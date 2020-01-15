@@ -1,28 +1,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>wm&#39;s blog on wm&#39;s blog</title>
-    <link>https://example.com/</link>
+    <link>https://iseekto.github.io/trysme/</link>
     <description>Recent content in wm&#39;s blog on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Jan 2020 23:37:32 +0800</lastBuildDate>
-    <atom:link href="/" rel="self" type="application/rss+xml" />
+    <atom:link href="/trysme/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Posts</title>
-      <link>https://example.com/posts/</link>
+      <link>https://iseekto.github.io/trysme/posts/</link>
       <pubDate>Wed, 15 Jan 2020 23:37:32 +0800</pubDate>
       
-      <guid>https://example.com/posts/</guid>
+      <guid>https://iseekto.github.io/trysme/posts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jas</title>
-      <link>https://example.com/jas/</link>
+      <link>https://iseekto.github.io/trysme/jas/</link>
       <pubDate>Wed, 15 Jan 2020 18:40:41 +0800</pubDate>
       
-      <guid>https://example.com/jas/</guid>
+      <guid>https://iseekto.github.io/trysme/jas/</guid>
       <description>&lt;p&gt;111&lt;/p&gt;
 </description>
     </item>
