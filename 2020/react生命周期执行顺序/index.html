@@ -114,7 +114,6 @@
         <h1 class="post-title" itemprop="name headline">React生命周期执行顺序</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
-                Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥
                 <span class="post-time">
                 on <time datetime=2020-01-15 itemprop="datePublished">January 15, 2020</time>
                 </span>
@@ -305,11 +304,12 @@ constructor-&gt;componentWillMount-&gt;render-&gt;componentDidMount-&gt;!props�
 
     <link rel="stylesheet" href="https://cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
     <script src="https://cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
+    
 
     <script type="text/javascript">
       var gitalk = new Gitalk({
         
-        id: location.pathname,
+        id: location.pathname.substr(0, 50),
         title: 'React生命周期执行顺序',
         clientID: '64ecd4438b6b3a3a9bd8',
         clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
