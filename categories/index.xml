@@ -6,9 +6,28 @@
     <description>Recent content in Categories on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jan 2020 23:37:32 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>tool</title>
+      <link>https://iseekto.github.io/trysme/categories/tool/</link>
+      <pubDate>Wed, 15 Jan 2020 23:37:32 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/categories/tool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>React</title>
+      <link>https://iseekto.github.io/trysme/categories/react/</link>
+      <pubDate>Wed, 15 Jan 2020 23:05:35 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/categories/react/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
