@@ -15,7 +15,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="favicon.ico" color="#5bbad5">
+  <link rel="mask-icon" href="favicon.ico" color="#5bbad5">  
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <title>
@@ -108,19 +108,101 @@
 </nav>
     	 <main class="main">
           <div class="container">
-      		
+          
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
         <h1 class="post-title" itemprop="name headline">First</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
+                Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥
                 <span class="post-time">
                 on <time datetime=2020-01-15 itemprop="datePublished">January 15, 2020</time>
                 </span>
                 in
                 
+                |
+                <a href="#gitalk-container" itemprop="discussionUrl">
+                    <span class="gitalk-comment-count" itemprop="commentCount"></span>
+                </a>
+                条评论
         </div>
     </header>
+    <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title"></h2>
+    
+    <div class="post-toc-content">
+      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#cd-rn项目-react-native-run-ios-之后yarn-start-打开手机模拟器即可显示">cd rn项目 react-native run-ios 之后yarn start 打开手机模拟器即可显示。</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#ghaaahha">GHAAAHHA</a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#https-www-jianshu-com-p-ff20064f7a7f-解读react-native"><a href="https://www.jianshu.com/p/ff20064f7a7f" rel="nofollow noreferrer" target="_blank">https://www.jianshu.com/p/ff20064f7a7f</a>  解读React Native</a></li>
+<li><a href="#更换rn应用程序图标-在xcode里双击项目工程-general-app-icons-source将合成好的图片拉到-images-1-xcassets下-重新启动-成功-相关连接-https-www-jianshu-com-p-56562e5a9396">更换RN应用程序图标 在Xcode里双击项目工程 -&gt; general-&gt; App Icons Source将合成好的图片拉到 Images-1.xcassets下  重新启动 成功， 相关连接 <a href="https://www.jianshu.com/p/56562e5a9396" rel="nofollow noreferrer" target="_blank">https://www.jianshu.com/p/56562e5a9396</a></a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="#live-demo">Live demo</a>
+<ul>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#html-block-below">HTML block below</a></li>
+<li><a href="#how-about-some-code">How about some code?</a></li>
+</ul></li>
+<li><a href="#hsdhfjshfjsf1111111111111">hsdhfjshfjsf1111111111111</a>
+<ul>
+<li><a href="#tables">Tables?</a></li>
+<li><a href="#more-info">More info?</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+    window.onload = function () {
+      var fix = $('.post-toc');
+      var end = $('.post-comment');
+      var fixTop = fix.offset().top, fixHeight = fix.height();
+      var endTop, miss;
+      var offsetTop = fix[0].offsetTop;
+  
+      $(window).scroll(function () {
+        var docTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+  
+        if (end.length > 0) {
+          endTop = end.offset().top;
+          miss = endTop - docTop - fixHeight;
+        }
+  
+        if (fixTop < docTop) {
+          fix.css({ 'position': 'fixed' });
+          if ((end.length > 0) && (endTop < (docTop + fixHeight))) {
+            fix.css({ top: miss });
+          } else {
+            fix.css({ top: 0 });
+          }
+        } else {
+          fix.css({ 'position': 'absolute' });
+          fix.css({ top: offsetTop });
+        }
+      })
+    }
+  </script> 
     <div class="post-content">
         
 
@@ -232,7 +314,12 @@ React.render(
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://iseekto.github.io/trysme/2020/first/>https://iseekto.github.io/trysme/2020/first/</span>
+                    
+                    <a href=https://iseekto.github.io/trysme/2020/first/>
+                        <script>
+                            document.write(decodeURI(location.origin + location.pathname))
+                        </script>
+                    </a>
             </p>
             
              
@@ -266,6 +353,50 @@ React.render(
           
     </div>
 </article>
+          
+<div class="post-comment"><div onclick="showDisqus();" id="disqus_title" class="disqus_title">显示 Disqus 评论</div><div id="gitalk-container" class="gitalk-container"></div>
+    
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
+    <script src="https://cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
+
+    <script type="text/javascript">
+      var gitalk = new Gitalk({
+        
+        id: location.pathname,
+        title: 'First',
+        clientID: '64ecd4438b6b3a3a9bd8',
+        clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
+        repo: 'trysme-comment',
+        owner: 'iseekTo',
+        admin: 'iseekTo',
+        
+        
+        
+      });
+      gitalk.render('gitalk-container');
+    </script>
+    <noscript>Please enable JavaScript to view the
+      <a href="https://github.com/gitalk/gitalk">comments powered by gitalk.</a>
+    </noscript><div id="disqus_thread"></div>
+    <script type="text/javascript">
+    function showDisqus() {
+      
+
+      
+      
+      
+      
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = false;
+      var disqus_shortname = 'ksksksk';
+      dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+      window.location.hash = "#disqus_thread";
+    }
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
           </div>
 		   </main>
       <footer class="footer">

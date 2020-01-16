@@ -15,7 +15,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="favicon.ico" color="#5bbad5">
+  <link rel="mask-icon" href="favicon.ico" color="#5bbad5">  
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <title>
@@ -108,12 +108,13 @@
 </nav>
     	 <main class="main">
           <div class="container">
-      		
+          
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
         <h1 class="post-title" itemprop="name headline">Hugo简单实用</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
+                Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥
                 <span class="post-time">
                 on <time datetime=2020-01-15 itemprop="datePublished">January 15, 2020</time>
                 </span>
@@ -123,8 +124,51 @@
                         <a href="https://iseekto.github.io/trysme/categories/tool/"> tool </a>
                         
                 </span>
+                |
+                <a href="#gitalk-container" itemprop="discussionUrl">
+                    <span class="gitalk-comment-count" itemprop="commentCount"></span>
+                </a>
+                条评论
         </div>
     </header>
+    <div class="post-toc" id="post-toc">
+    <h2 class="post-toc-title"></h2>
+    
+    <div class="post-toc-content">
+      
+    </div>
+  </div>
+  
+  <script type="text/javascript">
+    window.onload = function () {
+      var fix = $('.post-toc');
+      var end = $('.post-comment');
+      var fixTop = fix.offset().top, fixHeight = fix.height();
+      var endTop, miss;
+      var offsetTop = fix[0].offsetTop;
+  
+      $(window).scroll(function () {
+        var docTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
+  
+        if (end.length > 0) {
+          endTop = end.offset().top;
+          miss = endTop - docTop - fixHeight;
+        }
+  
+        if (fixTop < docTop) {
+          fix.css({ 'position': 'fixed' });
+          if ((end.length > 0) && (endTop < (docTop + fixHeight))) {
+            fix.css({ top: miss });
+          } else {
+            fix.css({ top: 0 });
+          }
+        } else {
+          fix.css({ 'position': 'absolute' });
+          fix.css({ top: offsetTop });
+        }
+      })
+    }
+  </script> 
     <div class="post-content">
         
 
@@ -164,7 +208,12 @@
              
             <p class="copyright-item">
                     <span>Link:</span>
-                    <a href=https://iseekto.github.io/trysme/2020/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/>https://iseekto.github.io/trysme/2020/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/</span>
+                    
+                    <a href=https://iseekto.github.io/trysme/2020/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/>
+                        <script>
+                            document.write(decodeURI(location.origin + location.pathname))
+                        </script>
+                    </a>
             </p>
             
              
@@ -196,6 +245,50 @@
           
     </div>
 </article>
+          
+<div class="post-comment"><div onclick="showDisqus();" id="disqus_title" class="disqus_title">显示 Disqus 评论</div><div id="gitalk-container" class="gitalk-container"></div>
+    
+
+    <link rel="stylesheet" href="https://cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
+    <script src="https://cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
+
+    <script type="text/javascript">
+      var gitalk = new Gitalk({
+        
+        id: location.pathname,
+        title: 'Hugo简单实用',
+        clientID: '64ecd4438b6b3a3a9bd8',
+        clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
+        repo: 'trysme-comment',
+        owner: 'iseekTo',
+        admin: 'iseekTo',
+        
+        
+        
+      });
+      gitalk.render('gitalk-container');
+    </script>
+    <noscript>Please enable JavaScript to view the
+      <a href="https://github.com/gitalk/gitalk">comments powered by gitalk.</a>
+    </noscript><div id="disqus_thread"></div>
+    <script type="text/javascript">
+    function showDisqus() {
+      
+
+      
+      
+      
+      
+
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = false;
+      var disqus_shortname = 'ksksksk';
+      dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+      window.location.hash = "#disqus_thread";
+    }
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div>
           </div>
 		   </main>
       <footer class="footer">
