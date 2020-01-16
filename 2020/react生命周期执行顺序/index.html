@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noodp"/>
-  
+  <meta name="author" content="_weimou">
   
   <meta name="keywords" content="blog">
   
@@ -13,10 +13,9 @@
   <link rel="next" href="https://iseekto.github.io/trysme/2020/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/" />
   <link rel="canonical" href="https://iseekto.github.io/trysme/2020/react%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="mask-icon" href="favicon.ico" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <title>
@@ -48,11 +47,11 @@
     "headline" : "React生命周期执行顺序",
     "description" : " React生命周期执行顺序： ###################\t渲染过程 ############### #constructor: ES6构造函数. 1.定义它是为了初始化state，这样我们可以在组件生命周期任何函数中访问state 1.其次是为了绑定成员函数的this环境、 #render：组件中最重要的函数，渲染DOM。 1.它返回一个JSX描述的结构，最终由react来操作渲染过程 2.如果组件的作用不是为了渲染页面，无东西可画，我们可以返回一个null或者false 3.不可再render中使用this.setState，因为一个纯函数不应该引起状态的改变。 #componentWillMount: 组件渲染前，将要装载时。 1.它执行完毕会走render函数 2.建议数据渲染不要放在这个函数里 3.一般都在里放loading，改变引用title等。 4.它可以在浏览器和服务器端被调用。 #componentDidMount: 组件挂载时 1.这里我们可以拿到DOM节点，动态赋予DOM事件 2.可以请求数据接口 3.它只能在浏览器端被调用，因为DOM已经挂载 4.可结合其他UI库执行代码。 ################## 更新过程 ################## 组件被挂载到DOM树上之后，当props或者state被更改的时候会依次执行以下生命周期函数 #componentWillReceiveProps 1.只要是父组件里的render函数被调用，在render函数里面#【被渲染的子组件也会经历更新过程】#； 不管父传给子组件的props有没有改变，都会触发子组件的componentWillReceiveProps函数 2.注意：this.setState()函数在更新的过程中不会触发这个函数； 因为它是根据props值，也就是参数nextProps来计算出是不是要更新内部state状态 3.触发之后会更新子组件的render函数 #shouldComponentUpdate: 性能优化利器-决定一个组件什么时候不需要渲染。 1.在更新过程中，react会首先调用shouldComponentUpdate函数，如果他返回true，继续更新 接下来调用render 反之，停止更新，也就不会引发后续的渲染。 2.通过this.setState()函数引发更新过程，而不是立即更新组件的state值，在执行到本周期函数时，this.state依 然是this.setState()函数执行前的值，我们要做的就是在nextProps, this.props, nextState, this.state中做对比。 #componentWillUpdate：组件更新前 1.如果shouldComponentUpdate函数返回true，react接下来就会调用组件的componentWillUpdate, render和componentDidUpdate函数。 2.使用React做服务端渲染时(SSR), 基本不会经历更新过程，因为服务端之产出一个HTML字符串。 ################## 卸载过程 ################## #componentWillUnMount: 组件卸载时 1.本周期函数与componentDidMount周期函数有关，用于移除DOM节点 2.清除定时器。 React生命周期走势大致是： constructor-\x26gt;componentWillMount-\x26gt;render-\x26gt;componentDidMount-\x26gt;!props更新调用-\x26gt;(componentWillReceiveProps -\x26gt; render) -\x26gt;(shouldComponentUpdate ? true -\x26gt; componentWillUpdate -\x26gt; render -\x26gt; componentDidUpdate : componentWillUnMount: 不会打印 默认执行了)  ",
     "inLanguage" : "en-us",
-    "author" : "",
-    "creator" : "",
-    "publisher": "",
-    "accountablePerson" : "",
-    "copyrightHolder" : "",
+    "author" : "_weimou",
+    "creator" : "_weimou",
+    "publisher": "_weimou",
+    "accountablePerson" : "_weimou",
+    "copyrightHolder" : "_weimou",
     "copyrightYear" : "2020",
     "datePublished": "2020-01-15 23:05:35 \x2b0800 CST",
     "dateModified" : "2020-01-15 23:05:35 \x2b0800 CST",
@@ -114,7 +113,7 @@
     <header class="post-header">
         <h1 class="post-title" itemprop="name headline">React生命周期执行顺序</h1>
         <div class="post-meta">
-                Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author"></a> with ♥ 
+                Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
                 <span class="post-time">
                 on <time datetime=2020-01-15 itemprop="datePublished">January 15, 2020</time>
                 </span>
@@ -200,6 +199,11 @@ constructor-&gt;componentWillMount-&gt;render-&gt;componentDidMount-&gt;!props�
     </div>
 
     <div class="post-copyright">
+             
+            <p class="copyright-item">
+                <span>Author:</span>
+                <span>_weimou </span>
+                </p>
             
            
              
@@ -245,11 +249,13 @@ constructor-&gt;componentWillMount-&gt;render-&gt;componentDidMount-&gt;!props�
     <div class="copyright">
         &copy;
         
-        <span itemprop="copyrightYear">2011 - 2020</span>
+        <span itemprop="copyrightYear">2019 - 2020</span>
         
         <span class="with-love">
     	 
          </span>
+         
+            <span class="author" itemprop="copyrightHolder"><a href="https://iseekto.github.io/trysme/">_weimou</a> | </span> 
          
 
          
