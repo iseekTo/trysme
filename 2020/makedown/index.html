@@ -10,9 +10,9 @@
   
   <meta name="keywords" content="blog">
   
-  
-  <link rel="next" href="https://iseekto.github.io/trysme/2020/makedown/" />
-  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/about/" />
+  <link rel="prev" href="https://iseekto.github.io/trysme/2020/about/" />
+  <link rel="next" href="https://iseekto.github.io/trysme/2020/react%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/" />
+  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/makedown/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -22,10 +22,10 @@
   <title>
        
        
-           About | wm&#39;s blog
+           Makedown | wm&#39;s blog
        
   </title>
-  <meta name="title" content="About | wm&#39;s blog">
+  <meta name="title" content="Makedown | wm&#39;s blog">
     
   
   <link rel="stylesheet" href="/trysme/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/iseekto.github.io\/trysme\/"
     },
     "articleSection" : "posts",
-    "name" : "About",
-    "headline" : "About",
-    "description" : " Aheadline update by 2020年01月15日23:42:50 ",
+    "name" : "Makedown",
+    "headline" : "Makedown",
+    "description" : "Table of Contents  1212 22 333 454 Implements GitHub Flavored Markdown Renders actual, \x26ldquo;native\x26rdquo; React DOM elements Allows you to escape or skip HTML (try toggling the checkboxes above) If you escape or skip the HTML, no dangerouslySetInnerHTML is used! Yay! \x26mdash;-   第一项：  第一项嵌套的第一个元素 第一项嵌套的第二个元素  深入嵌套   第二项：  第二项嵌套的第一个元素  深入嵌套\x26ndash;二  第二项嵌套的第二个元素   cd rn项目 react-native run-ios 之后yarn start 打开手机模拟器即可显示。",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -54,11 +54,11 @@
     "accountablePerson" : "_weimou",
     "copyrightHolder" : "_weimou",
     "copyrightYear" : "2020",
-    "datePublished": "2020-01-15 18:26:38 \x2b0800 CST",
-    "dateModified" : "2020-01-15 18:26:38 \x2b0800 CST",
-    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/about\/",
-    "wordCount" : "4",
-    "keywords" : [ "tags", "wm\x27s blog"]
+    "datePublished": "2020-01-15 18:28:14 \x2b0800 CST",
+    "dateModified" : "2020-01-15 18:28:14 \x2b0800 CST",
+    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/makedown\/",
+    "wordCount" : "134",
+    "keywords" : [  "wm\x27s blog"]
 }
 </script>
 
@@ -135,14 +135,18 @@
           
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">About</h1>
+        <h1 class="post-title" itemprop="name headline">Makedown</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
                 <span class="post-time">
                 on <time datetime=2020-01-15 itemprop="datePublished">January 15, 2020</time>
                 </span>
                 in
-                
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="https://iseekto.github.io/trysme/categories/tool/"> tool </a>
+                        
+                </span>
                 
                 <a href="#gitalk-container" itemprop="discussionUrl">
                     <span class="gitalk-comment-count" itemprop="commentCount"></span>
@@ -156,10 +160,13 @@
     <div class="post-toc-content">
       <nav id="TableOfContents">
 <ul>
-<li><a href="#aheadline">Aheadline</a>
-<ul>
-<li><a href="#update-by-2020年01月15日23-42-50">update by 2020年01月15日23:42:50</a></li>
-</ul></li>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#live-demo">Live demo</a></li>
+<li><a href="#解读react-native">解读React Native</a></li>
+<li><a href="#html-block-below">HTML block below</a></li>
+<li><a href="#how-about-some-code">How about some code?</a></li>
+<li><a href="#tables">Tables?</a></li>
+<li><a href="#more-info">More info?</a></li>
 </ul>
 </nav>
     </div>
@@ -226,9 +233,107 @@
 
           
 
-<h1 id="aheadline">Aheadline</h1>
+<h1 id="table-of-contents">Table of Contents</h1>
 
-<h2 id="update-by-2020年01月15日23-42-50">update by 2020年01月15日23:42:50</h2>
+<ul>
+<li>1212</li>
+<li>22</li>
+<li>333</li>
+<li>454</li>
+<li>Implements <a href="https://github.github.com/gfm/" rel="nofollow noreferrer" target="_blank">GitHub Flavored Markdown</a></li>
+<li>Renders actual, &ldquo;native&rdquo; React DOM elements</li>
+<li>Allows you to escape or skip HTML (try toggling the checkboxes above)</li>
+<li>If you escape or skip the HTML, no <code>dangerouslySetInnerHTML</code> is used! Yay!
+&mdash;-</li>
+</ul>
+
+<ol>
+<li>第一项：
+
+<ul>
+<li>第一项嵌套的第一个元素</li>
+<li>第一项嵌套的第二个元素
+
+<ul>
+<li>深入嵌套</li>
+</ul></li>
+</ul></li>
+<li>第二项：
+
+<ul>
+<li>第二项嵌套的第一个元素
+
+<ul>
+<li>深入嵌套&ndash;二</li>
+</ul></li>
+<li>第二项嵌套的第二个元素</li>
+</ul></li>
+</ol>
+
+<p><em>cd rn项目 react-native run-ios 之后yarn start 打开手机模拟器即可显示。</em></p>
+
+<h1 id="live-demo">Live demo</h1>
+
+<h1 id="解读react-native">解读React Native</h1>
+
+<p><a href="https://www.jianshu.com/p/ff20064f7a7f" rel="nofollow noreferrer" target="_blank">https://www.jianshu.com/p/ff20064f7a7f</a></p>
+
+<p><em>更换RN应用程序图标 在Xcode里双击项目工程 -&gt; general-&gt; App Icons Source将合成好的图片拉到 Images-1.xcassets下  重新启动 成功， 相关连接 <a href="https://www.jianshu.com/p/56562e5a9396" rel="nofollow noreferrer" target="_blank">https://www.jianshu.com/p/56562e5a9396</a></em></p>
+
+<h1 id="html-block-below">HTML block below</h1>
+
+<blockquote>
+  This blockquote will change based on the HTML settings above.
+</blockquote>
+
+<h1 id="how-about-some-code">How about some code?</h1>
+
+<pre><code class="language-jsx">var React = require('react');
+var Markdown = require('react-markdown');
+
+React.render(
+  &lt;Markdown source=&quot;# Your markdown here&quot; /&gt;,
+  document.getElementById('content')
+);
+</code></pre>
+
+<p>Pretty neat, eh?</p>
+
+<h1 id="tables">Tables?</h1>
+
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Support</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>tables</td>
+<td>✔</td>
+</tr>
+
+<tr>
+<td>alignment</td>
+<td>✔</td>
+</tr>
+
+<tr>
+<td>wewt</td>
+<td>✔</td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="more-info">More info?</h1>
+
+<p>Read usage information and more on <a href="//github.com/rexxars/react-markdown" rel="nofollow noreferrer" target="_blank">GitHub</a></p>
+
+<hr />
+
+<p>A component by <a href="https://espen.codes/" rel="nofollow noreferrer" target="_blank">Espen Hovlandsdal</a></p>
 
     </div>
 
@@ -244,7 +349,7 @@
             <p class="copyright-item">
                     <span>Link:</span>
                     
-                    <a href=https://iseekto.github.io/trysme/2020/about/>
+                    <a href=https://iseekto.github.io/trysme/2020/makedown/>
                         <script>
                             document.write(decodeURI(location.origin + location.pathname))
                         </script>
@@ -261,14 +366,6 @@
   
     <div class="post-tags">
         
-            <section>
-            <i class="iconfont icon-tag"></i>Tag(s): 
-            
-            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/tags/">
-                    #tags</a></span>
-            
-            </section>
-        
         <section>
                 <a href="javascript:window.history.back();">back</a></span> · 
                 <span><a href="https://iseekto.github.io/trysme/">home</a></span>
@@ -276,9 +373,11 @@
     </div>
 
     <div class="post-nav">
+        
+        <a href="https://iseekto.github.io/trysme/2020/about/" class="prev" rel="prev" title="About"><i class="iconfont icon-left"></i>&nbsp;About</a>
          
         
-        <a href="https://iseekto.github.io/trysme/2020/makedown/" class="next" rel="next" title="Makedown">Makedown&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="https://iseekto.github.io/trysme/2020/react%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/" class="next" rel="next" title="React生命周期执行顺序">React生命周期执行顺序&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -300,7 +399,7 @@
       var gitalk = new Gitalk({
         
         id: location.pathname.substr(0, 50),
-        title: 'About',
+        title: 'Makedown',
         clientID: '64ecd4438b6b3a3a9bd8',
         clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
         repo: 'trysme-comment',

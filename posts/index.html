@@ -43,6 +43,29 @@
 
   
 
+<script>
+  window.onload = function() {
+    
+    var lastTouchEnd = 0;
+    document.addEventListener('touchstart', function(event) {
+        if (event.touches.length > 1) {
+            event.preventDefault();
+        }
+    });
+    document.addEventListener('touchend', function(event) {
+        var now = (new Date()).getTime();
+        if (now - lastTouchEnd <= 300) {
+            event.preventDefault();
+        }
+        lastTouchEnd = now;
+    }, false);
+
+    
+    document.addEventListener('gesturestart', function(event) {
+        event.preventDefault();
+    });
+}
+</script>
 
   <body class="">
     <div class="wrapper">
@@ -107,7 +130,7 @@
     </article>
     
     <article class="archive-item">
-        <a href="/trysme/2020/first/" class="archive-item-link">First</a>
+        <a href="/trysme/2020/makedown/" class="archive-item-link">Makedown</a>
         <span class="archive-item-date">
             January 15, 2020
         </span>

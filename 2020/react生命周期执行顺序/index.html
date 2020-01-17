@@ -10,7 +10,7 @@
   
   <meta name="keywords" content="blog">
   
-  <link rel="prev" href="https://iseekto.github.io/trysme/2020/first/" />
+  <link rel="prev" href="https://iseekto.github.io/trysme/2020/makedown/" />
   <link rel="next" href="https://iseekto.github.io/trysme/2020/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/" />
   <link rel="canonical" href="https://iseekto.github.io/trysme/2020/react%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -66,6 +66,29 @@
 
   
 
+<script>
+  window.onload = function() {
+    
+    var lastTouchEnd = 0;
+    document.addEventListener('touchstart', function(event) {
+        if (event.touches.length > 1) {
+            event.preventDefault();
+        }
+    });
+    document.addEventListener('touchend', function(event) {
+        var now = (new Date()).getTime();
+        if (now - lastTouchEnd <= 300) {
+            event.preventDefault();
+        }
+        lastTouchEnd = now;
+    }, false);
+
+    
+    document.addEventListener('gesturestart', function(event) {
+        event.preventDefault();
+    });
+}
+</script>
 
   <body class="">
     <div class="wrapper">
@@ -299,7 +322,7 @@ constructor-&gt;componentWillMount-&gt;render-&gt;componentDidMount-&gt;!props�
 
     <div class="post-nav">
         
-        <a href="https://iseekto.github.io/trysme/2020/first/" class="prev" rel="prev" title="First"><i class="iconfont icon-left"></i>&nbsp;First</a>
+        <a href="https://iseekto.github.io/trysme/2020/makedown/" class="prev" rel="prev" title="Makedown"><i class="iconfont icon-left"></i>&nbsp;Makedown</a>
          
         
         <a href="https://iseekto.github.io/trysme/2020/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/" class="next" rel="next" title="Hugo简单实用">Hugo简单实用&nbsp;<i class="iconfont icon-right"></i></a>
