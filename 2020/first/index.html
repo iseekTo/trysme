@@ -3,7 +3,8 @@
   <head>
   <meta http-equiv="content-type" content="text/html;charset=utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta name="robots" content="noodp"/>
   <meta name="author" content="_weimou">
   
@@ -45,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "First",
     "headline" : "First",
-    "description" : "[toc]\ncd rn项目 react-native run-ios 之后yarn start 打开手机模拟器即可显示。 GHAAAHHA https:\/\/www.jianshu.com\/p\/ff20064f7a7f 解读React Native 更换RN应用程序图标 在Xcode里双击项目工程 -\x26gt; general-\x26gt; App Icons Source将合成好的图片拉到 Images-1.xcassets下 重新启动 成功， 相关连接 https:\/\/www.jianshu.com\/p\/56562e5a9396 Live demo Changes are automatically rendered as you type.\nTable of Contents  Implements GitHub Flavored Markdown Renders actual, \x26ldquo;native\x26rdquo; React DOM elements Allows you to escape or skip HTML (try toggling the checkboxes above) If you escape or skip the HTML, no dangerouslySetInnerHTML is used!",
+    "description" : "Table of Contents  1212 22 333 454 Implements GitHub Flavored Markdown Renders actual, \x26ldquo;native\x26rdquo; React DOM elements Allows you to escape or skip HTML (try toggling the checkboxes above) If you escape or skip the HTML, no dangerouslySetInnerHTML is used! Yay! \x26mdash;-   第一项：  第一项嵌套的第一个元素 第一项嵌套的第二个元素  深入嵌套   第二项：  第二项嵌套的第一个元素  深入嵌套\x26ndash;二  第二项嵌套的第二个元素   cd rn项目 react-native run-ios 之后yarn start 打开手机模拟器即可显示。",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -56,7 +57,7 @@
     "datePublished": "2020-01-15 18:28:14 \x2b0800 CST",
     "dateModified" : "2020-01-15 18:28:14 \x2b0800 CST",
     "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/first\/",
-    "wordCount" : "131",
+    "wordCount" : "134",
     "keywords" : [  "wm\x27s blog"]
 }
 </script>
@@ -132,41 +133,13 @@
     <div class="post-toc-content">
       <nav id="TableOfContents">
 <ul>
-<li>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#cd-rn项目-react-native-run-ios-之后yarn-start-打开手机模拟器即可显示">cd rn项目 react-native run-ios 之后yarn start 打开手机模拟器即可显示。</a></li>
-</ul></li>
-</ul></li>
-</ul></li>
-<li><a href="#ghaaahha">GHAAAHHA</a>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#https-www-jianshu-com-p-ff20064f7a7f-解读react-native"><a href="https://www.jianshu.com/p/ff20064f7a7f" rel="nofollow noreferrer" target="_blank">https://www.jianshu.com/p/ff20064f7a7f</a>  解读React Native</a></li>
-<li><a href="#更换rn应用程序图标-在xcode里双击项目工程-general-app-icons-source将合成好的图片拉到-images-1-xcassets下-重新启动-成功-相关连接-https-www-jianshu-com-p-56562e5a9396">更换RN应用程序图标 在Xcode里双击项目工程 -&gt; general-&gt; App Icons Source将合成好的图片拉到 Images-1.xcassets下  重新启动 成功， 相关连接 <a href="https://www.jianshu.com/p/56562e5a9396" rel="nofollow noreferrer" target="_blank">https://www.jianshu.com/p/56562e5a9396</a></a></li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul></li>
-<li><a href="#live-demo">Live demo</a>
-<ul>
 <li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#live-demo">Live demo</a></li>
+<li><a href="#解读react-native">解读React Native</a></li>
 <li><a href="#html-block-below">HTML block below</a></li>
 <li><a href="#how-about-some-code">How about some code?</a></li>
-</ul></li>
-<li><a href="#hsdhfjshfjsf1111111111111">hsdhfjshfjsf1111111111111</a>
-<ul>
 <li><a href="#tables">Tables?</a></li>
 <li><a href="#more-info">More info?</a></li>
-</ul></li>
 </ul>
 </nav>
     </div>
@@ -176,10 +149,23 @@
     window.onload = function () {
       var fix = $('.post-toc');
       var end = $('.post-comment');
+      var eachTocA = $('#TableOfContents ul li a')  
+      var sameTocA = $('.post-content h1')  
       var fixTop = fix.offset().top, fixHeight = fix.height();
       var endTop, miss;
       var offsetTop = fix[0].offsetTop;
-  
+
+      eachTocA.on('click', function() {
+        $('.active-by-alink').removeClass('active-by-alink')
+        $(this).addClass('active-by-alink')
+      })
+      
+      
+      
+      
+      
+
+
       $(window).scroll(function () {
         var docTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
   
@@ -220,36 +206,60 @@
 
           
 
-<p>[toc]</p>
-
-<h4 id="cd-rn项目-react-native-run-ios-之后yarn-start-打开手机模拟器即可显示">cd rn项目 react-native run-ios 之后yarn start 打开手机模拟器即可显示。</h4>
-
-<h1 id="ghaaahha">GHAAAHHA</h1>
-
-<h5 id="https-www-jianshu-com-p-ff20064f7a7f-解读react-native"><a href="https://www.jianshu.com/p/ff20064f7a7f" rel="nofollow noreferrer" target="_blank">https://www.jianshu.com/p/ff20064f7a7f</a>  解读React Native</h5>
-
-<h5 id="更换rn应用程序图标-在xcode里双击项目工程-general-app-icons-source将合成好的图片拉到-images-1-xcassets下-重新启动-成功-相关连接-https-www-jianshu-com-p-56562e5a9396">更换RN应用程序图标 在Xcode里双击项目工程 -&gt; general-&gt; App Icons Source将合成好的图片拉到 Images-1.xcassets下  重新启动 成功， 相关连接 <a href="https://www.jianshu.com/p/56562e5a9396" rel="nofollow noreferrer" target="_blank">https://www.jianshu.com/p/56562e5a9396</a></h5>
-
-<h1 id="live-demo">Live demo</h1>
-
-<p>Changes are automatically rendered as you type.</p>
-
-<h2 id="table-of-contents">Table of Contents</h2>
+<h1 id="table-of-contents">Table of Contents</h1>
 
 <ul>
+<li>1212</li>
+<li>22</li>
+<li>333</li>
+<li>454</li>
 <li>Implements <a href="https://github.github.com/gfm/" rel="nofollow noreferrer" target="_blank">GitHub Flavored Markdown</a></li>
 <li>Renders actual, &ldquo;native&rdquo; React DOM elements</li>
 <li>Allows you to escape or skip HTML (try toggling the checkboxes above)</li>
-<li>If you escape or skip the HTML, no <code>dangerouslySetInnerHTML</code> is used! Yay!</li>
+<li>If you escape or skip the HTML, no <code>dangerouslySetInnerHTML</code> is used! Yay!
+&mdash;-</li>
 </ul>
 
-<h2 id="html-block-below">HTML block below</h2>
+<ol>
+<li>第一项：
+
+<ul>
+<li>第一项嵌套的第一个元素</li>
+<li>第一项嵌套的第二个元素
+
+<ul>
+<li>深入嵌套</li>
+</ul></li>
+</ul></li>
+<li>第二项：
+
+<ul>
+<li>第二项嵌套的第一个元素
+
+<ul>
+<li>深入嵌套&ndash;二</li>
+</ul></li>
+<li>第二项嵌套的第二个元素</li>
+</ul></li>
+</ol>
+
+<p><em>cd rn项目 react-native run-ios 之后yarn start 打开手机模拟器即可显示。</em></p>
+
+<h1 id="live-demo">Live demo</h1>
+
+<h1 id="解读react-native">解读React Native</h1>
+
+<p><a href="https://www.jianshu.com/p/ff20064f7a7f" rel="nofollow noreferrer" target="_blank">https://www.jianshu.com/p/ff20064f7a7f</a></p>
+
+<p><em>更换RN应用程序图标 在Xcode里双击项目工程 -&gt; general-&gt; App Icons Source将合成好的图片拉到 Images-1.xcassets下  重新启动 成功， 相关连接 <a href="https://www.jianshu.com/p/56562e5a9396" rel="nofollow noreferrer" target="_blank">https://www.jianshu.com/p/56562e5a9396</a></em></p>
+
+<h1 id="html-block-below">HTML block below</h1>
 
 <blockquote>
   This blockquote will change based on the HTML settings above.
 </blockquote>
 
-<h2 id="how-about-some-code">How about some code?</h2>
+<h1 id="how-about-some-code">How about some code?</h1>
 
 <pre><code class="language-jsx">var React = require('react');
 var Markdown = require('react-markdown');
@@ -260,11 +270,9 @@ React.render(
 );
 </code></pre>
 
-<h1 id="hsdhfjshfjsf1111111111111">hsdhfjshfjsf1111111111111</h1>
-
 <p>Pretty neat, eh?</p>
 
-<h2 id="tables">Tables?</h2>
+<h1 id="tables">Tables?</h1>
 
 <table>
 <thead>
@@ -292,7 +300,7 @@ React.render(
 </tbody>
 </table>
 
-<h2 id="more-info">More info?</h2>
+<h1 id="more-info">More info?</h1>
 
 <p>Read usage information and more on <a href="//github.com/rexxars/react-markdown" rel="nofollow noreferrer" target="_blank">GitHub</a></p>
 
