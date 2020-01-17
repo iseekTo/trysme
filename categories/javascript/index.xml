@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScript on wm&#39;s blog</title>
+    <link>https://iseekto.github.io/trysme/categories/javascript/</link>
+    <description>Recent content in JavaScript on wm&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Jan 2020 15:33:22 +0800</lastBuildDate>
+    
+	<atom:link href="https://iseekto.github.io/trysme/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Js面试</title>
+      <link>https://iseekto.github.io/trysme/2020/js%E9%9D%A2%E8%AF%95/</link>
+      <pubDate>Fri, 17 Jan 2020 15:33:22 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/js%E9%9D%A2%E8%AF%95/</guid>
+      <description> 一、铺平数组 给定原数组：let moreArr = [1, 2, [3, 4], [33, [442]], 5];
+1、moreArr = [...moreArr] 2、moreArr = moreArr.flat(Infinity) 3、while(moreArr.some(Array.isArray)) { moreArr = [].concat(...moreArr) } 4、let flatArr = []; function flats(arr = []) { arr.forEach(v =&amp;gt; { if (Array.isArray(v)) { flats(v) } else { flatArr.push(v) } }) }  </description>
+    </item>
+    
+  </channel>
+</rss>

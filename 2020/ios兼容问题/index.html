@@ -10,9 +10,9 @@
   
   <meta name="keywords" content="blog">
   
-  <link rel="prev" href="https://iseekto.github.io/trysme/2020/react%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/" />
-  <link rel="next" href="https://iseekto.github.io/trysme/2020/js%E9%9D%A2%E8%AF%95/" />
-  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/" />
+  
+  <link rel="next" href="https://iseekto.github.io/trysme/2020/makedown/" />
+  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/ios%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -22,10 +22,10 @@
   <title>
        
        
-           Hugo简单实用 | wm&#39;s blog
+           iOS兼容问题 | wm&#39;s blog
        
   </title>
-  <meta name="title" content="Hugo简单实用 | wm&#39;s blog">
+  <meta name="title" content="iOS兼容问题 | wm&#39;s blog">
     
   
   <link rel="stylesheet" href="/trysme/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/iseekto.github.io\/trysme\/"
     },
     "articleSection" : "posts",
-    "name" : "Hugo简单实用",
-    "headline" : "Hugo简单实用",
-    "description" : "注：使用 hugo new posts\/...md 之后，需要将 draft: true 这一行删掉。\n文章写完后，且绑定了github域名了，\n我们接着操作 hugo 他会在根目录下的 public 文件夹生成我们改动之后的代码\n然后就是一波 git add -A, git commit ....\n最后就可以在你的github上看效果吧！",
+    "name" : "iOS兼容问题",
+    "headline" : "iOS兼容问题",
+    "description" : "前置条件：在不使用第三方封装好的ui库，比如跨端框架Taro。\n input兼容问题 1、掉起输入框英文键盘，第一个字母为大写的问题\n\x26lt;input type=\x26quot;text\x26quot; autocapitalize=\x26quot;off\x26quot; \/\x26gt; \n2、在靠近底部触发input输入框，输入完成后，页面底部留白问题\n注册blur事件及定时器变量方便下一个focus时清除此使用，使用document.scrollIntoView()，然后在加上window.scrollTo(0, document.body.scrollHeight) 来重置高度\n3、获取焦点时，光标错位\n加上如下css样式user-select: text 如下js input.target.scrollIntoView(true)\n4、输入框获取焦点时，页面输入框被覆盖，定位的元素位置错乱\n可能性：当input位于fixed底部时，输入法弹出后，fixed会失效，页面的定位元素也会乱\n方案一：使用原生 API scrollIntoView(true) focus时，定时器 setTimeout(() =\x26gt; input.target.scrollIntoView(true), 200)\n方案二：focus时，改变自身定位及其他定位保持位置不变，blur时恢复。\n点击300ms穿透 建议方案：\n1、引入fastclick cdn文件，或者npm i fastclick, 再注册fastClick实例\n2、将click事件注册为touchstart事件立即执行\niOS 的 webview 中 滑动不流畅 ios5.0及以后的版本里，滑动有定义两个值，一个是auto，一个是touch\n-webkit-overflow-scrolling: touch : 当手指从触摸屏上离开，会保持一段时间的滚动\n-webkit-overflow-scrolling: auto: 当手指从触摸屏上离开，滚动会立即停止\n在滚动容器上增加滚动touch方法，可能会导致的问题是 含有fixed的元素会随着页面一起滚动，解决方案；在\nbody: { ​ overflow-y: hidden; } .box { ​ overflow-y: auto; ​ -webkit-overflow-scrolling: touch; }  iOS上拉边界与下拉会出现白色空白区域 产生原因: 在 iOS 中，手指按住屏幕上下拖动，会触发 touchmove 事件。这个事件触发的对象是整个 webview 容器，容器自然会被拖动，剩下的部分会成空白",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -54,10 +54,10 @@
     "accountablePerson" : "_weimou",
     "copyrightHolder" : "_weimou",
     "copyrightYear" : "2020",
-    "datePublished": "2020-01-15 23:37:32 \x2b0800 CST",
-    "dateModified" : "2020-01-15 23:37:32 \x2b0800 CST",
-    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8\/",
-    "wordCount" : "22",
+    "datePublished": "2020-01-15 18:26:38 \x2b0800 CST",
+    "dateModified" : "2020-01-15 18:26:38 \x2b0800 CST",
+    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/ios%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98\/",
+    "wordCount" : "91",
     "keywords" : [  "wm\x27s blog"]
 }
 </script>
@@ -135,7 +135,7 @@
           
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Hugo简单实用</h1>
+        <h1 class="post-title" itemprop="name headline">iOS兼容问题</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
                 <span class="post-time">
@@ -144,7 +144,7 @@
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://iseekto.github.io/trysme/categories/tool/"> tool </a>
+                        <a href="https://iseekto.github.io/trysme/categories/%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/"> 兼容问题 </a>
                         
                 </span>
                 
@@ -158,7 +158,14 @@
     <h2 class="post-toc-title"></h2>
     
     <div class="post-toc-content">
-      
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#input兼容问题">input兼容问题</a></li>
+<li><a href="#点击300ms穿透">点击300ms穿透</a></li>
+<li><a href="#ios-的-webview-中-滑动不流畅">iOS 的 webview 中 滑动不流畅</a></li>
+<li><a href="#ios上拉边界与下拉会出现白色空白区域">iOS上拉边界与下拉会出现白色空白区域</a></li>
+</ul>
+</nav>
     </div>
   </div>
   
@@ -214,15 +221,91 @@
           
           
 
-          <p>注：使用 <code>hugo new posts/...md</code> 之后，需要将 <code>draft: true</code> 这一行删掉。</p>
+          
 
-<p>文章写完后，且绑定了github域名了，</p>
+<blockquote>
+<p>前置条件：在不使用第三方封装好的ui库，比如跨端框架Taro。</p>
+</blockquote>
 
-<p>我们接着操作 <code>hugo</code> 他会在根目录下的 <code>public</code> 文件夹生成我们改动之后的代码</p>
+<h1 id="input兼容问题">input兼容问题</h1>
 
-<p>然后就是一波 <code>git add -A</code>, <code>git commit ....</code></p>
+<p>1、掉起输入框英文键盘，第一个字母为大写的问题</p>
 
-<p>最后就可以在你的github上看效果吧！</p>
+<p><code>&lt;input type=&quot;text&quot; autocapitalize=&quot;off&quot; /&gt;
+</code></p>
+
+<p>2、在靠近底部触发input输入框，输入完成后，页面底部留白问题</p>
+
+<p>注册blur事件及定时器变量方便下一个focus时清除此使用，使用<code>document.scrollIntoView()</code>，然后在加上<code>window.scrollTo(0, document.body.scrollHeight)</code> 来重置高度</p>
+
+<p>3、获取焦点时，光标错位</p>
+
+<p>加上如下css样式<code>user-select: text</code>
+如下js <code>input.target.scrollIntoView(true)</code></p>
+
+<p>4、输入框获取焦点时，页面输入框被覆盖，定位的元素位置错乱</p>
+
+<p>可能性：当input位于fixed底部时，输入法弹出后，fixed会失效，页面的定位元素也会乱</p>
+
+<p>方案一：使用原生 <code>API scrollIntoView(true)</code> focus时，定时器 <code>setTimeout(() =&gt; input.target.scrollIntoView(true), 200)</code></p>
+
+<p>方案二：focus时，改变自身定位及其他定位保持位置不变，blur时恢复。</p>
+
+<hr />
+
+<h1 id="点击300ms穿透">点击300ms穿透</h1>
+
+<p>建议方案：</p>
+
+<p>1、引入fastclick cdn文件，或者<code>npm i fastclick</code>, 再注册fastClick实例</p>
+
+<p>2、将click事件注册为touchstart事件立即执行</p>
+
+<hr />
+
+<h1 id="ios-的-webview-中-滑动不流畅">iOS 的 webview 中 滑动不流畅</h1>
+
+<p>ios5.0及以后的版本里，滑动有定义两个值，一个是auto，一个是touch</p>
+
+<p><code>-webkit-overflow-scrolling: touch</code> : 当手指从触摸屏上离开，会保持一段时间的滚动</p>
+
+<p><code>-webkit-overflow-scrolling: auto</code>: 当手指从触摸屏上离开，滚动会立即停止</p>
+
+<p>在滚动容器上增加滚动touch方法，可能会导致的问题是 含有fixed的元素会随着页面一起滚动，解决方案；在</p>
+
+<pre><code class="language-css">    body: {
+​       overflow-y: hidden;
+    }
+
+  .box {
+​    overflow-y: auto;
+​    -webkit-overflow-scrolling: touch;
+    }
+</code></pre>
+
+<hr />
+
+<h1 id="ios上拉边界与下拉会出现白色空白区域">iOS上拉边界与下拉会出现白色空白区域</h1>
+
+<p>产生原因:
+在 iOS 中，手指按住屏幕上下拖动，会触发 <code>touchmove</code> 事件。这个事件触发的对象是整个 webview 容器，容器自然会被拖动，剩下的部分会成空白</p>
+
+<p>解决方案：
+1、监听事件禁止滑动
+例如：</p>
+
+<pre><code class="language-javascript">document.body.addEventListener('touchmove', function(e) {
+	if(e._isScroller) return;
+        // 阻止默认事件
+  	    e.preventDefault();
+  	}, {
+        passive: false
+    });
+</code></pre>
+
+<blockquote>
+<p>由此可扩展出一个功能，下拉刷新上拉加载。</p>
+</blockquote>
 
     </div>
 
@@ -238,7 +321,7 @@
             <p class="copyright-item">
                     <span>Link:</span>
                     
-                    <a href=https://iseekto.github.io/trysme/2020/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/>
+                    <a href=https://iseekto.github.io/trysme/2020/ios%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/>
                         <script>
                             document.write(decodeURI(location.origin + location.pathname))
                         </script>
@@ -262,11 +345,9 @@
     </div>
 
     <div class="post-nav">
-        
-        <a href="https://iseekto.github.io/trysme/2020/react%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/" class="prev" rel="prev" title="React生命周期执行顺序"><i class="iconfont icon-left"></i>&nbsp;React生命周期执行顺序</a>
          
         
-        <a href="https://iseekto.github.io/trysme/2020/js%E9%9D%A2%E8%AF%95/" class="next" rel="next" title="Js面试">Js面试&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="https://iseekto.github.io/trysme/2020/makedown/" class="next" rel="next" title="Makedown">Makedown&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -288,7 +369,7 @@
       var gitalk = new Gitalk({
         
         id: location.pathname.substr(0, 50),
-        title: 'Hugo简单实用',
+        title: 'iOS兼容问题',
         clientID: '64ecd4438b6b3a3a9bd8',
         clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
         repo: 'trysme-comment',

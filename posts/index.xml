@@ -6,10 +6,38 @@
     <description>Recent content in Posts on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jan 2020 23:37:32 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jan 2020 16:21:40 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ts代码片段</title>
+      <link>https://iseekto.github.io/trysme/2020/ts%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/</link>
+      <pubDate>Fri, 17 Jan 2020 16:21:40 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/ts%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/</guid>
+      <description>interface定义函数 interface User { name: string age: number } // 定义单个函数，用type定义是个不错的选择 type UserFunc = (user: User) =&amp;gt; string const getUserInfo: UserFunc = (user) =&amp;gt; { return `name: ${user.name}，age: ${user.age}` } getUserInfo({ name: &#39;ff&#39;, age: 23 })  typeof 探查某个dom/关键字的类型 // 想知道某个dom，关键字(setTimeout)的类型是什么，可用typeof let div = document.createElement(&#39;div&#39;); // HTMLDivElement type divType = typeof div let timer = setTimeout(() =&amp;gt; console.log(&#39;st&#39;), 2) // NodeJS.Timeout type timerType = typeof timer  ts高级类型 // 剔除某个键 Omit let person = { name: &#39;name&#39;, hoppy: [&#39;eat&#39;, &#39;sleep&#39;] } type user = Omit&amp;lt;typeof person, &#39;name&#39;&amp;gt;   持续更新中&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>常见需求</title>
+      <link>https://iseekto.github.io/trysme/2020/%E5%B8%B8%E8%A7%81%E9%9C%80%E6%B1%82/</link>
+      <pubDate>Fri, 17 Jan 2020 16:12:32 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/%E5%B8%B8%E8%A7%81%E9%9C%80%E6%B1%82/</guid>
+      <description> 生成二维码：使用 QRCode import QRCode from &#39;qrcode&#39;; const opt = {} const url = window.location.url try { console.log(await QRCode.toDataURL(url, opt)) } catch(err) { console.error(err) }  -- 生成图片：使用html2canvas import html2canvas from &#39;html2canvas&#39;; html2canvas(document.body).then(function(canvas) { document.body.appendChild(canvas); });  后续问题：  生成的有base64，但img区域空白 解决方案：  截图产生空白是因为容器高度设置的问题，设置windowHeight的高度等于页面包含滚动条的高度即可获取滚动条中的内容。这一条就可以解决空白的问题。 设置width、height属性的原因是，我们在页面中截图显示的区域宽度和高度是固定的，就是当前屏幕的可见区域。 设置x、y坐标的原因是由于页面在有滚动条的时候，需要指定截图的起始位置。本项目中x轴方向不存在滚动条，所以设置为零；y方向有滚动条，所以需要获取一下当前方向的滚动坐标。 一般网页中会有图片，图片中有链接地址时，设置useCORS属性可保证图片的加载。   </description>
+    </item>
+    
+    <item>
+      <title>Js面试</title>
+      <link>https://iseekto.github.io/trysme/2020/js%E9%9D%A2%E8%AF%95/</link>
+      <pubDate>Fri, 17 Jan 2020 15:33:22 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/js%E9%9D%A2%E8%AF%95/</guid>
+      <description> 一、铺平数组 给定原数组：let moreArr = [1, 2, [3, 4], [33, [442]], 5];
+1、moreArr = [...moreArr] 2、moreArr = moreArr.flat(Infinity) 3、while(moreArr.some(Array.isArray)) { moreArr = [].concat(...moreArr) } 4、let flatArr = []; function flats(arr = []) { arr.forEach(v =&amp;gt; { if (Array.isArray(v)) { flats(v) } else { flatArr.push(v) } }) }  </description>
+    </item>
     
     <item>
       <title>Hugo简单实用</title>
@@ -44,12 +72,30 @@
     </item>
     
     <item>
-      <title>About</title>
-      <link>https://iseekto.github.io/trysme/2020/about/</link>
+      <title>iOS兼容问题</title>
+      <link>https://iseekto.github.io/trysme/2020/ios%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</link>
       <pubDate>Wed, 15 Jan 2020 18:26:38 +0800</pubDate>
       
-      <guid>https://iseekto.github.io/trysme/2020/about/</guid>
-      <description> Aheadline update by 2020年01月15日23:42:50 </description>
+      <guid>https://iseekto.github.io/trysme/2020/ios%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</guid>
+      <description>前置条件：在不使用第三方封装好的ui库，比如跨端框架Taro。
+ input兼容问题 1、掉起输入框英文键盘，第一个字母为大写的问题
+&amp;lt;input type=&amp;quot;text&amp;quot; autocapitalize=&amp;quot;off&amp;quot; /&amp;gt; 
+2、在靠近底部触发input输入框，输入完成后，页面底部留白问题
+注册blur事件及定时器变量方便下一个focus时清除此使用，使用document.scrollIntoView()，然后在加上window.scrollTo(0, document.body.scrollHeight) 来重置高度
+3、获取焦点时，光标错位
+加上如下css样式user-select: text 如下js input.target.scrollIntoView(true)
+4、输入框获取焦点时，页面输入框被覆盖，定位的元素位置错乱
+可能性：当input位于fixed底部时，输入法弹出后，fixed会失效，页面的定位元素也会乱
+方案一：使用原生 API scrollIntoView(true) focus时，定时器 setTimeout(() =&amp;gt; input.target.scrollIntoView(true), 200)
+方案二：focus时，改变自身定位及其他定位保持位置不变，blur时恢复。
+点击300ms穿透 建议方案：
+1、引入fastclick cdn文件，或者npm i fastclick, 再注册fastClick实例
+2、将click事件注册为touchstart事件立即执行
+iOS 的 webview 中 滑动不流畅 ios5.0及以后的版本里，滑动有定义两个值，一个是auto，一个是touch
+-webkit-overflow-scrolling: touch : 当手指从触摸屏上离开，会保持一段时间的滚动
+-webkit-overflow-scrolling: auto: 当手指从触摸屏上离开，滚动会立即停止
+在滚动容器上增加滚动touch方法，可能会导致的问题是 含有fixed的元素会随着页面一起滚动，解决方案；在
+body: { ​ overflow-y: hidden; } .box { ​ overflow-y: auto; ​ -webkit-overflow-scrolling: touch; }  iOS上拉边界与下拉会出现白色空白区域 产生原因: 在 iOS 中，手指按住屏幕上下拖动，会触发 touchmove 事件。这个事件触发的对象是整个 webview 容器，容器自然会被拖动，剩下的部分会成空白</description>
     </item>
     
   </channel>

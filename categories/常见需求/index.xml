@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>常见需求 on wm&#39;s blog</title>
+    <link>https://iseekto.github.io/trysme/categories/%E5%B8%B8%E8%A7%81%E9%9C%80%E6%B1%82/</link>
+    <description>Recent content in 常见需求 on wm&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Jan 2020 16:12:32 +0800</lastBuildDate>
+    
+	<atom:link href="https://iseekto.github.io/trysme/categories/%E5%B8%B8%E8%A7%81%E9%9C%80%E6%B1%82/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>常见需求</title>
+      <link>https://iseekto.github.io/trysme/2020/%E5%B8%B8%E8%A7%81%E9%9C%80%E6%B1%82/</link>
+      <pubDate>Fri, 17 Jan 2020 16:12:32 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/%E5%B8%B8%E8%A7%81%E9%9C%80%E6%B1%82/</guid>
+      <description> 生成二维码：使用 QRCode import QRCode from &#39;qrcode&#39;; const opt = {} const url = window.location.url try { console.log(await QRCode.toDataURL(url, opt)) } catch(err) { console.error(err) }  -- 生成图片：使用html2canvas import html2canvas from &#39;html2canvas&#39;; html2canvas(document.body).then(function(canvas) { document.body.appendChild(canvas); });  后续问题：  生成的有base64，但img区域空白 解决方案：  截图产生空白是因为容器高度设置的问题，设置windowHeight的高度等于页面包含滚动条的高度即可获取滚动条中的内容。这一条就可以解决空白的问题。 设置width、height属性的原因是，我们在页面中截图显示的区域宽度和高度是固定的，就是当前屏幕的可见区域。 设置x、y坐标的原因是由于页面在有滚动条的时候，需要指定截图的起始位置。本项目中x轴方向不存在滚动条，所以设置为零；y方向有滚动条，所以需要获取一下当前方向的滚动坐标。 一般网页中会有图片，图片中有链接地址时，设置useCORS属性可保证图片的加载。   </description>
+    </item>
+    
+  </channel>
+</rss>

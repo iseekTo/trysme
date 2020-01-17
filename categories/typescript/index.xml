@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TypeScript on wm&#39;s blog</title>
+    <link>https://iseekto.github.io/trysme/categories/typescript/</link>
+    <description>Recent content in TypeScript on wm&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Jan 2020 16:21:40 +0800</lastBuildDate>
+    
+	<atom:link href="https://iseekto.github.io/trysme/categories/typescript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ts代码片段</title>
+      <link>https://iseekto.github.io/trysme/2020/ts%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/</link>
+      <pubDate>Fri, 17 Jan 2020 16:21:40 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/ts%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/</guid>
+      <description>interface定义函数 interface User { name: string age: number } // 定义单个函数，用type定义是个不错的选择 type UserFunc = (user: User) =&amp;gt; string const getUserInfo: UserFunc = (user) =&amp;gt; { return `name: ${user.name}，age: ${user.age}` } getUserInfo({ name: &#39;ff&#39;, age: 23 })  typeof 探查某个dom/关键字的类型 // 想知道某个dom，关键字(setTimeout)的类型是什么，可用typeof let div = document.createElement(&#39;div&#39;); // HTMLDivElement type divType = typeof div let timer = setTimeout(() =&amp;gt; console.log(&#39;st&#39;), 2) // NodeJS.Timeout type timerType = typeof timer  ts高级类型 // 剔除某个键 Omit let person = { name: &#39;name&#39;, hoppy: [&#39;eat&#39;, &#39;sleep&#39;] } type user = Omit&amp;lt;typeof person, &#39;name&#39;&amp;gt;   持续更新中&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

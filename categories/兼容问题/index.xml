@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>兼容问题 on wm&#39;s blog</title>
+    <link>https://iseekto.github.io/trysme/categories/%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</link>
+    <description>Recent content in 兼容问题 on wm&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jan 2020 18:26:38 +0800</lastBuildDate>
+    
+	<atom:link href="https://iseekto.github.io/trysme/categories/%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>iOS兼容问题</title>
+      <link>https://iseekto.github.io/trysme/2020/ios%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Wed, 15 Jan 2020 18:26:38 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/ios%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</guid>
+      <description>前置条件：在不使用第三方封装好的ui库，比如跨端框架Taro。
+ input兼容问题 1、掉起输入框英文键盘，第一个字母为大写的问题
+&amp;lt;input type=&amp;quot;text&amp;quot; autocapitalize=&amp;quot;off&amp;quot; /&amp;gt; 
+2、在靠近底部触发input输入框，输入完成后，页面底部留白问题
+注册blur事件及定时器变量方便下一个focus时清除此使用，使用document.scrollIntoView()，然后在加上window.scrollTo(0, document.body.scrollHeight) 来重置高度
+3、获取焦点时，光标错位
+加上如下css样式user-select: text 如下js input.target.scrollIntoView(true)
+4、输入框获取焦点时，页面输入框被覆盖，定位的元素位置错乱
+可能性：当input位于fixed底部时，输入法弹出后，fixed会失效，页面的定位元素也会乱
+方案一：使用原生 API scrollIntoView(true) focus时，定时器 setTimeout(() =&amp;gt; input.target.scrollIntoView(true), 200)
+方案二：focus时，改变自身定位及其他定位保持位置不变，blur时恢复。
+点击300ms穿透 建议方案：
+1、引入fastclick cdn文件，或者npm i fastclick, 再注册fastClick实例
+2、将click事件注册为touchstart事件立即执行
+iOS 的 webview 中 滑动不流畅 ios5.0及以后的版本里，滑动有定义两个值，一个是auto，一个是touch
+-webkit-overflow-scrolling: touch : 当手指从触摸屏上离开，会保持一段时间的滚动
+-webkit-overflow-scrolling: auto: 当手指从触摸屏上离开，滚动会立即停止
+在滚动容器上增加滚动touch方法，可能会导致的问题是 含有fixed的元素会随着页面一起滚动，解决方案；在
+body: { ​ overflow-y: hidden; } .box { ​ overflow-y: auto; ​ -webkit-overflow-scrolling: touch; }  iOS上拉边界与下拉会出现白色空白区域 产生原因: 在 iOS 中，手指按住屏幕上下拖动，会触发 touchmove 事件。这个事件触发的对象是整个 webview 容器，容器自然会被拖动，剩下的部分会成空白</description>
+    </item>
+    
+  </channel>
+</rss>
