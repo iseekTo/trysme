@@ -167,7 +167,6 @@
       var fix = $('.post-toc');
       var end = $('.post-comment');
       var eachTocA = $('#TableOfContents ul li a')  
-      var sameTocA = $('.post-content h1')  
       var fixTop = fix.offset().top, fixHeight = fix.height();
       var endTop, miss;
       var offsetTop = fix[0].offsetTop;
@@ -177,12 +176,6 @@
         $(this).addClass('active-by-alink')
       })
       
-      
-      
-      
-      
-
-
       $(window).scroll(function () {
         var docTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
   

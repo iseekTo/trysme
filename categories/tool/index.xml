@@ -22,10 +22,10 @@
     
     <item>
       <title>Hugo简单实用</title>
-      <link>https://iseekto.github.io/trysme/2020/01/15/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/</link>
+      <link>https://iseekto.github.io/trysme/2020/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/</link>
       <pubDate>Wed, 15 Jan 2020 23:37:32 +0800</pubDate>
       
-      <guid>https://iseekto.github.io/trysme/2020/01/15/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/</guid>
+      <guid>https://iseekto.github.io/trysme/2020/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/</guid>
       <description>注：使用 hugo new posts/...md 之后，需要将 draft: true 这一行删掉。
 文章写完后，且绑定了github域名了，
 我们接着操作 hugo 他会在根目录下的 public 文件夹生成我们改动之后的代码
@@ -35,10 +35,10 @@
     
     <item>
       <title>Makedown</title>
-      <link>https://iseekto.github.io/trysme/2020/01/15/makedown/</link>
+      <link>https://iseekto.github.io/trysme/2020/makedown/</link>
       <pubDate>Wed, 15 Jan 2020 18:28:14 +0800</pubDate>
       
-      <guid>https://iseekto.github.io/trysme/2020/01/15/makedown/</guid>
+      <guid>https://iseekto.github.io/trysme/2020/makedown/</guid>
       <description>Table of Contents  1212 22 333   第一项：  第一项嵌套的第一个元素 第一项嵌套的第二个元素  深入嵌套   第二项：  第二项嵌套的第一个元素  深入嵌套&amp;ndash;二  第二项嵌套的第二个元素   cd rn项目 react-native run-ios 之后yarn start 打开手机模拟器即可显示。 新增代码高亮效果 - let bs = undefined; + bs = 100  解读React Native https://www.jianshu.com/p/ff20064f7a7f
 更换RN应用程序图标 在Xcode里双击项目工程 -&amp;gt; general-&amp;gt; App Icons Source将合成好的图片拉到 Images-1.xcassets下 重新启动 成功， 相关连接 https://www.jianshu.com/p/56562e5a9396 HTML block below  This blockquote will change based on the HTML settings above.</description>
     </item>

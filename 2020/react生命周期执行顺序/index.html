@@ -58,7 +58,7 @@
     "dateModified" : "2020-01-15 23:05:35 \x2b0800 CST",
     "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/react%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F\/",
     "wordCount" : "73",
-    "keywords" : [  "wm\x27s blog"]
+    "keywords" : [ "React", "wm\x27s blog"]
 }
 </script>
 
@@ -174,7 +174,6 @@
       var fix = $('.post-toc');
       var end = $('.post-comment');
       var eachTocA = $('#TableOfContents ul li a')  
-      var sameTocA = $('.post-content h1')  
       var fixTop = fix.offset().top, fixHeight = fix.height();
       var endTop, miss;
       var offsetTop = fix[0].offsetTop;
@@ -184,12 +183,6 @@
         $(this).addClass('active-by-alink')
       })
       
-      
-      
-      
-      
-
-
       $(window).scroll(function () {
         var docTop = Math.max(document.body.scrollTop, document.documentElement.scrollTop);
   
@@ -313,6 +306,14 @@ constructor-&gt;componentWillMount-&gt;render-&gt;componentDidMount-&gt;!propsæ›
 
   
     <div class="post-tags">
+        
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/react/">
+                    #React</a></span>
+            
+            </section>
         
         <section>
                 <a href="javascript:window.history.back();">back</a></span> Â· 
