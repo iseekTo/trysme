@@ -6,10 +6,19 @@
     <description>Recent content in Posts on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Jan 2020 16:21:40 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jan 2020 20:03:59 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mac常用指令</title>
+      <link>https://iseekto.github.io/trysme/2020/mac%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</link>
+      <pubDate>Sun, 19 Jan 2020 20:03:59 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/mac%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</guid>
+      <description>查看本机ip ifconfig | grep &amp;quot;inet&amp;quot;</description>
+    </item>
     
     <item>
       <title>Ts代码片段</title>
@@ -21,20 +30,20 @@
     </item>
     
     <item>
-      <title>常见需求</title>
-      <link>https://iseekto.github.io/trysme/2020/%E5%B8%B8%E8%A7%81%E9%9C%80%E6%B1%82/</link>
+      <title>常用插件</title>
+      <link>https://iseekto.github.io/trysme/2020/%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/</link>
       <pubDate>Fri, 17 Jan 2020 16:12:32 +0800</pubDate>
       
-      <guid>https://iseekto.github.io/trysme/2020/%E5%B8%B8%E8%A7%81%E9%9C%80%E6%B1%82/</guid>
+      <guid>https://iseekto.github.io/trysme/2020/%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/</guid>
       <description> 生成二维码：使用 QRCode import QRCode from &#39;qrcode&#39;; const opt = {} const url = window.location.url try { console.log(await QRCode.toDataURL(url, opt)) } catch(err) { console.error(err) }  -- 生成图片：使用html2canvas import html2canvas from &#39;html2canvas&#39;; html2canvas(document.body).then(function(canvas) { document.body.appendChild(canvas); });  后续问题：  生成的有base64，但img区域空白 解决方案：  截图产生空白是因为容器高度设置的问题，设置windowHeight的高度等于页面包含滚动条的高度即可获取滚动条中的内容。这一条就可以解决空白的问题。 设置width、height属性的原因是，我们在页面中截图显示的区域宽度和高度是固定的，就是当前屏幕的可见区域。 设置x、y坐标的原因是由于页面在有滚动条的时候，需要指定截图的起始位置。本项目中x轴方向不存在滚动条，所以设置为零；y方向有滚动条，所以需要获取一下当前方向的滚动坐标。 一般网页中会有图片，图片中有链接地址时，设置useCORS属性可保证图片的加载。   </description>
     </item>
     
     <item>
-      <title>Js面试</title>
-      <link>https://iseekto.github.io/trysme/2020/js%E9%9D%A2%E8%AF%95/</link>
+      <title>js面试—数组</title>
+      <link>https://iseekto.github.io/trysme/2020/js%E9%9D%A2%E8%AF%95%E6%95%B0%E7%BB%84/</link>
       <pubDate>Fri, 17 Jan 2020 15:33:22 +0800</pubDate>
       
-      <guid>https://iseekto.github.io/trysme/2020/js%E9%9D%A2%E8%AF%95/</guid>
+      <guid>https://iseekto.github.io/trysme/2020/js%E9%9D%A2%E8%AF%95%E6%95%B0%E7%BB%84/</guid>
       <description> 一、铺平数组 给定原数组：let moreArr = [1, 2, [3, 4], [33, [442]], 5];
 1、moreArr = [...moreArr] 2、moreArr = moreArr.flat(Infinity) 3、while(moreArr.some(Array.isArray)) { moreArr = [].concat(...moreArr) } 4、let flatArr = []; function flats(arr = []) { arr.forEach(v =&amp;gt; { if (Array.isArray(v)) { flats(v) } else { flatArr.push(v) } }) }  </description>
     </item>
@@ -45,11 +54,12 @@
       <pubDate>Wed, 15 Jan 2020 23:37:32 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/2020/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/</guid>
-      <description>注：使用 hugo new posts/...md 之后，需要将 draft: true 这一行删掉。
-文章写完后，且绑定了github域名了，
-我们接着操作 hugo 他会在根目录下的 public 文件夹生成我们改动之后的代码
+      <description>Hugo简单实用流程 注：使用 hugo new posts/...md 之后，需要将 draft: true 这一行删掉。
+ 文章写完后，且绑定了github域名了，  我们接着操作 hugo 他会在根目录下的 public 文件夹生成我们改动之后的代码
 然后就是一波 git add -A, git commit ....
-最后就可以在你的github上看效果吧！</description>
+最后就可以在你的github上看效果吧！
+ 记坑，tags分页下404的问题：需要加上 trysme 作为链接标头 导航需要加入别的路由时可用到此招！
+ </description>
     </item>
     
     <item>

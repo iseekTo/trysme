@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tool on wm&#39;s blog</title>
-    <link>https://iseekto.github.io/trysme/categories/tool/</link>
+    <link>https://iseekto.github.io/trysme/tags/tool/</link>
     <description>Recent content in tool on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 15 Jan 2020 23:37:32 +0800</lastBuildDate>
     
-	<atom:link href="https://iseekto.github.io/trysme/categories/tool/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://iseekto.github.io/trysme/tags/tool/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -23,16 +23,6 @@
 最后就可以在你的github上看效果吧！
  记坑，tags分页下404的问题：需要加上 trysme 作为链接标头 导航需要加入别的路由时可用到此招！
  </description>
-    </item>
-    
-    <item>
-      <title>Makedown</title>
-      <link>https://iseekto.github.io/trysme/2020/makedown/</link>
-      <pubDate>Wed, 15 Jan 2020 18:28:14 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/2020/makedown/</guid>
-      <description>Table of Contents  1212 22 333   第一项：  第一项嵌套的第一个元素 第一项嵌套的第二个元素  深入嵌套   第二项：  第二项嵌套的第一个元素  深入嵌套&amp;ndash;二  第二项嵌套的第二个元素   cd rn项目 react-native run-ios 之后yarn start 打开手机模拟器即可显示。 新增代码高亮效果 - let bs = undefined; + bs = 100  解读React Native https://www.jianshu.com/p/ff20064f7a7f
-更换RN应用程序图标 在Xcode里双击项目工程 -&amp;gt; general-&amp;gt; App Icons Source将合成好的图片拉到 Images-1.xcassets下 重新启动 成功， 相关连接 https://www.jianshu.com/p/56562e5a9396 HTML block below  This blockquote will change based on the HTML settings above.</description>
     </item>
     
   </channel>

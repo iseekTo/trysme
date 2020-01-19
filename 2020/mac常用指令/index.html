@@ -10,9 +10,9 @@
   
   <meta name="keywords" content="blog">
   
-  <link rel="prev" href="https://iseekto.github.io/trysme/2020/react%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/" />
-  <link rel="next" href="https://iseekto.github.io/trysme/2020/js%E9%9D%A2%E8%AF%95%E6%95%B0%E7%BB%84/" />
-  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/" />
+  <link rel="prev" href="https://iseekto.github.io/trysme/2020/ts%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/" />
+  
+  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/mac%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -22,10 +22,10 @@
   <title>
        
        
-           Hugo简单实用 | wm&#39;s blog
+           Mac常用指令 | wm&#39;s blog
        
   </title>
-  <meta name="title" content="Hugo简单实用 | wm&#39;s blog">
+  <meta name="title" content="Mac常用指令 | wm&#39;s blog">
     
   
   <link rel="stylesheet" href="/trysme/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/iseekto.github.io\/trysme\/"
     },
     "articleSection" : "posts",
-    "name" : "Hugo简单实用",
-    "headline" : "Hugo简单实用",
-    "description" : "Hugo简单实用流程 注：使用 hugo new posts\/...md 之后，需要将 draft: true 这一行删掉。\n 文章写完后，且绑定了github域名了，  我们接着操作 hugo 他会在根目录下的 public 文件夹生成我们改动之后的代码\n然后就是一波 git add -A, git commit ....\n最后就可以在你的github上看效果吧！\n 记坑，tags分页下404的问题：需要加上 trysme 作为链接标头 导航需要加入别的路由时可用到此招！\n ",
+    "name" : "Mac常用指令",
+    "headline" : "Mac常用指令",
+    "description" : "查看本机ip ifconfig | grep \x26quot;inet\x26quot;",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -54,11 +54,11 @@
     "accountablePerson" : "_weimou",
     "copyrightHolder" : "_weimou",
     "copyrightYear" : "2020",
-    "datePublished": "2020-01-15 23:37:32 \x2b0800 CST",
-    "dateModified" : "2020-01-15 23:37:32 \x2b0800 CST",
-    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8\/",
-    "wordCount" : "27",
-    "keywords" : [ "tool","hugo", "wm\x27s blog"]
+    "datePublished": "2020-01-19 20:03:59 \x2b0800 CST",
+    "dateModified" : "2020-01-19 20:03:59 \x2b0800 CST",
+    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/mac%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4\/",
+    "wordCount" : "5",
+    "keywords" : [  "wm\x27s blog"]
 }
 </script>
 
@@ -135,18 +135,14 @@
           
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Hugo简单实用</h1>
+        <h1 class="post-title" itemprop="name headline">Mac常用指令</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2020-01-15 itemprop="datePublished">January 15, 2020</time>
+                on <time datetime=2020-01-19 itemprop="datePublished">January 19, 2020</time>
                 </span>
                 in
-                <i class="iconfont icon-folder"></i>
-                <span class="post-category">
-                        <a href="https://iseekto.github.io/trysme/categories/tool/"> tool </a>
-                        
-                </span>
+                
                 
                 <a href="#gitalk-container" itemprop="discussionUrl">
                     <span class="gitalk-comment-count" itemprop="commentCount"></span>
@@ -158,7 +154,11 @@
     <h2 class="post-toc-title"></h2>
     
     <div class="post-toc-content">
-      
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#查看本机ip">查看本机ip</a></li>
+</ul>
+</nav>
     </div>
   </div>
   
@@ -214,22 +214,11 @@
           
           
 
-          <p>Hugo简单实用流程
-注：使用 <code>hugo new posts/...md</code> 之后，需要将 <code>draft: true</code> 这一行删掉。</p>
+          
 
-<ol>
-<li>文章写完后，且绑定了github域名了，</li>
-</ol>
+<h1 id="查看本机ip">查看本机ip</h1>
 
-<p>我们接着操作 <code>hugo</code> 他会在根目录下的 <code>public</code> 文件夹生成我们改动之后的代码</p>
-
-<p>然后就是一波 <code>git add -A</code>, <code>git commit ....</code></p>
-
-<p>最后就可以在你的github上看效果吧！</p>
-
-<blockquote>
-<p>记坑，tags分页下404的问题：需要加上 <code>trysme</code> 作为链接标头 导航需要加入别的路由时可用到此招！</p>
-</blockquote>
+<p><code>ifconfig | grep &quot;inet&quot;</code></p>
 
     </div>
 
@@ -245,7 +234,7 @@
             <p class="copyright-item">
                     <span>Link:</span>
                     
-                    <a href=https://iseekto.github.io/trysme/2020/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/>
+                    <a href=https://iseekto.github.io/trysme/2020/mac%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/>
                         <script>
                             document.write(decodeURI(location.origin + location.pathname))
                         </script>
@@ -262,17 +251,6 @@
   
     <div class="post-tags">
         
-            <section>
-            <i class="iconfont icon-tag"></i>Tag(s): 
-            
-            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/tool/">
-                    #tool</a></span>
-            
-            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/hugo/">
-                    #hugo</a></span>
-            
-            </section>
-        
         <section>
                 <a href="javascript:window.history.back();">back</a></span> · 
                 <span><a href="https://iseekto.github.io/trysme/">home</a></span>
@@ -281,10 +259,8 @@
 
     <div class="post-nav">
         
-        <a href="https://iseekto.github.io/trysme/2020/react%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/" class="prev" rel="prev" title="React生命周期执行顺序"><i class="iconfont icon-left"></i>&nbsp;React生命周期执行顺序</a>
+        <a href="https://iseekto.github.io/trysme/2020/ts%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/" class="prev" rel="prev" title="Ts代码片段"><i class="iconfont icon-left"></i>&nbsp;Ts代码片段</a>
          
-        
-        <a href="https://iseekto.github.io/trysme/2020/js%E9%9D%A2%E8%AF%95%E6%95%B0%E7%BB%84/" class="next" rel="next" title="js面试—数组">js面试—数组&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -306,7 +282,7 @@
       var gitalk = new Gitalk({
         
         id: location.pathname.substr(0, 50),
-        title: 'Hugo简单实用',
+        title: 'Mac常用指令',
         clientID: '64ecd4438b6b3a3a9bd8',
         clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
         repo: 'trysme-comment',
