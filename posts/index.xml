@@ -6,10 +6,32 @@
     <description>Recent content in Posts on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Jan 2020 20:03:59 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jan 2020 20:36:06 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ts常见问题总结</title>
+      <link>https://iseekto.github.io/trysme/2020/ts%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Tue, 21 Jan 2020 20:36:06 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/ts%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</guid>
+      <description>1、从一组数组对象中拿到相应值，组成枚举类型 const littleNumbers = [ { a: 1, b: &#39;123&#39; }, { a: 2, b: &#39;22223&#39; }, { a: 3, b: &#39;3123&#39; }, ] as const; // remember &#39;as const&#39; // littleNumbers[number] 相当于下标 type aLittle = typeof littleNumbers[number][&#39;b&#39;] // aLittle = &#39;123&#39; | &#39;22223&#39; | &#39;3123&#39; let useLittles: aLittle = &#39;3123&#39;  2、找不到第三方模块时，有两种方法可以消除ts的报警 // 1、在加载第三方模块内部声明 declare const yourModuleName: any; // 2、在根目录新建 modules.d.ts declare module &#39;yourModuleName&#39;;  3、根据key值，约束对应value的值类型 let source = { name: &#39;lisa&#39;, age: 19 } type typeSource = typeof source const getKey = &amp;lt;T extends keyof typeSource&amp;gt;( key: T, value: typeSource[T] ): typeSource[T] =&amp;gt; { return value } // error 类型“&amp;quot;123&amp;quot;”的参数不能赋给类型“number”的参数。ts(2345) let bingoAge = getKey(&#39;age&#39;, &#39;123&#39;) // is ok let bingoName = getKey(&#39;name&#39;, &#39;123&#39;)   持续更新中&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Css常用技巧</title>
+      <link>https://iseekto.github.io/trysme/2020/css%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Tue, 21 Jan 2020 20:31:19 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/css%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/</guid>
+      <description> transition 闪屏问题 .css { -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden; -webkit-perspective: 1000; }  开启硬件加速 .css { transform: translate3d(0, 0, 0); }  1px的问题 解决方案大致为两种：
+1、使用css伪类加 transform: scale(0.5)
+.box { width: 100px; padding: 10px; position: relative; background-color: white; } .box::after { content: &#39;&#39;; box-sizing: border-box; pointer-events: none; position: absolute; top: -50%; bottom: -50%; right: -50%; left: -50%; border: 0px solid red; transform: scale(.5); border-bottom-width: 1px; }  2、媒体查询根据不同尺寸进行相对缩放
+ 持续更新中&amp;hellip;
+ </description>
+    </item>
     
     <item>
       <title>Mac常用指令</title>
@@ -49,13 +71,14 @@
     </item>
     
     <item>
-      <title>Hugo简单实用</title>
+      <title>Hugo简单使用</title>
       <link>https://iseekto.github.io/trysme/2020/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/</link>
       <pubDate>Wed, 15 Jan 2020 23:37:32 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/2020/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/</guid>
-      <description>Hugo简单实用流程 注：使用 hugo new posts/...md 之后，需要将 draft: true 这一行删掉。
- 文章写完后，且绑定了github域名了，  我们接着操作 hugo 他会在根目录下的 public 文件夹生成我们改动之后的代码
+      <description>Hugo简单使用流程 注：使用 hugo new posts/...md 之后，需要将 draft: true 这一行删掉。
+文章写完后，且绑定github域名；
+接着在项目根目录终端输入 hugo 他会在根目录下的 public 文件夹生成我们改动之后的代码
 然后就是一波 git add -A, git commit ....
 最后就可以在你的github上看效果吧！
  记坑，tags分页下404的问题：需要加上 trysme 作为链接标头 导航需要加入别的路由时可用到此招！

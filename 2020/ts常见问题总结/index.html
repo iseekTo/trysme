@@ -10,9 +10,9 @@
   
   <meta name="keywords" content="blog">
   
-  <link rel="prev" href="https://iseekto.github.io/trysme/2020/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/" />
-  <link rel="next" href="https://iseekto.github.io/trysme/2020/%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/" />
-  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/js%E9%9D%A2%E8%AF%95%E6%95%B0%E7%BB%84/" />
+  <link rel="prev" href="https://iseekto.github.io/trysme/2020/css%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/" />
+  
+  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/ts%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -22,10 +22,10 @@
   <title>
        
        
-           js面试—数组 | wm&#39;s blog
+           Ts常见问题总结 | wm&#39;s blog
        
   </title>
-  <meta name="title" content="js面试—数组 | wm&#39;s blog">
+  <meta name="title" content="Ts常见问题总结 | wm&#39;s blog">
     
   
   <link rel="stylesheet" href="/trysme/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/iseekto.github.io\/trysme\/"
     },
     "articleSection" : "posts",
-    "name" : "js面试—数组",
-    "headline" : "js面试—数组",
-    "description" : " 一、铺平数组 给定原数组：let moreArr = [1, 2, [3, 4], [33, [442]], 5];\n1、moreArr = [...moreArr] 2、moreArr = moreArr.flat(Infinity) 3、while(moreArr.some(Array.isArray)) { moreArr = [].concat(...moreArr) } 4、let flatArr = []; function flats(arr = []) { arr.forEach(v =\x26gt; { if (Array.isArray(v)) { flats(v) } else { flatArr.push(v) } }) }  ",
+    "name" : "Ts常见问题总结",
+    "headline" : "Ts常见问题总结",
+    "description" : "1、从一组数组对象中拿到相应值，组成枚举类型 const littleNumbers = [ { a: 1, b: \x27123\x27 }, { a: 2, b: \x2722223\x27 }, { a: 3, b: \x273123\x27 }, ] as const; \/\/ remember \x27as const\x27 \/\/ littleNumbers[number] 相当于下标 type aLittle = typeof littleNumbers[number][\x27b\x27] \/\/ aLittle = \x27123\x27 | \x2722223\x27 | \x273123\x27 let useLittles: aLittle = \x273123\x27  2、找不到第三方模块时，有两种方法可以消除ts的报警 \/\/ 1、在加载第三方模块内部声明 declare const yourModuleName: any; \/\/ 2、在根目录新建 modules.d.ts declare module \x27yourModuleName\x27;  3、根据key值，约束对应value的值类型 let source = { name: \x27lisa\x27, age: 19 } type typeSource = typeof source const getKey = \x26lt;T extends keyof typeSource\x26gt;( key: T, value: typeSource[T] ): typeSource[T] =\x26gt; { return value } \/\/ error 类型“\x26quot;123\x26quot;”的参数不能赋给类型“number”的参数。ts(2345) let bingoAge = getKey(\x27age\x27, \x27123\x27) \/\/ is ok let bingoName = getKey(\x27name\x27, \x27123\x27)   持续更新中\x26hellip;",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -54,11 +54,11 @@
     "accountablePerson" : "_weimou",
     "copyrightHolder" : "_weimou",
     "copyrightYear" : "2020",
-    "datePublished": "2020-01-17 15:33:22 \x2b0800 CST",
-    "dateModified" : "2020-01-17 15:33:22 \x2b0800 CST",
-    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/js%E9%9D%A2%E8%AF%95%E6%95%B0%E7%BB%84\/",
-    "wordCount" : "46",
-    "keywords" : [ "js", "wm\x27s blog"]
+    "datePublished": "2020-01-21 20:36:06 \x2b0800 CST",
+    "dateModified" : "2020-01-21 20:36:06 \x2b0800 CST",
+    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/ts%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93\/",
+    "wordCount" : "114",
+    "keywords" : [ "ts", "wm\x27s blog"]
 }
 </script>
 
@@ -135,16 +135,16 @@
           
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">js面试—数组</h1>
+        <h1 class="post-title" itemprop="name headline">Ts常见问题总结</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2020-01-17 itemprop="datePublished">January 17, 2020</time>
+                on <time datetime=2020-01-21 itemprop="datePublished">January 21, 2020</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://iseekto.github.io/trysme/categories/javascript/"> JavaScript </a>
+                        <a href="https://iseekto.github.io/trysme/categories/typescript/"> Typescript </a>
                         
                 </span>
                 
@@ -160,7 +160,9 @@
     <div class="post-toc-content">
       <nav id="TableOfContents">
 <ul>
-<li><a href="#一-铺平数组">一、铺平数组</a></li>
+<li><a href="#1-从一组数组对象中拿到相应值-组成枚举类型">1、从一组数组对象中拿到相应值，组成枚举类型</a></li>
+<li><a href="#2-找不到第三方模块时-有两种方法可以消除ts的报警">2、找不到第三方模块时，有两种方法可以消除ts的报警</a></li>
+<li><a href="#3-根据key值-约束对应value的值类型">3、根据key值，约束对应value的值类型</a></li>
 </ul>
 </nav>
     </div>
@@ -220,29 +222,55 @@
 
           
 
-<h1 id="一-铺平数组">一、铺平数组</h1>
+<h1 id="1-从一组数组对象中拿到相应值-组成枚举类型">1、从一组数组对象中拿到相应值，组成枚举类型</h1>
 
-<p>给定原数组：<code>let moreArr = [1, 2, [3, 4], [33, [442]], 5]</code>;</p>
+<pre><code class="language-typescript">const littleNumbers = [
+    { a: 1, b: '123' },
+    { a: 2, b: '22223' },
+    { a: 3, b: '3123' },
+] as const;  // remember 'as const'
 
-<pre><code class="language-javascript">    1、moreArr = [...moreArr]
-
-    2、moreArr = moreArr.flat(Infinity)
-
-    3、while(moreArr.some(Array.isArray)) {
-        moreArr = [].concat(...moreArr)
-    }
-
-    4、let flatArr = [];
-        function flats(arr = []) {
-            arr.forEach(v =&gt; {
-                if (Array.isArray(v)) {
-                    flats(v)
-                } else {
-                    flatArr.push(v)
-                }
-            })
-        }
+// littleNumbers[number] 相当于下标
+type aLittle = typeof littleNumbers[number]['b']
+// aLittle = '123' | '22223' | '3123'
+let useLittles: aLittle = '3123'
 </code></pre>
+
+<h1 id="2-找不到第三方模块时-有两种方法可以消除ts的报警">2、找不到第三方模块时，有两种方法可以消除ts的报警</h1>
+
+<pre><code class="language-typescript">// 1、在加载第三方模块内部声明
+declare const yourModuleName: any;
+
+// 2、在根目录新建 modules.d.ts
+declare module 'yourModuleName';
+</code></pre>
+
+<h1 id="3-根据key值-约束对应value的值类型">3、根据key值，约束对应value的值类型</h1>
+
+<pre><code class="language-typescript">let source = {
+    name: 'lisa',
+    age: 19
+}
+
+type typeSource = typeof source
+
+const getKey = &lt;T extends keyof typeSource&gt;(
+    key: T, value: typeSource[T]
+): typeSource[T] =&gt; {
+    return value
+}
+
+// error 类型“&quot;123&quot;”的参数不能赋给类型“number”的参数。ts(2345)
+let bingoAge = getKey('age', '123')   
+
+// is ok
+let bingoName = getKey('name', '123') 
+
+</code></pre>
+
+<blockquote>
+<p>持续更新中&hellip;</p>
+</blockquote>
 
     </div>
 
@@ -258,7 +286,7 @@
             <p class="copyright-item">
                     <span>Link:</span>
                     
-                    <a href=https://iseekto.github.io/trysme/2020/js%E9%9D%A2%E8%AF%95%E6%95%B0%E7%BB%84/>
+                    <a href=https://iseekto.github.io/trysme/2020/ts%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/>
                         <script>
                             document.write(decodeURI(location.origin + location.pathname))
                         </script>
@@ -278,8 +306,8 @@
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/js/">
-                    #js</a></span>
+            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/ts/">
+                    #ts</a></span>
             
             </section>
         
@@ -291,10 +319,8 @@
 
     <div class="post-nav">
         
-        <a href="https://iseekto.github.io/trysme/2020/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/" class="prev" rel="prev" title="Hugo简单使用"><i class="iconfont icon-left"></i>&nbsp;Hugo简单使用</a>
+        <a href="https://iseekto.github.io/trysme/2020/css%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/" class="prev" rel="prev" title="Css常用技巧"><i class="iconfont icon-left"></i>&nbsp;Css常用技巧</a>
          
-        
-        <a href="https://iseekto.github.io/trysme/2020/%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/" class="next" rel="next" title="常用插件">常用插件&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -316,7 +342,7 @@
       var gitalk = new Gitalk({
         
         id: location.pathname.substr(0, 50),
-        title: 'js面试—数组',
+        title: 'Ts常见问题总结',
         clientID: '64ecd4438b6b3a3a9bd8',
         clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
         repo: 'trysme-comment',

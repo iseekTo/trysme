@@ -6,7 +6,7 @@
     <description>Recent content in Categories on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Jan 2020 16:21:40 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jan 2020 20:36:06 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>TypeScript</title>
       <link>https://iseekto.github.io/trysme/categories/typescript/</link>
-      <pubDate>Fri, 17 Jan 2020 16:21:40 +0800</pubDate>
+      <pubDate>Tue, 21 Jan 2020 20:36:06 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/categories/typescript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>css</title>
+      <link>https://iseekto.github.io/trysme/categories/css/</link>
+      <pubDate>Tue, 21 Jan 2020 20:31:19 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/categories/css/</guid>
       <description></description>
     </item>
     

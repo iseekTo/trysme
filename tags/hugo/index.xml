@@ -12,13 +12,14 @@
     
     
     <item>
-      <title>Hugo简单实用</title>
+      <title>Hugo简单使用</title>
       <link>https://iseekto.github.io/trysme/2020/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/</link>
       <pubDate>Wed, 15 Jan 2020 23:37:32 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/2020/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/</guid>
-      <description>Hugo简单实用流程 注：使用 hugo new posts/...md 之后，需要将 draft: true 这一行删掉。
- 文章写完后，且绑定了github域名了，  我们接着操作 hugo 他会在根目录下的 public 文件夹生成我们改动之后的代码
+      <description>Hugo简单使用流程 注：使用 hugo new posts/...md 之后，需要将 draft: true 这一行删掉。
+文章写完后，且绑定github域名；
+接着在项目根目录终端输入 hugo 他会在根目录下的 public 文件夹生成我们改动之后的代码
 然后就是一波 git add -A, git commit ....
 最后就可以在你的github上看效果吧！
  记坑，tags分页下404的问题：需要加上 trysme 作为链接标头 导航需要加入别的路由时可用到此招！
