@@ -6,7 +6,7 @@
     <description>Recent content in Tags on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Jan 2020 20:36:06 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jan 2020 21:40:38 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>ts</title>
       <link>https://iseekto.github.io/trysme/tags/ts/</link>
-      <pubDate>Tue, 21 Jan 2020 20:36:06 +0800</pubDate>
+      <pubDate>Thu, 23 Jan 2020 21:40:38 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/tags/ts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>util</title>
+      <link>https://iseekto.github.io/trysme/tags/util/</link>
+      <pubDate>Thu, 23 Jan 2020 21:40:38 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/tags/util/</guid>
       <description></description>
     </item>
     

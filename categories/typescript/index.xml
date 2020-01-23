@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TypeScript on wm&#39;s blog</title>
+    <title>Typescript on wm&#39;s blog</title>
     <link>https://iseekto.github.io/trysme/categories/typescript/</link>
-    <description>Recent content in TypeScript on wm&#39;s blog</description>
+    <description>Recent content in Typescript on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Jan 2020 20:36:06 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jan 2020 21:40:38 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/categories/typescript/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ts_util</title>
+      <link>https://iseekto.github.io/trysme/2020/ts_util/</link>
+      <pubDate>Thu, 23 Jan 2020 21:40:38 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/ts_util/</guid>
+      <description>js工具库层出不穷，各种辅助函数更是数不胜数，今天我这里用ts版本的写一个小型工具
+ Talk is cheap，Show me your code.
+ 类型封装，字符串、数组、正则、纯对象&amp;hellip; // 类型辅助函数 const typeToString = &amp;lt;T&amp;gt;(type: T) =&amp;gt; { return Object.prototype.toString.call(type).slice(8, -1) } /** * 这里不直接写返回 boolean的原因是函数多用于条件判断， * 如果是字符串，则... 如果是数字，则... * 然而在ts运行环境中，除非写泛型，或者多返回值，不然就会出现报错，无法精确具体类型。 */ const isString = (str: any): str is string =&amp;gt; typeof str === &#39;string&#39; const isNumber = (num: any): num is string =&amp;gt; typeof num === &#39;number&#39; const isRegExp = (reg: any): reg is RegExp =&amp;gt; typeToString(reg) === &#39;RegExp&#39; const isFunction = (func: any): func is Function =&amp;gt; typeof func === &#39;function&#39; const isObject = (obj: any): obj is Object =&amp;gt; typeof obj === &#39;object&#39; // waiting problem const isArray = Array.</description>
+    </item>
     
     <item>
       <title>Ts常见问题总结</title>
