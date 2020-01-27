@@ -6,10 +6,22 @@
     <description>Recent content in React on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jan 2020 23:05:35 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jan 2020 20:28:16 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/categories/react/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Create React App运行报错解决方案</title>
+      <link>https://iseekto.github.io/trysme/2020/create-react-app%E8%BF%90%E8%A1%8C%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Mon, 27 Jan 2020 20:28:16 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/create-react-app%E8%BF%90%E8%A1%8C%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
+      <description>排除webpack，以及相关依赖包/版本的错误
+ 根目录下创建一个 .env 文件
+添加 SKIP_PREFLIGHT_CHECK=true
+运行 npm start</description>
+    </item>
     
     <item>
       <title>React生命周期执行顺序</title>

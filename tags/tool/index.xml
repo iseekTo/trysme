@@ -6,10 +6,21 @@
     <description>Recent content in tool on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Jan 2020 23:37:32 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jan 2020 20:34:10 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/tags/tool/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Node资源</title>
+      <link>https://iseekto.github.io/trysme/2020/node%E8%B5%84%E6%BA%90/</link>
+      <pubDate>Mon, 27 Jan 2020 20:34:10 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/node%E8%B5%84%E6%BA%90/</guid>
+      <description>nodejs不同版本的下载
+ mac系统的同学建议下载相关版本的 msi
+ </description>
+    </item>
     
     <item>
       <title>Hugo简单使用</title>

@@ -10,9 +10,9 @@
   
   <meta name="keywords" content="blog">
   
-  <link rel="prev" href="https://iseekto.github.io/trysme/2020/ts%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/" />
-  <link rel="next" href="https://iseekto.github.io/trysme/2020/create-react-app%E8%BF%90%E8%A1%8C%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" />
-  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/ts_util/" />
+  <link rel="prev" href="https://iseekto.github.io/trysme/2020/ts_util/" />
+  <link rel="next" href="https://iseekto.github.io/trysme/2020/node%E8%B5%84%E6%BA%90/" />
+  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/create-react-app%E8%BF%90%E8%A1%8C%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -22,10 +22,10 @@
   <title>
        
        
-           TsUtil | wm&#39;s blog
+           Create React App运行报错解决方案 | wm&#39;s blog
        
   </title>
-  <meta name="title" content="TsUtil | wm&#39;s blog">
+  <meta name="title" content="Create React App运行报错解决方案 | wm&#39;s blog">
     
   
   <link rel="stylesheet" href="/trysme/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/iseekto.github.io\/trysme\/"
     },
     "articleSection" : "posts",
-    "name" : "TsUtil",
-    "headline" : "TsUtil",
-    "description" : "js工具库层出不穷，各种辅助函数更是数不胜数，今天我这里用ts版本的写一个小型工具\n Talk is cheap，Show me your code.\n 类型封装，字符串、数组、正则、纯对象\x26hellip; \/\/ 类型辅助函数 const typeToString = \x26lt;T\x26gt;(type: T) =\x26gt; { return Object.prototype.toString.call(type).slice(8, -1) } \/** * 这里不直接写返回 boolean的原因是函数多用于条件判断， * 如果是字符串，则... 如果是数字，则... * 然而在ts运行环境中，除非写泛型，或者多返回值，不然就会出现报错，无法精确具体类型。 *\/ const isString = (str: any): str is string =\x26gt; typeof str === \x27string\x27 const isNumber = (num: any): num is string =\x26gt; typeof num === \x27number\x27 const isRegExp = (reg: any): reg is RegExp =\x26gt; typeToString(reg) === \x27RegExp\x27 const isFunction = (func: any): func is Function =\x26gt; typeof func === \x27function\x27 const isObject = (obj: any): obj is Object =\x26gt; typeof obj === \x27object\x27 \/\/ waiting problem const isArray = Array.",
+    "name" : "Create React App运行报错解决方案",
+    "headline" : "Create React App运行报错解决方案",
+    "description" : "排除webpack，以及相关依赖包\/版本的错误\n 根目录下创建一个 .env 文件\n添加 SKIP_PREFLIGHT_CHECK=true\n运行 npm start",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -54,11 +54,11 @@
     "accountablePerson" : "_weimou",
     "copyrightHolder" : "_weimou",
     "copyrightYear" : "2020",
-    "datePublished": "2020-01-23 21:40:38 \x2b0800 CST",
-    "dateModified" : "2020-01-23 21:40:38 \x2b0800 CST",
-    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/ts_util\/",
-    "wordCount" : "109",
-    "keywords" : [ "ts","util", "wm\x27s blog"]
+    "datePublished": "2020-01-27 20:28:16 \x2b0800 CST",
+    "dateModified" : "2020-01-27 20:28:16 \x2b0800 CST",
+    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/create-react-app%E8%BF%90%E8%A1%8C%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88\/",
+    "wordCount" : "9",
+    "keywords" : [ "react", "wm\x27s blog"]
 }
 </script>
 
@@ -135,16 +135,16 @@
           
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">TsUtil</h1>
+        <h1 class="post-title" itemprop="name headline">Create React App运行报错解决方案</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2020-01-23 itemprop="datePublished">January 23, 2020</time>
+                on <time datetime=2020-01-27 itemprop="datePublished">January 27, 2020</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://iseekto.github.io/trysme/categories/typescript/"> Typescript </a>
+                        <a href="https://iseekto.github.io/trysme/categories/react/"> react </a>
                         
                 </span>
                 
@@ -158,11 +158,7 @@
     <h2 class="post-toc-title"></h2>
     
     <div class="post-toc-content">
-      <nav id="TableOfContents">
-<ul>
-<li><a href="#类型封装-字符串-数组-正则-纯对象">类型封装，字符串、数组、正则、纯对象&hellip;</a></li>
-</ul>
-</nav>
+      
     </div>
   </div>
   
@@ -218,39 +214,15 @@
           
           
 
-          
-
-<p><em>js工具库层出不穷，各种辅助函数更是数不胜数，今天我这里用ts版本的写一个小型工具</em></p>
-
-<blockquote>
-<p>Talk is cheap，Show me your code.</p>
+          <blockquote>
+<p>排除webpack，以及相关依赖包/版本的错误</p>
 </blockquote>
 
-<h1 id="类型封装-字符串-数组-正则-纯对象">类型封装，字符串、数组、正则、纯对象&hellip;</h1>
+<p>根目录下创建一个 <code>.env</code> 文件</p>
 
-<pre><code class="language-typescript">// 类型辅助函数
-const typeToString = &lt;T&gt;(type: T) =&gt; {
-    return Object.prototype.toString.call(type).slice(8, -1)
-}
+<p>添加 <code>SKIP_PREFLIGHT_CHECK=true</code></p>
 
-/**
- * 这里不直接写返回 boolean的原因是函数多用于条件判断，
- * 如果是字符串，则... 如果是数字，则...
- * 然而在ts运行环境中，除非写泛型，或者多返回值，不然就会出现报错，无法精确具体类型。
- */ 
-const isString = (str: any): str is string =&gt; typeof str === 'string'
-const isNumber = (num: any): num is string =&gt; typeof num === 'number'
-const isRegExp = (reg: any): reg is RegExp =&gt; typeToString(reg) === 'RegExp'
-const isFunction = (func: any): func is Function =&gt; typeof func === 'function'
-const isObject = (obj: any): obj is Object =&gt; typeof obj === 'object'   // waiting problem
-const isArray  = Array.isArray
-
-// const isPlainObject  waiting for update
-</code></pre>
-
-<blockquote>
-<p>持续更新..</p>
-</blockquote>
+<p>运行 <code>npm start</code></p>
 
     </div>
 
@@ -266,7 +238,7 @@ const isArray  = Array.isArray
             <p class="copyright-item">
                     <span>Link:</span>
                     
-                    <a href=https://iseekto.github.io/trysme/2020/ts_util/>
+                    <a href=https://iseekto.github.io/trysme/2020/create-react-app%E8%BF%90%E8%A1%8C%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/>
                         <script>
                             document.write(decodeURI(location.origin + location.pathname))
                         </script>
@@ -286,11 +258,8 @@ const isArray  = Array.isArray
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/ts/">
-                    #ts</a></span>
-            
-            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/util/">
-                    #util</a></span>
+            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/react/">
+                    #react</a></span>
             
             </section>
         
@@ -302,10 +271,10 @@ const isArray  = Array.isArray
 
     <div class="post-nav">
         
-        <a href="https://iseekto.github.io/trysme/2020/ts%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/" class="prev" rel="prev" title="Ts常见问题总结"><i class="iconfont icon-left"></i>&nbsp;Ts常见问题总结</a>
+        <a href="https://iseekto.github.io/trysme/2020/ts_util/" class="prev" rel="prev" title="TsUtil"><i class="iconfont icon-left"></i>&nbsp;TsUtil</a>
          
         
-        <a href="https://iseekto.github.io/trysme/2020/create-react-app%E8%BF%90%E8%A1%8C%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" class="next" rel="next" title="Create React App运行报错解决方案">Create React App运行报错解决方案&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="https://iseekto.github.io/trysme/2020/node%E8%B5%84%E6%BA%90/" class="next" rel="next" title="Node资源">Node资源&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -327,7 +296,7 @@ const isArray  = Array.isArray
       var gitalk = new Gitalk({
         
         id: location.pathname.substr(0, 50),
-        title: 'TsUtil',
+        title: 'Create React App运行报错解决方案',
         clientID: '64ecd4438b6b3a3a9bd8',
         clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
         repo: 'trysme-comment',
