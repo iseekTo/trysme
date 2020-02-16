@@ -6,10 +6,22 @@
     <description>Recent content in Posts on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Feb 2020 21:57:03 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 16 Feb 2020 17:41:37 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux常用命令</title>
+      <link>https://iseekto.github.io/trysme/2020/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sun, 16 Feb 2020 17:41:37 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>查看文件及目录下子及的大小 1、最简单的查看方法可以使用 ls -ll、ls-lh命令进行查看，使用 ls -ll，会显示成字节大小; ls- lh会以KB、MB等为单位进行显示，这样比较直观一些。
+2、通过命令 du -h –-max-depth=1 *，可以查看当前目录下各文件、文件夹的大小，这个比较实用。
+3、查询当前目录总大小可以使用 du -sh。
+4、只想查看指定目录的总大小，可以使用 du -sh 目录名称，好用。</description>
+    </item>
     
     <item>
       <title>React Hook持久化引用方案</title>

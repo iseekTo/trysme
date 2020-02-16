@@ -11,7 +11,7 @@
   <meta name="keywords" content="blog">
   
   <link rel="prev" href="https://iseekto.github.io/trysme/2020/js%E5%8E%9F%E5%9E%8B%E4%B8%8E%E9%97%AD%E5%8C%85%E7%B3%BB%E5%88%97%E4%B9%8Bprototype%E5%8E%9F%E5%9E%8B/" />
-  
+  <link rel="next" href="https://iseekto.github.io/trysme/2020/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" />
   <link rel="canonical" href="https://iseekto.github.io/trysme/2020/react-hook%E6%8C%81%E4%B9%85%E5%8C%96%E5%BC%95%E7%94%A8%E6%96%B9%E6%A1%88/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
@@ -175,9 +175,22 @@
       var endTop, miss;
       var offsetTop = fix[0].offsetTop;
 
-      eachTocA.on('click', function() {
+
+      eachTocA.on('click', function(e) {
+      [...$('h1')].slice(1).forEach(el => {
+        if (e.target.innerHTML === el.innerHTML) {
+          el.style.paddingTop = '1em'
+
+        }
+
+      })
+
+
         $('.active-by-alink').removeClass('active-by-alink')
         $(this).addClass('active-by-alink')
+
+        console.log([...$('h1')]);
+        
       })
       
       $(window).scroll(function () {
@@ -290,6 +303,8 @@ export default usePreviousValue
         
         <a href="https://iseekto.github.io/trysme/2020/js%E5%8E%9F%E5%9E%8B%E4%B8%8E%E9%97%AD%E5%8C%85%E7%B3%BB%E5%88%97%E4%B9%8Bprototype%E5%8E%9F%E5%9E%8B/" class="prev" rel="prev" title="JS原型与闭包系列之——prototype原型"><i class="iconfont icon-left"></i>&nbsp;JS原型与闭包系列之——prototype原型</a>
          
+        
+        <a href="https://iseekto.github.io/trysme/2020/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="next" rel="next" title="Linux常用命令">Linux常用命令&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 

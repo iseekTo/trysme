@@ -177,9 +177,22 @@
       var endTop, miss;
       var offsetTop = fix[0].offsetTop;
 
-      eachTocA.on('click', function() {
+
+      eachTocA.on('click', function(e) {
+      [...$('h1')].slice(1).forEach(el => {
+        if (e.target.innerHTML === el.innerHTML) {
+          el.style.paddingTop = '1em'
+
+        }
+
+      })
+
+
         $('.active-by-alink').removeClass('active-by-alink')
         $(this).addClass('active-by-alink')
+
+        console.log([...$('h1')]);
+        
       })
       
       $(window).scroll(function () {
