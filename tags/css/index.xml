@@ -17,11 +17,10 @@
       <pubDate>Tue, 21 Jan 2020 20:31:19 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/2020/css%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/</guid>
-      <description> transition 闪屏问题 .css { -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden; -webkit-perspective: 1000; }  开启硬件加速 .css { transform: translate3d(0, 0, 0); }  1px的问题 解决方案大致为两种：
+      <description>transition 闪屏问题 .css { -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden; -webkit-perspective: 1000; }  开启硬件加速 .css { transform: translate3d(0, 0, 0); }  1px的问题 解决方案大致为两种：
 1、使用css伪类加 transform: scale(0.5)
 .box { width: 100px; padding: 10px; position: relative; background-color: white; } .box::after { content: &#39;&#39;; box-sizing: border-box; pointer-events: none; position: absolute; top: -50%; bottom: -50%; right: -50%; left: -50%; border: 0px solid red; transform: scale(.5); border-bottom-width: 1px; }  2、媒体查询根据不同尺寸进行相对缩放
- 持续更新中&amp;hellip;
- </description>
+极简弹窗动画 /* 进场动画 */ .</description>
     </item>
     
   </channel>

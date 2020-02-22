@@ -6,10 +6,19 @@
     <description>Recent content in tool on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Jan 2020 20:34:10 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 21 Feb 2020 14:11:45 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/tags/tool/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Js工具函数</title>
+      <link>https://iseekto.github.io/trysme/2020/js%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Fri, 21 Feb 2020 14:11:45 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/js%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0/</guid>
+      <description> 快速获取url地址栏的参数(对象格式) const locationParams = location.search.slice(1) locationParams.split(&#39;&amp;amp;&#39;).reduce((acc, params) =&amp;gt; { const [key, value] = params.split(&#39;=&#39;) return { ...acc, [key]: value } }, {})  </description>
+    </item>
     
     <item>
       <title>Node资源</title>

@@ -11,7 +11,7 @@
   <meta name="keywords" content="blog">
   
   <link rel="prev" href="https://iseekto.github.io/trysme/2020/react-hook%E6%8C%81%E4%B9%85%E5%8C%96%E5%BC%95%E7%94%A8%E6%96%B9%E6%A1%88/" />
-  
+  <link rel="next" href="https://iseekto.github.io/trysme/2020/js%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0/" />
   <link rel="canonical" href="https://iseekto.github.io/trysme/2020/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "Linux常用命令",
     "headline" : "Linux常用命令",
-    "description" : "查看文件及目录下子及的大小 1、最简单的查看方法可以使用 ls -ll、ls-lh命令进行查看，使用 ls -ll，会显示成字节大小; ls- lh会以KB、MB等为单位进行显示，这样比较直观一些。\n2、通过命令 du -h –-max-depth=1 *，可以查看当前目录下各文件、文件夹的大小，这个比较实用。\n3、查询当前目录总大小可以使用 du -sh。\n4、只想查看指定目录的总大小，可以使用 du -sh 目录名称，好用。",
+    "description" : "查看文件及目录下子及的大小 1、最简单的查看方法可以使用 ls -ll、ls-lh命令进行查看，使用 ls -ll，会显示成字节大小; ls- lh会以KB、MB等为单位进行显示，这样比较直观一些。\n2、通过命令 du -h –-max-depth=1 *，可以查看当前目录下各文件、文件夹的大小，这个比较实用。\n3、查询当前目录总大小可以使用 du -sh。\n4、只想查看指定目录的总大小，可以使用 du -sh 目录名称，好用。\n端口是否占用 查找系统所示正在使用的端口列表 netstat -lntp 查找监听端口号的进程 PID lsof -i :3000 杀死对应进程 PID, 如 13459 kill -9 13459\n防火墙相关 查看防火墙服务有没有运行 firewall-cmd --state 打开\/关闭防火墙 systemctl start\/stop firewalld 查看防火墙开放的端口 firewall-cmd --list-port 重启防火墙服务使新配置生效 systemctl restart firewalld",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -57,7 +57,7 @@
     "datePublished": "2020-02-16 17:41:37 \x2b0800 CST",
     "dateModified" : "2020-02-16 17:41:37 \x2b0800 CST",
     "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4\/",
-    "wordCount" : "20",
+    "wordCount" : "51",
     "keywords" : [  "wm\x27s blog"]
 }
 </script>
@@ -161,6 +161,8 @@
       <nav id="TableOfContents">
 <ul>
 <li><a href="#查看文件及目录下子及的大小">查看文件及目录下子及的大小</a></li>
+<li><a href="#端口是否占用">端口是否占用</a></li>
+<li><a href="#防火墙相关">防火墙相关</a></li>
 </ul>
 </nav>
     </div>
@@ -243,6 +245,19 @@
 
 <p>4、只想查看指定目录的总大小，可以使用 <code>du -sh 目录名称</code>，好用。</p>
 
+<h1 id="端口是否占用">端口是否占用</h1>
+
+<p>查找系统所示正在使用的端口列表 <code>netstat -lntp</code>
+查找监听端口号的进程 PID <code>lsof -i :3000</code>
+杀死对应进程 PID, 如 13459 <code>kill -9 13459</code></p>
+
+<h1 id="防火墙相关">防火墙相关</h1>
+
+<p>查看防火墙服务有没有运行 <code>firewall-cmd --state</code>
+打开/关闭防火墙 <code>systemctl start/stop  firewalld</code>
+查看防火墙开放的端口 <code>firewall-cmd --list-port</code>
+重启防火墙服务使新配置生效 <code>systemctl restart firewalld</code></p>
+
     </div>
 
     <div class="post-copyright">
@@ -284,6 +299,8 @@
         
         <a href="https://iseekto.github.io/trysme/2020/react-hook%E6%8C%81%E4%B9%85%E5%8C%96%E5%BC%95%E7%94%A8%E6%96%B9%E6%A1%88/" class="prev" rel="prev" title="React Hook持久化引用方案"><i class="iconfont icon-left"></i>&nbsp;React Hook持久化引用方案</a>
          
+        
+        <a href="https://iseekto.github.io/trysme/2020/js%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0/" class="next" rel="next" title="Js工具函数">Js工具函数&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 

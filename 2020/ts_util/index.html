@@ -57,7 +57,7 @@
     "datePublished": "2020-01-23 21:40:38 \x2b0800 CST",
     "dateModified" : "2020-01-23 21:40:38 \x2b0800 CST",
     "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/ts_util\/",
-    "wordCount" : "109",
+    "wordCount" : "139",
     "keywords" : [ "ts","util", "wm\x27s blog"]
 }
 </script>
@@ -161,6 +161,7 @@
       <nav id="TableOfContents">
 <ul>
 <li><a href="#类型封装-字符串-数组-正则-纯对象">类型封装，字符串、数组、正则、纯对象&hellip;</a></li>
+<li><a href="#简单节流函数">简单节流函数</a></li>
 </ul>
 </nav>
     </div>
@@ -259,6 +260,19 @@ const isObject = (obj: any): obj is Object =&gt; typeof obj === 'object'   // wa
 const isArray  = Array.isArray
 
 // const isPlainObject  waiting for update
+</code></pre>
+
+<h1 id="简单节流函数">简单节流函数</h1>
+
+<pre><code class="language-typescript">const debonce = (func: any, delay: number) =&gt; {
+    let timer: NodeJS.Timeout;
+    return function(...args) {
+        if (timer) clearTimeout(timer)
+        timer = setTimeout(() =&gt; {
+            func.apply(this, args)
+        }, delay);
+    }
+}
 </code></pre>
 
 <blockquote>

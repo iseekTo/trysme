@@ -20,7 +20,9 @@
       <description>查看文件及目录下子及的大小 1、最简单的查看方法可以使用 ls -ll、ls-lh命令进行查看，使用 ls -ll，会显示成字节大小; ls- lh会以KB、MB等为单位进行显示，这样比较直观一些。
 2、通过命令 du -h –-max-depth=1 *，可以查看当前目录下各文件、文件夹的大小，这个比较实用。
 3、查询当前目录总大小可以使用 du -sh。
-4、只想查看指定目录的总大小，可以使用 du -sh 目录名称，好用。</description>
+4、只想查看指定目录的总大小，可以使用 du -sh 目录名称，好用。
+端口是否占用 查找系统所示正在使用的端口列表 netstat -lntp 查找监听端口号的进程 PID lsof -i :3000 杀死对应进程 PID, 如 13459 kill -9 13459
+防火墙相关 查看防火墙服务有没有运行 firewall-cmd --state 打开/关闭防火墙 systemctl start/stop firewalld 查看防火墙开放的端口 firewall-cmd --list-port 重启防火墙服务使新配置生效 systemctl restart firewalld</description>
     </item>
     
     <item>

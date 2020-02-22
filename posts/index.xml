@@ -6,10 +6,19 @@
     <description>Recent content in Posts on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Feb 2020 17:41:37 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 21 Feb 2020 14:11:45 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Js工具函数</title>
+      <link>https://iseekto.github.io/trysme/2020/js%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0/</link>
+      <pubDate>Fri, 21 Feb 2020 14:11:45 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/js%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0/</guid>
+      <description> 快速获取url地址栏的参数(对象格式) const locationParams = location.search.slice(1) locationParams.split(&#39;&amp;amp;&#39;).reduce((acc, params) =&amp;gt; { const [key, value] = params.split(&#39;=&#39;) return { ...acc, [key]: value } }, {})  </description>
+    </item>
     
     <item>
       <title>Linux常用命令</title>
@@ -20,7 +29,9 @@
       <description>查看文件及目录下子及的大小 1、最简单的查看方法可以使用 ls -ll、ls-lh命令进行查看，使用 ls -ll，会显示成字节大小; ls- lh会以KB、MB等为单位进行显示，这样比较直观一些。
 2、通过命令 du -h –-max-depth=1 *，可以查看当前目录下各文件、文件夹的大小，这个比较实用。
 3、查询当前目录总大小可以使用 du -sh。
-4、只想查看指定目录的总大小，可以使用 du -sh 目录名称，好用。</description>
+4、只想查看指定目录的总大小，可以使用 du -sh 目录名称，好用。
+端口是否占用 查找系统所示正在使用的端口列表 netstat -lntp 查找监听端口号的进程 PID lsof -i :3000 杀死对应进程 PID, 如 13459 kill -9 13459
+防火墙相关 查看防火墙服务有没有运行 firewall-cmd --state 打开/关闭防火墙 systemctl start/stop firewalld 查看防火墙开放的端口 firewall-cmd --list-port 重启防火墙服务使新配置生效 systemctl restart firewalld</description>
     </item>
     
     <item>
@@ -98,11 +109,10 @@ Fn是一个函数，fn对象是从Fn函数new出来的，这样fn对象就可以
       <pubDate>Tue, 21 Jan 2020 20:31:19 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/2020/css%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/</guid>
-      <description> transition 闪屏问题 .css { -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden; -webkit-perspective: 1000; }  开启硬件加速 .css { transform: translate3d(0, 0, 0); }  1px的问题 解决方案大致为两种：
+      <description>transition 闪屏问题 .css { -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden; -webkit-perspective: 1000; }  开启硬件加速 .css { transform: translate3d(0, 0, 0); }  1px的问题 解决方案大致为两种：
 1、使用css伪类加 transform: scale(0.5)
 .box { width: 100px; padding: 10px; position: relative; background-color: white; } .box::after { content: &#39;&#39;; box-sizing: border-box; pointer-events: none; position: absolute; top: -50%; bottom: -50%; right: -50%; left: -50%; border: 0px solid red; transform: scale(.5); border-bottom-width: 1px; }  2、媒体查询根据不同尺寸进行相对缩放
- 持续更新中&amp;hellip;
- </description>
+极简弹窗动画 /* 进场动画 */ .</description>
     </item>
     
     <item>
