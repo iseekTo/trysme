@@ -6,10 +6,20 @@
     <description>Recent content in tool on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 16 Feb 2020 17:41:37 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 22 Feb 2020 19:12:57 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/categories/tool/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Yarn安装项目遇到的难点</title>
+      <link>https://iseekto.github.io/trysme/2020/yarn%E5%AE%89%E8%A3%85%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E7%9A%84%E9%9A%BE%E7%82%B9/</link>
+      <pubDate>Sat, 22 Feb 2020 19:12:57 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/yarn%E5%AE%89%E8%A3%85%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E7%9A%84%E9%9A%BE%E7%82%B9/</guid>
+      <description>create-react-app创建项目报错（冷门错误） 错误日志：The engine &amp;ldquo;node&amp;rdquo; is incompatible with this module
+解决方案：yarn config set ignore-engines true</description>
+    </item>
     
     <item>
       <title>Linux常用命令</title>
@@ -23,6 +33,15 @@
 4、只想查看指定目录的总大小，可以使用 du -sh 目录名称，好用。
 端口是否占用 查找系统所示正在使用的端口列表 netstat -lntp 查找监听端口号的进程 PID lsof -i :3000 杀死对应进程 PID, 如 13459 kill -9 13459
 防火墙相关 查看防火墙服务有没有运行 firewall-cmd --state 打开/关闭防火墙 systemctl start/stop firewalld 查看防火墙开放的端口 firewall-cmd --list-port 重启防火墙服务使新配置生效 systemctl restart firewalld</description>
+    </item>
+    
+    <item>
+      <title>Mac常用指令</title>
+      <link>https://iseekto.github.io/trysme/2020/mac%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</link>
+      <pubDate>Sun, 19 Jan 2020 20:03:59 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/mac%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</guid>
+      <description>查看本机ip ifconfig | grep &amp;quot;inet&amp;quot;</description>
     </item>
     
     <item>
