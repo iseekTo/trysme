@@ -10,9 +10,9 @@
   
   <meta name="keywords" content="blog">
   
-  <link rel="prev" href="https://iseekto.github.io/trysme/2020/js%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0/" />
-  <link rel="next" href="https://iseekto.github.io/trysme/2020/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8react-hooks/" />
-  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/yarn%E5%AE%89%E8%A3%85%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E7%9A%84%E9%9A%BE%E7%82%B9/" />
+  <link rel="prev" href="https://iseekto.github.io/trysme/2020/yarn%E5%AE%89%E8%A3%85%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E7%9A%84%E9%9A%BE%E7%82%B9/" />
+  
+  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8react-hooks/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -22,10 +22,10 @@
   <title>
        
        
-           Yarn安装项目遇到的难点 | wm&#39;s blog
+           如何正确使用React Hooks | wm&#39;s blog
        
   </title>
-  <meta name="title" content="Yarn安装项目遇到的难点 | wm&#39;s blog">
+  <meta name="title" content="如何正确使用React Hooks | wm&#39;s blog">
     
   
   <link rel="stylesheet" href="/trysme/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/iseekto.github.io\/trysme\/"
     },
     "articleSection" : "posts",
-    "name" : "Yarn安装项目遇到的难点",
-    "headline" : "Yarn安装项目遇到的难点",
-    "description" : "create-react-app创建项目报错（冷门错误） 错误日志：The engine \x26ldquo;node\x26rdquo; is incompatible with this module\n解决方案：yarn config set ignore-engines true",
+    "name" : "如何正确使用React Hooks",
+    "headline" : "如何正确使用React Hooks",
+    "description" : "本文转自 https:\/\/zhuanlan.zhihu.com\/p\/85969406\n 从 React Hooks 正式发布到现在，我一直在项目使用它。但是，在使用 Hooks 的过程中，我也进入了一些误区，导致写出来的代码隐藏 bug 并且难以维护。这篇文章中，我会具体分析这些问题，并总结一些好的实践，以供大家参考。\n问题一：我该使用单个 state 变量还是多个 state 变量？ useState 的出现，让我们可以使用多个 state 变量来保存 state，比如：\nconst [width, setWidth] = useState(100); const [height, setHeight] = useState(100); const [left, setLeft] = useState(0); const [top, setTop] = useState(0);  但同时，我们也可以像 Class 组件的 this.state 一样，将所有的 state 放到一个 object 中，这样只需一个 state 变量即可：\nconst [state, setState] = useState({ width: 100, height: 100, left: 0, top: 0 });  那么问题来了，到底该用单个 state 变量还是多个 state 变量呢？",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -54,11 +54,11 @@
     "accountablePerson" : "_weimou",
     "copyrightHolder" : "_weimou",
     "copyrightYear" : "2020",
-    "datePublished": "2020-02-22 19:12:57 \x2b0800 CST",
-    "dateModified" : "2020-02-22 19:12:57 \x2b0800 CST",
-    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/yarn%E5%AE%89%E8%A3%85%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E7%9A%84%E9%9A%BE%E7%82%B9\/",
-    "wordCount" : "14",
-    "keywords" : [  "wm\x27s blog"]
+    "datePublished": "2020-02-25 14:08:13 \x2b0800 CST",
+    "dateModified" : "2020-02-25 14:08:13 \x2b0800 CST",
+    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8react-hooks\/",
+    "wordCount" : "284",
+    "keywords" : [ "react", "wm\x27s blog"]
 }
 </script>
 
@@ -135,16 +135,16 @@
           
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Yarn安装项目遇到的难点</h1>
+        <h1 class="post-title" itemprop="name headline">如何正确使用React Hooks</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2020-02-22 itemprop="datePublished">February 22, 2020</time>
+                on <time datetime=2020-02-25 itemprop="datePublished">February 25, 2020</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://iseekto.github.io/trysme/categories/tool/"> tool </a>
+                        <a href="https://iseekto.github.io/trysme/categories/react/"> react </a>
                         
                 </span>
                 
@@ -160,7 +160,8 @@
     <div class="post-toc-content">
       <nav id="TableOfContents">
 <ul>
-<li><a href="#create-react-app创建项目报错-冷门错误">create-react-app创建项目报错（冷门错误）</a></li>
+<li><a href="#问题一-我该使用单个-state-变量还是多个-state-变量">问题一：我该使用单个 state 变量还是多个 state 变量？</a></li>
+<li><a href="#总结">总结</a></li>
 </ul>
 </nav>
     </div>
@@ -233,11 +234,121 @@
 
           
 
-<h1 id="create-react-app创建项目报错-冷门错误">create-react-app创建项目报错（冷门错误）</h1>
+<blockquote>
+<p>本文转自 <a href="https://zhuanlan.zhihu.com/p/85969406" rel="nofollow noreferrer" target="_blank">https://zhuanlan.zhihu.com/p/85969406</a></p>
+</blockquote>
 
-<p>错误日志：The engine &ldquo;node&rdquo; is incompatible with this module</p>
+<p>从 React Hooks 正式发布到现在，我一直在项目使用它。但是，在使用 Hooks 的过程中，我也进入了一些误区，导致写出来的代码隐藏 bug 并且难以维护。这篇文章中，我会具体分析这些问题，并总结一些好的实践，以供大家参考。</p>
 
-<p>解决方案：<code>yarn config set ignore-engines true</code></p>
+<h1 id="问题一-我该使用单个-state-变量还是多个-state-变量">问题一：我该使用单个 state 变量还是多个 state 变量？</h1>
+
+<p><code>useState</code> 的出现，让我们可以使用多个 state 变量来保存 state，比如：</p>
+
+<pre><code class="language-js">const [width, setWidth] = useState(100);
+const [height, setHeight] = useState(100);
+const [left, setLeft] = useState(0);
+const [top, setTop] = useState(0);
+</code></pre>
+
+<p>但同时，我们也可以像 Class 组件的 this.state 一样，将所有的 state 放到一个 object 中，这样只需一个 state 变量即可：</p>
+
+<pre><code class="language-jsx">const [state, setState] = useState({
+    width: 100,
+    height: 100,
+    left: 0,
+    top: 0
+});
+</code></pre>
+
+<p>那么问题来了，到底该用单个 state 变量还是多个 state 变量呢？</p>
+
+<p>如果使用单个 state 变量，每次更新 state 时需要合并之前的 state。因为 <code>useState</code> 返回的 <code>setState</code> 会替换原来的值。这一点和 Class 组件的 <code>this.setState</code> 不同。<code>this.setState</code> 会把更新的字段自动合并到 <code>this.state</code> 对象中。</p>
+
+<pre><code class="language-jsx">const handleMouseMove = (e) =&gt; {
+    setState((prevState) =&gt; ({
+        ...prevState,
+        left: e.pageX,
+        top: e.pageY,
+    }))
+};
+</code></pre>
+
+<p>使用多个 state 变量可以让 state 的粒度更细，更易于逻辑的拆分和组合。比如，我们可以将关联的逻辑提取到自定义 Hook 中：</p>
+
+<pre><code class="language-jsx">function usePosition() {
+    const [left, setLeft] = useState(0);
+    const [top, setTop] = useState(0);
+
+    useEffect(() =&gt; {
+        // ...
+    }, []);
+
+    return [left, top, setLeft, setTop];
+}
+</code></pre>
+
+<p>我们发现，每次更新 left 时 top 也会随之更新。因此，把 top 和 left 拆分为两个 state 变量显得有点多余。</p>
+
+<ul>
+<li><p>在使用 state 之前，我们需要考虑状态拆分的「粒度」问题。如果粒度过细，代码就会变得比较冗余。如果粒度过粗，代码的可复用性就会降低。那么，到底哪些 state 应该合并，哪些 state 应该拆分呢？我总结了下面两点：</p>
+
+<ul>
+<li>将完全不相关的 state 拆分为多组 state。比如 size 和 position。</li>
+
+<li><p>如果某些 state 是相互关联的，或者需要一起发生改变，就可以把它们合并为一组 state。比如 left 和 top。</p>
+
+<pre><code class="language-jsx">function Box() {
+const [position, setPosition] = usePosition();
+const [size, setSize] = useState({width: 100, height: 100});
+// ...
+}
+
+function usePosition() {
+const [position, setPosition] = useState({left: 0, top: 0});
+
+useEffect(() =&gt; {
+// ...
+}, []);
+
+return [position, setPosition];
+}
+</code></pre></li>
+</ul></li>
+</ul>
+
+<h1 id="总结">总结</h1>
+
+<ol>
+<li>将完全不相关的 state 拆分为多组 state。<br /></li>
+<li>如果某些 state 是相互关联的，或者需要一起发生改变，就可以把它们合并为一组 state。<br /></li>
+<li>依赖数组依赖的值最好不要超过 3 个，否则会导致代码会难以维护。<br /></li>
+<li>如果发现依赖数组依赖的值过多，我们应该采取一些方法来减少它。<br />
+
+<ul>
+<li>去掉不必要的依赖。<br /></li>
+<li>将 Hook 拆分为更小的单元，每个 Hook 依赖于各自的依赖数组。<br /></li>
+<li>通过合并相关的 state，将多个依赖值聚合为一个。<br /></li>
+<li>通过 setState 回调函数获取最新的 state，以减少外部依赖。<br /></li>
+<li>通过 ref 来读取可变变量的值，不过需要注意控制修改它的途径。<br /></li>
+</ul></li>
+<li>应该使用 useMemo 的场景：
+
+<ul>
+<li>保持引用相等</li>
+<li>成本很高的计算</li>
+</ul></li>
+<li>无需使用 useMemo 的场景：
+
+<ul>
+<li>如果返回的值是原始值： string, boolean, null, undefined, number, symbol（不包括动态声明的 Symbol），一般不需要使用 useMemo。</li>
+<li>仅在组件内部用到的 object、array、函数等（没有作为 props 传递给子组件），且没有用到其他 Hook 的依赖数组中，一般不需要使用 useMemo。</li>
+</ul></li>
+<li>Hooks、Render Props 和高阶组件都有各自的使用场景，具体使用哪一种要看实际情况。</li>
+<li>若 Hook 类型相同，且依赖数组一致时，应该合并成一个 Hook。</li>
+<li>自定义 Hooks 的返回值可以使用 Tuple 类型，更易于在外部重命名。如果返回的值过多，则不建议使用。</li>
+<li>ref 不要直接暴露给外部使用，而是提供一个修改值的方法。</li>
+<li>在使用 useMemo 或者 useCallback 时，可以借助 ref 或者 setState callback，确保返回的函数只创建一次。也就是说，函数不会根据依赖数组的变化而二次创建。</li>
+</ol>
 
     </div>
 
@@ -253,7 +364,7 @@
             <p class="copyright-item">
                     <span>Link:</span>
                     
-                    <a href=https://iseekto.github.io/trysme/2020/yarn%E5%AE%89%E8%A3%85%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E7%9A%84%E9%9A%BE%E7%82%B9/>
+                    <a href=https://iseekto.github.io/trysme/2020/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8react-hooks/>
                         <script>
                             document.write(decodeURI(location.origin + location.pathname))
                         </script>
@@ -270,6 +381,14 @@
   
     <div class="post-tags">
         
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/react/">
+                    #react</a></span>
+            
+            </section>
+        
         <section>
                 <a href="javascript:window.history.back();">back</a></span> · 
                 <span><a href="https://iseekto.github.io/trysme/">home</a></span>
@@ -278,10 +397,8 @@
 
     <div class="post-nav">
         
-        <a href="https://iseekto.github.io/trysme/2020/js%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0/" class="prev" rel="prev" title="Js工具函数"><i class="iconfont icon-left"></i>&nbsp;Js工具函数</a>
+        <a href="https://iseekto.github.io/trysme/2020/yarn%E5%AE%89%E8%A3%85%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E7%9A%84%E9%9A%BE%E7%82%B9/" class="prev" rel="prev" title="Yarn安装项目遇到的难点"><i class="iconfont icon-left"></i>&nbsp;Yarn安装项目遇到的难点</a>
          
-        
-        <a href="https://iseekto.github.io/trysme/2020/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8react-hooks/" class="next" rel="next" title="如何正确使用React Hooks">如何正确使用React Hooks&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -303,7 +420,7 @@
       var gitalk = new Gitalk({
         
         id: location.pathname.substr(0, 50),
-        title: 'Yarn安装项目遇到的难点',
+        title: '如何正确使用React Hooks',
         clientID: '64ecd4438b6b3a3a9bd8',
         clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
         repo: 'trysme-comment',

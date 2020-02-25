@@ -6,10 +6,23 @@
     <description>Recent content in Posts on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Feb 2020 19:12:57 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 25 Feb 2020 14:08:13 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>如何正确使用React Hooks</title>
+      <link>https://iseekto.github.io/trysme/2020/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8react-hooks/</link>
+      <pubDate>Tue, 25 Feb 2020 14:08:13 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8react-hooks/</guid>
+      <description>本文转自 https://zhuanlan.zhihu.com/p/85969406
+ 从 React Hooks 正式发布到现在，我一直在项目使用它。但是，在使用 Hooks 的过程中，我也进入了一些误区，导致写出来的代码隐藏 bug 并且难以维护。这篇文章中，我会具体分析这些问题，并总结一些好的实践，以供大家参考。
+问题一：我该使用单个 state 变量还是多个 state 变量？ useState 的出现，让我们可以使用多个 state 变量来保存 state，比如：
+const [width, setWidth] = useState(100); const [height, setHeight] = useState(100); const [left, setLeft] = useState(0); const [top, setTop] = useState(0);  但同时，我们也可以像 Class 组件的 this.state 一样，将所有的 state 放到一个 object 中，这样只需一个 state 变量即可：
+const [state, setState] = useState({ width: 100, height: 100, left: 0, top: 0 });  那么问题来了，到底该用单个 state 变量还是多个 state 变量呢？</description>
+    </item>
     
     <item>
       <title>Yarn安装项目遇到的难点</title>
