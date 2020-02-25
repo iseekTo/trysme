@@ -10,9 +10,9 @@
   
   <meta name="keywords" content="blog">
   
-  <link rel="prev" href="https://iseekto.github.io/trysme/2020/yarn%E5%AE%89%E8%A3%85%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E7%9A%84%E9%9A%BE%E7%82%B9/" />
-  <link rel="next" href="https://iseekto.github.io/trysme/2020/taro%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" />
-  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8react-hooks/" />
+  <link rel="prev" href="https://iseekto.github.io/trysme/2020/taro%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" />
+  
+  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/mongodb%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -22,10 +22,10 @@
   <title>
        
        
-           如何正确使用React Hooks | wm&#39;s blog
+           Mongodb相关问题 | wm&#39;s blog
        
   </title>
-  <meta name="title" content="如何正确使用React Hooks | wm&#39;s blog">
+  <meta name="title" content="Mongodb相关问题 | wm&#39;s blog">
     
   
   <link rel="stylesheet" href="/trysme/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/iseekto.github.io\/trysme\/"
     },
     "articleSection" : "posts",
-    "name" : "如何正确使用React Hooks",
-    "headline" : "如何正确使用React Hooks",
-    "description" : "本文转自 https:\/\/zhuanlan.zhihu.com\/p\/85969406\n 从 React Hooks 正式发布到现在，我一直在项目使用它。但是，在使用 Hooks 的过程中，我也进入了一些误区，导致写出来的代码隐藏 bug 并且难以维护。这篇文章中，我会具体分析这些问题，并总结一些好的实践，以供大家参考。\n问题一：我该使用单个 state 变量还是多个 state 变量？ useState 的出现，让我们可以使用多个 state 变量来保存 state，比如：\nconst [width, setWidth] = useState(100); const [height, setHeight] = useState(100); const [left, setLeft] = useState(0); const [top, setTop] = useState(0);  但同时，我们也可以像 Class 组件的 this.state 一样，将所有的 state 放到一个 object 中，这样只需一个 state 变量即可：\nconst [state, setState] = useState({ width: 100, height: 100, left: 0, top: 0 });  那么问题来了，到底该用单个 state 变量还是多个 state 变量呢？",
+    "name" : "Mongodb相关问题",
+    "headline" : "Mongodb相关问题",
+    "description" : "此处不讲本地mongodb的连接, 主环境在宝塔面板中进行\n 基本步骤 1、点击ssh终端进行命令行交互\n2、输入 mongo\n3、切换 admin 数据库，输入：use admin\n4、 给 admin 设置密码\n添加用户密码 db.createUser({ user: \x26quot;自定义名\x26quot;, \/\/ db,getUsers(user) pwd: \x26quot;密码\x26quot;, roles:[ { role: \x26quot;userAdmin\x26quot;, \/\/ 权限 db: \x26quot;数据库名字\x26quot; \/\/ 要对应 数据库列表中的某一个，查看数据库列表 show dbs } ] })  5、验证是否添加成功，db.auth(用户名，用户密码)，如果返回 ‘1’表示验证成功， 如果是 ‘0’ 表示验证失败\n刚才是给 admin 添加的权限，现在可以给别的数据库加\n 宝塔mongodb配置修改  bindIp 修改为 0.0.0.0 允许外网访问 authorization 修改为 enabled 开启认证   createUser中的 role 字段解释  MongoDB 目前内置了 7 个角色。  数据库用户角色：read、readWrite; 数据库管理角色：dbAdmin、dbOwner、userAdmin； 集群管理角色：clusterAdmin、clusterManager、clusterMonitor、hostManager； 备份恢复角色：backup、restore； 所有数据库角色：readAnyDatabase、readWriteAnyDatabase、userAdminAnyDatabase、dbAdminAnyDatabase 超级用户角色：root；这里还有几个角色间接或直接提供了系统超级用户的访问（dbOwner 、userAdmin、userAdminAnyDatabase） 内部角色：__system  这些角色对应的作用如下：  Read：允许用户读取指定数据库 readWrite：允许用户读写指定数据库 dbAdmin：允许用户在指定数据库中执行管理函数，如索引创建、删除，查看统计或访问system.",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -54,11 +54,11 @@
     "accountablePerson" : "_weimou",
     "copyrightHolder" : "_weimou",
     "copyrightYear" : "2020",
-    "datePublished": "2020-02-25 14:08:13 \x2b0800 CST",
-    "dateModified" : "2020-02-25 14:08:13 \x2b0800 CST",
-    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8react-hooks\/",
-    "wordCount" : "284",
-    "keywords" : [ "react", "wm\x27s blog"]
+    "datePublished": "2020-02-25 17:06:47 \x2b0800 CST",
+    "dateModified" : "2020-02-25 17:06:47 \x2b0800 CST",
+    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/mongodb%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98\/",
+    "wordCount" : "82",
+    "keywords" : [  "wm\x27s blog"]
 }
 </script>
 
@@ -135,7 +135,7 @@
           
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">如何正确使用React Hooks</h1>
+        <h1 class="post-title" itemprop="name headline">Mongodb相关问题</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
                 <span class="post-time">
@@ -144,7 +144,7 @@
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://iseekto.github.io/trysme/categories/react/"> react </a>
+                        <a href="https://iseekto.github.io/trysme/categories/node/"> node </a>
                         
                 </span>
                 
@@ -160,8 +160,9 @@
     <div class="post-toc-content">
       <nav id="TableOfContents">
 <ul>
-<li><a href="#问题一-我该使用单个-state-变量还是多个-state-变量">问题一：我该使用单个 state 变量还是多个 state 变量？</a></li>
-<li><a href="#总结">总结</a></li>
+<li><a href="#基本步骤">基本步骤</a></li>
+<li><a href="#添加用户密码">添加用户密码</a></li>
+<li><a href="#createuser中的-role-字段解释">createUser中的 role 字段解释</a></li>
 </ul>
 </nav>
     </div>
@@ -235,120 +236,73 @@
           
 
 <blockquote>
-<p>本文转自 <a href="https://zhuanlan.zhihu.com/p/85969406" rel="nofollow noreferrer" target="_blank">https://zhuanlan.zhihu.com/p/85969406</a></p>
+<p>此处不讲本地mongodb的连接, 主环境在宝塔面板中进行</p>
 </blockquote>
 
-<p>从 React Hooks 正式发布到现在，我一直在项目使用它。但是，在使用 Hooks 的过程中，我也进入了一些误区，导致写出来的代码隐藏 bug 并且难以维护。这篇文章中，我会具体分析这些问题，并总结一些好的实践，以供大家参考。</p>
+<h1 id="基本步骤">基本步骤</h1>
 
-<h1 id="问题一-我该使用单个-state-变量还是多个-state-变量">问题一：我该使用单个 state 变量还是多个 state 变量？</h1>
+<p>1、点击ssh终端进行命令行交互<br />
+2、输入 <code>mongo</code><br />
+3、切换 <code>admin</code> 数据库，输入：<code>use admin</code><br />
+4、 给 <code>admin</code> 设置密码</p>
 
-<p><code>useState</code> 的出现，让我们可以使用多个 state 变量来保存 state，比如：</p>
+<h1 id="添加用户密码">添加用户密码</h1>
 
-<pre><code class="language-js">const [width, setWidth] = useState(100);
-const [height, setHeight] = useState(100);
-const [left, setLeft] = useState(0);
-const [top, setTop] = useState(0);
+<pre><code class="language-jsx">db.createUser({
+    user: &quot;自定义名&quot;,   // db,getUsers(user)
+    pwd: &quot;密码&quot;,
+    roles:[
+        {
+            role: &quot;userAdmin&quot;,  // 权限
+            db: &quot;数据库名字&quot;      // 要对应 数据库列表中的某一个，查看数据库列表 show dbs
+        }
+    ]
+})
 </code></pre>
 
-<p>但同时，我们也可以像 Class 组件的 this.state 一样，将所有的 state 放到一个 object 中，这样只需一个 state 变量即可：</p>
+<p>5、验证是否添加成功，<code>db.auth(用户名，用户密码)</code>，如果返回 ‘1’表示验证成功， 如果是 ‘0’ 表示验证失败</p>
 
-<pre><code class="language-jsx">const [state, setState] = useState({
-    width: 100,
-    height: 100,
-    left: 0,
-    top: 0
-});
-</code></pre>
-
-<p>那么问题来了，到底该用单个 state 变量还是多个 state 变量呢？</p>
-
-<p>如果使用单个 state 变量，每次更新 state 时需要合并之前的 state。因为 <code>useState</code> 返回的 <code>setState</code> 会替换原来的值。这一点和 Class 组件的 <code>this.setState</code> 不同。<code>this.setState</code> 会把更新的字段自动合并到 <code>this.state</code> 对象中。</p>
-
-<pre><code class="language-jsx">const handleMouseMove = (e) =&gt; {
-    setState((prevState) =&gt; ({
-        ...prevState,
-        left: e.pageX,
-        top: e.pageY,
-    }))
-};
-</code></pre>
-
-<p>使用多个 state 变量可以让 state 的粒度更细，更易于逻辑的拆分和组合。比如，我们可以将关联的逻辑提取到自定义 Hook 中：</p>
-
-<pre><code class="language-jsx">function usePosition() {
-    const [left, setLeft] = useState(0);
-    const [top, setTop] = useState(0);
-
-    useEffect(() =&gt; {
-        // ...
-    }, []);
-
-    return [left, top, setLeft, setTop];
-}
-</code></pre>
-
-<p>我们发现，每次更新 left 时 top 也会随之更新。因此，把 top 和 left 拆分为两个 state 变量显得有点多余。</p>
+<p>刚才是给 <code>admin</code> 添加的权限，现在可以给别的数据库加</p>
 
 <ul>
-<li><p>在使用 state 之前，我们需要考虑状态拆分的「粒度」问题。如果粒度过细，代码就会变得比较冗余。如果粒度过粗，代码的可复用性就会降低。那么，到底哪些 state 应该合并，哪些 state 应该拆分呢？我总结了下面两点：</p>
+<li>宝塔mongodb配置修改
 
 <ul>
-<li>将完全不相关的 state 拆分为多组 state。比如 size 和 position。</li>
-
-<li><p>如果某些 state 是相互关联的，或者需要一起发生改变，就可以把它们合并为一组 state。比如 left 和 top。</p>
-
-<pre><code class="language-jsx">function Box() {
-const [position, setPosition] = usePosition();
-const [size, setSize] = useState({width: 100, height: 100});
-// ...
-}
-
-function usePosition() {
-const [position, setPosition] = useState({left: 0, top: 0});
-
-useEffect(() =&gt; {
-// ...
-}, []);
-
-return [position, setPosition];
-}
-</code></pre></li>
+<li>bindIp 修改为 <code>0.0.0.0</code> 允许外网访问</li>
+<li>authorization 修改为 <code>enabled</code> 开启认证</li>
 </ul></li>
 </ul>
 
-<h1 id="总结">总结</h1>
-
-<ol>
-<li>将完全不相关的 state 拆分为多组 state。<br /></li>
-<li>如果某些 state 是相互关联的，或者需要一起发生改变，就可以把它们合并为一组 state。<br /></li>
-<li>依赖数组依赖的值最好不要超过 3 个，否则会导致代码会难以维护。<br /></li>
-<li>如果发现依赖数组依赖的值过多，我们应该采取一些方法来减少它。<br />
+<h1 id="createuser中的-role-字段解释">createUser中的 role 字段解释</h1>
 
 <ul>
-<li>去掉不必要的依赖。<br /></li>
-<li>将 Hook 拆分为更小的单元，每个 Hook 依赖于各自的依赖数组。<br /></li>
-<li>通过合并相关的 state，将多个依赖值聚合为一个。<br /></li>
-<li>通过 setState 回调函数获取最新的 state，以减少外部依赖。<br /></li>
-<li>通过 ref 来读取可变变量的值，不过需要注意控制修改它的途径。<br /></li>
-</ul></li>
-<li>应该使用 useMemo 的场景：
+<li>MongoDB 目前内置了 7 个角色。
 
 <ul>
-<li>保持引用相等</li>
-<li>成本很高的计算</li>
+<li>数据库用户角色：read、readWrite;</li>
+<li>数据库管理角色：dbAdmin、dbOwner、userAdmin；</li>
+<li>集群管理角色：clusterAdmin、clusterManager、clusterMonitor、hostManager；</li>
+<li>备份恢复角色：backup、restore；</li>
+<li>所有数据库角色：readAnyDatabase、readWriteAnyDatabase、userAdminAnyDatabase、dbAdminAnyDatabase</li>
+<li>超级用户角色：root；这里还有几个角色间接或直接提供了系统超级用户的访问（dbOwner 、userAdmin、userAdminAnyDatabase）</li>
+<li>内部角色：__system</li>
 </ul></li>
-<li>无需使用 useMemo 的场景：
+<li>这些角色对应的作用如下：
 
 <ul>
-<li>如果返回的值是原始值： string, boolean, null, undefined, number, symbol（不包括动态声明的 Symbol），一般不需要使用 useMemo。</li>
-<li>仅在组件内部用到的 object、array、函数等（没有作为 props 传递给子组件），且没有用到其他 Hook 的依赖数组中，一般不需要使用 useMemo。</li>
+<li>Read：允许用户读取指定数据库</li>
+<li>readWrite：允许用户读写指定数据库</li>
+<li>dbAdmin：允许用户在指定数据库中执行管理函数，如索引创建、删除，查看统计或访问system.profile</li>
+<li>userAdmin：允许用户向system.users集合写入，可以找指定数据库里创建、删除和管理用户</li>
+<li>————————————————————————————————————————————————————————————</li>
+<li>clusterAdmin：只在admin数据库中可用，赋予用户所有分片和复制集相关函数的管理权限。</li>
+<li>readAnyDatabase：只在admin数据库中可用，赋予用户所有数据库的读权限</li>
+<li>readWriteAnyDatabase：只在admin数据库中可用，赋予用户所有数据库的读写权限</li>
+<li>userAdminAnyDatabase：只在admin数据库中可用，赋予用户所有数据库的userAdmin权限</li>
+<li>dbAdminAnyDatabase：只在admin数据库中可用，赋予用户所有数据库的dbAdmin权限。</li>
+<li>root：只在admin数据库中可用。超级账号，超级权限</li>
 </ul></li>
-<li>Hooks、Render Props 和高阶组件都有各自的使用场景，具体使用哪一种要看实际情况。</li>
-<li>若 Hook 类型相同，且依赖数组一致时，应该合并成一个 Hook。</li>
-<li>自定义 Hooks 的返回值可以使用 Tuple 类型，更易于在外部重命名。如果返回的值过多，则不建议使用。</li>
-<li>ref 不要直接暴露给外部使用，而是提供一个修改值的方法。</li>
-<li>在使用 useMemo 或者 useCallback 时，可以借助 ref 或者 setState callback，确保返回的函数只创建一次。也就是说，函数不会根据依赖数组的变化而二次创建。</li>
-</ol>
+</ul>
 
     </div>
 
@@ -364,7 +318,7 @@ return [position, setPosition];
             <p class="copyright-item">
                     <span>Link:</span>
                     
-                    <a href=https://iseekto.github.io/trysme/2020/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8react-hooks/>
+                    <a href=https://iseekto.github.io/trysme/2020/mongodb%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/>
                         <script>
                             document.write(decodeURI(location.origin + location.pathname))
                         </script>
@@ -381,14 +335,6 @@ return [position, setPosition];
   
     <div class="post-tags">
         
-            <section>
-            <i class="iconfont icon-tag"></i>Tag(s): 
-            
-            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/react/">
-                    #react</a></span>
-            
-            </section>
-        
         <section>
                 <a href="javascript:window.history.back();">back</a></span> · 
                 <span><a href="https://iseekto.github.io/trysme/">home</a></span>
@@ -397,10 +343,8 @@ return [position, setPosition];
 
     <div class="post-nav">
         
-        <a href="https://iseekto.github.io/trysme/2020/yarn%E5%AE%89%E8%A3%85%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E7%9A%84%E9%9A%BE%E7%82%B9/" class="prev" rel="prev" title="Yarn安装项目遇到的难点"><i class="iconfont icon-left"></i>&nbsp;Yarn安装项目遇到的难点</a>
+        <a href="https://iseekto.github.io/trysme/2020/taro%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" class="prev" rel="prev" title="Taro注意事项"><i class="iconfont icon-left"></i>&nbsp;Taro注意事项</a>
          
-        
-        <a href="https://iseekto.github.io/trysme/2020/taro%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" class="next" rel="next" title="Taro注意事项">Taro注意事项&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -422,7 +366,7 @@ return [position, setPosition];
       var gitalk = new Gitalk({
         
         id: location.pathname.substr(0, 50),
-        title: '如何正确使用React Hooks',
+        title: 'Mongodb相关问题',
         clientID: '64ecd4438b6b3a3a9bd8',
         clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
         repo: 'trysme-comment',
