@@ -50,7 +50,7 @@
       <pubDate>Sun, 19 Jan 2020 20:03:59 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/2020/mac%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</guid>
-      <description>查看本机ip ifconfig | grep &amp;quot;inet&amp;quot;</description>
+      <description>查看本机ip grep：筛选的意思 筛选某个键 ifconfig | grep &amp;quot;inet&amp;quot;</description>
     </item>
     
     <item>
