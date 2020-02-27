@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TypeScript on wm&#39;s blog</title>
+    <title>Typescript on wm&#39;s blog</title>
     <link>https://iseekto.github.io/trysme/categories/typescript/</link>
-    <description>Recent content in TypeScript on wm&#39;s blog</description>
+    <description>Recent content in Typescript on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 23 Jan 2020 21:40:38 +0800</lastBuildDate>

@@ -6,10 +6,21 @@
     <description>Recent content in tool on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Feb 2020 09:47:56 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 27 Feb 2020 17:08:38 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/tags/tool/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git冷门指令</title>
+      <link>https://iseekto.github.io/trysme/2020/git%E5%86%B7%E9%97%A8%E6%8C%87%E4%BB%A4/</link>
+      <pubDate>Thu, 27 Feb 2020 17:08:38 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/git%E5%86%B7%E9%97%A8%E6%8C%87%E4%BB%A4/</guid>
+      <description>项目权限问题 对项目进行权限提升，导致没有更改的文件全部变成待提交状态，
+在根项目: git config core.filemode false
+代码库远程迁移后，修改本地代码关联的远程地址: git remote set-url origin your resp address</description>
+    </item>
     
     <item>
       <title>Charles在app中抓包乱码问题的解决</title>
