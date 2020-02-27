@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "Taro注意事项",
     "headline" : "Taro注意事项",
-    "description" : "",
+    "description" : " 路由无法跳转的相关问题 版本问题：升级taro版本，项目中的@tarojs相关版本，nervjs版本\x26lt;版本必须保持一致\x26gt;\n设置页面标题优先级 config.navigationBarTitleText \x26gt; Taro.setNavigationBarTitle  上传图片 使用Taro.uploadFile Taro.uploadFile({ url: `\/\/${getEnv()}xxx.xxx.com\/base\/v1\/upload`, name: \x27file\x27, filePath: files[0].url, formData, }).then(res =\x26gt; console.log(res))  canvas清除画笔 清除画笔使用 ctx.draw(); ctx.beginPath()\n输出图片使用 Taro.canvasToTempFilePath()\n预览图片功能  在新页面中全屏预览图片。预览的过程中用户可以进行保存图片、发送给朋友等操作。\nTaro.previewImage({ current: \x27urls[0]\x27, \/\/ 当前显示图片链接 urls: imgList \/\/ 需要预览的图片链接列表 })   ",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -57,7 +57,7 @@
     "datePublished": "2020-02-25 14:41:37 \x2b0800 CST",
     "dateModified" : "2020-02-25 14:41:37 \x2b0800 CST",
     "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/taro%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9\/",
-    "wordCount" : "0",
+    "wordCount" : "37",
     "keywords" : [ "taro","question", "wm\x27s blog"]
 }
 </script>
@@ -154,7 +154,15 @@
     <h2 class="post-toc-title"></h2>
     
     <div class="post-toc-content">
-      
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#路由无法跳转的相关问题">路由无法跳转的相关问题</a></li>
+<li><a href="#设置页面标题优先级">设置页面标题优先级</a></li>
+<li><a href="#上传图片-使用taro-uploadfile">上传图片 使用Taro.uploadFile</a></li>
+<li><a href="#canvas清除画笔">canvas清除画笔</a></li>
+<li><a href="#预览图片功能">预览图片功能</a></li>
+</ul>
+</nav>
     </div>
   </div>
   
@@ -224,6 +232,43 @@
           
 
           
+
+<h1 id="路由无法跳转的相关问题">路由无法跳转的相关问题</h1>
+
+<p>版本问题：升级taro版本，项目中的@tarojs相关版本，nervjs版本&lt;版本必须保持一致&gt;</p>
+
+<h1 id="设置页面标题优先级">设置页面标题优先级</h1>
+
+<pre><code class="language-js">config.navigationBarTitleText &gt; Taro.setNavigationBarTitle
+</code></pre>
+
+<h1 id="上传图片-使用taro-uploadfile">上传图片 使用Taro.uploadFile</h1>
+
+<pre><code class="language-js">Taro.uploadFile({
+    url: `//${getEnv()}xxx.xxx.com/base/v1/upload`,
+    name: 'file',
+    filePath: files[0].url,
+    formData,
+}).then(res =&gt; console.log(res))
+</code></pre>
+
+<h1 id="canvas清除画笔">canvas清除画笔</h1>
+
+<p>清除画笔使用 <code>ctx.draw()</code>; <code>ctx.beginPath()</code><br />
+输出图片使用 <code>Taro.canvasToTempFilePath()</code></p>
+
+<h1 id="预览图片功能">预览图片功能</h1>
+
+<blockquote>
+<p>在新页面中全屏预览图片。预览的过程中用户可以进行保存图片、发送给朋友等操作。</p>
+
+<pre><code class="language-js">Taro.previewImage({
+    current: 'urls[0]',             // 当前显示图片链接
+    urls: imgList                   // 需要预览的图片链接列表
+})
+</code></pre>
+</blockquote>
+
     </div>
 
     <div class="post-copyright">
