@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>question on wm&#39;s blog</title>
+    <link>https://iseekto.github.io/trysme/tags/question/</link>
+    <description>Recent content in question on wm&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Feb 2020 09:47:56 +0800</lastBuildDate>
+    
+	<atom:link href="https://iseekto.github.io/trysme/tags/question/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Charles在app中抓包乱码问题的解决</title>
+      <link>https://iseekto.github.io/trysme/2020/charles%E5%9C%A8app%E4%B8%AD%E6%8A%93%E5%8C%85%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/</link>
+      <pubDate>Thu, 27 Feb 2020 09:47:56 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/charles%E5%9C%A8app%E4%B8%AD%E6%8A%93%E5%8C%85%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/</guid>
+      <description>Charles在抓取https协议的内容时会出现乱码
+解决方案：
+1、在菜单栏中找到 Proxy -&amp;gt; SSL Proxying Settings
+2、在弹窗框中的 SSL Proxying 选项卡内的 Include 下方点击 Add
+3、什么都不填，默认所有域名都可捕获
+4、点击 ok 数据就正常显示了~</description>
+    </item>
+    
+    <item>
+      <title>Taro注意事项</title>
+      <link>https://iseekto.github.io/trysme/2020/taro%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</link>
+      <pubDate>Tue, 25 Feb 2020 14:41:37 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/taro%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yarn安装项目遇到的难点</title>
+      <link>https://iseekto.github.io/trysme/2020/yarn%E5%AE%89%E8%A3%85%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E7%9A%84%E9%9A%BE%E7%82%B9/</link>
+      <pubDate>Sat, 22 Feb 2020 19:12:57 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/yarn%E5%AE%89%E8%A3%85%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E7%9A%84%E9%9A%BE%E7%82%B9/</guid>
+      <description>create-react-app创建项目报错（冷门错误） 错误日志：The engine &amp;ldquo;node&amp;rdquo; is incompatible with this module
+解决方案：yarn config set ignore-engines true</description>
+    </item>
+    
+    <item>
+      <title>Create React App运行报错解决方案</title>
+      <link>https://iseekto.github.io/trysme/2020/create-react-app%E8%BF%90%E8%A1%8C%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
+      <pubDate>Mon, 27 Jan 2020 20:28:16 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/create-react-app%E8%BF%90%E8%A1%8C%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</guid>
+      <description>排除webpack，以及相关依赖包/版本的错误
+ 根目录下创建一个 .env 文件
+添加 SKIP_PREFLIGHT_CHECK=true
+运行 npm start</description>
+    </item>
+    
+    <item>
+      <title>iOS兼容问题</title>
+      <link>https://iseekto.github.io/trysme/2020/ios%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Wed, 15 Jan 2020 18:26:38 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/ios%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</guid>
+      <description>前置条件：在不使用第三方封装好的ui库，比如跨端框架Taro。
+ input兼容问题 1、掉起输入框英文键盘，第一个字母为大写的问题
+&amp;lt;input type=&amp;quot;text&amp;quot; autocapitalize=&amp;quot;off&amp;quot; /&amp;gt; 
+2、在靠近底部触发input输入框，输入完成后，页面底部留白问题
+注册blur事件及定时器变量方便下一个focus时清除此使用，使用document.scrollIntoView()，然后在加上window.scrollTo(0, document.body.scrollHeight) 来重置高度
+3、获取焦点时，光标错位
+加上如下css样式user-select: text 如下js input.target.scrollIntoView(true)
+4、输入框获取焦点时，页面输入框被覆盖，定位的元素位置错乱
+可能性：当input位于fixed底部时，输入法弹出后，fixed会失效，页面的定位元素也会乱
+方案一：使用原生 API scrollIntoView(true) focus时，定时器 setTimeout(() =&amp;gt; input.target.scrollIntoView(true), 200)
+方案二：focus时，改变自身定位及其他定位保持位置不变，blur时恢复。
+点击300ms穿透 建议方案：
+1、引入fastclick cdn文件，或者npm i fastclick, 再注册fastClick实例
+2、将click事件注册为touchstart事件立即执行
+iOS 的 webview 中 滑动不流畅 ios5.0及以后的版本里，滑动有定义两个值，一个是auto，一个是touch
+-webkit-overflow-scrolling: touch : 当手指从触摸屏上离开，会保持一段时间的滚动
+-webkit-overflow-scrolling: auto: 当手指从触摸屏上离开，滚动会立即停止
+在滚动容器上增加滚动touch方法，可能会导致的问题是 含有fixed的元素会随着页面一起滚动，解决方案；在
+body: { ​ overflow-y: hidden; } .box { ​ overflow-y: auto; ​ -webkit-overflow-scrolling: touch; }  iOS上拉边界与下拉会出现白色空白区域 产生原因: 在 iOS 中，手指按住屏幕上下拖动，会触发 touchmove 事件。这个事件触发的对象是整个 webview 容器，容器自然会被拖动，剩下的部分会成空白</description>
+    </item>
+    
+  </channel>
+</rss>

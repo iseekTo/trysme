@@ -10,9 +10,9 @@
   
   <meta name="keywords" content="blog">
   
-  <link rel="prev" href="https://iseekto.github.io/trysme/2020/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8react-hooks/" />
-  <link rel="next" href="https://iseekto.github.io/trysme/2020/mongodb%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/" />
-  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/taro%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" />
+  <link rel="prev" href="https://iseekto.github.io/trysme/2020/mongodb%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/" />
+  
+  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/charles%E5%9C%A8app%E4%B8%AD%E6%8A%93%E5%8C%85%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -22,10 +22,10 @@
   <title>
        
        
-           Taro注意事项 | wm&#39;s blog
+           Charles在app中抓包乱码问题的解决 | wm&#39;s blog
        
   </title>
-  <meta name="title" content="Taro注意事项 | wm&#39;s blog">
+  <meta name="title" content="Charles在app中抓包乱码问题的解决 | wm&#39;s blog">
     
   
   <link rel="stylesheet" href="/trysme/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/iseekto.github.io\/trysme\/"
     },
     "articleSection" : "posts",
-    "name" : "Taro注意事项",
-    "headline" : "Taro注意事项",
-    "description" : "",
+    "name" : "Charles在app中抓包乱码问题的解决",
+    "headline" : "Charles在app中抓包乱码问题的解决",
+    "description" : "Charles在抓取https协议的内容时会出现乱码\n解决方案：\n1、在菜单栏中找到 Proxy -\x26gt; SSL Proxying Settings\n2、在弹窗框中的 SSL Proxying 选项卡内的 Include 下方点击 Add\n3、什么都不填，默认所有域名都可捕获\n4、点击 ok 数据就正常显示了~",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -54,11 +54,11 @@
     "accountablePerson" : "_weimou",
     "copyrightHolder" : "_weimou",
     "copyrightYear" : "2020",
-    "datePublished": "2020-02-25 14:41:37 \x2b0800 CST",
-    "dateModified" : "2020-02-25 14:41:37 \x2b0800 CST",
-    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/taro%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9\/",
-    "wordCount" : "0",
-    "keywords" : [ "taro","question", "wm\x27s blog"]
+    "datePublished": "2020-02-27 09:47:56 \x2b0800 CST",
+    "dateModified" : "2020-02-27 09:47:56 \x2b0800 CST",
+    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/charles%E5%9C%A8app%E4%B8%AD%E6%8A%93%E5%8C%85%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3\/",
+    "wordCount" : "19",
+    "keywords" : [ "tool","question", "wm\x27s blog"]
 }
 </script>
 
@@ -135,14 +135,18 @@
           
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Taro注意事项</h1>
+        <h1 class="post-title" itemprop="name headline">Charles在app中抓包乱码问题的解决</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2020-02-25 itemprop="datePublished">February 25, 2020</time>
+                on <time datetime=2020-02-27 itemprop="datePublished">February 27, 2020</time>
                 </span>
                 in
-                
+                <i class="iconfont icon-folder"></i>
+                <span class="post-category">
+                        <a href="https://iseekto.github.io/trysme/categories/tool/"> tool </a>
+                        
+                </span>
                 
                 <a href="#gitalk-container" itemprop="discussionUrl">
                     <span class="gitalk-comment-count" itemprop="commentCount"></span>
@@ -223,7 +227,13 @@
           
           
 
-          
+          <p>Charles在抓取<code>https</code>协议的内容时会出现乱码<br />
+解决方案：<br />
+1、在菜单栏中找到 <code>Proxy</code> -&gt; <code>SSL Proxying Settings</code><br />
+2、在弹窗框中的 <code>SSL Proxying</code> 选项卡内的 <code>Include</code> 下方点击 <code>Add</code><br />
+3、什么都不填，默认所有域名都可捕获<br />
+4、点击 <code>ok</code> 数据就正常显示了~</p>
+
     </div>
 
     <div class="post-copyright">
@@ -238,7 +248,7 @@
             <p class="copyright-item">
                     <span>Link:</span>
                     
-                    <a href=https://iseekto.github.io/trysme/2020/taro%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/>
+                    <a href=https://iseekto.github.io/trysme/2020/charles%E5%9C%A8app%E4%B8%AD%E6%8A%93%E5%8C%85%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/>
                         <script>
                             document.write(decodeURI(location.origin + location.pathname))
                         </script>
@@ -258,8 +268,8 @@
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/taro/">
-                    #taro</a></span>
+            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/tool/">
+                    #tool</a></span>
             
             <span class="tag"><a href="https://iseekto.github.io/trysme/tags/question/">
                     #question</a></span>
@@ -274,10 +284,8 @@
 
     <div class="post-nav">
         
-        <a href="https://iseekto.github.io/trysme/2020/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8react-hooks/" class="prev" rel="prev" title="如何正确使用React Hooks"><i class="iconfont icon-left"></i>&nbsp;如何正确使用React Hooks</a>
+        <a href="https://iseekto.github.io/trysme/2020/mongodb%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/" class="prev" rel="prev" title="Mongodb相关问题"><i class="iconfont icon-left"></i>&nbsp;Mongodb相关问题</a>
          
-        
-        <a href="https://iseekto.github.io/trysme/2020/mongodb%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/" class="next" rel="next" title="Mongodb相关问题">Mongodb相关问题&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -299,7 +307,7 @@
       var gitalk = new Gitalk({
         
         id: location.pathname.substr(0, 50),
-        title: 'Taro注意事项',
+        title: 'Charles在app中抓包乱码问题的解决',
         clientID: '64ecd4438b6b3a3a9bd8',
         clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
         repo: 'trysme-comment',
