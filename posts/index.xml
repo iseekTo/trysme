@@ -6,10 +6,28 @@
     <description>Recent content in Posts on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Feb 2020 17:08:38 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 28 Feb 2020 11:25:01 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Pm2使用</title>
+      <link>https://iseekto.github.io/trysme/2020/pm2%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Fri, 28 Feb 2020 11:25:01 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/pm2%E4%BD%BF%E7%94%A8/</guid>
+      <description>安装: npm i pm2 -g
+查看版本：pm2 --version
+启动：pm2 start index.js 监听文件启动：pm2 start index.js --watch
+查看启动历史：pm2 list
+停止：pm2 stop &amp;lt;AppName&amp;gt;/&amp;lt;id&amp;gt;
+全部停止： pm2 stop all
+删除进程：pm2 delete &amp;lt;id&amp;gt;
+ pm2 常用配置
+ 根目录下，新建空文件 /logs/err.log 和 /logs/out.log 新建配置文件 pm2.conf.json
+// pm2.conf.json： { &amp;quot;apps&amp;quot;: { &amp;quot;name&amp;quot;: &amp;quot;pm2-test-server&amp;quot;, // 起个进程名，即AppName &amp;quot;script&amp;quot;: &amp;quot;index.js&amp;quot;, // 启动的入口文件（koa2项目中为/bin/www.js） &amp;quot;watch&amp;quot;: true, // 监听文件变化，自动重启 &amp;quot;ignore_watch&amp;quot;: [ // 不需要监听的文件 &amp;quot;node_modules&amp;quot;, &amp;quot;logs&amp;quot; ], &amp;quot;instances&amp;quot;: 4, // 设置多进程 &amp;quot;error_file&amp;quot;: &amp;quot;logs/err.log&amp;quot;, // 错误日志存储的文件 &amp;quot;out_file&amp;quot;: &amp;quot;logs/out.log&amp;quot;, // console.</description>
+    </item>
     
     <item>
       <title>Git冷门指令</title>

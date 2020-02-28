@@ -10,9 +10,9 @@
   
   <meta name="keywords" content="blog">
   
-  <link rel="prev" href="https://iseekto.github.io/trysme/2020/charles%E5%9C%A8app%E4%B8%AD%E6%8A%93%E5%8C%85%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/" />
-  <link rel="next" href="https://iseekto.github.io/trysme/2020/pm2%E4%BD%BF%E7%94%A8/" />
-  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/git%E5%86%B7%E9%97%A8%E6%8C%87%E4%BB%A4/" />
+  <link rel="prev" href="https://iseekto.github.io/trysme/2020/git%E5%86%B7%E9%97%A8%E6%8C%87%E4%BB%A4/" />
+  
+  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/pm2%E4%BD%BF%E7%94%A8/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -22,10 +22,10 @@
   <title>
        
        
-           Git冷门指令 | wm&#39;s blog
+           Pm2使用 | wm&#39;s blog
        
   </title>
-  <meta name="title" content="Git冷门指令 | wm&#39;s blog">
+  <meta name="title" content="Pm2使用 | wm&#39;s blog">
     
   
   <link rel="stylesheet" href="/trysme/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/iseekto.github.io\/trysme\/"
     },
     "articleSection" : "posts",
-    "name" : "Git冷门指令",
-    "headline" : "Git冷门指令",
-    "description" : "项目权限问题 对项目进行权限提升，导致没有更改的文件全部变成待提交状态，\n在根项目: git config core.filemode false\n代码库远程迁移后，修改本地代码关联的远程地址: git remote set-url origin your resp address",
+    "name" : "Pm2使用",
+    "headline" : "Pm2使用",
+    "description" : "安装: npm i pm2 -g\n查看版本：pm2 --version\n启动：pm2 start index.js 监听文件启动：pm2 start index.js --watch\n查看启动历史：pm2 list\n停止：pm2 stop \x26lt;AppName\x26gt;\/\x26lt;id\x26gt;\n全部停止： pm2 stop all\n删除进程：pm2 delete \x26lt;id\x26gt;\n pm2 常用配置\n 根目录下，新建空文件 \/logs\/err.log 和 \/logs\/out.log 新建配置文件 pm2.conf.json\n\/\/ pm2.conf.json： { \x26quot;apps\x26quot;: { \x26quot;name\x26quot;: \x26quot;pm2-test-server\x26quot;, \/\/ 起个进程名，即AppName \x26quot;script\x26quot;: \x26quot;index.js\x26quot;, \/\/ 启动的入口文件（koa2项目中为\/bin\/www.js） \x26quot;watch\x26quot;: true, \/\/ 监听文件变化，自动重启 \x26quot;ignore_watch\x26quot;: [ \/\/ 不需要监听的文件 \x26quot;node_modules\x26quot;, \x26quot;logs\x26quot; ], \x26quot;instances\x26quot;: 4, \/\/ 设置多进程 \x26quot;error_file\x26quot;: \x26quot;logs\/err.log\x26quot;, \/\/ 错误日志存储的文件 \x26quot;out_file\x26quot;: \x26quot;logs\/out.log\x26quot;, \/\/ console.",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -54,11 +54,11 @@
     "accountablePerson" : "_weimou",
     "copyrightHolder" : "_weimou",
     "copyrightYear" : "2020",
-    "datePublished": "2020-02-27 17:08:38 \x2b0800 CST",
-    "dateModified" : "2020-02-27 17:08:38 \x2b0800 CST",
-    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/git%E5%86%B7%E9%97%A8%E6%8C%87%E4%BB%A4\/",
-    "wordCount" : "15",
-    "keywords" : [ "tool","git", "wm\x27s blog"]
+    "datePublished": "2020-02-28 11:25:01 \x2b0800 CST",
+    "dateModified" : "2020-02-28 11:25:01 \x2b0800 CST",
+    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/pm2%E4%BD%BF%E7%94%A8\/",
+    "wordCount" : "109",
+    "keywords" : [ "tool","node", "wm\x27s blog"]
 }
 </script>
 
@@ -135,11 +135,11 @@
           
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Git冷门指令</h1>
+        <h1 class="post-title" itemprop="name headline">Pm2使用</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2020-02-27 itemprop="datePublished">February 27, 2020</time>
+                on <time datetime=2020-02-28 itemprop="datePublished">February 28, 2020</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
@@ -158,12 +158,7 @@
     <h2 class="post-toc-title"></h2>
     
     <div class="post-toc-content">
-      <nav id="TableOfContents">
-<ul>
-<li><a href="#项目权限问题">项目权限问题</a></li>
-<li><a href="#代码库远程迁移后-修改本地代码关联的远程地址">代码库远程迁移后，修改本地代码关联的远程地址:</a></li>
-</ul>
-</nav>
+      
     </div>
   </div>
   
@@ -232,16 +227,66 @@
           
           
 
-          
+          <p>安装: <code>npm i pm2 -g</code><br />
+查看版本：<code>pm2 --version</code></p>
 
-<h1 id="项目权限问题">项目权限问题</h1>
+<p>启动：<code>pm2 start index.js</code>
+监听文件启动：<code>pm2 start index.js --watch</code><br />
+查看启动历史：<code>pm2 list</code></p>
 
-<p>对项目进行权限提升，导致没有更改的文件全部变成待提交状态，<br />
-在根项目: <code>git config core.filemode false</code></p>
+<p>停止：<code>pm2 stop &lt;AppName&gt;/&lt;id&gt;</code><br />
+全部停止： <code>pm2 stop all</code></p>
 
-<h1 id="代码库远程迁移后-修改本地代码关联的远程地址">代码库远程迁移后，修改本地代码关联的远程地址:</h1>
+<p>删除进程：<code>pm2 delete &lt;id&gt;</code></p>
 
-<p><code>git remote set-url origin your resp address</code></p>
+<ul>
+<li><p>pm2 常用配置</p>
+
+<ul>
+<li>根目录下，新建空文件 <code>/logs/err.log</code> 和 <code>/logs/out.log</code></li>
+
+<li><p>新建配置文件 pm2.conf.json</p>
+
+<pre><code class="language-json">// pm2.conf.json：
+{
+&quot;apps&quot;: {
+&quot;name&quot;: &quot;pm2-test-server&quot;, // 起个进程名，即AppName
+&quot;script&quot;: &quot;index.js&quot;,  // 启动的入口文件（koa2项目中为/bin/www.js）
+&quot;watch&quot;: true,      // 监听文件变化，自动重启
+&quot;ignore_watch&quot;: [   // 不需要监听的文件
+    &quot;node_modules&quot;,
+    &quot;logs&quot;
+],
+&quot;instances&quot;: 4,   // 设置多进程
+&quot;error_file&quot;: &quot;logs/err.log&quot;,  // 错误日志存储的文件
+&quot;out_file&quot;: &quot;logs/out.log&quot;,    // console.log()打印的都会放进去
+&quot;log_date_format&quot;: &quot;YYYY-MM-DD HH:mm:ss&quot; // 给每行日志标记一个时间
+}
+}
+</code></pre></li>
+</ul></li>
+</ul>
+
+<p>修改package.json:</p>
+
+<pre><code class="language-json">{
+  &quot;name&quot;: &quot;pm2-demo&quot;,
+  &quot;main&quot;: &quot;index.js&quot;,
+  &quot;scripts&quot;: {
+    &quot;dev&quot;: &quot;cross-env NODE_ENV=dev nodemon index.js&quot;,
+    &quot;prod&quot;: &quot;cross-env NODE_ENV=production pm2 start pm2.conf.json&quot;
+  },
+  &quot;dependencies&quot;: {
+    &quot;cross-env&quot;: &quot;^5.2.0&quot;,
+    &quot;nodemon&quot;: &quot;^1.19.1&quot;
+  }
+}
+</code></pre>
+
+<p>配置完后，执行下面命令，即可启动项目</p>
+
+<pre><code class="language-js">npm run prod
+</code></pre>
 
     </div>
 
@@ -257,7 +302,7 @@
             <p class="copyright-item">
                     <span>Link:</span>
                     
-                    <a href=https://iseekto.github.io/trysme/2020/git%E5%86%B7%E9%97%A8%E6%8C%87%E4%BB%A4/>
+                    <a href=https://iseekto.github.io/trysme/2020/pm2%E4%BD%BF%E7%94%A8/>
                         <script>
                             document.write(decodeURI(location.origin + location.pathname))
                         </script>
@@ -280,8 +325,8 @@
             <span class="tag"><a href="https://iseekto.github.io/trysme/tags/tool/">
                     #tool</a></span>
             
-            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/git/">
-                    #git</a></span>
+            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/node/">
+                    #node</a></span>
             
             </section>
         
@@ -293,10 +338,8 @@
 
     <div class="post-nav">
         
-        <a href="https://iseekto.github.io/trysme/2020/charles%E5%9C%A8app%E4%B8%AD%E6%8A%93%E5%8C%85%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98%E7%9A%84%E8%A7%A3%E5%86%B3/" class="prev" rel="prev" title="Charles在app中抓包乱码问题的解决"><i class="iconfont icon-left"></i>&nbsp;Charles在app中抓包乱码问题的解决</a>
+        <a href="https://iseekto.github.io/trysme/2020/git%E5%86%B7%E9%97%A8%E6%8C%87%E4%BB%A4/" class="prev" rel="prev" title="Git冷门指令"><i class="iconfont icon-left"></i>&nbsp;Git冷门指令</a>
          
-        
-        <a href="https://iseekto.github.io/trysme/2020/pm2%E4%BD%BF%E7%94%A8/" class="next" rel="next" title="Pm2使用">Pm2使用&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -318,7 +361,7 @@
       var gitalk = new Gitalk({
         
         id: location.pathname.substr(0, 50),
-        title: 'Git冷门指令',
+        title: 'Pm2使用',
         clientID: '64ecd4438b6b3a3a9bd8',
         clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
         repo: 'trysme-comment',
