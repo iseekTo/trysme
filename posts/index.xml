@@ -6,10 +6,23 @@
     <description>Recent content in Posts on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 28 Feb 2020 11:25:01 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 07 Mar 2020 21:41:45 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Http协议</title>
+      <link>https://iseekto.github.io/trysme/2020/http%E5%8D%8F%E8%AE%AE/</link>
+      <pubDate>Sat, 07 Mar 2020 21:41:45 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/http%E5%8D%8F%E8%AE%AE/</guid>
+      <description>E-Tag
+Cache-Control
+Content-Type
+Content-Length
+Access-Control-Allow-Origin/Headers/Methods</description>
+    </item>
     
     <item>
       <title>Pm2使用</title>

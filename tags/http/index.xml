@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>http on wm&#39;s blog</title>
+    <link>https://iseekto.github.io/trysme/tags/http/</link>
+    <description>Recent content in http on wm&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 07 Mar 2020 21:41:45 +0800</lastBuildDate>
+    
+	<atom:link href="https://iseekto.github.io/trysme/tags/http/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Http协议</title>
+      <link>https://iseekto.github.io/trysme/2020/http%E5%8D%8F%E8%AE%AE/</link>
+      <pubDate>Sat, 07 Mar 2020 21:41:45 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/http%E5%8D%8F%E8%AE%AE/</guid>
+      <description>E-Tag
+Cache-Control
+Content-Type
+Content-Length
+Access-Control-Allow-Origin/Headers/Methods</description>
+    </item>
+    
+  </channel>
+</rss>
