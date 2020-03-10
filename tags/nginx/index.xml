@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nginx on wm&#39;s blog</title>
+    <link>https://iseekto.github.io/trysme/tags/nginx/</link>
+    <description>Recent content in nginx on wm&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 09 Mar 2020 20:10:29 +0800</lastBuildDate>
+    
+	<atom:link href="https://iseekto.github.io/trysme/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ngnix刷新404</title>
+      <link>https://iseekto.github.io/trysme/2020/ngnix%E5%88%B7%E6%96%B0404/</link>
+      <pubDate>Mon, 09 Mar 2020 20:10:29 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/ngnix%E5%88%B7%E6%96%B0404/</guid>
+      <description> 前端项目刷新404 解决：在项目的nginx配置文件里加入
+location / { try_files $uri $uri/ /index.html; }  </description>
+    </item>
+    
+  </channel>
+</rss>
