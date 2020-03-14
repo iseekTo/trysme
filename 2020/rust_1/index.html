@@ -10,9 +10,9 @@
   
   <meta name="keywords" content="blog">
   
-  <link rel="prev" href="https://iseekto.github.io/trysme/2020/http%E5%8D%8F%E8%AE%AE/" />
-  <link rel="next" href="https://iseekto.github.io/trysme/2020/rust_1/" />
-  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/ngnix%E5%88%B7%E6%96%B0404/" />
+  <link rel="prev" href="https://iseekto.github.io/trysme/2020/ngnix%E5%88%B7%E6%96%B0404/" />
+  
+  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/rust_1/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -22,10 +22,10 @@
   <title>
        
        
-           Ngnix刷新404 | wm&#39;s blog
+           Rust_常见命令 | wm&#39;s blog
        
   </title>
-  <meta name="title" content="Ngnix刷新404 | wm&#39;s blog">
+  <meta name="title" content="Rust_常见命令 | wm&#39;s blog">
     
   
   <link rel="stylesheet" href="/trysme/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/iseekto.github.io\/trysme\/"
     },
     "articleSection" : "posts",
-    "name" : "Ngnix刷新404",
-    "headline" : "Ngnix刷新404",
-    "description" : " 前端项目刷新404 解决：在项目的nginx配置文件里加入\nlocation \/ { try_files $uri $uri\/ \/index.html; }  ",
+    "name" : "Rust_常见命令",
+    "headline" : "Rust_常见命令",
+    "description" : "项目常用命令 1、创建项目 cargo new 项目名\n 源文件尽量放在src目录中 rustc .rs 可直接运行文件\n 2、打包项目\ncargo build: 打包一个目录及可执行文件 cargo run: 运行全部可执行文件（如果没有更改，则命令只运行二进制文件，反之则重新构建然后再运行） cargo check: 此命令快速检查您的代码，以确保其可编译，但不会产生可执行文件 （check比build快），因为它跳过了生成可执行文件的步骤  3、发布项目\n使用 cargo build --release 优化对其进行编译，此命令将在 target \/ release 中创建一个可执行文件",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -54,11 +54,11 @@
     "accountablePerson" : "_weimou",
     "copyrightHolder" : "_weimou",
     "copyrightYear" : "2020",
-    "datePublished": "2020-03-09 20:10:29 \x2b0800 CST",
-    "dateModified" : "2020-03-09 20:10:29 \x2b0800 CST",
-    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/ngnix%E5%88%B7%E6%96%B0404\/",
-    "wordCount" : "10",
-    "keywords" : [ "nginx", "wm\x27s blog"]
+    "datePublished": "2020-03-14 16:31:31 \x2b0800 CST",
+    "dateModified" : "2020-03-14 16:31:31 \x2b0800 CST",
+    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/rust_1\/",
+    "wordCount" : "30",
+    "keywords" : [ "rust", "wm\x27s blog"]
 }
 </script>
 
@@ -135,16 +135,16 @@
           
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Ngnix刷新404</h1>
+        <h1 class="post-title" itemprop="name headline">Rust_常见命令</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2020-03-09 itemprop="datePublished">March 9, 2020</time>
+                on <time datetime=2020-03-14 itemprop="datePublished">March 14, 2020</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://iseekto.github.io/trysme/categories/tool/"> tool </a>
+                        <a href="https://iseekto.github.io/trysme/categories/rust/"> rust </a>
                         
                 </span>
                 
@@ -160,7 +160,7 @@
     <div class="post-toc-content">
       <nav id="TableOfContents">
 <ul>
-<li><a href="#前端项目刷新404">前端项目刷新404</a></li>
+<li><a href="#项目常用命令">项目常用命令</a></li>
 </ul>
 </nav>
     </div>
@@ -233,14 +233,23 @@
 
           
 
-<h1 id="前端项目刷新404">前端项目刷新404</h1>
+<h1 id="项目常用命令">项目常用命令</h1>
 
-<p>解决：在项目的nginx配置文件里加入</p>
+<p>1、创建项目 <code>cargo new 项目名</code></p>
 
-<pre><code class="language-shell">location / {
-    try_files $uri $uri/ /index.html;
-}
+<blockquote>
+<p>源文件尽量放在src目录中  rustc .rs 可直接运行文件</p>
+</blockquote>
+
+<p>2、打包项目</p>
+
+<pre><code class="language-shell">cargo build: 打包一个目录及可执行文件  
+cargo run: 运行全部可执行文件（如果没有更改，则命令只运行二进制文件，反之则重新构建然后再运行）  
+cargo check: 此命令快速检查您的代码，以确保其可编译，但不会产生可执行文件 （check比build快），因为它跳过了生成可执行文件的步骤
 </code></pre>
+
+<p>3、发布项目<br />
+使用 <code>cargo build --release</code> 优化对其进行编译，此命令将在 <code>target / release</code> 中创建一个可执行文件</p>
 
     </div>
 
@@ -256,7 +265,7 @@
             <p class="copyright-item">
                     <span>Link:</span>
                     
-                    <a href=https://iseekto.github.io/trysme/2020/ngnix%E5%88%B7%E6%96%B0404/>
+                    <a href=https://iseekto.github.io/trysme/2020/rust_1/>
                         <script>
                             document.write(decodeURI(location.origin + location.pathname))
                         </script>
@@ -276,8 +285,8 @@
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/nginx/">
-                    #nginx</a></span>
+            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/rust/">
+                    #rust</a></span>
             
             </section>
         
@@ -289,10 +298,8 @@
 
     <div class="post-nav">
         
-        <a href="https://iseekto.github.io/trysme/2020/http%E5%8D%8F%E8%AE%AE/" class="prev" rel="prev" title="Http协议"><i class="iconfont icon-left"></i>&nbsp;Http协议</a>
+        <a href="https://iseekto.github.io/trysme/2020/ngnix%E5%88%B7%E6%96%B0404/" class="prev" rel="prev" title="Ngnix刷新404"><i class="iconfont icon-left"></i>&nbsp;Ngnix刷新404</a>
          
-        
-        <a href="https://iseekto.github.io/trysme/2020/rust_1/" class="next" rel="next" title="Rust_常见命令">Rust_常见命令&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -314,7 +321,7 @@
       var gitalk = new Gitalk({
         
         id: location.pathname.substr(0, 50),
-        title: 'Ngnix刷新404',
+        title: 'Rust_常见命令',
         clientID: '64ecd4438b6b3a3a9bd8',
         clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
         repo: 'trysme-comment',
