@@ -10,9 +10,9 @@
   
   <meta name="keywords" content="blog">
   
-  <link rel="prev" href="https://iseekto.github.io/trysme/2020/rust_1/" />
-  <link rel="next" href="https://iseekto.github.io/trysme/2020/tree%E5%91%BD%E4%BB%A4/" />
-  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/ts%E9%A1%B9%E7%9B%AE%E4%B8%8Ewebpack%E9%85%8D%E7%BD%AE%E8%B7%AF%E5%BE%84%E5%88%AB%E5%90%8D/" />
+  <link rel="prev" href="https://iseekto.github.io/trysme/2020/ts%E9%A1%B9%E7%9B%AE%E4%B8%8Ewebpack%E9%85%8D%E7%BD%AE%E8%B7%AF%E5%BE%84%E5%88%AB%E5%90%8D/" />
+  
+  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/tree%E5%91%BD%E4%BB%A4/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -22,10 +22,10 @@
   <title>
        
        
-           Ts项目与webpack配置路径别名 | wm&#39;s blog
+           Tree命令 | wm&#39;s blog
        
   </title>
-  <meta name="title" content="Ts项目与webpack配置路径别名 | wm&#39;s blog">
+  <meta name="title" content="Tree命令 | wm&#39;s blog">
     
   
   <link rel="stylesheet" href="/trysme/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/iseekto.github.io\/trysme\/"
     },
     "articleSection" : "posts",
-    "name" : "Ts项目与webpack配置路径别名",
-    "headline" : "Ts项目与webpack配置路径别名",
-    "description" : "webpack与ts项目配置路径别名的问题 1、can not find xxx module\n解决方案：\n\/\/ 1、首先安装 awesome-typescript-loader cnpm i awesome-typescript-loader -S \/\/ 2、webpack.config.js const { TsConfigPathsPlugin } = require(\x27awesome-typescript-loader\x27); resolve: { plugins: [ new TsConfigPathsPlugin() ] } \/\/ 3、tsconfig.json { \x26quot;compilerOptions\x26quot;: { ... \x26quot;rootDir\x26quot;: \x26quot;.\x26quot;, \x26quot;paths\x26quot;: { \x26quot;@src\/*\x26quot;: [ \x26quot;src\/lib\/*\x26quot; ], \x26quot;@util\/*\x26quot;: [ \x26quot;src\/util\/*\x26quot; ] } } }  配置成功后 如下图所示，已经显示了我们配置的两个路径别名！ 详情资料请前往 TS中文网\x26ndash;模块解析",
+    "name" : "Tree命令",
+    "headline" : "Tree命令",
+    "description" : "tree 显示当前全部目录及全部子文件\ntree -d 只显示文件夹\ntree -L n n表示目录的层级\n例如：tree -L 3",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -54,11 +54,11 @@
     "accountablePerson" : "_weimou",
     "copyrightHolder" : "_weimou",
     "copyrightYear" : "2020",
-    "datePublished": "2020-03-18 13:49:32 \x2b0800 CST",
-    "dateModified" : "2020-03-18 13:49:32 \x2b0800 CST",
-    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/ts%E9%A1%B9%E7%9B%AE%E4%B8%8Ewebpack%E9%85%8D%E7%BD%AE%E8%B7%AF%E5%BE%84%E5%88%AB%E5%90%8D\/",
-    "wordCount" : "55",
-    "keywords" : [ "ts","question", "wm\x27s blog"]
+    "datePublished": "2020-03-20 10:49:09 \x2b0800 CST",
+    "dateModified" : "2020-03-20 10:49:09 \x2b0800 CST",
+    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/tree%E5%91%BD%E4%BB%A4\/",
+    "wordCount" : "12",
+    "keywords" : [ "tool", "wm\x27s blog"]
 }
 </script>
 
@@ -135,16 +135,16 @@
           
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Ts项目与webpack配置路径别名</h1>
+        <h1 class="post-title" itemprop="name headline">Tree命令</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2020-03-18 itemprop="datePublished">March 18, 2020</time>
+                on <time datetime=2020-03-20 itemprop="datePublished">March 20, 2020</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://iseekto.github.io/trysme/categories/typescript/"> TypeScript </a>
+                        <a href="https://iseekto.github.io/trysme/categories/tool/"> tool </a>
                         
                 </span>
                 
@@ -158,11 +158,7 @@
     <h2 class="post-toc-title"></h2>
     
     <div class="post-toc-content">
-      <nav id="TableOfContents">
-<ul>
-<li><a href="#webpack与ts项目配置路径别名的问题">webpack与ts项目配置路径别名的问题</a></li>
-</ul>
-</nav>
+      
     </div>
   </div>
   
@@ -219,8 +215,6 @@
         
 
         
-            
-        
 
         
         
@@ -233,44 +227,10 @@
           
           
 
-          
-
-<h1 id="webpack与ts项目配置路径别名的问题">webpack与ts项目配置路径别名的问题</h1>
-
-<p>1、<code>can not find xxx module</code></p>
-
-<p>解决方案：</p>
-
-<pre><code class="language-js">// 1、首先安装 awesome-typescript-loader  
-cnpm i awesome-typescript-loader -S  
-// 2、webpack.config.js
-const { TsConfigPathsPlugin } = require('awesome-typescript-loader');
-resolve: {
-    plugins: [
-        new TsConfigPathsPlugin()
-    ]
-}
-// 3、tsconfig.json
-{
-  &quot;compilerOptions&quot;: {
-        ...
-        &quot;rootDir&quot;: &quot;.&quot;,
-        &quot;paths&quot;: {
-            &quot;@src/*&quot;: [
-                &quot;src/lib/*&quot;
-            ],
-            &quot;@util/*&quot;: [
-                &quot;src/util/*&quot;
-            ]
-        }
-    }
-}
-</code></pre>
-
-<p>配置成功后 如下图所示，已经显示了我们配置的两个路径别名！
-<figure><img src="/images/ring.svg" data-sizes="auto" data-src="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202003/18/cc43b_20200318140029.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></p>
-
-<p>详情资料请前往 <a href="https://www.tslang.cn/docs/handbook/module-resolution.html" rel="nofollow noreferrer" target="_blank">TS中文网&ndash;模块解析</a></p>
+          <p><code>tree</code> 显示当前全部目录及全部子文件<br />
+<code>tree -d</code> 只显示文件夹<br />
+<code>tree -L n</code> n表示目录的层级<br />
+例如：<code>tree -L 3</code></p>
 
     </div>
 
@@ -286,7 +246,7 @@ resolve: {
             <p class="copyright-item">
                     <span>Link:</span>
                     
-                    <a href=https://iseekto.github.io/trysme/2020/ts%E9%A1%B9%E7%9B%AE%E4%B8%8Ewebpack%E9%85%8D%E7%BD%AE%E8%B7%AF%E5%BE%84%E5%88%AB%E5%90%8D/>
+                    <a href=https://iseekto.github.io/trysme/2020/tree%E5%91%BD%E4%BB%A4/>
                         <script>
                             document.write(decodeURI(location.origin + location.pathname))
                         </script>
@@ -306,11 +266,8 @@ resolve: {
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/ts/">
-                    #ts</a></span>
-            
-            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/question/">
-                    #question</a></span>
+            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/tool/">
+                    #tool</a></span>
             
             </section>
         
@@ -322,10 +279,8 @@ resolve: {
 
     <div class="post-nav">
         
-        <a href="https://iseekto.github.io/trysme/2020/rust_1/" class="prev" rel="prev" title="Rust_常见命令"><i class="iconfont icon-left"></i>&nbsp;Rust_常见命令</a>
+        <a href="https://iseekto.github.io/trysme/2020/ts%E9%A1%B9%E7%9B%AE%E4%B8%8Ewebpack%E9%85%8D%E7%BD%AE%E8%B7%AF%E5%BE%84%E5%88%AB%E5%90%8D/" class="prev" rel="prev" title="Ts项目与webpack配置路径别名"><i class="iconfont icon-left"></i>&nbsp;Ts项目与webpack配置路径别名</a>
          
-        
-        <a href="https://iseekto.github.io/trysme/2020/tree%E5%91%BD%E4%BB%A4/" class="next" rel="next" title="Tree命令">Tree命令&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -347,7 +302,7 @@ resolve: {
       var gitalk = new Gitalk({
         
         id: location.pathname.substr(0, 50),
-        title: 'Ts项目与webpack配置路径别名',
+        title: 'Tree命令',
         clientID: '64ecd4438b6b3a3a9bd8',
         clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
         repo: 'trysme-comment',
@@ -423,9 +378,8 @@ resolve: {
 
 
     
-     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
-      
-     <script src="/trysme/js/vendor_gallery.min.js" async="" ></script>
+    
+    <script src="/trysme/js/vendor_no_gallery.min.js" async=""></script>
     
   
 
