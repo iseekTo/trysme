@@ -81,7 +81,11 @@ location / { try_files $uri $uri/ /index.html; }  </description>
       <guid>https://iseekto.github.io/trysme/2020/git%E5%86%B7%E9%97%A8%E6%8C%87%E4%BB%A4/</guid>
       <description>项目权限问题 对项目进行权限提升，导致没有更改的文件全部变成待提交状态，
 在根项目: git config core.filemode false
-代码库远程迁移后，修改本地代码关联的远程地址: git remote set-url origin your resp address</description>
+代码库远程迁移后，修改本地代码关联的远程地址: git remote set-url origin your resp address
+复制指定commit号的内容 ✨ git cherry-pick commitID
+提交日志图化，是否平行提交 ✨ git log --oneline --graph
+通过rebase合并分支 ✨ git rebase
+将冲突修改完后: git rebase --continue</description>
     </item>
     
     <item>
