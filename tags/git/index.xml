@@ -6,10 +6,25 @@
     <description>Recent content in git on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Feb 2020 17:08:38 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2020 10:36:02 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Git Rebase简单使用</title>
+      <link>https://iseekto.github.io/trysme/2020/git-rebase%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Wed, 15 Apr 2020 10:36:02 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/git-rebase%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/</guid>
+      <description> 多个commit合成一个并提交远程  git log 选清楚要合并的commit id，从早提交的一个开始算起，到你想合并的commit区间
+ git rebase -i HEAD~3 (或者你的commit id 区间)
+ 此时弹出一个vim交互页面，如果commit过多，则底部输入指令 %s/pick/s/g
+ 指令解释: 批量替换，将pick字节的改为squash(简写s), g全部 有一个需要改一下，在command处的我们把它给还原即可
+  执行完毕如果又出现，successfully updated&amp;hellip; 然后会出现一个无序数字字母组成的分支名
+ 执行 git checkout -b new branch git add . git commit -m &#39;some msg&#39; git push 可选，多余分支删掉即可。
+  </description>
+    </item>
     
     <item>
       <title>Git冷门指令</title>
@@ -21,9 +36,7 @@
 在根项目: git config core.filemode false
 代码库远程迁移后，修改本地代码关联的远程地址: git remote set-url origin your resp address
 复制指定commit号的内容 ✨ git cherry-pick commitID
-提交日志图化，是否平行提交 ✨ git log --oneline --graph
-通过rebase合并分支 ✨ git rebase
-将冲突修改完后: git rebase --continue</description>
+提交日志图化，是否平行提交 ✨ git log --oneline --graph</description>
     </item>
     
   </channel>
