@@ -52,7 +52,7 @@
     </url>
   
     <url>
-      <loc>https://iseekto.github.io/trysme/tags/tool/</loc>
+      <loc>https://iseekto.github.io/trysme/categories/tool/</loc>
       
       <lastmod>2020-04-15T10:36:02+08:00</lastmod>
       
@@ -62,7 +62,7 @@
     </url>
   
     <url>
-      <loc>https://iseekto.github.io/trysme/categories/tool/</loc>
+      <loc>https://iseekto.github.io/trysme/tags/tool/</loc>
       
       <lastmod>2020-04-15T10:36:02+08:00</lastmod>
       
@@ -75,36 +75,6 @@
       <loc>https://iseekto.github.io/trysme/</loc>
       
       <lastmod>2020-04-15T10:36:02+08:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://iseekto.github.io/trysme/categories/css/</loc>
-      
-      <lastmod>2020-03-27T13:52:48+08:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://iseekto.github.io/trysme/tags/css/</loc>
-      
-      <lastmod>2020-03-27T13:52:48+08:00</lastmod>
-      
-      
-      
-      
-    </url>
-  
-    <url>
-      <loc>https://iseekto.github.io/trysme/2020/css%E6%8A%80%E5%B7%A7/</loc>
-      
-      <lastmod>2020-03-27T13:52:48+08:00</lastmod>
       
       
       
@@ -502,6 +472,26 @@
     </url>
   
     <url>
+      <loc>https://iseekto.github.io/trysme/categories/css/</loc>
+      
+      <lastmod>2020-01-21T20:31:19+08:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://iseekto.github.io/trysme/tags/css/</loc>
+      
+      <lastmod>2020-01-21T20:31:19+08:00</lastmod>
+      
+      
+      
+      
+    </url>
+  
+    <url>
       <loc>https://iseekto.github.io/trysme/2020/css%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/</loc>
       
       <lastmod>2020-01-21T20:31:19+08:00</lastmod>
@@ -607,6 +597,16 @@
       <lastmod>2020-01-15T18:26:38+08:00</lastmod>
       
       
+      
+      
+    </url>
+  
+    <url>
+      <loc>https://iseekto.github.io/trysme/1/css%E6%8A%80%E5%B7%A7/</loc>
+      
+      
+      
+      <priority>0</priority>
       
       
     </url>

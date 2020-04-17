@@ -21,15 +21,6 @@
     </item>
     
     <item>
-      <title>css</title>
-      <link>https://iseekto.github.io/trysme/categories/css/</link>
-      <pubDate>Fri, 27 Mar 2020 13:52:48 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/categories/css/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>兼容问题</title>
       <link>https://iseekto.github.io/trysme/categories/%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/</link>
       <pubDate>Fri, 20 Mar 2020 13:26:39 +0800</pubDate>
@@ -75,7 +66,7 @@
     </item>
     
     <item>
-      <title>React</title>
+      <title>react</title>
       <link>https://iseekto.github.io/trysme/categories/react/</link>
       <pubDate>Tue, 25 Feb 2020 14:08:13 +0800</pubDate>
       
@@ -89,6 +80,15 @@
       <pubDate>Mon, 27 Jan 2020 20:41:43 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/categories/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>css</title>
+      <link>https://iseekto.github.io/trysme/categories/css/</link>
+      <pubDate>Tue, 21 Jan 2020 20:31:19 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/categories/css/</guid>
       <description></description>
     </item>
     

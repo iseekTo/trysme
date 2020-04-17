@@ -27,15 +27,6 @@
     </item>
     
     <item>
-      <title>Css技巧</title>
-      <link>https://iseekto.github.io/trysme/2020/css%E6%8A%80%E5%B7%A7/</link>
-      <pubDate>Fri, 27 Mar 2020 13:52:48 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/2020/css%E6%8A%80%E5%B7%A7/</guid>
-      <description>select内容居中显示、下拉内容右对齐 select { text-align: center; text-align-last: center; } select option { direction: rtl; }  修改input输入框中光标的颜色不改变字体的颜色 input { color: #fff; caret-color: red; }  修改input 输入框中 placeholder 默认字体样式 /* webkit内核的浏览器 */ input::-webkit-input-placeholder { color: #c2c6ce; } /* Firefox版本4-18 */ input:-moz-placeholder { color: #c2c6ce; } /* Firefox版本19+ */ input::-moz-placeholder { color: #c2c6ce; } /* IE浏览器 */ input:-ms-input-placeholder { color: #c2c6ce; }  transfrom的rotate属性在span标签下失效 span { display: inline-block; }  cursor属性 .</description>
-    </item>
-    
-    <item>
       <title>微信内置浏览器缓存问题</title>
       <link>https://iseekto.github.io/trysme/2020/%E5%BE%AE%E4%BF%A1%E5%86%85%E7%BD%AE%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E9%97%AE%E9%A2%98/</link>
       <pubDate>Fri, 20 Mar 2020 13:26:39 +0800</pubDate>
@@ -434,6 +425,16 @@ iOS 的 webview 中 滑动不流畅 ios5.0及以后的版本里，滑动有定�
 -webkit-overflow-scrolling: auto: 当手指从触摸屏上离开，滚动会立即停止
 在滚动容器上增加滚动touch方法，可能会导致的问题是 含有fixed的元素会随着页面一起滚动，解决方案；在
 body: { ​ overflow-y: hidden; } .box { ​ overflow-y: auto; ​ -webkit-overflow-scrolling: touch; }  iOS上拉边界与下拉会出现白色空白区域 产生原因: 在 iOS 中，手指按住屏幕上下拖动，会触发 touchmove 事件。这个事件触发的对象是整个 webview 容器，容器自然会被拖动，剩下的部分会成空白</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://iseekto.github.io/trysme/1/css%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/1/css%E6%8A%80%E5%B7%A7/</guid>
+      <description>title: &amp;ldquo;Css技巧&amp;rdquo; date: 2020-03-27T13:52:48+08:00 categories: [&amp;lsquo;css&amp;rsquo;]
+tags: [&amp;lsquo;css&amp;rsquo;] select内容居中显示、下拉内容右对齐 select { text-align: center; text-align-last: center; } select option { direction: rtl; }  修改input输入框中光标的颜色不改变字体的颜色 input { color: #fff; caret-color: red; }  修改input 输入框中 placeholder 默认字体样式 /* webkit内核的浏览器 */ input::-webkit-input-placeholder { color: #c2c6ce; } /* Firefox版本4-18 */ input:-moz-placeholder { color: #c2c6ce; } /* Firefox版本19+ */ input::-moz-placeholder { color: #c2c6ce; } /* IE浏览器 */ input:-ms-input-placeholder { color: #c2c6ce; }  transfrom的rotate属性在span标签下失效 span { display: inline-block; }  cursor属性 .</description>
     </item>
     
   </channel>

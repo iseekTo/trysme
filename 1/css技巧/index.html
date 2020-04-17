@@ -10,9 +10,9 @@
   
   <meta name="keywords" content="blog">
   
-  <link rel="prev" href="https://iseekto.github.io/trysme/1/css%E6%8A%80%E5%B7%A7/" />
-  <link rel="next" href="https://iseekto.github.io/trysme/2020/makedown/" />
-  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/ios%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/" />
+  
+  <link rel="next" href="https://iseekto.github.io/trysme/2020/ios%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/" />
+  <link rel="canonical" href="https://iseekto.github.io/trysme/1/css%E6%8A%80%E5%B7%A7/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -22,10 +22,10 @@
   <title>
        
        
-           iOS兼容问题 | wm&#39;s blog
+            | wm&#39;s blog
        
   </title>
-  <meta name="title" content="iOS兼容问题 | wm&#39;s blog">
+  <meta name="title" content=" | wm&#39;s blog">
     
   
   <link rel="stylesheet" href="/trysme/font/iconfont.css">
@@ -44,21 +44,21 @@
          "@id": "https:\/\/iseekto.github.io\/trysme\/"
     },
     "articleSection" : "posts",
-    "name" : "iOS兼容问题",
-    "headline" : "iOS兼容问题",
-    "description" : "前置条件：在不使用第三方封装好的ui库，比如跨端框架Taro。\n input兼容问题 1、掉起输入框英文键盘，第一个字母为大写的问题\n\x26lt;input type=\x26quot;text\x26quot; autocapitalize=\x26quot;off\x26quot; \/\x26gt; \n2、在靠近底部触发input输入框，输入完成后，页面底部留白问题\n注册blur事件及定时器变量方便下一个focus时清除此使用，使用document.scrollIntoView()，然后在加上window.scrollTo(0, document.body.scrollHeight) 来重置高度\n3、获取焦点时，光标错位\n加上如下css样式user-select: text 如下js input.target.scrollIntoView(true)\n4、输入框获取焦点时，页面输入框被覆盖，定位的元素位置错乱\n可能性：当input位于fixed底部时，输入法弹出后，fixed会失效，页面的定位元素也会乱\n方案一：使用原生 API scrollIntoView(true) focus时，定时器 setTimeout(() =\x26gt; input.target.scrollIntoView(true), 200)\n方案二：focus时，改变自身定位及其他定位保持位置不变，blur时恢复。\n点击300ms穿透 建议方案：\n1、引入fastclick cdn文件，或者npm i fastclick, 再注册fastClick实例\n2、将click事件注册为touchstart事件立即执行\niOS 的 webview 中 滑动不流畅 ios5.0及以后的版本里，滑动有定义两个值，一个是auto，一个是touch\n-webkit-overflow-scrolling: touch : 当手指从触摸屏上离开，会保持一段时间的滚动\n-webkit-overflow-scrolling: auto: 当手指从触摸屏上离开，滚动会立即停止\n在滚动容器上增加滚动touch方法，可能会导致的问题是 含有fixed的元素会随着页面一起滚动，解决方案；在\nbody: { ​ overflow-y: hidden; } .box { ​ overflow-y: auto; ​ -webkit-overflow-scrolling: touch; }  iOS上拉边界与下拉会出现白色空白区域 产生原因: 在 iOS 中，手指按住屏幕上下拖动，会触发 touchmove 事件。这个事件触发的对象是整个 webview 容器，容器自然会被拖动，剩下的部分会成空白",
+    "name" : "",
+    "headline" : "",
+    "description" : "title: \x26ldquo;Css技巧\x26rdquo; date: 2020-03-27T13:52:48\x2b08:00 categories: [\x26lsquo;css\x26rsquo;]\ntags: [\x26lsquo;css\x26rsquo;] select内容居中显示、下拉内容右对齐 select { text-align: center; text-align-last: center; } select option { direction: rtl; }  修改input输入框中光标的颜色不改变字体的颜色 input { color: #fff; caret-color: red; }  修改input 输入框中 placeholder 默认字体样式 \/* webkit内核的浏览器 *\/ input::-webkit-input-placeholder { color: #c2c6ce; } \/* Firefox版本4-18 *\/ input:-moz-placeholder { color: #c2c6ce; } \/* Firefox版本19\x2b *\/ input::-moz-placeholder { color: #c2c6ce; } \/* IE浏览器 *\/ input:-ms-input-placeholder { color: #c2c6ce; }  transfrom的rotate属性在span标签下失效 span { display: inline-block; }  cursor属性 .",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
     "publisher": "_weimou",
     "accountablePerson" : "_weimou",
     "copyrightHolder" : "_weimou",
-    "copyrightYear" : "2020",
-    "datePublished": "2020-01-15 18:26:38 \x2b0800 CST",
-    "dateModified" : "2020-01-15 18:26:38 \x2b0800 CST",
-    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/ios%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98\/",
-    "wordCount" : "91",
-    "keywords" : [ "question", "wm\x27s blog"]
+    "copyrightYear" : "0001",
+    "datePublished": "0001-01-01 00:00:00 \x2b0000 UTC",
+    "dateModified" : "0001-01-01 00:00:00 \x2b0000 UTC",
+    "url" : "https:\/\/iseekto.github.io\/trysme\/1\/css%E6%8A%80%E5%B7%A7\/",
+    "wordCount" : "171",
+    "keywords" : [  "wm\x27s blog"]
 }
 </script>
 
@@ -135,18 +135,14 @@
           
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">iOS兼容问题</h1>
+        <h1 class="post-title" itemprop="name headline"></h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2020-01-15 itemprop="datePublished">January 15, 2020</time>
+                on <time datetime=0001-01-01 itemprop="datePublished">January 1, 0001</time>
                 </span>
                 in
-                <i class="iconfont icon-folder"></i>
-                <span class="post-category">
-                        <a href="https://iseekto.github.io/trysme/categories/%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/"> 兼容问题 </a>
-                        
-                </span>
+                
                 
                 <a href="#gitalk-container" itemprop="discussionUrl">
                     <span class="gitalk-comment-count" itemprop="commentCount"></span>
@@ -160,10 +156,17 @@
     <div class="post-toc-content">
       <nav id="TableOfContents">
 <ul>
-<li><a href="#input兼容问题">input兼容问题</a></li>
-<li><a href="#点击300ms穿透">点击300ms穿透</a></li>
-<li><a href="#ios-的-webview-中-滑动不流畅">iOS 的 webview 中 滑动不流畅</a></li>
-<li><a href="#ios上拉边界与下拉会出现白色空白区域">iOS上拉边界与下拉会出现白色空白区域</a></li>
+<li>
+<ul>
+<li><a href="#tags-css">tags: [&lsquo;css&rsquo;]</a></li>
+</ul></li>
+<li><a href="#select内容居中显示-下拉内容右对齐">select内容居中显示、下拉内容右对齐</a></li>
+<li><a href="#修改input输入框中光标的颜色不改变字体的颜色">修改input输入框中光标的颜色不改变字体的颜色</a></li>
+<li><a href="#修改input-输入框中-placeholder-默认字体样式">修改input 输入框中 placeholder 默认字体样式</a></li>
+<li><a href="#transfrom的rotate属性在span标签下失效">transfrom的rotate属性在span标签下失效</a></li>
+<li><a href="#cursor属性">cursor属性</a></li>
+<li><a href="#自动换行">自动换行</a></li>
+<li><a href="#解决translatex造成其他元素抖动">解决translateX造成其他元素抖动</a></li>
 </ul>
 </nav>
     </div>
@@ -236,89 +239,107 @@
 
           
 
-<blockquote>
-<p>前置条件：在不使用第三方封装好的ui库，比如跨端框架Taro。</p>
-</blockquote>
-
-<h1 id="input兼容问题">input兼容问题</h1>
-
-<p>1、掉起输入框英文键盘，第一个字母为大写的问题</p>
-
-<p><code>&lt;input type=&quot;text&quot; autocapitalize=&quot;off&quot; /&gt;
-</code></p>
-
-<p>2、在靠近底部触发input输入框，输入完成后，页面底部留白问题</p>
-
-<p>注册blur事件及定时器变量方便下一个focus时清除此使用，使用<code>document.scrollIntoView()</code>，然后在加上<code>window.scrollTo(0, document.body.scrollHeight)</code> 来重置高度</p>
-
-<p>3、获取焦点时，光标错位</p>
-
-<p>加上如下css样式<code>user-select: text</code>
-如下js <code>input.target.scrollIntoView(true)</code></p>
-
-<p>4、输入框获取焦点时，页面输入框被覆盖，定位的元素位置错乱</p>
-
-<p>可能性：当input位于fixed底部时，输入法弹出后，fixed会失效，页面的定位元素也会乱</p>
-
-<p>方案一：使用原生 <code>API scrollIntoView(true)</code> focus时，定时器 <code>setTimeout(() =&gt; input.target.scrollIntoView(true), 200)</code></p>
-
-<p>方案二：focus时，改变自身定位及其他定位保持位置不变，blur时恢复。</p>
-
 <hr />
 
-<h1 id="点击300ms穿透">点击300ms穿透</h1>
+<p>title: &ldquo;Css技巧&rdquo;
+date: 2020-03-27T13:52:48+08:00
+categories: [&lsquo;css&rsquo;]</p>
 
-<p>建议方案：</p>
+<h2 id="tags-css">tags: [&lsquo;css&rsquo;]</h2>
 
-<p>1、引入fastclick cdn文件，或者<code>npm i fastclick</code>, 再注册fastClick实例</p>
+<h1 id="select内容居中显示-下拉内容右对齐">select内容居中显示、下拉内容右对齐</h1>
 
-<p>2、将click事件注册为touchstart事件立即执行</p>
-
-<hr />
-
-<h1 id="ios-的-webview-中-滑动不流畅">iOS 的 webview 中 滑动不流畅</h1>
-
-<p>ios5.0及以后的版本里，滑动有定义两个值，一个是auto，一个是touch</p>
-
-<p><code>-webkit-overflow-scrolling: touch</code> : 当手指从触摸屏上离开，会保持一段时间的滚动</p>
-
-<p><code>-webkit-overflow-scrolling: auto</code>: 当手指从触摸屏上离开，滚动会立即停止</p>
-
-<p>在滚动容器上增加滚动touch方法，可能会导致的问题是 含有fixed的元素会随着页面一起滚动，解决方案；在</p>
-
-<pre><code class="language-css">    body: {
-​       overflow-y: hidden;
-    }
-
-  .box {
-​    overflow-y: auto;
-​    -webkit-overflow-scrolling: touch;
-    }
+<pre><code class="language-css">select {
+    text-align: center;
+    text-align-last: center;
+}
+select option {
+    direction: rtl;
+}
 </code></pre>
 
-<hr />
+<h1 id="修改input输入框中光标的颜色不改变字体的颜色">修改input输入框中光标的颜色不改变字体的颜色</h1>
 
-<h1 id="ios上拉边界与下拉会出现白色空白区域">iOS上拉边界与下拉会出现白色空白区域</h1>
-
-<p>产生原因:
-在 iOS 中，手指按住屏幕上下拖动，会触发 <code>touchmove</code> 事件。这个事件触发的对象是整个 webview 容器，容器自然会被拖动，剩下的部分会成空白</p>
-
-<p>解决方案：
-1、监听事件禁止滑动
-例如：</p>
-
-<pre><code class="language-javascript">document.body.addEventListener('touchmove', function(e) {
-	if(e._isScroller) return;
-        // 阻止默认事件
-  	    e.preventDefault();
-  	}, {
-        passive: false
-    });
+<pre><code class="language-css">input {
+    color:  #fff;
+    caret-color: red;
+}
 </code></pre>
 
-<blockquote>
-<p>由此可扩展出一个功能，下拉刷新上拉加载。</p>
-</blockquote>
+<h1 id="修改input-输入框中-placeholder-默认字体样式">修改input 输入框中 placeholder 默认字体样式</h1>
+
+<pre><code class="language-css">/* webkit内核的浏览器  */
+input::-webkit-input-placeholder {
+    color: #c2c6ce;
+}
+/* Firefox版本4-18  */
+input:-moz-placeholder {
+    color: #c2c6ce;
+}
+/* Firefox版本19+ */
+input::-moz-placeholder {
+    color: #c2c6ce;
+}
+/* IE浏览器 */
+input:-ms-input-placeholder {
+    color: #c2c6ce;
+}
+</code></pre>
+
+<h1 id="transfrom的rotate属性在span标签下失效">transfrom的rotate属性在span标签下失效</h1>
+
+<pre><code class="language-css">span {
+    display: inline-block;
+}
+</code></pre>
+
+<h1 id="cursor属性">cursor属性</h1>
+
+<pre><code class="language-css">.wrap {
+    cursor: pointer; /* 小手指；*/
+    cursor: help; /* 箭头加问号；*/
+    cursor: move;   /* 移动光标 */
+    cursor: crosshair;  /* 十字光标 */
+    cursor: wait;   /* 转圈圈 */
+}
+</code></pre>
+
+<h1 id="自动换行">自动换行</h1>
+
+<pre><code class="language-css">.wrap {
+    word-wrap: break-word;
+    word-break: normal;
+}
+
+/* 单行文本 */
+.wrap {
+	overflow:hidden;    /*超出部分隐藏*/
+	text-overflow:ellipsis;   /*超出部分显示省略号*/
+	white-space:nowrap;   /*规定段落中的文本不进行换行 */
+}
+
+/* 多行文本 */
+.wrap {
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;   /* 将对象作为弹性伸缩盒子模型显示  *必须结合的属性* */
+    -webkit-box-orient: vertical;   /* 设置伸缩盒对象的子元素的排列方式  *必须结合的属性* */
+    -webkit-line-clamp: 3;   /* 用来限制在一个块元素中显示的文本的行数  */
+    word-break: break-all;   /* 让浏览器实现在任意位置的换行 *break-all为允许在单词内换行*  */
+}
+</code></pre>
+
+<h1 id="解决translatex造成其他元素抖动">解决translateX造成其他元素抖动</h1>
+
+<pre><code class="language-css">/* 容器元素 */  
+.box {
+    backface-visibility: hidden;
+}
+.translateXEle {
+    transform: translateZ(0);
+    transform: translate3d(0, 0, 0);
+}
+</code></pre>
 
     </div>
 
@@ -334,7 +355,7 @@
             <p class="copyright-item">
                     <span>Link:</span>
                     
-                    <a href=https://iseekto.github.io/trysme/2020/ios%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/>
+                    <a href=https://iseekto.github.io/trysme/1/css%E6%8A%80%E5%B7%A7/>
                         <script>
                             document.write(decodeURI(location.origin + location.pathname))
                         </script>
@@ -351,14 +372,6 @@
   
     <div class="post-tags">
         
-            <section>
-            <i class="iconfont icon-tag"></i>Tag(s): 
-            
-            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/question/">
-                    #question</a></span>
-            
-            </section>
-        
         <section>
                 <a href="javascript:window.history.back();">back</a></span> · 
                 <span><a href="https://iseekto.github.io/trysme/">home</a></span>
@@ -366,11 +379,9 @@
     </div>
 
     <div class="post-nav">
-        
-        <a href="https://iseekto.github.io/trysme/1/css%E6%8A%80%E5%B7%A7/" class="prev" rel="prev" title=""><i class="iconfont icon-left"></i>&nbsp;</a>
          
         
-        <a href="https://iseekto.github.io/trysme/2020/makedown/" class="next" rel="next" title="Makedown">Makedown&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="https://iseekto.github.io/trysme/2020/ios%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98/" class="next" rel="next" title="iOS兼容问题">iOS兼容问题&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -392,7 +403,7 @@
       var gitalk = new Gitalk({
         
         id: location.pathname.substr(0, 50),
-        title: 'iOS兼容问题',
+        title: '',
         clientID: '64ecd4438b6b3a3a9bd8',
         clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
         repo: 'trysme-comment',
