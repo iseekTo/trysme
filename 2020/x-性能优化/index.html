@@ -10,9 +10,9 @@
   
   <meta name="keywords" content="blog">
   
-  <link rel="prev" href="https://iseekto.github.io/trysme/2020/%E5%BE%AE%E4%BF%A1%E5%86%85%E7%BD%AE%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E9%97%AE%E9%A2%98/" />
-  <link rel="next" href="https://iseekto.github.io/trysme/2020/x-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" />
-  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/git-rebase%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/" />
+  <link rel="prev" href="https://iseekto.github.io/trysme/2020/git-rebase%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/" />
+  
+  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/x-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -22,10 +22,10 @@
   <title>
        
        
-           Git Rebase简单使用 | wm&#39;s blog
+           X 性能优化 | wm&#39;s blog
        
   </title>
-  <meta name="title" content="Git Rebase简单使用 | wm&#39;s blog">
+  <meta name="title" content="X 性能优化 | wm&#39;s blog">
     
   
   <link rel="stylesheet" href="/trysme/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/iseekto.github.io\/trysme\/"
     },
     "articleSection" : "posts",
-    "name" : "Git Rebase简单使用",
-    "headline" : "Git Rebase简单使用",
-    "description" : " 多个commit合成一个并提交远程  git log 选清楚要合并的commit id，从早提交的一个开始算起，到你想合并的commit区间\n git rebase -i HEAD~3 (或者你的commit id 区间)\n 此时弹出一个vim交互页面，如果commit过多，则底部输入指令 %s\/pick\/s\/g\n 指令解释: 批量替换，将pick字节的改为squash(简写s), g全部 有一个需要改一下，在command处的我们把它给还原即可\n  执行完毕如果又出现，successfully updated\x26hellip; 然后会出现一个无序数字字母组成的分支名\n 执行 git checkout -b new branch git add . git commit -m \x27some msg\x27 git push 可选，多余分支删掉即可。\n  ",
+    "name" : "X 性能优化",
+    "headline" : "X 性能优化",
+    "description" : " 网络层次  CDN缓存  核心包(react\/\x26amp;-dom)一律走缓存  service worker缓存  缓存字体，图像等  GZIP压缩  webpack -\x26gt; compression-webpack-plugin   ARMS监控  通过监控应用解决项目错误率最高的地方  ",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -54,11 +54,11 @@
     "accountablePerson" : "_weimou",
     "copyrightHolder" : "_weimou",
     "copyrightYear" : "2020",
-    "datePublished": "2020-04-15 10:36:02 \x2b0800 CST",
-    "dateModified" : "2020-04-15 10:36:02 \x2b0800 CST",
-    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/git-rebase%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8\/",
-    "wordCount" : "38",
-    "keywords" : [ "tool","git", "wm\x27s blog"]
+    "datePublished": "2020-04-20 17:49:53 \x2b0800 CST",
+    "dateModified" : "2020-04-20 17:49:53 \x2b0800 CST",
+    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/x-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96\/",
+    "wordCount" : "12",
+    "keywords" : [  "wm\x27s blog"]
 }
 </script>
 
@@ -135,16 +135,16 @@
           
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Git Rebase简单使用</h1>
+        <h1 class="post-title" itemprop="name headline">X 性能优化</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2020-04-15 itemprop="datePublished">April 15, 2020</time>
+                on <time datetime=2020-04-20 itemprop="datePublished">April 20, 2020</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://iseekto.github.io/trysme/categories/tool/"> tool </a>
+                        <a href="https://iseekto.github.io/trysme/categories/optmize/"> optmize </a>
                         
                 </span>
                 
@@ -160,7 +160,8 @@
     <div class="post-toc-content">
       <nav id="TableOfContents">
 <ul>
-<li><a href="#多个commit合成一个并提交远程">多个commit合成一个并提交远程</a></li>
+<li><a href="#网络层次">网络层次</a></li>
+<li><a href="#arms监控">ARMS监控</a></li>
 </ul>
 </nav>
     </div>
@@ -233,21 +234,31 @@
 
           
 
-<h1 id="多个commit合成一个并提交远程">多个commit合成一个并提交远程</h1>
-
-<ol>
-<li>git log 选清楚要合并的commit id，从早提交的一个开始算起，到你想合并的commit区间<br /></li>
-<li><code>git rebase -i HEAD~3</code> (或者你的commit id 区间)<br /></li>
-<li>此时弹出一个vim交互页面，如果commit过多，则底部输入指令 <code>%s/pick/s/g</code><br />
+<h1 id="网络层次">网络层次</h1>
 
 <ul>
-<li>指令解释: 批量替换，将pick字节的改为squash(简写s), g全部</li>
-<li>有一个需要改一下，在command处的我们把它给还原即可<br /></li>
+<li>CDN缓存
+
+<ul>
+<li>核心包(react/&amp;-dom)一律走缓存</li>
 </ul></li>
-<li>执行完毕如果又出现，successfully updated&hellip; 然后会出现一个无序数字字母组成的分支名<br /></li>
-<li>执行 <code>git checkout -b new branch</code>  <code>git add .</code>  <code>git commit -m 'some msg'</code>  <code>git push</code></li>
-<li>可选，多余分支删掉即可。<br /></li>
-</ol>
+<li>service worker缓存
+
+<ul>
+<li>缓存字体，图像等</li>
+</ul></li>
+<li>GZIP压缩
+
+<ul>
+<li>webpack -&gt; compression-webpack-plugin</li>
+</ul></li>
+</ul>
+
+<h1 id="arms监控">ARMS监控</h1>
+
+<ul>
+<li>通过监控应用解决项目错误率最高的地方</li>
+</ul>
 
     </div>
 
@@ -263,7 +274,7 @@
             <p class="copyright-item">
                     <span>Link:</span>
                     
-                    <a href=https://iseekto.github.io/trysme/2020/git-rebase%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/>
+                    <a href=https://iseekto.github.io/trysme/2020/x-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/>
                         <script>
                             document.write(decodeURI(location.origin + location.pathname))
                         </script>
@@ -280,17 +291,6 @@
   
     <div class="post-tags">
         
-            <section>
-            <i class="iconfont icon-tag"></i>Tag(s): 
-            
-            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/tool/">
-                    #tool</a></span>
-            
-            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/git/">
-                    #git</a></span>
-            
-            </section>
-        
         <section>
                 <a href="javascript:window.history.back();">back</a></span> · 
                 <span><a href="https://iseekto.github.io/trysme/">home</a></span>
@@ -299,10 +299,8 @@
 
     <div class="post-nav">
         
-        <a href="https://iseekto.github.io/trysme/2020/%E5%BE%AE%E4%BF%A1%E5%86%85%E7%BD%AE%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E9%97%AE%E9%A2%98/" class="prev" rel="prev" title="微信内置浏览器缓存问题"><i class="iconfont icon-left"></i>&nbsp;微信内置浏览器缓存问题</a>
+        <a href="https://iseekto.github.io/trysme/2020/git-rebase%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/" class="prev" rel="prev" title="Git Rebase简单使用"><i class="iconfont icon-left"></i>&nbsp;Git Rebase简单使用</a>
          
-        
-        <a href="https://iseekto.github.io/trysme/2020/x-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" class="next" rel="next" title="X 性能优化">X 性能优化&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -324,7 +322,7 @@
       var gitalk = new Gitalk({
         
         id: location.pathname.substr(0, 50),
-        title: 'Git Rebase简单使用',
+        title: 'X 性能优化',
         clientID: '64ecd4438b6b3a3a9bd8',
         clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
         repo: 'trysme-comment',

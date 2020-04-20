@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>optmize on wm&#39;s blog</title>
+    <link>https://iseekto.github.io/trysme/categories/optmize/</link>
+    <description>Recent content in optmize on wm&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 20 Apr 2020 17:49:53 +0800</lastBuildDate>
+    
+	<atom:link href="https://iseekto.github.io/trysme/categories/optmize/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>X 性能优化</title>
+      <link>https://iseekto.github.io/trysme/2020/x-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</link>
+      <pubDate>Mon, 20 Apr 2020 17:49:53 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/x-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</guid>
+      <description> 网络层次  CDN缓存  核心包(react/&amp;amp;-dom)一律走缓存  service worker缓存  缓存字体，图像等  GZIP压缩  webpack -&amp;gt; compression-webpack-plugin   ARMS监控  通过监控应用解决项目错误率最高的地方  </description>
+    </item>
+    
+  </channel>
+</rss>
