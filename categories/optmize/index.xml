@@ -17,7 +17,7 @@
       <pubDate>Mon, 20 Apr 2020 17:49:53 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/2020/x-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</guid>
-      <description> 网络层次  CDN缓存  核心包(react/&amp;amp;-dom)一律走缓存  service worker缓存  缓存字体，图像等  GZIP压缩  webpack -&amp;gt; compression-webpack-plugin   ARMS监控  通过监控应用解决项目错误率最高的地方  </description>
+      <description> 网络  CDN缓存  核心包(react/&amp;amp;-dom)一律走缓存  HTTP缓存  Cache-Control  max-age=xxx，public  客户端在xxx秒内，如果有该资源的请求，直接读取缓存(200 from cache)  max-age=xxx, private  只让客户端缓存资源，代理服务器不缓存  max-age=xxx, immutable  强缓存，资源永不过期，用户强刷也不会去请求服务器，  max-age=xxx, no-cache  跳过强缓存，不影响设置协商缓存，每次请求都会询问服务端  max-age=xxx, no-store  不缓存，客户端，服务端都不缓存，也就没有强缓存与协商缓存。   Expires Etag MaxAge LastModified  Service Worker缓存  缓存字体，图像等  GZIP压缩  webpack -&amp;gt; compression-webpack-plugin  样式/文件合并  CSS/JS 合并打包   ARMS监控  通过监控应用解决项目错误率最高的地方  </description>
     </item>
     
   </channel>

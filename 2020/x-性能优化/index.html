@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "X 性能优化",
     "headline" : "X 性能优化",
-    "description" : " 网络层次  CDN缓存  核心包(react\/\x26amp;-dom)一律走缓存  service worker缓存  缓存字体，图像等  GZIP压缩  webpack -\x26gt; compression-webpack-plugin   ARMS监控  通过监控应用解决项目错误率最高的地方  ",
+    "description" : " 网络  CDN缓存  核心包(react\/\x26amp;-dom)一律走缓存  HTTP缓存  Cache-Control  max-age=xxx，public  客户端在xxx秒内，如果有该资源的请求，直接读取缓存(200 from cache)  max-age=xxx, private  只让客户端缓存资源，代理服务器不缓存  max-age=xxx, immutable  强缓存，资源永不过期，用户强刷也不会去请求服务器，  max-age=xxx, no-cache  跳过强缓存，不影响设置协商缓存，每次请求都会询问服务端  max-age=xxx, no-store  不缓存，客户端，服务端都不缓存，也就没有强缓存与协商缓存。   Expires Etag MaxAge LastModified  Service Worker缓存  缓存字体，图像等  GZIP压缩  webpack -\x26gt; compression-webpack-plugin  样式\/文件合并  CSS\/JS 合并打包   ARMS监控  通过监控应用解决项目错误率最高的地方  ",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -57,7 +57,7 @@
     "datePublished": "2020-04-20 17:49:53 \x2b0800 CST",
     "dateModified" : "2020-04-20 17:49:53 \x2b0800 CST",
     "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/x-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96\/",
-    "wordCount" : "12",
+    "wordCount" : "37",
     "keywords" : [  "wm\x27s blog"]
 }
 </script>
@@ -160,7 +160,7 @@
     <div class="post-toc-content">
       <nav id="TableOfContents">
 <ul>
-<li><a href="#网络层次">网络层次</a></li>
+<li><a href="#网络">网络</a></li>
 <li><a href="#arms监控">ARMS监控</a></li>
 </ul>
 </nav>
@@ -234,7 +234,7 @@
 
           
 
-<h1 id="网络层次">网络层次</h1>
+<h1 id="网络">网络</h1>
 
 <ul>
 <li>CDN缓存
@@ -242,7 +242,44 @@
 <ul>
 <li>核心包(react/&amp;-dom)一律走缓存</li>
 </ul></li>
-<li>service worker缓存
+<li>HTTP缓存
+
+<ul>
+<li>Cache-Control
+
+<ul>
+<li>max-age=xxx，public
+
+<ul>
+<li>客户端在xxx秒内，如果有该资源的请求，直接读取缓存(200 from cache)</li>
+</ul></li>
+<li>max-age=xxx, private
+
+<ul>
+<li>只让客户端缓存资源，代理服务器不缓存</li>
+</ul></li>
+<li>max-age=xxx, immutable
+
+<ul>
+<li>强缓存，资源永不过期，用户强刷也不会去请求服务器，</li>
+</ul></li>
+<li>max-age=xxx, no-cache
+
+<ul>
+<li>跳过强缓存，不影响设置协商缓存，每次请求都会询问服务端</li>
+</ul></li>
+<li>max-age=xxx, no-store
+
+<ul>
+<li>不缓存，客户端，服务端都不缓存，也就没有强缓存与协商缓存。</li>
+</ul></li>
+</ul></li>
+<li>Expires</li>
+<li>Etag</li>
+<li>MaxAge</li>
+<li>LastModified</li>
+</ul></li>
+<li>Service Worker缓存
 
 <ul>
 <li>缓存字体，图像等</li>
@@ -251,6 +288,11 @@
 
 <ul>
 <li>webpack -&gt; compression-webpack-plugin</li>
+</ul></li>
+<li>样式/文件合并
+
+<ul>
+<li>CSS/JS 合并打包</li>
 </ul></li>
 </ul>
 
