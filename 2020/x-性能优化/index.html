@@ -22,10 +22,10 @@
   <title>
        
        
-           X 性能优化 | wm&#39;s blog
+           性能优化 | wm&#39;s blog
        
   </title>
-  <meta name="title" content="X 性能优化 | wm&#39;s blog">
+  <meta name="title" content="性能优化 | wm&#39;s blog">
     
   
   <link rel="stylesheet" href="/trysme/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/iseekto.github.io\/trysme\/"
     },
     "articleSection" : "posts",
-    "name" : "X 性能优化",
-    "headline" : "X 性能优化",
-    "description" : " 网络  CDN缓存  核心包(react\/\x26amp;-dom)一律走缓存  HTTP缓存  Cache-Control  max-age=xxx，public  客户端在xxx秒内，如果有该资源的请求，直接读取缓存(200 from cache)  max-age=xxx, private  只让客户端缓存资源，代理服务器不缓存  max-age=xxx, immutable  强缓存，资源永不过期，用户强刷也不会去请求服务器，  max-age=xxx, no-cache  跳过强缓存，不影响设置协商缓存，每次请求都会询问服务端  max-age=xxx, no-store  不缓存，客户端，服务端都不缓存，也就没有强缓存与协商缓存。   Expires Etag MaxAge LastModified  Service Worker缓存  缓存字体，图像等  GZIP压缩  webpack -\x26gt; compression-webpack-plugin  样式\/文件合并  CSS\/JS 合并打包   ARMS监控  通过监控应用解决项目错误率最高的地方  ",
+    "name" : "性能优化",
+    "headline" : "性能优化",
+    "description" : " 网络  CDN缓存  核心包(react\/\x26amp;-dom)一律走缓存  HTTP缓存\n Cache-Control(强缓存，设置过期时间)  max-age=xxx，public  客户端在xxx秒内，如果有该资源的请求，直接读取缓存(200 from cache)  max-age=xxx, private  只让客户端缓存资源，代理服务器不缓存  max-age=xxx, immutable  强缓存，资源永不过期，用户强刷也不会去请求服务器，  max-age=xxx, no-cache  跳过强缓存，不影响设置协商缓存，每次请求都会询问服务端  max-age=xxx, no-store  不缓存，客户端，服务端都不缓存，也就没有强缓存与协商缓存。   Expires(资源的过期时间) Etag(协商缓存，资源文件唯一hash)  每个资源文件都有一个etag选项，并且每个文件都是唯一的hash值(打包加上hash选项)  LastModified(协商缓存，文件的修改时间\x26lt;秒\x26gt;)  客户端发起请求\x26ndash;\x26gt;看资源是否过期\x26ndash;\x26gt;过期\x26ndash;\x26gt;请求服务器\x26ndash;\x26gt;服务器对比资源是否真的过期\x26ndash;\x26gt;没过期\x26ndash;\x26gt;返回304状态码\x26ndash;\x26gt;客户端用缓存的老资源 \x26gt; 如何设置？ nodejs -\x26gt; setHeader; nginx -\x26gt; add_header;\n   Service Worker缓存(可选)\n 缓存字体，图像等  GZIP压缩\n webpack -\x26gt; compression-webpack-plugin  样式\/文件合并\n CSS\/JS 合并打包   ARMS监控  通过监控应用解决项目错误率最高的地方  ",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -57,7 +57,7 @@
     "datePublished": "2020-04-20 17:49:53 \x2b0800 CST",
     "dateModified" : "2020-04-20 17:49:53 \x2b0800 CST",
     "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/x-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96\/",
-    "wordCount" : "37",
+    "wordCount" : "46",
     "keywords" : [  "wm\x27s blog"]
 }
 </script>
@@ -135,7 +135,7 @@
           
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">X 性能优化</h1>
+        <h1 class="post-title" itemprop="name headline">性能优化</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
                 <span class="post-time">
@@ -242,10 +242,11 @@
 <ul>
 <li>核心包(react/&amp;-dom)一律走缓存</li>
 </ul></li>
-<li>HTTP缓存
+
+<li><p>HTTP缓存</p>
 
 <ul>
-<li>Cache-Control
+<li>Cache-Control(强缓存，设置过期时间)
 
 <ul>
 <li>max-age=xxx，public
@@ -274,22 +275,33 @@
 <li>不缓存，客户端，服务端都不缓存，也就没有强缓存与协商缓存。</li>
 </ul></li>
 </ul></li>
-<li>Expires</li>
-<li>Etag</li>
-<li>MaxAge</li>
-<li>LastModified</li>
+<li>Expires(资源的过期时间)</li>
+<li>Etag(协商缓存，资源文件唯一hash)
+
+<ul>
+<li>每个资源文件都有一个etag选项，并且每个文件都是唯一的hash值(打包加上hash选项)</li>
 </ul></li>
-<li>Service Worker缓存
+<li>LastModified(协商缓存，文件的修改时间&lt;秒&gt;)
+
+<ul>
+<li>客户端发起请求&ndash;&gt;看资源是否过期&ndash;&gt;过期&ndash;&gt;请求服务器&ndash;&gt;服务器对比资源是否真的过期&ndash;&gt;没过期&ndash;&gt;返回304状态码&ndash;&gt;客户端用缓存的老资源
+&gt; 如何设置？ nodejs -&gt; setHeader; nginx -&gt; add_header;<br /></li>
+</ul></li>
+</ul></li>
+
+<li><p>Service Worker缓存(可选)</p>
 
 <ul>
 <li>缓存字体，图像等</li>
 </ul></li>
-<li>GZIP压缩
+
+<li><p>GZIP压缩</p>
 
 <ul>
 <li>webpack -&gt; compression-webpack-plugin</li>
 </ul></li>
-<li>样式/文件合并
+
+<li><p>样式/文件合并</p>
 
 <ul>
 <li>CSS/JS 合并打包</li>
@@ -364,7 +376,7 @@
       var gitalk = new Gitalk({
         
         id: location.pathname.substr(0, 50),
-        title: 'X 性能优化',
+        title: '性能优化',
         clientID: '64ecd4438b6b3a3a9bd8',
         clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
         repo: 'trysme-comment',
