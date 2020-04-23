@@ -19,7 +19,7 @@
       <guid>https://iseekto.github.io/trysme/2020/x-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</guid>
       <description>网络  CDN缓存  核心包(react/&amp;amp;-dom)一律走缓存  HTTP缓存
  Cache-Control(强缓存，设置过期时间)  max-age=xxx，public  客户端在xxx秒内，如果有该资源的请求，直接读取缓存(200 from cache)  max-age=xxx, private  只让客户端缓存资源，代理服务器不缓存  max-age=xxx, immutable  强缓存，资源永不过期，用户强刷也不会去请求服务器，  max-age=xxx, no-cache  跳过强缓存，不影响设置协商缓存，每次请求都会询问服务端  max-age=xxx, no-store  不缓存，客户端，服务端都不缓存，也就没有强缓存与协商缓存。   Expires(资源的过期时间) Etag(协商缓存，资源文件唯一hash)  每个资源文件都有一个etag选项，并且每个文件都是唯一的hash值(打包加上hash选项)  LastModified(协商缓存，文件的修改时间&amp;lt;秒&amp;gt;)  客户端发起请求&amp;ndash;&amp;gt;看资源是否过期&amp;ndash;&amp;gt;过期&amp;ndash;&amp;gt;请求服务器&amp;ndash;&amp;gt;服务器对比资源是否真的过期&amp;ndash;&amp;gt;没过期&amp;ndash;&amp;gt;返回304状态码&amp;ndash;&amp;gt;客户端用缓存的老资源    如何设置？ nodejs -&amp;gt; setHeader; nginx -&amp;gt; add_header;
-  项目构建  Service Worker缓存(可选)  缓存字体，图像等  GZIP压缩  webpack -&amp;gt; compression-webpack-plugin  样式/文件合并  CSS/JS 合并打包  memory-cache  对于一成不变的接口内容(tree组件，组织架构树)，可进行缓存。   ARMS监控  通过监控应用解决项目错误率最高的地方  ECMA提案  最新的ECMA 2020草案中有一项是 dynamic import，他在运行时才定义，</description>
+  项目构建  Service Worker缓存(可选)  缓存字体，图像等  GZIP压缩  webpack -&amp;gt; compression-webpack-plugin  样式/文件合并  CSS/JS 合并打包  memory-cache  对于一成不变的接口内容(tree组件，组织架构树)，可进行缓存。  动画  使用 requestAnimationFrame 代替 setInterval  ARMS监控  通过监控应用 找到项目错误率较多的点   ECMA提案  最新的ECMA 2020草案中有一项是 dynamic import，他在运行时才定义，</description>
     </item>
     
     <item>
