@@ -6,10 +6,19 @@
     <description>Recent content in react on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Feb 2020 14:08:13 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 24 Apr 2020 16:54:22 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/categories/react/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ts React</title>
+      <link>https://iseekto.github.io/trysme/2020/ts-react/</link>
+      <pubDate>Fri, 24 Apr 2020 16:54:22 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/ts-react/</guid>
+      <description> withRouter类型集成 // 引入函数及类型 import { withRouter, RouteComponentProps } from &#39;react-router&#39; // 定义组件内的props类型 // 如果不需要props，写 {} &amp;amp; RouteComponentProps type IEmptyCommanyProps = Readonly&amp;lt;{ onClick: () =&amp;gt; void }&amp;gt; &amp;amp; RouteComponentProps // 然后就可以愉快的跳转了~  </description>
+    </item>
     
     <item>
       <title>如何正确使用React Hooks</title>

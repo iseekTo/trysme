@@ -10,9 +10,9 @@
   
   <meta name="keywords" content="blog">
   
-  <link rel="prev" href="https://iseekto.github.io/trysme/2020/git-rebase%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/" />
-  <link rel="next" href="https://iseekto.github.io/trysme/2020/ts-react/" />
-  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/x-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" />
+  <link rel="prev" href="https://iseekto.github.io/trysme/2020/x-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" />
+  
+  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/ts-react/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -22,10 +22,10 @@
   <title>
        
        
-           性能优化 | wm&#39;s blog
+           Ts React | wm&#39;s blog
        
   </title>
-  <meta name="title" content="性能优化 | wm&#39;s blog">
+  <meta name="title" content="Ts React | wm&#39;s blog">
     
   
   <link rel="stylesheet" href="/trysme/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/iseekto.github.io\/trysme\/"
     },
     "articleSection" : "posts",
-    "name" : "性能优化",
-    "headline" : "性能优化",
-    "description" : "网络  CDN缓存  核心包(react\/\x26amp;-dom)一律走缓存  HTTP缓存\n Cache-Control(强缓存，设置过期时间)  max-age=xxx，public  客户端在xxx秒内，如果有该资源的请求，直接读取缓存(200 from cache)  max-age=xxx, private  只让客户端缓存资源，代理服务器不缓存  max-age=xxx, immutable  强缓存，资源永不过期，用户强刷也不会去请求服务器，  max-age=xxx, no-cache  跳过强缓存，不影响设置协商缓存，每次请求都会询问服务端  max-age=xxx, no-store  不缓存，客户端，服务端都不缓存，也就没有强缓存与协商缓存。   Expires(资源的过期时间) Etag(协商缓存，资源文件唯一hash)  每个资源文件都有一个etag选项，并且每个文件都是唯一的hash值(打包加上hash选项)  LastModified(协商缓存，文件的修改时间\x26lt;秒\x26gt;)  客户端发起请求\x26ndash;\x26gt;看资源是否过期\x26ndash;\x26gt;过期\x26ndash;\x26gt;请求服务器\x26ndash;\x26gt;服务器对比资源是否真的过期\x26ndash;\x26gt;没过期\x26ndash;\x26gt;返回304状态码\x26ndash;\x26gt;客户端用缓存的老资源    如何设置？ nodejs -\x26gt; setHeader; nginx -\x26gt; add_header;\n  项目构建  Service Worker缓存(可选)  缓存字体，图像等  GZIP压缩  webpack -\x26gt; compression-webpack-plugin  样式\/文件合并  CSS\/JS 合并打包  memory-cache  对于一成不变的接口内容(tree组件，组织架构树)，可进行缓存。  动画  使用 requestAnimationFrame 代替 setInterval  ARMS监控  通过监控应用 找到项目错误率较多的点   ECMA提案  最新的ECMA 2020草案中有一项是 dynamic import，他在运行时才定义，",
+    "name" : "Ts React",
+    "headline" : "Ts React",
+    "description" : " withRouter类型集成 \/\/ 引入函数及类型 import { withRouter, RouteComponentProps } from \x27react-router\x27 \/\/ 定义组件内的props类型 \/\/ 如果不需要props，写 {} \x26amp; RouteComponentProps type IEmptyCommanyProps = Readonly\x26lt;{ onClick: () =\x26gt; void }\x26gt; \x26amp; RouteComponentProps \/\/ 然后就可以愉快的跳转了~  ",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -54,11 +54,11 @@
     "accountablePerson" : "_weimou",
     "copyrightHolder" : "_weimou",
     "copyrightYear" : "2020",
-    "datePublished": "2020-04-20 17:49:53 \x2b0800 CST",
-    "dateModified" : "2020-04-20 17:49:53 \x2b0800 CST",
-    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/x-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96\/",
-    "wordCount" : "100",
-    "keywords" : [  "wm\x27s blog"]
+    "datePublished": "2020-04-24 16:54:22 \x2b0800 CST",
+    "dateModified" : "2020-04-24 16:54:22 \x2b0800 CST",
+    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/ts-react\/",
+    "wordCount" : "30",
+    "keywords" : [ "react","ts", "wm\x27s blog"]
 }
 </script>
 
@@ -135,16 +135,17 @@
           
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">性能优化</h1>
+        <h1 class="post-title" itemprop="name headline">Ts React</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2020-04-20 itemprop="datePublished">April 20, 2020</time>
+                on <time datetime=2020-04-24 itemprop="datePublished">April 24, 2020</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://iseekto.github.io/trysme/categories/optmize/"> optmize </a>
+                        <a href="https://iseekto.github.io/trysme/categories/react/"> react </a>
+                        <a href="https://iseekto.github.io/trysme/categories/typescript/"> TypeScript </a>
                         
                 </span>
                 
@@ -160,11 +161,7 @@
     <div class="post-toc-content">
       <nav id="TableOfContents">
 <ul>
-<li><a href="#网络">网络</a></li>
-<li><a href="#项目构建">项目构建</a></li>
-<li><a href="#ecma提案">ECMA提案</a></li>
-<li><a href="#chrome-工具项">Chrome 工具项</a></li>
-<li><a href="#其他">其他</a></li>
+<li><a href="#withrouter类型集成">withRouter类型集成</a></li>
 </ul>
 </nav>
     </div>
@@ -237,137 +234,18 @@
 
           
 
-<h1 id="网络">网络</h1>
+<h1 id="withrouter类型集成">withRouter类型集成</h1>
 
-<ul>
-<li>CDN缓存
+<pre><code class="language-js">// 引入函数及类型
+import { withRouter, RouteComponentProps } from 'react-router'
 
-<ul>
-<li>核心包(react/&amp;-dom)一律走缓存</li>
-</ul></li>
-
-<li><p>HTTP缓存</p>
-
-<ul>
-<li>Cache-Control(强缓存，设置过期时间)
-
-<ul>
-<li>max-age=xxx，public
-
-<ul>
-<li>客户端在xxx秒内，如果有该资源的请求，直接读取缓存(200 from cache)</li>
-</ul></li>
-<li>max-age=xxx, private
-
-<ul>
-<li>只让客户端缓存资源，代理服务器不缓存</li>
-</ul></li>
-<li>max-age=xxx, immutable
-
-<ul>
-<li>强缓存，资源永不过期，用户强刷也不会去请求服务器，</li>
-</ul></li>
-<li>max-age=xxx, no-cache
-
-<ul>
-<li>跳过强缓存，不影响设置协商缓存，每次请求都会询问服务端</li>
-</ul></li>
-<li>max-age=xxx, no-store
-
-<ul>
-<li>不缓存，客户端，服务端都不缓存，也就没有强缓存与协商缓存。</li>
-</ul></li>
-</ul></li>
-<li>Expires(资源的过期时间)</li>
-<li>Etag(协商缓存，资源文件唯一hash)
-
-<ul>
-<li>每个资源文件都有一个etag选项，并且每个文件都是唯一的hash值(打包加上hash选项)</li>
-</ul></li>
-<li>LastModified(协商缓存，文件的修改时间&lt;秒&gt;)
-
-<ul>
-<li>客户端发起请求&ndash;&gt;看资源是否过期&ndash;&gt;过期&ndash;&gt;请求服务器&ndash;&gt;服务器对比资源是否真的过期&ndash;&gt;没过期&ndash;&gt;返回304状态码&ndash;&gt;客户端用缓存的老资源</li>
-</ul></li>
-</ul>
-
-<blockquote>
-<p>如何设置？ nodejs -&gt; setHeader; nginx -&gt; add_header;</p>
-</blockquote></li>
-</ul>
-
-<h1 id="项目构建">项目构建</h1>
-
-<ul>
-<li>Service Worker缓存(可选)
-
-<ul>
-<li>缓存字体，图像等</li>
-</ul></li>
-<li>GZIP压缩
-
-<ul>
-<li>webpack -&gt; compression-webpack-plugin</li>
-</ul></li>
-<li>样式/文件合并
-
-<ul>
-<li>CSS/JS 合并打包</li>
-</ul></li>
-<li>memory-cache
-
-<ul>
-<li>对于一成不变的接口内容(tree组件，组织架构树)，可进行缓存。</li>
-</ul></li>
-<li>动画
-
-<ul>
-<li>使用 <code>requestAnimationFrame</code> 代替 <code>setInterval</code></li>
-</ul></li>
-<li>ARMS监控
-
-<ul>
-<li>通过监控应用 找到项目错误率较多的点</li>
-</ul></li>
-</ul>
-
-<h1 id="ecma提案">ECMA提案</h1>
-
-<ul>
-<li><p>最新的ECMA 2020草案中有一项是 <code>dynamic import</code>，他在运行时才定义，</p>
-
-<pre><code class="language-js">// 它返回一个 promise
-// 运行到此处时，才会被加载。
-const jq_cdn = 'https://cdn.bootcss.com/jquery/3.5.0/jquery.min.js'
-const module = async () =&gt; await import(jq_cdn)
-</code></pre></li>
-</ul>
-
-<h1 id="chrome-工具项">Chrome 工具项</h1>
-
-<ul>
-<li>查找运行时比较耗时的操作片段
-
-<ol>
-<li>启动node服务时加上<code>–-inspect</code>参数</li>
-<li>在chrome里面输入 <code>chrome://inspect</code></li>
-<li><code>Pages</code> 一栏：找到相对应的服务，点击 <code>inspect</code></li>
-<li>使用 loadtest 压测工具向本地服务发送请求，</li>
-<li>查看详细，对耗时较长的进行逐个优化</li>
-</ol></li>
-</ul>
-
-<h1 id="其他">其他</h1>
-
-<ul>
-<li>&ldquo;潜藏的危险&rdquo; —— 内存泄漏
-
-<ul>
-<li>喜闻乐见的定时器  - 清除</li>
-<li>闭包来不及释放    - 清除</li>
-<li>无用变量</li>
-</ul></li>
-</ul>
+// 定义组件内的props类型
+// 如果不需要props，写 {} &amp; RouteComponentProps
+type IEmptyCommanyProps = Readonly&lt;{
+    onClick: () =&gt; void
+}&gt; &amp; RouteComponentProps
+// 然后就可以愉快的跳转了~
+</code></pre>
 
     </div>
 
@@ -383,7 +261,7 @@ const module = async () =&gt; await import(jq_cdn)
             <p class="copyright-item">
                     <span>Link:</span>
                     
-                    <a href=https://iseekto.github.io/trysme/2020/x-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/>
+                    <a href=https://iseekto.github.io/trysme/2020/ts-react/>
                         <script>
                             document.write(decodeURI(location.origin + location.pathname))
                         </script>
@@ -400,6 +278,17 @@ const module = async () =&gt; await import(jq_cdn)
   
     <div class="post-tags">
         
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/react/">
+                    #react</a></span>
+            
+            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/ts/">
+                    #ts</a></span>
+            
+            </section>
+        
         <section>
                 <a href="javascript:window.history.back();">back</a></span> · 
                 <span><a href="https://iseekto.github.io/trysme/">home</a></span>
@@ -408,10 +297,8 @@ const module = async () =&gt; await import(jq_cdn)
 
     <div class="post-nav">
         
-        <a href="https://iseekto.github.io/trysme/2020/git-rebase%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/" class="prev" rel="prev" title="Git Rebase简单使用"><i class="iconfont icon-left"></i>&nbsp;Git Rebase简单使用</a>
+        <a href="https://iseekto.github.io/trysme/2020/x-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" class="prev" rel="prev" title="性能优化"><i class="iconfont icon-left"></i>&nbsp;性能优化</a>
          
-        
-        <a href="https://iseekto.github.io/trysme/2020/ts-react/" class="next" rel="next" title="Ts React">Ts React&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -433,7 +320,7 @@ const module = async () =&gt; await import(jq_cdn)
       var gitalk = new Gitalk({
         
         id: location.pathname.substr(0, 50),
-        title: '性能优化',
+        title: 'Ts React',
         clientID: '64ecd4438b6b3a3a9bd8',
         clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
         repo: 'trysme-comment',

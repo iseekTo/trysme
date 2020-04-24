@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>TypeScript on wm&#39;s blog</title>
+    <title>Typescript on wm&#39;s blog</title>
     <link>https://iseekto.github.io/trysme/categories/typescript/</link>
-    <description>Recent content in TypeScript on wm&#39;s blog</description>
+    <description>Recent content in Typescript on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2020 13:49:32 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 24 Apr 2020 16:54:22 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/categories/typescript/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ts React</title>
+      <link>https://iseekto.github.io/trysme/2020/ts-react/</link>
+      <pubDate>Fri, 24 Apr 2020 16:54:22 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/ts-react/</guid>
+      <description> withRouter类型集成 // 引入函数及类型 import { withRouter, RouteComponentProps } from &#39;react-router&#39; // 定义组件内的props类型 // 如果不需要props，写 {} &amp;amp; RouteComponentProps type IEmptyCommanyProps = Readonly&amp;lt;{ onClick: () =&amp;gt; void }&amp;gt; &amp;amp; RouteComponentProps // 然后就可以愉快的跳转了~  </description>
+    </item>
     
     <item>
       <title>Ts项目与webpack配置路径别名</title>
