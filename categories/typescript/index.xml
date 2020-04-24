@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Typescript on wm&#39;s blog</title>
+    <title>TypeScript on wm&#39;s blog</title>
     <link>https://iseekto.github.io/trysme/categories/typescript/</link>
-    <description>Recent content in Typescript on wm&#39;s blog</description>
+    <description>Recent content in TypeScript on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 24 Apr 2020 16:54:22 +0800</lastBuildDate>
@@ -17,7 +17,8 @@
       <pubDate>Fri, 24 Apr 2020 16:54:22 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/2020/ts-react/</guid>
-      <description> withRouter类型集成 // 引入函数及类型 import { withRouter, RouteComponentProps } from &#39;react-router&#39; // 定义组件内的props类型 // 如果不需要props，写 {} &amp;amp; RouteComponentProps type IEmptyCommanyProps = Readonly&amp;lt;{ onClick: () =&amp;gt; void }&amp;gt; &amp;amp; RouteComponentProps // 然后就可以愉快的跳转了~  </description>
+      <description>注释写好，同事烧香；不写注释，当场去世
+ withRouter类型集成 // 引入函数及类型 import { withRouter, RouteComponentProps } from &#39;react-router&#39; // 定义组件内的props类型 type IEmptyCommanyProps = Readonly&amp;lt;{ onClick: () =&amp;gt; void }&amp;gt; &amp;amp; RouteComponentProps // 如果不需要props 但组件报错 type Iprops = {} &amp;amp; RouteComponentProps // 然后就可以愉快的跳转了~ [转圈]  axios集成返回体 import axios, { AxiosResponse, AxiosRequestConfig } from &#39;axios&#39; // 我这里后端返回的字段都有一个 message 所以我把它加上去！🥶 interface ReWriteAxiosResponseType extends AxiosResponse { message?: string } // 定义一个通用请求 🔥 const request(options: AxiosRequestConfig): Promise&amp;lt;ReWriteAxiosResponseType&amp;gt; { return axios.</description>
     </item>
     
     <item>

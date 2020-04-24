@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "Ts React",
     "headline" : "Ts React",
-    "description" : " withRouter类型集成 \/\/ 引入函数及类型 import { withRouter, RouteComponentProps } from \x27react-router\x27 \/\/ 定义组件内的props类型 \/\/ 如果不需要props，写 {} \x26amp; RouteComponentProps type IEmptyCommanyProps = Readonly\x26lt;{ onClick: () =\x26gt; void }\x26gt; \x26amp; RouteComponentProps \/\/ 然后就可以愉快的跳转了~  ",
+    "description" : "注释写好，同事烧香；不写注释，当场去世\n withRouter类型集成 \/\/ 引入函数及类型 import { withRouter, RouteComponentProps } from \x27react-router\x27 \/\/ 定义组件内的props类型 type IEmptyCommanyProps = Readonly\x26lt;{ onClick: () =\x26gt; void }\x26gt; \x26amp; RouteComponentProps \/\/ 如果不需要props 但组件报错 type Iprops = {} \x26amp; RouteComponentProps \/\/ 然后就可以愉快的跳转了~ [转圈]  axios集成返回体 import axios, { AxiosResponse, AxiosRequestConfig } from \x27axios\x27 \/\/ 我这里后端返回的字段都有一个 message 所以我把它加上去！🥶 interface ReWriteAxiosResponseType extends AxiosResponse { message?: string } \/\/ 定义一个通用请求 🔥 const request(options: AxiosRequestConfig): Promise\x26lt;ReWriteAxiosResponseType\x26gt; { return axios.",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -57,7 +57,7 @@
     "datePublished": "2020-04-24 16:54:22 \x2b0800 CST",
     "dateModified" : "2020-04-24 16:54:22 \x2b0800 CST",
     "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/ts-react\/",
-    "wordCount" : "30",
+    "wordCount" : "72",
     "keywords" : [ "react","ts", "wm\x27s blog"]
 }
 </script>
@@ -162,6 +162,7 @@
       <nav id="TableOfContents">
 <ul>
 <li><a href="#withrouter类型集成">withRouter类型集成</a></li>
+<li><a href="#axios集成返回体">axios集成返回体</a></li>
 </ul>
 </nav>
     </div>
@@ -234,17 +235,41 @@
 
           
 
+<blockquote>
+<p>注释写好，同事烧香；不写注释，当场去世</p>
+</blockquote>
+
 <h1 id="withrouter类型集成">withRouter类型集成</h1>
 
 <pre><code class="language-js">// 引入函数及类型
 import { withRouter, RouteComponentProps } from 'react-router'
 
 // 定义组件内的props类型
-// 如果不需要props，写 {} &amp; RouteComponentProps
 type IEmptyCommanyProps = Readonly&lt;{
     onClick: () =&gt; void
 }&gt; &amp; RouteComponentProps
-// 然后就可以愉快的跳转了~
+
+// 如果不需要props 但组件报错
+type Iprops = {} &amp; RouteComponentProps
+
+// 然后就可以愉快的跳转了~ [转圈]
+</code></pre>
+
+<h1 id="axios集成返回体">axios集成返回体</h1>
+
+<pre><code class="language-js">import axios, { AxiosResponse, AxiosRequestConfig } from 'axios'
+
+// 我这里后端返回的字段都有一个 message 所以我把它加上去！🥶
+interface ReWriteAxiosResponseType extends AxiosResponse {
+    message?: string
+}
+
+// 定义一个通用请求 🔥
+const request(options: AxiosRequestConfig): Promise&lt;ReWriteAxiosResponseType&gt; {
+    return axios.request(options)
+}
+
+// 巴拉巴拉 over 👀
 </code></pre>
 
     </div>
