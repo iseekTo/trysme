@@ -6,7 +6,7 @@
     <description>Recent content in Tags on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Apr 2020 16:54:22 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 25 Apr 2020 21:40:44 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>react</title>
       <link>https://iseekto.github.io/trysme/tags/react/</link>
-      <pubDate>Fri, 24 Apr 2020 16:54:22 +0800</pubDate>
+      <pubDate>Sat, 25 Apr 2020 21:40:44 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/tags/react/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>ts</title>
       <link>https://iseekto.github.io/trysme/tags/ts/</link>
-      <pubDate>Fri, 24 Apr 2020 16:54:22 +0800</pubDate>
+      <pubDate>Sat, 25 Apr 2020 21:40:44 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/tags/ts/</guid>
       <description></description>
@@ -62,15 +62,6 @@
       <pubDate>Mon, 09 Mar 2020 20:10:29 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/tags/nginx/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>http</title>
-      <link>https://iseekto.github.io/trysme/tags/http/</link>
-      <pubDate>Sat, 07 Mar 2020 21:41:45 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/tags/http/</guid>
       <description></description>
     </item>
     
