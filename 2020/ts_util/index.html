@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "TsUtil",
     "headline" : "TsUtil",
-    "description" : "js工具库层出不穷，各种辅助函数更是数不胜数，今天我这里用ts版本的写一个小型工具\n Talk is cheap，Show me your code.\n 类型封装，字符串、数组、正则、纯对象\x26hellip; \/\/ 类型辅助函数 const typeToString = \x26lt;T\x26gt;(type: T) =\x26gt; { return Object.prototype.toString.call(type).slice(8, -1) } \/** * 这里不直接写返回 boolean的原因是函数多用于条件判断， * 如果是字符串，则... 如果是数字，则... * 然而在ts运行环境中，除非写泛型，或者多返回值，不然就会出现报错，无法精确具体类型。 *\/ const isString = (str: any): str is string =\x26gt; typeof str === \x27string\x27 const isNumber = (num: any): num is string =\x26gt; typeof num === \x27number\x27 const isRegExp = (reg: any): reg is RegExp =\x26gt; typeToString(reg) === \x27RegExp\x27 const isFunction = (func: any): func is Function =\x26gt; typeof func === \x27function\x27 const isObject = (obj: any): obj is Object =\x26gt; typeof obj === \x27object\x27 \/\/ waiting problem const isArray = Array.",
+    "description" : "Talk is cheap，Show me your code.\n 类型封装，字符串、数组、正则、纯对象\x26hellip; \/\/ 类型辅助函数 const typeToString = \x26lt;T\x26gt;(type: T) =\x26gt; { return Object.prototype.toString.call(type).slice(8, -1) } \/** * 这里不直接写返回 boolean的原因是函数多用于条件判断， * 如果是字符串，则... 如果是数字，则... * 然而在ts运行环境中，除非写泛型，或者多返回值，不然就会出现报错，无法精确具体类型。 *\/ const isString = (str: any): str is string =\x26gt; typeof str === \x27string\x27 const isNumber = (num: any): num is string =\x26gt; typeof num === \x27number\x27 const isRegExp = (reg: any): reg is RegExp =\x26gt; typeToString(reg) === \x27RegExp\x27 const isFunction = (func: any): func is Function =\x26gt; typeof func === \x27function\x27 const isObject = (obj: any): obj is Object =\x26gt; typeof obj === \x27object\x27 \/\/ waiting problem const isArray = Array.",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -57,7 +57,7 @@
     "datePublished": "2020-01-23 21:40:38 \x2b0800 CST",
     "dateModified" : "2020-01-23 21:40:38 \x2b0800 CST",
     "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/ts_util\/",
-    "wordCount" : "139",
+    "wordCount" : "138",
     "keywords" : [ "ts","util", "wm\x27s blog"]
 }
 </script>
@@ -233,8 +233,6 @@
           
 
           
-
-<p><em>js工具库层出不穷，各种辅助函数更是数不胜数，今天我这里用ts版本的写一个小型工具</em></p>
 
 <blockquote>
 <p>Talk is cheap，Show me your code.</p>

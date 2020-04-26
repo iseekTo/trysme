@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "在React中更好的集成TypeScript",
     "headline" : "在React中更好的集成TypeScript",
-    "description" : "",
+    "description" : "定义一个公共类组件的 props 和 state类型\nimport React, { Component, ComponentProps } from \x27react\x27 type IProps = { initalNum: number } type IState = { username: string | null } class GlobalType extends Component\x26lt;IProps, IState\x26gt; { static defaultProps = { initalNum: 0 } }   在React中使用TS需要注意的几点：\n1. .jsx文件都需要变为 .tsx\n2. 使用class组件时必须要写 props和state的类型声明(以此代替了propTypes)\n3. 需要定义全局变量时，在根目录的 global.d.ts 里写，使用时无需引入\n4. 接口，其他类型声明在types\/**.ts里写，统一规范化\nclass组件类型  React.ComponentProps: 获取指定组件的props类型  type getGlobalTypesForProps = ComponentProps\x26lt;typeof GlobalType\x26gt;  React.",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -57,7 +57,7 @@
     "datePublished": "2020-04-25 21:40:44 \x2b0800 CST",
     "dateModified" : "2020-04-25 21:40:44 \x2b0800 CST",
     "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/%E5%9C%A8react%E4%B8%AD%E6%9B%B4%E5%A5%BD%E7%9A%84%E9%9B%86%E6%88%90typescript\/",
-    "wordCount" : "0",
+    "wordCount" : "77",
     "keywords" : [ "react","ts", "wm\x27s blog"]
 }
 </script>
@@ -159,7 +159,11 @@
     <h2 class="post-toc-title"></h2>
     
     <div class="post-toc-content">
-      
+      <nav id="TableOfContents">
+<ul>
+<li><a href="#class组件类型">class组件类型</a></li>
+</ul>
+</nav>
     </div>
   </div>
   
@@ -229,6 +233,58 @@
           
 
           
+
+<blockquote>
+<p>定义一个公共类组件的 props 和 state类型</p>
+
+<pre><code class="language-js">import React, { Component, ComponentProps } from 'react'
+
+type IProps = {
+    initalNum: number
+}
+
+type IState = {
+    username: string | null
+}
+
+class GlobalType extends Component&lt;IProps, IState&gt; {
+    static defaultProps = {
+        initalNum: 0
+    } 
+}
+</code></pre>
+</blockquote>
+
+<p>在React中使用TS需要注意的几点：<br />
+1. <code>.jsx</code>文件都需要变为 <code>.tsx</code><br />
+2. 使用class组件时必须要写 <code>props</code>和<code>state</code>的类型声明(以此代替了propTypes)<br />
+3. 需要定义全局变量时，在根目录的 <code>global.d.ts</code> 里写，使用时无需引入<br />
+4. 接口，其他类型声明在<code>types/**.ts</code>里写，统一规范化</p>
+
+<h1 id="class组件类型">class组件类型</h1>
+
+<ul>
+<li>React.ComponentProps: 获取指定组件的props类型
+
+<ul>
+<li><code>type getGlobalTypesForProps = ComponentProps&lt;typeof GlobalType&gt;</code></li>
+</ul></li>
+<li>React.ComponentType: 表示 <code>React.FC | React.Component</code> 的并集的类型-用于HOC</li>
+</ul>
+
+<blockquote>
+<p>由于hook的出现，以往函数式组件的SFC类型已被废除
+- FC</p>
+</blockquote>
+
+<!-- 
+    // S = state types
+    // K = state all key
+    // Pick<S, K> = S[K] = 从源类型中拿到想要的key，然后在组成key-value
+ -->
+
+<!-- 高阶组件的类型声明及正确使用 -->
+
     </div>
 
     <div class="post-copyright">

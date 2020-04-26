@@ -17,7 +17,13 @@
       <pubDate>Sat, 25 Apr 2020 21:40:44 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/2020/%E5%9C%A8react%E4%B8%AD%E6%9B%B4%E5%A5%BD%E7%9A%84%E9%9B%86%E6%88%90typescript/</guid>
-      <description></description>
+      <description>定义一个公共类组件的 props 和 state类型
+import React, { Component, ComponentProps } from &#39;react&#39; type IProps = { initalNum: number } type IState = { username: string | null } class GlobalType extends Component&amp;lt;IProps, IState&amp;gt; { static defaultProps = { initalNum: 0 } }   在React中使用TS需要注意的几点：
+1. .jsx文件都需要变为 .tsx
+2. 使用class组件时必须要写 props和state的类型声明(以此代替了propTypes)
+3. 需要定义全局变量时，在根目录的 global.d.ts 里写，使用时无需引入
+4. 接口，其他类型声明在types/**.ts里写，统一规范化
+class组件类型  React.ComponentProps: 获取指定组件的props类型  type getGlobalTypesForProps = ComponentProps&amp;lt;typeof GlobalType&amp;gt;  React.</description>
     </item>
     
     <item>
