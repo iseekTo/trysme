@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "Git Rebase简单使用",
     "headline" : "Git Rebase简单使用",
-    "description" : " 多个commit合成一个并提交远程  git log 选清楚要合并的commit id，从早提交的一个开始算起，到你想合并的commit区间\n git rebase -i HEAD~3 (或者你的commit id 区间)\n 此时弹出一个vim交互页面，如果commit过多，则底部输入指令 %s\/pick\/s\/g\n 指令解释: 批量替换，将pick字节的改为squash(简写s), g全部 有一个需要改一下，在command处的我们把它给还原即可\n  执行完毕如果又出现，successfully updated\x26hellip; 然后会出现一个无序数字字母组成的分支名\n 执行 git checkout -b new branch git add . git commit -m \x27some msg\x27 git push 可选，多余分支删掉即可。\n  ",
+    "description" : "多个commit合成一个并提交远程  git log 选清楚要合并的commit id，从早提交的一个开始算起，到你想合并的commit区间\n git rebase -i HEAD~3 (或者你的commit id 区间)\n 此时弹出一个vim交互页面，如果commit过多，则底部输入指令 %s\/pick\/s\/g\n 指令解释: 批量替换，将pick字节的改为squash(简写s), g全部 有一个需要改一下，在command处的我们把它给还原即可\n  执行完毕如果又出现，successfully updated\x26hellip; 然后会出现一个无序数字字母组成的分支名\n 执行 git checkout -b new branch git add . git commit -m \x27some msg\x27 git push 可选，多余分支删掉即可。\n  去掉上一次的提交 git reset HEAD^ 或者 commitid",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -57,7 +57,7 @@
     "datePublished": "2020-04-15 10:36:02 \x2b0800 CST",
     "dateModified" : "2020-04-15 10:36:02 \x2b0800 CST",
     "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/git-rebase%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8\/",
-    "wordCount" : "38",
+    "wordCount" : "44",
     "keywords" : [ "tool","git", "wm\x27s blog"]
 }
 </script>
@@ -161,6 +161,7 @@
       <nav id="TableOfContents">
 <ul>
 <li><a href="#多个commit合成一个并提交远程">多个commit合成一个并提交远程</a></li>
+<li><a href="#去掉上一次的提交">去掉上一次的提交</a></li>
 </ul>
 </nav>
     </div>
@@ -248,6 +249,10 @@
 <li>执行 <code>git checkout -b new branch</code>  <code>git add .</code>  <code>git commit -m 'some msg'</code>  <code>git push</code></li>
 <li>可选，多余分支删掉即可。<br /></li>
 </ol>
+
+<h1 id="去掉上一次的提交">去掉上一次的提交</h1>
+
+<p><code>git reset HEAD^ 或者 commitid</code></p>
 
     </div>
 
