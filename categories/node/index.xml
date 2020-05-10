@@ -6,10 +6,20 @@
     <description>Recent content in node on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Feb 2020 17:06:47 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2020 14:27:31 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/categories/node/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Wrk压测工具</title>
+      <link>https://iseekto.github.io/trysme/2020/wrk%E5%8E%8B%E6%B5%8B%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Sun, 10 May 2020 14:27:31 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/wrk%E5%8E%8B%E6%B5%8B%E5%B7%A5%E5%85%B7/</guid>
+      <description>基本使用: wrk -t8 -c200 -d30s http://localhost:3000/test
+命令行选项 -c, --connections: 总的http并发数 -d, --duration: 持续压测时间, 比如: 2s, 2m, 2h -t, --threads: 总线程数 -s, --script: -H, --header: 添加http header, 比如. &amp;quot;User-Agent: wrk&amp;quot; --latency: 在控制台打印出延迟统计情况 --timeout: http超时时间  运行结果 # wrk -t8 -c200 -d30s http://localhost:3000/test Running 30s test @ http://localhost:3000/test 8 threads and 200 connections Thread Stats Avg Stdev Max +/- Stdev Latency 933.40ms 588.82ms 2.00s 56.50% Req/Sec 15.05 15.87 180.00 92.63% 1012 requests in 30.</description>
+    </item>
     
     <item>
       <title>Mongodb相关问题</title>

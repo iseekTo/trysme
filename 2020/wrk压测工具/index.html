@@ -10,9 +10,9 @@
   
   <meta name="keywords" content="blog">
   
-  <link rel="prev" href="https://iseekto.github.io/trysme/2020/ts-react/" />
-  <link rel="next" href="https://iseekto.github.io/trysme/2020/wrk%E5%8E%8B%E6%B5%8B%E5%B7%A5%E5%85%B7/" />
-  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/%E5%9C%A8react%E4%B8%AD%E6%9B%B4%E5%A5%BD%E7%9A%84%E9%9B%86%E6%88%90typescript/" />
+  <link rel="prev" href="https://iseekto.github.io/trysme/2020/%E5%9C%A8react%E4%B8%AD%E6%9B%B4%E5%A5%BD%E7%9A%84%E9%9B%86%E6%88%90typescript/" />
+  
+  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/wrk%E5%8E%8B%E6%B5%8B%E5%B7%A5%E5%85%B7/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -22,10 +22,10 @@
   <title>
        
        
-           在React中更好的集成TypeScript | wm&#39;s blog
+           Wrk压测工具 | wm&#39;s blog
        
   </title>
-  <meta name="title" content="在React中更好的集成TypeScript | wm&#39;s blog">
+  <meta name="title" content="Wrk压测工具 | wm&#39;s blog">
     
   
   <link rel="stylesheet" href="/trysme/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/iseekto.github.io\/trysme\/"
     },
     "articleSection" : "posts",
-    "name" : "在React中更好的集成TypeScript",
-    "headline" : "在React中更好的集成TypeScript",
-    "description" : "定义一个公共类组件的 props 和 state类型\nimport React, { Component, ComponentProps } from \x27react\x27 type IProps = { initalNum: number } type IState = { username: string | null } class GlobalType extends Component\x26lt;IProps, IState\x26gt; { static defaultProps = { initalNum: 0 } }   在React中使用TS需要注意的几点：\n1. .jsx文件都需要变为 .tsx\n2. 使用class组件时必须要写 props和state的类型声明(以此代替了propTypes)\n3. 需要定义全局变量时，在根目录的 global.d.ts 里写，使用时无需引入\n4. 接口，其他类型声明在types\/**.ts里写，统一规范化\nclass组件类型  React.ComponentProps: 获取指定组件的props类型  type getGlobalTypesForProps = ComponentProps\x26lt;typeof GlobalType\x26gt;  React.",
+    "name" : "Wrk压测工具",
+    "headline" : "Wrk压测工具",
+    "description" : "基本使用: wrk -t8 -c200 -d30s http:\/\/localhost:3000\/test\n命令行选项 -c, --connections: 总的http并发数 -d, --duration: 持续压测时间, 比如: 2s, 2m, 2h -t, --threads: 总线程数 -s, --script: -H, --header: 添加http header, 比如. \x26quot;User-Agent: wrk\x26quot; --latency: 在控制台打印出延迟统计情况 --timeout: http超时时间  运行结果 # wrk -t8 -c200 -d30s http:\/\/localhost:3000\/test Running 30s test @ http:\/\/localhost:3000\/test 8 threads and 200 connections Thread Stats Avg Stdev Max \x2b\/- Stdev Latency 933.40ms 588.82ms 2.00s 56.50% Req\/Sec 15.05 15.87 180.00 92.63% 1012 requests in 30.",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -54,11 +54,11 @@
     "accountablePerson" : "_weimou",
     "copyrightHolder" : "_weimou",
     "copyrightYear" : "2020",
-    "datePublished": "2020-04-25 21:40:44 \x2b0800 CST",
-    "dateModified" : "2020-04-25 21:40:44 \x2b0800 CST",
-    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/%E5%9C%A8react%E4%B8%AD%E6%9B%B4%E5%A5%BD%E7%9A%84%E9%9B%86%E6%88%90typescript\/",
-    "wordCount" : "77",
-    "keywords" : [ "react","ts", "wm\x27s blog"]
+    "datePublished": "2020-05-10 14:27:31 \x2b0800 CST",
+    "dateModified" : "2020-05-10 14:27:31 \x2b0800 CST",
+    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/wrk%E5%8E%8B%E6%B5%8B%E5%B7%A5%E5%85%B7\/",
+    "wordCount" : "97",
+    "keywords" : [  "wm\x27s blog"]
 }
 </script>
 
@@ -135,17 +135,16 @@
           
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">在React中更好的集成TypeScript</h1>
+        <h1 class="post-title" itemprop="name headline">Wrk压测工具</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2020-04-25 itemprop="datePublished">April 25, 2020</time>
+                on <time datetime=2020-05-10 itemprop="datePublished">May 10, 2020</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://iseekto.github.io/trysme/categories/react/"> react </a>
-                        <a href="https://iseekto.github.io/trysme/categories/typescript/"> TypeScript </a>
+                        <a href="https://iseekto.github.io/trysme/categories/node/"> node </a>
                         
                 </span>
                 
@@ -161,7 +160,15 @@
     <div class="post-toc-content">
       <nav id="TableOfContents">
 <ul>
-<li><a href="#class组件类型">class组件类型</a></li>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#基本使用">基本使用:</a></li>
+<li><a href="#命令行选项">命令行选项</a></li>
+<li><a href="#运行结果">运行结果</a></li>
+</ul></li>
+</ul></li>
 </ul>
 </nav>
     </div>
@@ -234,56 +241,39 @@
 
           
 
-<blockquote>
-<p>定义一个公共类组件的 props 和 state类型</p>
+<h3 id="基本使用">基本使用:</h3>
 
-<pre><code class="language-js">import React, { Component, ComponentProps } from 'react'
+<p><code>wrk -t8 -c200 -d30s http://localhost:3000/test</code></p>
 
-type IProps = {
-    initalNum: number
-}
+<h3 id="命令行选项">命令行选项</h3>
 
-type IState = {
-    username: string | null
-}
-
-class GlobalType extends Component&lt;IProps, IState&gt; {
-    static defaultProps = {
-        initalNum: 0
-    } 
-}
+<pre><code class="language-bash">-c, --connections: 总的http并发数
+-d, --duration:    持续压测时间, 比如: 2s, 2m, 2h
+-t, --threads:     总线程数
+-s, --script:      
+-H, --header:      添加http header, 比如. &quot;User-Agent: wrk&quot;
+    --latency:     在控制台打印出延迟统计情况
+    --timeout:     http超时时间
 </code></pre>
-</blockquote>
 
-<p>在React中使用TS需要注意的几点：<br />
-1. <code>.jsx</code>文件都需要变为 <code>.tsx</code><br />
-2. 使用class组件时必须要写 <code>props</code>和<code>state</code>的类型声明(以此代替了propTypes)<br />
-3. 需要定义全局变量时，在根目录的 <code>global.d.ts</code> 里写，使用时无需引入<br />
-4. 接口，其他类型声明在<code>types/**.ts</code>里写，统一规范化</p>
+<h3 id="运行结果">运行结果</h3>
 
-<h1 id="class组件类型">class组件类型</h1>
+<pre><code class="language-bash"># wrk -t8 -c200 -d30s http://localhost:3000/test
+Running 30s test @ http://localhost:3000/test
+  8 threads and 200 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   933.40ms  588.82ms   2.00s    56.50%
+    Req/Sec    15.05     15.87   180.00     92.63%
+  1012 requests in 30.07s, 10.00MB read
+  Socket errors: connect 0, read 186, write 0, timeout 681
+Requests/sec:     33.66
+Transfer/sec:    340.71KB
+</code></pre>
 
-<ul>
-<li>React.ComponentProps: 获取指定组件的props类型
-
-<ul>
-<li><code>type getGlobalTypesForProps = ComponentProps&lt;typeof GlobalType&gt;</code></li>
-</ul></li>
-<li>React.ComponentType: 表示 <code>React.FC | React.Component</code> 的并集的类型-用于HOC</li>
-</ul>
-
-<blockquote>
-<p>由于hook的出现，以往函数式组件的SFC类型已被废除
-- FC</p>
-</blockquote>
-
-<!-- 
-    // S = state types
-    // K = state all key
-    // Pick<S, K> = S[K] = 从源类型中拿到想要的key，然后在组成key-value
- -->
-
-<!-- 高阶组件的类型声明及正确使用 -->
+<p>说明：以上使用8个线程，200个并发，对测试接口进行30秒的压测，得出的结果。<br />
+结论：<br />
+    - 延迟平均达到 933ms， qps平均只有 15 ，这是非常坏的结果<br />
+    - QPS（单个进程每秒请求服务器的成功次数）太低</p>
 
     </div>
 
@@ -299,7 +289,7 @@ class GlobalType extends Component&lt;IProps, IState&gt; {
             <p class="copyright-item">
                     <span>Link:</span>
                     
-                    <a href=https://iseekto.github.io/trysme/2020/%E5%9C%A8react%E4%B8%AD%E6%9B%B4%E5%A5%BD%E7%9A%84%E9%9B%86%E6%88%90typescript/>
+                    <a href=https://iseekto.github.io/trysme/2020/wrk%E5%8E%8B%E6%B5%8B%E5%B7%A5%E5%85%B7/>
                         <script>
                             document.write(decodeURI(location.origin + location.pathname))
                         </script>
@@ -316,17 +306,6 @@ class GlobalType extends Component&lt;IProps, IState&gt; {
   
     <div class="post-tags">
         
-            <section>
-            <i class="iconfont icon-tag"></i>Tag(s): 
-            
-            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/react/">
-                    #react</a></span>
-            
-            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/ts/">
-                    #ts</a></span>
-            
-            </section>
-        
         <section>
                 <a href="javascript:window.history.back();">back</a></span> · 
                 <span><a href="https://iseekto.github.io/trysme/">home</a></span>
@@ -335,10 +314,8 @@ class GlobalType extends Component&lt;IProps, IState&gt; {
 
     <div class="post-nav">
         
-        <a href="https://iseekto.github.io/trysme/2020/ts-react/" class="prev" rel="prev" title="Ts React"><i class="iconfont icon-left"></i>&nbsp;Ts React</a>
+        <a href="https://iseekto.github.io/trysme/2020/%E5%9C%A8react%E4%B8%AD%E6%9B%B4%E5%A5%BD%E7%9A%84%E9%9B%86%E6%88%90typescript/" class="prev" rel="prev" title="在React中更好的集成TypeScript"><i class="iconfont icon-left"></i>&nbsp;在React中更好的集成TypeScript</a>
          
-        
-        <a href="https://iseekto.github.io/trysme/2020/wrk%E5%8E%8B%E6%B5%8B%E5%B7%A5%E5%85%B7/" class="next" rel="next" title="Wrk压测工具">Wrk压测工具&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -360,7 +337,7 @@ class GlobalType extends Component&lt;IProps, IState&gt; {
       var gitalk = new Gitalk({
         
         id: location.pathname.substr(0, 50),
-        title: '在React中更好的集成TypeScript',
+        title: 'Wrk压测工具',
         clientID: '64ecd4438b6b3a3a9bd8',
         clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
         repo: 'trysme-comment',
