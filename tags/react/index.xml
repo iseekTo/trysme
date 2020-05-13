@@ -23,7 +23,9 @@ import React, { Component, ComponentProps } from &#39;react&#39; type IProps = {
 2. 使用class组件时必须要写 props和state的类型声明(以此代替了propTypes)
 3. 需要定义全局变量时，在根目录的 global.d.ts 里写，使用时无需引入
 4. 接口，其他类型声明在types/**.ts里写，统一规范化
-class组件类型  React.ComponentProps: 获取指定组件的props类型  type getGlobalTypesForProps = ComponentProps&amp;lt;typeof GlobalType&amp;gt;  React.</description>
+class组件类型  React.ComponentProps: 获取指定组件的props类型
+ type getGlobalTypesForProps = ComponentProps&amp;lt;typeof GlobalType&amp;gt;
+  React.</description>
     </item>
     
     <item>

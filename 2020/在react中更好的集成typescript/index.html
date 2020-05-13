@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "在React中更好的集成TypeScript",
     "headline" : "在React中更好的集成TypeScript",
-    "description" : "定义一个公共类组件的 props 和 state类型\nimport React, { Component, ComponentProps } from \x27react\x27 type IProps = { initalNum: number } type IState = { username: string | null } class GlobalType extends Component\x26lt;IProps, IState\x26gt; { static defaultProps = { initalNum: 0 } }   在React中使用TS需要注意的几点：\n1. .jsx文件都需要变为 .tsx\n2. 使用class组件时必须要写 props和state的类型声明(以此代替了propTypes)\n3. 需要定义全局变量时，在根目录的 global.d.ts 里写，使用时无需引入\n4. 接口，其他类型声明在types\/**.ts里写，统一规范化\nclass组件类型  React.ComponentProps: 获取指定组件的props类型  type getGlobalTypesForProps = ComponentProps\x26lt;typeof GlobalType\x26gt;  React.",
+    "description" : "定义一个公共类组件的 props 和 state类型\nimport React, { Component, ComponentProps } from \x27react\x27 type IProps = { initalNum: number } type IState = { username: string | null } class GlobalType extends Component\x26lt;IProps, IState\x26gt; { static defaultProps = { initalNum: 0 } }   在React中使用TS需要注意的几点：\n1. .jsx文件都需要变为 .tsx\n2. 使用class组件时必须要写 props和state的类型声明(以此代替了propTypes)\n3. 需要定义全局变量时，在根目录的 global.d.ts 里写，使用时无需引入\n4. 接口，其他类型声明在types\/**.ts里写，统一规范化\nclass组件类型  React.ComponentProps: 获取指定组件的props类型\n type getGlobalTypesForProps = ComponentProps\x26lt;typeof GlobalType\x26gt;\n  React.",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -57,7 +57,7 @@
     "datePublished": "2020-04-25 21:40:44 \x2b0800 CST",
     "dateModified" : "2020-04-25 21:40:44 \x2b0800 CST",
     "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/%E5%9C%A8react%E4%B8%AD%E6%9B%B4%E5%A5%BD%E7%9A%84%E9%9B%86%E6%88%90typescript\/",
-    "wordCount" : "77",
+    "wordCount" : "193",
     "keywords" : [ "react","ts", "wm\x27s blog"]
 }
 </script>
@@ -162,6 +162,11 @@
       <nav id="TableOfContents">
 <ul>
 <li><a href="#class组件类型">class组件类型</a></li>
+<li><a href="#react节点类型">React节点类型</a></li>
+<li><a href="#react-css">React &amp; CSS</a></li>
+<li><a href="#html-element">HTML Element</a></li>
+<li><a href="#react-xxxevent-htmlxxxelement">React.XXXEvent<HTMLXXXElement></a></li>
+<li><a href="#react-router类型">react-router类型</a></li>
 </ul>
 </nav>
     </div>
@@ -264,18 +269,82 @@ class GlobalType extends Component&lt;IProps, IState&gt; {
 <h1 id="class组件类型">class组件类型</h1>
 
 <ul>
-<li>React.ComponentProps: 获取指定组件的props类型
+<li>React.ComponentProps: 获取指定组件的props类型<br />
 
 <ul>
-<li><code>type getGlobalTypesForProps = ComponentProps&lt;typeof GlobalType&gt;</code></li>
+<li><code>type getGlobalTypesForProps = ComponentProps&lt;typeof GlobalType&gt;</code><br /></li>
 </ul></li>
-<li>React.ComponentType: 表示 <code>React.FC | React.Component</code> 的并集的类型-用于HOC</li>
+<li>React.ComponentType: 表示 <code>React.FC | React.Component</code> 的并集的类型-用于HOC<br /></li>
+</ul>
+
+<h1 id="react节点类型">React节点类型</h1>
+
+<ul>
+<li>React.ReactElement | JSX.Element<br />
+
+<ul>
+<li>此类型代表本机DOM组件（例如<code>&lt;div&gt;</code>）或用户定义的复合组件(例如<code>&lt;MyComponent /&gt;</code>)<br /></li>
+</ul></li>
+<li>React.ReactNode(库的常见类型)<br />
+
+<ul>
+<li>此类型表示任何可能的React节点类型的类型<br />
+
+<ul>
+<li>eg: <code>const elementOrPrimitive: React.ReactNode = 'string' || 0 || false || null || undefined || &lt;div /&gt; || &lt;MyComponent /&gt;;</code></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<h1 id="react-css">React &amp; CSS</h1>
+
+<ul>
+<li><code>type styles = React.CSSProperties</code> -&gt; <code>const _styles: styles = { flexDirection: 'row', ...}</code></li>
+</ul>
+
+<h1 id="html-element">HTML Element</h1>
+
+<ul>
+<li>获取某一DOM对象上的所有属性时，可通过<code>HTMLProps&lt;HTMLInputElement&gt;</code><br />
+
+<ul>
+<li><code>type InputProps = HTMLProps&lt;HTMLInputElement&gt;</code><br /></li>
+<li><code>const Input: React.FC&lt;InputProps&gt; = props =&gt; &lt;input {...props} /&gt;</code></li>
+</ul></li>
+</ul>
+
+<h1 id="react-xxxevent-htmlxxxelement">React.XXXEvent<HTMLXXXElement></h1>
+
+<ul>
+<li>代表更具体事件的类型。 一些常见的事件：ChangeEvent，FormEvent，FocusEvent，KeyboardEvent，MouseEvent，DragEvent，PointerEvent，WheelEvent，TouchEvent</li>
+<li>上述事件泛型接收一个标签类型<br /></li>
+<li><code>const inputChange = (event: React.ChangeEvent&lt;HTMLInputElement&gt;) =&gt; { e.cancelable = true }</code></li>
 </ul>
 
 <blockquote>
 <p>由于hook的出现，以往函数式组件的SFC类型已被废除
-- FC</p>
+- <code>FC&lt;P = {}&gt;</code> 接收一个泛型<code>P</code>，代表接收<code>props</code>类型</p>
 </blockquote>
+
+<h1 id="react-router类型">react-router类型</h1>
+
+<ul>
+<li><p>页面跳转时，需要用到 <code>this.props.history.push(...)</code>, 但又不想它报错，我们可以这样写</p>
+
+<pre><code class="language-js">// 引入函数及类型
+import { withRouter, RouteComponentProps } from 'react-router'
+
+// 定义组件内的props类型
+type IEmptyCommanyProps = Readonly&lt;{
+    onClick: () =&gt; void
+}&gt; &amp; RouteComponentProps
+
+// 如果不需要props 但组件报错
+type Iprops = {} &amp; RouteComponentProps
+
+export default withRouter(MyComponent)
+</code></pre></li>
+</ul>
 
 <!-- 
     // S = state types
