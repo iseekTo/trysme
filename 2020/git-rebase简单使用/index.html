@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "Git Rebase简单使用",
     "headline" : "Git Rebase简单使用",
-    "description" : "多个commit合成一个并提交远程  git log 选清楚要合并的commit id，从早提交的一个开始算起，到你想合并的commit区间\n git rebase -i HEAD~3 (或者你的commit id 区间)\n 此时弹出一个vim交互页面，如果commit过多，则底部输入指令 %s\/pick\/s\/g\n 指令解释: 批量替换，将pick字节的改为squash(简写s), g全部 有一个需要改一下，在command处的我们把它给还原即可\n  执行完毕如果又出现，successfully updated\x26hellip; 然后会出现一个无序数字字母组成的分支名\n 执行 git checkout -b new branch git add . git commit -m \x27some msg\x27 git push 可选，多余分支删掉即可。\n  去掉上一次的提交 git reset HEAD^ 或者 commitid",
+    "description" : "多个commit合成一个并提交远程  git log 选清楚要合并的commit id，从早提交的一个开始算起，到你想合并的commit区间\n git rebase -i master (或者你的commit id 区间)\n 此时弹出一个vim交互页面，如果commit过多，则底部输入指令 %s\/pick\/s\/g\n 指令解释: 批量替换，将pick字节的改为squash(简写s), g全部 有一个需要改一下，在command处的我们把它给还原即可\n  执行完毕如果又出现，successfully updated\x26hellip; 然后会出现一个无序数字字母组成的分支名\n 执行 git checkout -b new branch git add . git commit -m \x27some msg\x27 git push 可选，多余分支删掉即可。\n  去掉上一次的提交 git reset HEAD^ 或者 commitid",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -238,7 +238,7 @@
 
 <ol>
 <li>git log 选清楚要合并的commit id，从早提交的一个开始算起，到你想合并的commit区间<br /></li>
-<li><code>git rebase -i HEAD~3</code> (或者你的commit id 区间)<br /></li>
+<li><code>git rebase -i master</code> (或者你的commit id 区间)<br /></li>
 <li>此时弹出一个vim交互页面，如果commit过多，则底部输入指令 <code>%s/pick/s/g</code><br />
 
 <ul>
