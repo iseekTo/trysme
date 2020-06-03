@@ -17,8 +17,10 @@
       <pubDate>Mon, 01 Jun 2020 21:57:27 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/2020/docker%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4/</guid>
-      <description>镜像列表：docker images
-- 构建镜像: ` - 删除镜像:docker rmi images`
+      <description>后台运行：docker run -d IMAGE some command
+镜像列表：docker images
+构建镜像: docker image build --tag xxx
+删除镜像: docker rmi images
 停止：docker stop CONTAINER ID</description>
     </item>
     
