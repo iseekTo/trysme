@@ -19,7 +19,8 @@
       <guid>https://iseekto.github.io/trysme/2020/docker%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4/</guid>
       <description>后台运行：docker run -d IMAGE some command
 镜像列表：docker images
-构建镜像: docker image build --tag xxx
+构建镜像: docker image build ./ -t docker-test:1.0.0
+&amp;gt; 基于路径./（当前路径）打包一个镜像，镜像的名字是 docker-test，版本号是1.0.0。该命令会自动寻找Dockerfile来打包出一个镜像
 删除镜像: docker rmi images
 停止：docker stop CONTAINER ID</description>
     </item>

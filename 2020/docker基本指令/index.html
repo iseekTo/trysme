@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "Docker基本指令",
     "headline" : "Docker基本指令",
-    "description" : "后台运行：docker run -d IMAGE some command\n镜像列表：docker images\n构建镜像: docker image build --tag xxx\n删除镜像: docker rmi images\n停止：docker stop CONTAINER ID",
+    "description" : "后台运行：docker run -d IMAGE some command\n镜像列表：docker images\n构建镜像: docker image build .\/ -t docker-test:1.0.0\n\x26gt; 基于路径.\/（当前路径）打包一个镜像，镜像的名字是 docker-test，版本号是1.0.0。该命令会自动寻找Dockerfile来打包出一个镜像\n删除镜像: docker rmi images\n停止：docker stop CONTAINER ID",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -57,7 +57,7 @@
     "datePublished": "2020-06-01 21:57:27 \x2b0800 CST",
     "dateModified" : "2020-06-01 21:57:27 \x2b0800 CST",
     "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/docker%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4\/",
-    "wordCount" : "22",
+    "wordCount" : "26",
     "keywords" : [ "tool", "wm\x27s blog"]
 }
 </script>
@@ -226,8 +226,10 @@
           <p>后台运行：<code>docker run -d IMAGE some command</code></p>
 
 <p>镜像列表：<code>docker images</code><br />
-构建镜像: <code>docker image build --tag xxx</code><br />
-删除镜像: <code>docker rmi images</code></p>
+构建镜像: <code>docker image build ./ -t docker-test:1.0.0</code><br />
+&gt; 基于路径./（当前路径）打包一个镜像，镜像的名字是 docker-test，版本号是1.0.0。该命令会自动寻找Dockerfile来打包出一个镜像</p>
+
+<p>删除镜像: <code>docker rmi images</code></p>
 
 <p>停止：<code>docker stop CONTAINER ID</code></p>
 
