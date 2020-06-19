@@ -57,7 +57,7 @@
     "datePublished": "2020-06-19 14:06:39 \x2b0800 CST",
     "dateModified" : "2020-06-19 14:06:39 \x2b0800 CST",
     "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/shell\/",
-    "wordCount" : "101",
+    "wordCount" : "235",
     "keywords" : [ "shell", "wm\x27s blog"]
 }
 </script>
@@ -163,6 +163,8 @@
 <li><a href="#变量">变量</a></li>
 <li><a href="#字符串">字符串</a></li>
 <li><a href="#数组">数组</a></li>
+<li><a href="#传递参数">传递参数</a></li>
+<li><a href="#基本运算符">基本运算符</a></li>
 </ul>
 </nav>
     </div>
@@ -321,7 +323,7 @@
 <li>读取数组
 
 <ul>
-<li>常规下标读取
+<li>常规下标读取(从0开始)
 
 <ul>
 <li>eg: <code>echo &quot;ary index for one's value is: ${ary[1]} &quot;</code></li>
@@ -336,6 +338,82 @@
 <ul>
 <li>eg: <code>echo &quot;ary length is: ${#ary[@或者*]}&quot;</code></li>
 </ul></li>
+</ul></li>
+</ul>
+
+<h1 id="传递参数">传递参数</h1>
+
+<ul>
+<li>执行 Shell 脚本时，我们可以向脚本传递参数
+
+<ul>
+<li>$n。n 代表一个数字，1 为执行脚本的第一个参数，2 为执行脚本的第二个参数，以此类推……</li>
+<li>$0: 为执行的文件名
+
+<ul>
+<li><code>echo &quot;执行的文件名：$0&quot;; echo &quot;第一个参数: $1&quot;; echo &quot;第一个参数: $2&quot;</code></li>
+</ul></li>
+</ul></li>
+
+<li><p>可使用 <code>for i in &quot;$*或者$@&quot;</code> 打印传递的参数</p>
+
+<pre><code class="language-shell">echo &quot;-- \$* 演示 ---&quot;
+for i in &quot;$*&quot;; do
+    echo $i
+done
+
+echo &quot;-- \$@ 演示 ---&quot;
+for i in &quot;$@&quot;; do
+    echo $i
+done
+
+:&lt;&lt;'
+$ chmod +x sl.sh 
+$ ./sl.sh 1 2 3
+-- $* 演示 ---
+1 2 3
+-- $@ 演示 ---
+1
+2
+3
+'
+</code></pre></li>
+</ul>
+
+<h1 id="基本运算符">基本运算符</h1>
+
+<ul>
+<li>expr配合基本的算术运算符（表达式一定要有空格隔开）
+
+<ul>
+<li>eg: <code>sum=`expr 2 + 2`</code></li>
+<li>比较两数是否相等使用 <code>==</code>，字符串比较为一个 <code>=</code></li>
+</ul></li>
+<li>关系运算符 <a href="https://www.runoob.com/linux/linux-shell-basic-operators.html" rel="nofollow noreferrer" target="_blank">菜鸟Shell教程</a><br /></li>
+
+<li><p>字符串运算符</p>
+
+<ul>
+<li><code>=</code> :  检测两个字符串是否相等，相等返回 true。</li>
+<li><code>!=</code>:  与上取反。</li>
+<li><code>-z</code>:  检测字符串长度是否为0，为0返回 true。</li>
+<li><code>-n</code>:  与上取反。</li>
+
+<li><p><code>$</code> :  检测字符串是否为空，不为空返回 true。</p>
+
+<pre><code class="language-shell">a=&quot;10&quot;
+b=&quot;20&quot;
+c=&quot;30&quot;
+if [ $a != $b ] 
+then
+    echo &quot;a != b&quot;
+fi
+
+# a的长度和b的长度是否都不为0
+if [ -n &quot;$a&quot; ] &amp;&amp; [ -n &quot;$b&quot; ]; then
+echo &quot;a和b的长度都不为0&quot;
+fi
+</code></pre></li>
 </ul></li>
 </ul>
 
