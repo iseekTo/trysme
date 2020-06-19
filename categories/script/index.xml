@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>script on wm&#39;s blog</title>
+    <link>https://iseekto.github.io/trysme/categories/script/</link>
+    <description>Recent content in script on wm&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 19 Jun 2020 14:06:39 +0800</lastBuildDate>
+    
+	<atom:link href="https://iseekto.github.io/trysme/categories/script/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Shell</title>
+      <link>https://iseekto.github.io/trysme/2020/shell/</link>
+      <pubDate>Fri, 19 Jun 2020 14:06:39 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/shell/</guid>
+      <description>查看该文件大小 echo &amp;quot;this file size is: du -sh sl.sh # 返回 4.0K sl.sh
+ 变量  变量使用  定义变量，等号与其后不能有空格  eg: name=&amp;quot;lili&amp;quot;  输出变量  eg: echo $name  只读变量  eg: readonly ONLY_NAME=&amp;quot;lili&amp;quot;  删除变量(不能删除只读变量)  eg: unset name
+    字符串  单引号  单引号里的任何字符都会原样输出，单引号字符串中的变量是无效的  eg: str=&#39;is a str&#39;  单引号字串中不能出现单独一个的单引号（对单引号使用转义符后也不行），但可成对出现，作为字符串拼接使用。  双引号  双引号里可以有变量，可以出现转义字符  eg: name=&amp;quot; My name is \&amp;quot;${str}\&amp;quot;! \n&amp;quot;   获取字符串长度  eg: echo &amp;quot;name length: ${#str}&amp;quot; # 输出 8  提取子字符串  eg: slen=${#s} &amp;quot;get str: ${s:6:slen}&amp;quot;   数组  shell不支持多维数组，且不限制数组的大小</description>
+    </item>
+    
+  </channel>
+</rss>

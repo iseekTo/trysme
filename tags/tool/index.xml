@@ -173,6 +173,15 @@
     </item>
     
     <item>
+      <title>Mac常用指令</title>
+      <link>https://iseekto.github.io/trysme/2020/mac%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</link>
+      <pubDate>Sun, 19 Jan 2020 20:03:59 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/mac%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</guid>
+      <description>查看本机ip grep：筛选的意思 筛选某个键 ifconfig | grep &amp;quot;inet&amp;quot;</description>
+    </item>
+    
+    <item>
       <title>Hugo简单使用</title>
       <link>https://iseekto.github.io/trysme/2020/hugo%E7%AE%80%E5%8D%95%E5%AE%9E%E7%94%A8/</link>
       <pubDate>Wed, 15 Jan 2020 23:37:32 +0800</pubDate>
