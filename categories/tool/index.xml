@@ -6,10 +6,20 @@
     <description>Recent content in tool on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Apr 2020 10:36:02 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2020 14:03:37 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/categories/tool/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Mac刷新环境变量</title>
+      <link>https://iseekto.github.io/trysme/2020/mac%E5%88%B7%E6%96%B0%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</link>
+      <pubDate>Fri, 19 Jun 2020 14:03:37 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/mac%E5%88%B7%E6%96%B0%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</guid>
+      <description>安装 https://ohmyz.sh/ 执行：source ~/.zshrc
+系统自带 执行：source ~/bash_profile</description>
+    </item>
     
     <item>
       <title>Git Rebase简单使用</title>
