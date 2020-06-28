@@ -10,9 +10,9 @@
   
   <meta name="keywords" content="blog">
   
-  <link rel="prev" href="https://iseekto.github.io/trysme/2020/mac%E5%88%B7%E6%96%B0%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/" />
-  <link rel="next" href="https://iseekto.github.io/trysme/2020/%E6%AD%A3%E5%88%99%E5%A6%99%E7%94%A8/" />
-  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/shell/" />
+  <link rel="prev" href="https://iseekto.github.io/trysme/2020/shell/" />
+  
+  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/%E6%AD%A3%E5%88%99%E5%A6%99%E7%94%A8/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -22,10 +22,10 @@
   <title>
        
        
-           Shell | wm&#39;s blog
+           正则妙用 | wm&#39;s blog
        
   </title>
-  <meta name="title" content="Shell | wm&#39;s blog">
+  <meta name="title" content="正则妙用 | wm&#39;s blog">
     
   
   <link rel="stylesheet" href="/trysme/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/iseekto.github.io\/trysme\/"
     },
     "articleSection" : "posts",
-    "name" : "Shell",
-    "headline" : "Shell",
-    "description" : "查看该文件大小 echo \x26quot;this file size is: du -sh sl.sh # 返回 4.0K sl.sh\n 变量  变量使用  定义变量，等号与其后不能有空格  eg: name=\x26quot;lili\x26quot;  输出变量  eg: echo $name  只读变量  eg: readonly ONLY_NAME=\x26quot;lili\x26quot;  删除变量(不能删除只读变量)  eg: unset name\n    字符串  单引号  单引号里的任何字符都会原样输出，单引号字符串中的变量是无效的  eg: str=\x27is a str\x27  单引号字串中不能出现单独一个的单引号（对单引号使用转义符后也不行），但可成对出现，作为字符串拼接使用。  双引号  双引号里可以有变量，可以出现转义字符  eg: name=\x26quot; My name is \\\x26quot;${str}\\\x26quot;! \\n\x26quot;   获取字符串长度  eg: echo \x26quot;name length: ${#str}\x26quot; # 输出 8  提取子字符串  eg: slen=${#s} \x26quot;get str: ${s:6:slen}\x26quot;   数组  shell不支持多维数组，且不限制数组的大小",
+    "name" : "正则妙用",
+    "headline" : "正则妙用",
+    "description" : "常用正则技巧  只允许输入 can, man, fan 反之返回 false\n \/[cmf]an$\/\n  严格匹配以\x26rsquo;an\x26rsquo;结尾，且不以\x26rsquo;d\x26rsquo; \x26lsquo;r\x26rsquo;或\x26rsquo;p\x26rsquo;开头的任何三个字母词，要求只能是三个字母词\n \/^[^drp]an$\/ 如果想排除数字的话可以这样写 ^[^a-z]an$\n  匹配在这三个字母词的范围区间内的字符串 \x26lsquo;Ana\x26rsquo;, \x26lsquo;Bob\x26rsquo;, \x26lsquo;Cpc\x26rsquo;\n 在表达式中使用不同的范围(精确匹配而不是一味的使用a-zA-Z) \/[A-C][n-p][a-c]$\/\n  匹配字符中重复的字母，最少2个，最多5个 \x26lsquo;wazzzzze\x26rsquo;, \x26lsquo;wazze\x26rsquo;, \x26lsquo;waze\x26rsquo;\n \/waz{2,5}e$\/\n  可选字符 严格匹配包括\x26rsquo;几\x26rsquo;个 \x26lsquo;文件(或复数)\x26rsquo; \x26lsquo;?(符号)\x26rsquo;, 注意空格\n example: \x26lsquo;1 file found?\x26rsquo; \x26lsquo;2 files found?\x26rsquo; \x26lsquo;21 files found?\x26rsquo; \x26lsquo;not file found\x26rsquo; \/^\\d\x2b files? found\\?$\/  空白后跟固定字符\n example: \x26lsquo;1. qwe\x26rsquo; \x26lsquo;2. qwe\x26rsquo; \x26lsquo;3. qwe\x26rsquo; \/^\\d\\.",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -54,11 +54,11 @@
     "accountablePerson" : "_weimou",
     "copyrightHolder" : "_weimou",
     "copyrightYear" : "2020",
-    "datePublished": "2020-06-19 14:06:39 \x2b0800 CST",
-    "dateModified" : "2020-06-19 14:06:39 \x2b0800 CST",
-    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/shell\/",
-    "wordCount" : "235",
-    "keywords" : [ "shell", "wm\x27s blog"]
+    "datePublished": "2020-06-28 13:16:34 \x2b0800 CST",
+    "dateModified" : "2020-06-28 13:16:34 \x2b0800 CST",
+    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/%E6%AD%A3%E5%88%99%E5%A6%99%E7%94%A8\/",
+    "wordCount" : "62",
+    "keywords" : [ "tool", "wm\x27s blog"]
 }
 </script>
 
@@ -135,16 +135,16 @@
           
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Shell</h1>
+        <h1 class="post-title" itemprop="name headline">正则妙用</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2020-06-19 itemprop="datePublished">June 19, 2020</time>
+                on <time datetime=2020-06-28 itemprop="datePublished">June 28, 2020</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://iseekto.github.io/trysme/categories/script/"> script </a>
+                        <a href="https://iseekto.github.io/trysme/categories/tool/"> tool </a>
                         
                 </span>
                 
@@ -160,11 +160,7 @@
     <div class="post-toc-content">
       <nav id="TableOfContents">
 <ul>
-<li><a href="#变量">变量</a></li>
-<li><a href="#字符串">字符串</a></li>
-<li><a href="#数组">数组</a></li>
-<li><a href="#传递参数">传递参数</a></li>
-<li><a href="#基本运算符">基本运算符</a></li>
+<li><a href="#常用正则技巧">常用正则技巧</a></li>
 </ul>
 </nav>
     </div>
@@ -237,183 +233,64 @@
 
           
 
-<blockquote>
-<p>查看该文件大小 <code>echo &quot;this file size is: du -sh sl.sh # 返回 4.0K sl.sh</code></p>
-</blockquote>
-
-<h1 id="变量">变量</h1>
+<h1 id="常用正则技巧">常用正则技巧</h1>
 
 <ul>
-<li>变量使用
+<li>只允许输入 <code>can</code>, <code>man</code>, <code>fan</code> 反之返回 <code>false</code><br />
 
 <ul>
-<li>定义变量，等号与其后不能有空格
-
-<ul>
-<li>eg: <code>name=&quot;lili&quot;</code></li>
-</ul></li>
-<li>输出变量
-
-<ul>
-<li>eg: <code>echo $name</code></li>
-</ul></li>
-<li>只读变量
-
-<ul>
-<li>eg: <code>readonly ONLY_NAME=&quot;lili&quot;</code></li>
-</ul></li>
-<li>删除变量(不能删除只读变量)
-
-<ul>
-<li>eg: <code>unset name</code><br /></li>
-</ul></li>
-</ul></li>
-</ul>
-
-<h1 id="字符串">字符串</h1>
-
-<ul>
-<li>单引号
-
-<ul>
-<li>单引号里的任何字符都会原样输出，单引号字符串中的变量是无效的
-
-<ul>
-<li>eg: <code>str='is a str'</code></li>
-</ul></li>
-<li>单引号字串中不能出现单独一个的单引号（对单引号使用转义符后也不行），但可成对出现，作为字符串拼接使用。</li>
-</ul></li>
-<li>双引号
-
-<ul>
-<li>双引号里可以有变量，可以出现转义字符
-
-<ul>
-<li>eg: <code>name=&quot; My name is \&quot;${str}\&quot;! \n&quot;</code></li>
-</ul></li>
-</ul></li>
-<li>获取字符串长度
-
-<ul>
-<li>eg: <code>echo &quot;name length: ${#str}&quot;     # 输出 8</code></li>
-</ul></li>
-<li>提取子字符串
-
-<ul>
-<li>eg: <code>slen=${#s} &quot;get str: ${s:6:slen}&quot;</code></li>
-</ul></li>
-</ul>
-
-<h1 id="数组">数组</h1>
-
-<blockquote>
-<p>shell不支持多维数组，且不限制数组的大小</p>
-</blockquote>
-
-<ul>
-<li>定义数组
-
-<ul>
-<li>用括号来表示数组，数组元素用&rdquo;空格&rdquo;符号分割开
-
-<ul>
-<li>eg: <code>ary=(1 2 3) 或者 ary[3]=4</code></li>
-</ul></li>
-</ul></li>
-<li>读取数组
-
-<ul>
-<li>常规下标读取(从0开始)
-
-<ul>
-<li>eg: <code>echo &quot;ary index for one's value is: ${ary[1]} &quot;</code></li>
-</ul></li>
-<li>使用 @ 符号可以获取数组中的所有元素
-
-<ul>
-<li>eg: <code>echo &quot;ary all element is: ${ary[@]}&quot;</code></li>
-</ul></li>
-<li>获取数组的长度
-
-<ul>
-<li>eg: <code>echo &quot;ary length is: ${#ary[@或者*]}&quot;</code></li>
-</ul></li>
-</ul></li>
-</ul>
-
-<h1 id="传递参数">传递参数</h1>
-
-<ul>
-<li>执行 Shell 脚本时，我们可以向脚本传递参数
-
-<ul>
-<li>$n。n 代表一个数字，1 为执行脚本的第一个参数，2 为执行脚本的第二个参数，以此类推……</li>
-<li>$0: 为执行的文件名
-
-<ul>
-<li><code>echo &quot;执行的文件名：$0&quot;; echo &quot;第一个参数: $1&quot;; echo &quot;第一个参数: $2&quot;</code></li>
-</ul></li>
+<li><code>/[cmf]an$/</code><br /></li>
 </ul></li>
 
-<li><p>可使用 <code>for i in &quot;$*或者$@&quot;</code> 打印传递的参数</p>
-
-<pre><code class="language-shell">echo &quot;-- \$* 演示 ---&quot;
-for i in &quot;$*&quot;; do
-    echo $i
-done
-
-echo &quot;-- \$@ 演示 ---&quot;
-for i in &quot;$@&quot;; do
-    echo $i
-done
-
-:&lt;&lt;'
-$ chmod +x sl.sh 
-$ ./sl.sh 1 2 3
--- $* 演示 ---
-1 2 3
--- $@ 演示 ---
-1
-2
-3
-'
-</code></pre></li>
-</ul>
-
-<h1 id="基本运算符">基本运算符</h1>
+<li><p>严格匹配以&rsquo;an&rsquo;结尾，且不以&rsquo;d&rsquo; &lsquo;r&rsquo;或&rsquo;p&rsquo;开头的任何三个字母词，要求只能是三个字母词</p>
 
 <ul>
-<li>expr配合基本的算术运算符（表达式一定要有空格隔开）
+<li><code>/^[^drp]an$/</code></li>
+<li>如果想排除数字的话可以这样写 <code>^[^a-z]an$</code><br />
 
-<ul>
-<li>eg: <code>sum=`expr 2 + 2`</code></li>
-<li>比较两数是否相等使用 <code>==</code>，字符串比较为一个 <code>=</code></li>
+
+<br /></li>
 </ul></li>
-<li>关系运算符 <a href="https://www.runoob.com/linux/linux-shell-basic-operators.html" rel="nofollow noreferrer" target="_blank">菜鸟Shell教程</a><br /></li>
 
-<li><p>字符串运算符</p>
+<li><p>匹配在这三个字母词的范围区间内的字符串 &lsquo;Ana&rsquo;, &lsquo;Bob&rsquo;, &lsquo;Cpc&rsquo;</p>
 
 <ul>
-<li><code>=</code> :  检测两个字符串是否相等，相等返回 true。</li>
-<li><code>!=</code>:  与上取反。</li>
-<li><code>-z</code>:  检测字符串长度是否为0，为0返回 true。</li>
-<li><code>-n</code>:  与上取反。</li>
+<li>在表达式中使用不同的范围(精确匹配而不是一味的使用a-zA-Z)</li>
+<li><code>/[A-C][n-p][a-c]$/</code><br /></li>
+</ul></li>
 
-<li><p><code>$</code> :  检测字符串是否为空，不为空返回 true。</p>
+<li><p>匹配字符中重复的字母，最少2个，最多5个 &lsquo;wazzzzze&rsquo;, &lsquo;wazze&rsquo;, &lsquo;waze&rsquo;</p>
 
-<pre><code class="language-shell">a=&quot;10&quot;
-b=&quot;20&quot;
-c=&quot;30&quot;
-if [ $a != $b ] 
-then
-    echo &quot;a != b&quot;
-fi
+<ul>
+<li><code>/waz{2,5}e$/</code><br />
 
-# a的长度和b的长度是否都不为0
-if [ -n &quot;$a&quot; ] &amp;&amp; [ -n &quot;$b&quot; ]; then
-echo &quot;a和b的长度都不为0&quot;
-fi
-</code></pre></li>
+
+<br /></li>
+</ul></li>
+
+<li><p>可选字符 严格匹配包括&rsquo;几&rsquo;个 &lsquo;文件(或复数)&rsquo; &lsquo;?(符号)&rsquo;, 注意空格</p>
+
+<ul>
+<li>example: &lsquo;1 file found?&rsquo; &lsquo;2 files found?&rsquo; &lsquo;21 files found?&rsquo; &lsquo;not file found&rsquo;</li>
+<li><code>/^\d+ files? found\?$/</code></li>
+</ul></li>
+
+<li><p>空白后跟固定字符</p>
+
+<ul>
+<li>example: &lsquo;1. qwe&rsquo;  &lsquo;2.    qwe&rsquo;  &lsquo;3.  qwe&rsquo;</li>
+<li><code>/^\d\.\s+qwe/</code><br />
+
+<br />
+<br /></li>
+</ul></li>
+
+<li><p>捕获组 匹配前缀为 file至.pdf的内容</p>
+
+<ul>
+<li>example: &lsquo;file_transform.pdf&rsquo; &lsquo;file_21300.pdf&rsquo; &lsquo;testfile.tmp.pdf&rsquo;</li>
+<li><code>/^(file.+)\.pdf$/</code>
+<br /></li>
 </ul></li>
 </ul>
 
@@ -431,7 +308,7 @@ fi
             <p class="copyright-item">
                     <span>Link:</span>
                     
-                    <a href=https://iseekto.github.io/trysme/2020/shell/>
+                    <a href=https://iseekto.github.io/trysme/2020/%E6%AD%A3%E5%88%99%E5%A6%99%E7%94%A8/>
                         <script>
                             document.write(decodeURI(location.origin + location.pathname))
                         </script>
@@ -451,8 +328,8 @@ fi
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/shell/">
-                    #shell</a></span>
+            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/tool/">
+                    #tool</a></span>
             
             </section>
         
@@ -464,10 +341,8 @@ fi
 
     <div class="post-nav">
         
-        <a href="https://iseekto.github.io/trysme/2020/mac%E5%88%B7%E6%96%B0%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/" class="prev" rel="prev" title="Mac刷新环境变量"><i class="iconfont icon-left"></i>&nbsp;Mac刷新环境变量</a>
+        <a href="https://iseekto.github.io/trysme/2020/shell/" class="prev" rel="prev" title="Shell"><i class="iconfont icon-left"></i>&nbsp;Shell</a>
          
-        
-        <a href="https://iseekto.github.io/trysme/2020/%E6%AD%A3%E5%88%99%E5%A6%99%E7%94%A8/" class="next" rel="next" title="正则妙用">正则妙用&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -489,7 +364,7 @@ fi
       var gitalk = new Gitalk({
         
         id: location.pathname.substr(0, 50),
-        title: 'Shell',
+        title: '正则妙用',
         clientID: '64ecd4438b6b3a3a9bd8',
         clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
         repo: 'trysme-comment',

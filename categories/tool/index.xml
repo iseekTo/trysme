@@ -6,10 +6,29 @@
     <description>Recent content in tool on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jun 2020 14:03:37 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2020 13:16:34 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/categories/tool/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>正则妙用</title>
+      <link>https://iseekto.github.io/trysme/2020/%E6%AD%A3%E5%88%99%E5%A6%99%E7%94%A8/</link>
+      <pubDate>Sun, 28 Jun 2020 13:16:34 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/%E6%AD%A3%E5%88%99%E5%A6%99%E7%94%A8/</guid>
+      <description>常用正则技巧  只允许输入 can, man, fan 反之返回 false
+ /[cmf]an$/
+  严格匹配以&amp;rsquo;an&amp;rsquo;结尾，且不以&amp;rsquo;d&amp;rsquo; &amp;lsquo;r&amp;rsquo;或&amp;rsquo;p&amp;rsquo;开头的任何三个字母词，要求只能是三个字母词
+ /^[^drp]an$/ 如果想排除数字的话可以这样写 ^[^a-z]an$
+  匹配在这三个字母词的范围区间内的字符串 &amp;lsquo;Ana&amp;rsquo;, &amp;lsquo;Bob&amp;rsquo;, &amp;lsquo;Cpc&amp;rsquo;
+ 在表达式中使用不同的范围(精确匹配而不是一味的使用a-zA-Z) /[A-C][n-p][a-c]$/
+  匹配字符中重复的字母，最少2个，最多5个 &amp;lsquo;wazzzzze&amp;rsquo;, &amp;lsquo;wazze&amp;rsquo;, &amp;lsquo;waze&amp;rsquo;
+ /waz{2,5}e$/
+  可选字符 严格匹配包括&amp;rsquo;几&amp;rsquo;个 &amp;lsquo;文件(或复数)&amp;rsquo; &amp;lsquo;?(符号)&amp;rsquo;, 注意空格
+ example: &amp;lsquo;1 file found?&amp;rsquo; &amp;lsquo;2 files found?&amp;rsquo; &amp;lsquo;21 files found?&amp;rsquo; &amp;lsquo;not file found&amp;rsquo; /^\d+ files? found\?$/  空白后跟固定字符
+ example: &amp;lsquo;1. qwe&amp;rsquo; &amp;lsquo;2. qwe&amp;rsquo; &amp;lsquo;3. qwe&amp;rsquo; /^\d\.</description>
+    </item>
     
     <item>
       <title>Mac刷新环境变量</title>
