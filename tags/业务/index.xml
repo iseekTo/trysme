@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>业务 on wm&#39;s blog</title>
+    <link>https://iseekto.github.io/trysme/tags/%E4%B8%9A%E5%8A%A1/</link>
+    <description>Recent content in 业务 on wm&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 24 Jul 2020 22:06:38 +0800</lastBuildDate>
+    
+	<atom:link href="https://iseekto.github.io/trysme/tags/%E4%B8%9A%E5%8A%A1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Q 业务常见需求思路</title>
+      <link>https://iseekto.github.io/trysme/2020/q-%E4%B8%9A%E5%8A%A1%E5%B8%B8%E8%A7%81%E9%9C%80%E6%B1%82%E6%80%9D%E8%B7%AF/</link>
+      <pubDate>Fri, 24 Jul 2020 22:06:38 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/q-%E4%B8%9A%E5%8A%A1%E5%B8%B8%E8%A7%81%E9%9C%80%E6%B1%82%E6%80%9D%E8%B7%AF/</guid>
+      <description> 类似数组，长度不一致，如何取值？ // 给定 原数组 const dateWeek = [ { compare: &#39;2020-07-24&#39;, week: &#39;周五&#39; }, { compare: &#39;2020-07-25&#39;, week: &#39;周六&#39; }, { compare: &#39;2020-07-26&#39;, week: &#39;周日&#39; }, { compare: &#39;2020-07-27&#39;, week: &#39;周一&#39; }, ] // 假设接口数据 const serverDate = [ { examDate: &#39;2020-07-24&#39;, price: 90 }, { examDate: &#39;2020-07-26&#39;, price: 20 } ] // 如何有效根据日期获得对应价格？ // 可根据日期作为key，在原数组渲染中取得 const rangeDate = {} serverDate.forEach(date =&amp;gt; { rangeDate[date.examDate] = date }) // 判断是否存在即可取值：rangeDate[compare].price  </description>
+    </item>
+    
+  </channel>
+</rss>

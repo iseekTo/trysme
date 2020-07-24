@@ -10,9 +10,9 @@
   
   <meta name="keywords" content="blog">
   
-  <link rel="prev" href="https://iseekto.github.io/trysme/2020/shell/" />
-  <link rel="next" href="https://iseekto.github.io/trysme/2020/q-%E4%B8%9A%E5%8A%A1%E5%B8%B8%E8%A7%81%E9%9C%80%E6%B1%82%E6%80%9D%E8%B7%AF/" />
-  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/%E6%AD%A3%E5%88%99%E5%A6%99%E7%94%A8/" />
+  <link rel="prev" href="https://iseekto.github.io/trysme/2020/%E6%AD%A3%E5%88%99%E5%A6%99%E7%94%A8/" />
+  
+  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/q-%E4%B8%9A%E5%8A%A1%E5%B8%B8%E8%A7%81%E9%9C%80%E6%B1%82%E6%80%9D%E8%B7%AF/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -22,10 +22,10 @@
   <title>
        
        
-           正则妙用 | wm&#39;s blog
+           Q 业务常见需求思路 | wm&#39;s blog
        
   </title>
-  <meta name="title" content="正则妙用 | wm&#39;s blog">
+  <meta name="title" content="Q 业务常见需求思路 | wm&#39;s blog">
     
   
   <link rel="stylesheet" href="/trysme/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/iseekto.github.io\/trysme\/"
     },
     "articleSection" : "posts",
-    "name" : "正则妙用",
-    "headline" : "正则妙用",
-    "description" : "常用正则技巧  只允许输入 can, man, fan 反之返回 false\n \/[cmf]an$\/\n  严格匹配以\x26rsquo;an\x26rsquo;结尾，且不以\x26rsquo;d\x26rsquo; \x26lsquo;r\x26rsquo;或\x26rsquo;p\x26rsquo;开头的任何三个字母词，要求只能是三个字母词\n \/^[^drp]an$\/ 如果想排除数字的话可以这样写 ^[^a-z]an$\n  匹配在这三个字母词的范围区间内的字符串 \x26lsquo;Ana\x26rsquo;, \x26lsquo;Bob\x26rsquo;, \x26lsquo;Cpc\x26rsquo;\n 在表达式中使用不同的范围(精确匹配而不是一味的使用a-zA-Z) \/[A-C][n-p][a-c]$\/\n  匹配字符中重复的字母，最少2个，最多5个 \x26lsquo;wazzzzze\x26rsquo;, \x26lsquo;wazze\x26rsquo;, \x26lsquo;waze\x26rsquo;\n \/waz{2,5}e$\/\n  可选字符 严格匹配包括\x26rsquo;几\x26rsquo;个 \x26lsquo;文件(或复数)\x26rsquo; \x26lsquo;?(符号)\x26rsquo;, 注意空格\n example: \x26lsquo;1 file found?\x26rsquo; \x26lsquo;2 files found?\x26rsquo; \x26lsquo;21 files found?\x26rsquo; \x26lsquo;not file found\x26rsquo; \/^\\d\x2b files? found\\?$\/  空白后跟固定字符\n example: \x26lsquo;1. qwe\x26rsquo; \x26lsquo;2. qwe\x26rsquo; \x26lsquo;3. qwe\x26rsquo; \/^\\d\\.",
+    "name" : "Q 业务常见需求思路",
+    "headline" : "Q 业务常见需求思路",
+    "description" : " 类似数组，长度不一致，如何取值？ \/\/ 给定 原数组 const dateWeek = [ { compare: \x272020-07-24\x27, week: \x27周五\x27 }, { compare: \x272020-07-25\x27, week: \x27周六\x27 }, { compare: \x272020-07-26\x27, week: \x27周日\x27 }, { compare: \x272020-07-27\x27, week: \x27周一\x27 }, ] \/\/ 假设接口数据 const serverDate = [ { examDate: \x272020-07-24\x27, price: 90 }, { examDate: \x272020-07-26\x27, price: 20 } ] \/\/ 如何有效根据日期获得对应价格？ \/\/ 可根据日期作为key，在原数组渲染中取得 const rangeDate = {} serverDate.forEach(date =\x26gt; { rangeDate[date.examDate] = date }) \/\/ 判断是否存在即可取值：rangeDate[compare].price  ",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -54,11 +54,11 @@
     "accountablePerson" : "_weimou",
     "copyrightHolder" : "_weimou",
     "copyrightYear" : "2020",
-    "datePublished": "2020-06-28 13:16:34 \x2b0800 CST",
-    "dateModified" : "2020-06-28 13:16:34 \x2b0800 CST",
-    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/%E6%AD%A3%E5%88%99%E5%A6%99%E7%94%A8\/",
-    "wordCount" : "62",
-    "keywords" : [ "tool", "wm\x27s blog"]
+    "datePublished": "2020-07-24 22:06:38 \x2b0800 CST",
+    "dateModified" : "2020-07-24 22:06:38 \x2b0800 CST",
+    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/q-%E4%B8%9A%E5%8A%A1%E5%B8%B8%E8%A7%81%E9%9C%80%E6%B1%82%E6%80%9D%E8%B7%AF\/",
+    "wordCount" : "69",
+    "keywords" : [ "业务", "wm\x27s blog"]
 }
 </script>
 
@@ -135,16 +135,16 @@
           
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">正则妙用</h1>
+        <h1 class="post-title" itemprop="name headline">Q 业务常见需求思路</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2020-06-28 itemprop="datePublished">June 28, 2020</time>
+                on <time datetime=2020-07-24 itemprop="datePublished">July 24, 2020</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://iseekto.github.io/trysme/categories/tool/"> tool </a>
+                        <a href="https://iseekto.github.io/trysme/categories/business/"> business </a>
                         
                 </span>
                 
@@ -160,7 +160,7 @@
     <div class="post-toc-content">
       <nav id="TableOfContents">
 <ul>
-<li><a href="#常用正则技巧">常用正则技巧</a></li>
+<li><a href="#类似数组-长度不一致-如何取值">类似数组，长度不一致，如何取值？</a></li>
 </ul>
 </nav>
     </div>
@@ -233,66 +233,31 @@
 
           
 
-<h1 id="常用正则技巧">常用正则技巧</h1>
+<h1 id="类似数组-长度不一致-如何取值">类似数组，长度不一致，如何取值？</h1>
 
-<ul>
-<li>只允许输入 <code>can</code>, <code>man</code>, <code>fan</code> 反之返回 <code>false</code><br />
+<pre><code class="language-js">// 给定 原数组
+const dateWeek = [
+    { compare: '2020-07-24', week: '周五' },
+    { compare: '2020-07-25', week: '周六' },
+    { compare: '2020-07-26', week: '周日' },
+    { compare: '2020-07-27', week: '周一' },
+]
 
-<ul>
-<li><code>/[cmf]an$/</code><br /></li>
-</ul></li>
+// 假设接口数据
+const serverDate = [
+    { examDate: '2020-07-24', price: 90 },
+    { examDate: '2020-07-26', price: 20 }
+]
 
-<li><p>严格匹配以&rsquo;an&rsquo;结尾，且不以&rsquo;d&rsquo; &lsquo;r&rsquo;或&rsquo;p&rsquo;开头的任何三个字母词，要求只能是三个字母词</p>
+// 如何有效根据日期获得对应价格？
+// 可根据日期作为key，在原数组渲染中取得
+const rangeDate = {}
+serverDate.forEach(date =&gt; {
+    rangeDate[date.examDate] = date
+})
 
-<ul>
-<li><code>/^[^drp]an$/</code></li>
-<li>如果想排除数字的话可以这样写 <code>^[^a-z]an$</code><br />
-
-
-<br /></li>
-</ul></li>
-
-<li><p>匹配在这三个字母词的范围区间内的字符串 &lsquo;Ana&rsquo;, &lsquo;Bob&rsquo;, &lsquo;Cpc&rsquo;</p>
-
-<ul>
-<li>在表达式中使用不同的范围(精确匹配而不是一味的使用a-zA-Z)</li>
-<li><code>/[A-C][n-p][a-c]$/</code><br /></li>
-</ul></li>
-
-<li><p>匹配字符中重复的字母，最少2个，最多5个 &lsquo;wazzzzze&rsquo;, &lsquo;wazze&rsquo;, &lsquo;waze&rsquo;</p>
-
-<ul>
-<li><code>/waz{2,5}e$/</code><br />
-
-
-<br /></li>
-</ul></li>
-
-<li><p>可选字符 严格匹配包括&rsquo;几&rsquo;个 &lsquo;文件(或复数)&rsquo; &lsquo;?(符号)&rsquo;, 注意空格</p>
-
-<ul>
-<li>example: &lsquo;1 file found?&rsquo; &lsquo;2 files found?&rsquo; &lsquo;21 files found?&rsquo; &lsquo;not file found&rsquo;</li>
-<li><code>/^\d+ files? found\?$/</code></li>
-</ul></li>
-
-<li><p>空白后跟固定字符</p>
-
-<ul>
-<li>example: &lsquo;1. qwe&rsquo;  &lsquo;2.    qwe&rsquo;  &lsquo;3.  qwe&rsquo;</li>
-<li><code>/^\d\.\s+qwe/</code><br />
-
-<br />
-<br /></li>
-</ul></li>
-
-<li><p>捕获组 匹配前缀为 file至.pdf的内容</p>
-
-<ul>
-<li>example: &lsquo;file_transform.pdf&rsquo; &lsquo;file_21300.pdf&rsquo; &lsquo;testfile.tmp.pdf&rsquo;</li>
-<li><code>/^(file.+)\.pdf$/</code>
-<br /></li>
-</ul></li>
-</ul>
+// 判断是否存在即可取值：rangeDate[compare].price
+</code></pre>
 
     </div>
 
@@ -308,7 +273,7 @@
             <p class="copyright-item">
                     <span>Link:</span>
                     
-                    <a href=https://iseekto.github.io/trysme/2020/%E6%AD%A3%E5%88%99%E5%A6%99%E7%94%A8/>
+                    <a href=https://iseekto.github.io/trysme/2020/q-%E4%B8%9A%E5%8A%A1%E5%B8%B8%E8%A7%81%E9%9C%80%E6%B1%82%E6%80%9D%E8%B7%AF/>
                         <script>
                             document.write(decodeURI(location.origin + location.pathname))
                         </script>
@@ -328,8 +293,8 @@
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/tool/">
-                    #tool</a></span>
+            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/%E4%B8%9A%E5%8A%A1/">
+                    #业务</a></span>
             
             </section>
         
@@ -341,10 +306,8 @@
 
     <div class="post-nav">
         
-        <a href="https://iseekto.github.io/trysme/2020/shell/" class="prev" rel="prev" title="Shell"><i class="iconfont icon-left"></i>&nbsp;Shell</a>
+        <a href="https://iseekto.github.io/trysme/2020/%E6%AD%A3%E5%88%99%E5%A6%99%E7%94%A8/" class="prev" rel="prev" title="正则妙用"><i class="iconfont icon-left"></i>&nbsp;正则妙用</a>
          
-        
-        <a href="https://iseekto.github.io/trysme/2020/q-%E4%B8%9A%E5%8A%A1%E5%B8%B8%E8%A7%81%E9%9C%80%E6%B1%82%E6%80%9D%E8%B7%AF/" class="next" rel="next" title="Q 业务常见需求思路">Q 业务常见需求思路&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -366,7 +329,7 @@
       var gitalk = new Gitalk({
         
         id: location.pathname.substr(0, 50),
-        title: '正则妙用',
+        title: 'Q 业务常见需求思路',
         clientID: '64ecd4438b6b3a3a9bd8',
         clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
         repo: 'trysme-comment',
