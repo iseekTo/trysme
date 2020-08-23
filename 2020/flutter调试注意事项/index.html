@@ -10,9 +10,9 @@
   
   <meta name="keywords" content="blog">
   
-  <link rel="prev" href="https://iseekto.github.io/trysme/2020/%E6%AD%A3%E5%88%99%E5%A6%99%E7%94%A8/" />
-  <link rel="next" href="https://iseekto.github.io/trysme/2020/flutter%E8%B0%83%E8%AF%95%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" />
-  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/q-%E4%B8%9A%E5%8A%A1%E5%B8%B8%E8%A7%81%E9%9C%80%E6%B1%82%E6%80%9D%E8%B7%AF/" />
+  <link rel="prev" href="https://iseekto.github.io/trysme/2020/q-%E4%B8%9A%E5%8A%A1%E5%B8%B8%E8%A7%81%E9%9C%80%E6%B1%82%E6%80%9D%E8%B7%AF/" />
+  
+  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/flutter%E8%B0%83%E8%AF%95%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -22,10 +22,10 @@
   <title>
        
        
-           Q 业务常见需求思路 | wm&#39;s blog
+           Flutter调试注意事项 | wm&#39;s blog
        
   </title>
-  <meta name="title" content="Q 业务常见需求思路 | wm&#39;s blog">
+  <meta name="title" content="Flutter调试注意事项 | wm&#39;s blog">
     
   
   <link rel="stylesheet" href="/trysme/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/iseekto.github.io\/trysme\/"
     },
     "articleSection" : "posts",
-    "name" : "Q 业务常见需求思路",
-    "headline" : "Q 业务常见需求思路",
-    "description" : " 类似数组，长度不一致，如何取值？ \/\/ 给定 原数组 const dateWeek = [ { compare: \x272020-07-24\x27, week: \x27周五\x27 }, { compare: \x272020-07-25\x27, week: \x27周六\x27 }, { compare: \x272020-07-26\x27, week: \x27周日\x27 }, { compare: \x272020-07-27\x27, week: \x27周一\x27 }, ] \/\/ 假设接口数据 const serverDate = [ { examDate: \x272020-07-24\x27, price: 90 }, { examDate: \x272020-07-26\x27, price: 20 } ] \/\/ 如何有效根据日期获得对应价格？ \/\/ 可根据日期作为key，在原数组渲染中取得 const rangeDate = {} serverDate.forEach(date =\x26gt; { rangeDate[date.examDate] = date }) \/\/ 判断是否存在即可取值：rangeDate[compare].price  ",
+    "name" : "Flutter调试注意事项",
+    "headline" : "Flutter调试注意事项",
+    "description" : " 真机调试，xcode版本太低，手机版本太高  网上下载相对应的xcode包，放进去\n 打开xcode，点击项目名，进入xcode配置区\n Signing 下的 Team 确保你已经不出现警告字样\n 在 Build Settings 下找到 iOS Deployment Target，将版本选到你希望的\n 在 General 下找到 Deployment Info —— Deployment Target 将版本选到你希望的\n 连接手机，编译成功。   本地开发时，建议选低一个版本进行开发，以此避免出现一些编译后的应用闪退的问题。\n ",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -54,11 +54,11 @@
     "accountablePerson" : "_weimou",
     "copyrightHolder" : "_weimou",
     "copyrightYear" : "2020",
-    "datePublished": "2020-07-24 22:06:38 \x2b0800 CST",
-    "dateModified" : "2020-07-24 22:06:38 \x2b0800 CST",
-    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/q-%E4%B8%9A%E5%8A%A1%E5%B8%B8%E8%A7%81%E9%9C%80%E6%B1%82%E6%80%9D%E8%B7%AF\/",
-    "wordCount" : "69",
-    "keywords" : [ "业务", "wm\x27s blog"]
+    "datePublished": "2020-08-23 13:08:59 \x2b0800 CST",
+    "dateModified" : "2020-08-23 13:08:59 \x2b0800 CST",
+    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/flutter%E8%B0%83%E8%AF%95%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9\/",
+    "wordCount" : "25",
+    "keywords" : [ "flutter", "wm\x27s blog"]
 }
 </script>
 
@@ -135,16 +135,16 @@
           
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">Q 业务常见需求思路</h1>
+        <h1 class="post-title" itemprop="name headline">Flutter调试注意事项</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2020-07-24 itemprop="datePublished">July 24, 2020</time>
+                on <time datetime=2020-08-23 itemprop="datePublished">August 23, 2020</time>
                 </span>
                 in
                 <i class="iconfont icon-folder"></i>
                 <span class="post-category">
-                        <a href="https://iseekto.github.io/trysme/categories/business/"> business </a>
+                        <a href="https://iseekto.github.io/trysme/categories/flutter/"> flutter </a>
                         
                 </span>
                 
@@ -160,7 +160,7 @@
     <div class="post-toc-content">
       <nav id="TableOfContents">
 <ul>
-<li><a href="#类似数组-长度不一致-如何取值">类似数组，长度不一致，如何取值？</a></li>
+<li><a href="#真机调试-xcode版本太低-手机版本太高">真机调试，xcode版本太低，手机版本太高</a></li>
 </ul>
 </nav>
     </div>
@@ -233,31 +233,20 @@
 
           
 
-<h1 id="类似数组-长度不一致-如何取值">类似数组，长度不一致，如何取值？</h1>
+<h1 id="真机调试-xcode版本太低-手机版本太高">真机调试，xcode版本太低，手机版本太高</h1>
 
-<pre><code class="language-js">// 给定 原数组
-const dateWeek = [
-    { compare: '2020-07-24', week: '周五' },
-    { compare: '2020-07-25', week: '周六' },
-    { compare: '2020-07-26', week: '周日' },
-    { compare: '2020-07-27', week: '周一' },
-]
+<ol>
+<li>网上下载相对应的xcode包，放进去<br /></li>
+<li>打开xcode，点击项目名，进入xcode配置区<br /></li>
+<li><code>Signing</code> 下的 <code>Team</code> 确保你已经不出现警告字样<br /></li>
+<li>在 <code>Build Settings</code> 下找到 <code>iOS Deployment Target</code>，将版本选到你希望的<br /></li>
+<li>在 <code>General</code> 下找到 <code>Deployment Info</code> —— <code>Deployment Target</code> 将版本选到你希望的<br /></li>
+<li>连接手机，编译成功。</li>
+</ol>
 
-// 假设接口数据
-const serverDate = [
-    { examDate: '2020-07-24', price: 90 },
-    { examDate: '2020-07-26', price: 20 }
-]
-
-// 如何有效根据日期获得对应价格？
-// 可根据日期作为key，在原数组渲染中取得
-const rangeDate = {}
-serverDate.forEach(date =&gt; {
-    rangeDate[date.examDate] = date
-})
-
-// 判断是否存在即可取值：rangeDate[compare].price
-</code></pre>
+<blockquote>
+<p>本地开发时，建议选低一个版本进行开发，以此避免出现一些编译后的应用闪退的问题。</p>
+</blockquote>
 
     </div>
 
@@ -273,7 +262,7 @@ serverDate.forEach(date =&gt; {
             <p class="copyright-item">
                     <span>Link:</span>
                     
-                    <a href=https://iseekto.github.io/trysme/2020/q-%E4%B8%9A%E5%8A%A1%E5%B8%B8%E8%A7%81%E9%9C%80%E6%B1%82%E6%80%9D%E8%B7%AF/>
+                    <a href=https://iseekto.github.io/trysme/2020/flutter%E8%B0%83%E8%AF%95%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/>
                         <script>
                             document.write(decodeURI(location.origin + location.pathname))
                         </script>
@@ -293,8 +282,8 @@ serverDate.forEach(date =&gt; {
             <section>
             <i class="iconfont icon-tag"></i>Tag(s): 
             
-            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/%E4%B8%9A%E5%8A%A1/">
-                    #业务</a></span>
+            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/flutter/">
+                    #flutter</a></span>
             
             </section>
         
@@ -306,10 +295,8 @@ serverDate.forEach(date =&gt; {
 
     <div class="post-nav">
         
-        <a href="https://iseekto.github.io/trysme/2020/%E6%AD%A3%E5%88%99%E5%A6%99%E7%94%A8/" class="prev" rel="prev" title="正则妙用"><i class="iconfont icon-left"></i>&nbsp;正则妙用</a>
+        <a href="https://iseekto.github.io/trysme/2020/q-%E4%B8%9A%E5%8A%A1%E5%B8%B8%E8%A7%81%E9%9C%80%E6%B1%82%E6%80%9D%E8%B7%AF/" class="prev" rel="prev" title="Q 业务常见需求思路"><i class="iconfont icon-left"></i>&nbsp;Q 业务常见需求思路</a>
          
-        
-        <a href="https://iseekto.github.io/trysme/2020/flutter%E8%B0%83%E8%AF%95%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" class="next" rel="next" title="Flutter调试注意事项">Flutter调试注意事项&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -331,7 +318,7 @@ serverDate.forEach(date =&gt; {
       var gitalk = new Gitalk({
         
         id: location.pathname.substr(0, 50),
-        title: 'Q 业务常见需求思路',
+        title: 'Flutter调试注意事项',
         clientID: '64ecd4438b6b3a3a9bd8',
         clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
         repo: 'trysme-comment',
