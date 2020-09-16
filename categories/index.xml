@@ -6,10 +6,19 @@
     <description>Recent content in Categories on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Aug 2020 13:08:59 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2020 18:11:59 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>optmize</title>
+      <link>https://iseekto.github.io/trysme/categories/optmize/</link>
+      <pubDate>Wed, 16 Sep 2020 18:11:59 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/categories/optmize/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>flutter</title>
@@ -71,15 +80,6 @@
       <pubDate>Sat, 25 Apr 2020 21:40:44 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/categories/typescript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>optmize</title>
-      <link>https://iseekto.github.io/trysme/categories/optmize/</link>
-      <pubDate>Mon, 20 Apr 2020 17:49:53 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/categories/optmize/</guid>
       <description></description>
     </item>
     

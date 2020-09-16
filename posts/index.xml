@@ -6,10 +6,19 @@
     <description>Recent content in Posts on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Aug 2020 13:08:59 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2020 18:11:59 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>X 项目类优化</title>
+      <link>https://iseekto.github.io/trysme/2020/x-%E9%A1%B9%E7%9B%AE%E7%B1%BB%E4%BC%98%E5%8C%96/</link>
+      <pubDate>Wed, 16 Sep 2020 18:11:59 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/x-%E9%A1%B9%E7%9B%AE%E7%B1%BB%E4%BC%98%E5%8C%96/</guid>
+      <description> cli之外的优化方案  moment | lodash  根据 webpack-bundle-analyzer 分析 moment 包体积非常大，如果没有国际化需求，可以将语言包 剔除 plugins: [ new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /de|fr|hu/) ]   </description>
+    </item>
     
     <item>
       <title>Flutter调试注意事项</title>
