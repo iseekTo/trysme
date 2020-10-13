@@ -11,7 +11,7 @@
   <meta name="keywords" content="blog">
   
   <link rel="prev" href="https://iseekto.github.io/trysme/2020/%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/" />
-  <link rel="next" href="https://iseekto.github.io/trysme/2020/mac%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/" />
+  <link rel="next" href="https://iseekto.github.io/trysme/2020/css%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/" />
   <link rel="canonical" href="https://iseekto.github.io/trysme/2020/ts%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "Ts代码片段",
     "headline" : "Ts代码片段",
-    "description" : "interface定义函数 interface User { name: string age: number } \/\/ 定义单个函数，用type定义是个不错的选择 type UserFunc = (user: User) =\x26gt; string const getUserInfo: UserFunc = (user) =\x26gt; { return `name: ${user.name}，age: ${user.age}` } getUserInfo({ name: \x27ff\x27, age: 23 })  typeof 探查某个dom\/关键字的类型 \/\/ 想知道某个dom，关键字(setTimeout)的类型是什么，可用typeof let div = document.createElement(\x27div\x27); \/\/ HTMLDivElement type divType = typeof div let timer = setTimeout(() =\x26gt; console.log(\x27st\x27), 2) \/\/ NodeJS.Timeout type timerType = typeof timer  ts高级类型 \/\/ 剔除某个键 Omit let person = { name: \x27name\x27, hoppy: [\x27eat\x27, \x27sleep\x27] } type user = Omit\x26lt;typeof person, \x27name\x27\x26gt;   持续更新中\x26hellip;",
+    "description" : " typeof 探查某个dom\/关键字的类型 \/\/ 想知道某个dom，关键字(setTimeout)的类型是什么，可用typeof let div = document.createElement(\x27div\x27); \/\/ HTMLDivElement type divType = typeof div let timer = setTimeout(() =\x26gt; console.log(\x27st\x27), 2) \/\/ NodeJS.Timeout type timerType = typeof timer  ",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -57,7 +57,7 @@
     "datePublished": "2020-01-17 16:21:40 \x2b0800 CST",
     "dateModified" : "2020-01-17 16:21:40 \x2b0800 CST",
     "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/ts%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5\/",
-    "wordCount" : "86",
+    "wordCount" : "29",
     "keywords" : [ "ts", "wm\x27s blog"]
 }
 </script>
@@ -160,9 +160,7 @@
     <div class="post-toc-content">
       <nav id="TableOfContents">
 <ul>
-<li><a href="#interface定义函数">interface定义函数</a></li>
 <li><a href="#typeof-探查某个dom-关键字的类型">typeof 探查某个dom/关键字的类型</a></li>
-<li><a href="#ts高级类型">ts高级类型</a></li>
 </ul>
 </nav>
     </div>
@@ -235,22 +233,6 @@
 
           
 
-<h1 id="interface定义函数">interface定义函数</h1>
-
-<pre><code class="language-typescript">interface User {
-    name: string
-    age: number
-}
-// 定义单个函数，用type定义是个不错的选择
-type UserFunc = (user: User) =&gt; string
-const getUserInfo: UserFunc = (user) =&gt; {
-    return `name: ${user.name}，age: ${user.age}`
-}
-getUserInfo({ name: 'ff', age: 23 })
-</code></pre>
-
-<hr />
-
 <h1 id="typeof-探查某个dom-关键字的类型">typeof 探查某个dom/关键字的类型</h1>
 
 <pre><code class="language-typescript">// 想知道某个dom，关键字(setTimeout)的类型是什么，可用typeof
@@ -262,22 +244,6 @@ let timer = setTimeout(() =&gt; console.log('st'), 2)
 // NodeJS.Timeout
 type timerType = typeof timer 
 </code></pre>
-
-<hr />
-
-<h1 id="ts高级类型">ts高级类型</h1>
-
-<pre><code class="language-typescript">// 剔除某个键 Omit
-let person = {
-    name: 'name',
-    hoppy: ['eat', 'sleep']
-}
-type user = Omit&lt;typeof person, 'name'&gt; 
-</code></pre>
-
-<blockquote>
-<p>持续更新中&hellip;</p>
-</blockquote>
 
     </div>
 
@@ -329,7 +295,7 @@ type user = Omit&lt;typeof person, 'name'&gt;
         <a href="https://iseekto.github.io/trysme/2020/%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/" class="prev" rel="prev" title="常用插件"><i class="iconfont icon-left"></i>&nbsp;常用插件</a>
          
         
-        <a href="https://iseekto.github.io/trysme/2020/mac%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/" class="next" rel="next" title="Mac常用指令">Mac常用指令&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="https://iseekto.github.io/trysme/2020/css%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/" class="next" rel="next" title="Css常用技巧">Css常用技巧&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 

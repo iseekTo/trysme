@@ -65,7 +65,7 @@ class组件类型  React.ComponentProps: 获取指定组件的props类型
       <pubDate>Tue, 21 Jan 2020 20:36:06 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/2020/ts%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</guid>
-      <description>1、从一组数组对象中拿到相应值，组成枚举类型 const littleNumbers = [ { a: 1, b: &#39;123&#39; }, { a: 2, b: &#39;22223&#39; }, { a: 3, b: &#39;3123&#39; }, ] as const; // remember &#39;as const&#39; // littleNumbers[number] 相当于下标 type aLittle = typeof littleNumbers[number][&#39;b&#39;] // aLittle = &#39;123&#39; | &#39;22223&#39; | &#39;3123&#39; let useLittles: aLittle = &#39;3123&#39;  2、找不到第三方模块时，有两种方法可以消除ts的报警 // 1、在加载第三方模块内部声明 declare const yourModuleName: any; // 2、在根目录新建 modules.d.ts declare module &#39;yourModuleName&#39;;  3、根据key值，约束对应value的值类型 let source = { name: &#39;lisa&#39;, age: 19 } type typeSource = typeof source const getKey = &amp;lt;T extends keyof typeSource&amp;gt;( key: T, value: typeSource[T] ): typeSource[T] =&amp;gt; { return value } // error 类型“&amp;quot;123&amp;quot;”的参数不能赋给类型“number”的参数。ts(2345) let bingoAge = getKey(&#39;age&#39;, &#39;123&#39;) // is ok let bingoName = getKey(&#39;name&#39;, &#39;123&#39;)   持续更新中&amp;hellip;</description>
+      <description> 1、从一组数组对象中拿到相应值，组成枚举类型 const littleNumbers = [ { a: 1, b: &#39;123&#39; }, { a: 2, b: &#39;22223&#39; }, { a: 3, b: &#39;3123&#39; }, ] as const; // remember &#39;as const&#39; // littleNumbers[number] 相当于下标 type aLittle = typeof littleNumbers[number][&#39;b&#39;] // aLittle = &#39;123&#39; | &#39;22223&#39; | &#39;3123&#39; let useLittles: aLittle = &#39;3123&#39;  2、找不到第三方模块时，有两种方法可以消除ts的报警 // 1、在加载第三方模块内部声明 declare const yourModuleName: any; // 2、在根目录新建 modules.d.ts declare module &#39;yourModuleName&#39;;  </description>
     </item>
     
     <item>
@@ -74,7 +74,7 @@ class组件类型  React.ComponentProps: 获取指定组件的props类型
       <pubDate>Fri, 17 Jan 2020 16:21:40 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/2020/ts%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/</guid>
-      <description>interface定义函数 interface User { name: string age: number } // 定义单个函数，用type定义是个不错的选择 type UserFunc = (user: User) =&amp;gt; string const getUserInfo: UserFunc = (user) =&amp;gt; { return `name: ${user.name}，age: ${user.age}` } getUserInfo({ name: &#39;ff&#39;, age: 23 })  typeof 探查某个dom/关键字的类型 // 想知道某个dom，关键字(setTimeout)的类型是什么，可用typeof let div = document.createElement(&#39;div&#39;); // HTMLDivElement type divType = typeof div let timer = setTimeout(() =&amp;gt; console.log(&#39;st&#39;), 2) // NodeJS.Timeout type timerType = typeof timer  ts高级类型 // 剔除某个键 Omit let person = { name: &#39;name&#39;, hoppy: [&#39;eat&#39;, &#39;sleep&#39;] } type user = Omit&amp;lt;typeof person, &#39;name&#39;&amp;gt;   持续更新中&amp;hellip;</description>
+      <description> typeof 探查某个dom/关键字的类型 // 想知道某个dom，关键字(setTimeout)的类型是什么，可用typeof let div = document.createElement(&#39;div&#39;); // HTMLDivElement type divType = typeof div let timer = setTimeout(() =&amp;gt; console.log(&#39;st&#39;), 2) // NodeJS.Timeout type timerType = typeof timer  </description>
     </item>
     
   </channel>

@@ -6,10 +6,19 @@
     <description>Recent content in css on wm&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Jan 2020 20:31:19 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 27 Mar 2020 13:52:48 +0800</lastBuildDate>
     
 	<atom:link href="https://iseekto.github.io/trysme/tags/css/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Css技巧</title>
+      <link>https://iseekto.github.io/trysme/2020/css%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Fri, 27 Mar 2020 13:52:48 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/css%E6%8A%80%E5%B7%A7/</guid>
+      <description>select内容居中显示、下拉内容右对齐 select { text-align: center; text-align-last: center; } select option { direction: rtl; }  修改input输入框中光标的颜色不改变字体的颜色 input { color: #fff; caret-color: red; }  修改input 输入框中 placeholder 默认字体样式 /* webkit内核的浏览器 */ input::-webkit-input-placeholder { color: #c2c6ce; } /* Firefox版本4-18 */ input:-moz-placeholder { color: #c2c6ce; } /* Firefox版本19+ */ input::-moz-placeholder { color: #c2c6ce; } /* IE浏览器 */ input:-ms-input-placeholder { color: #c2c6ce; }  transfrom的rotate属性在span标签下失效 span { display: inline-block; }  cursor属性 .</description>
+    </item>
     
     <item>
       <title>Css常用技巧</title>
@@ -17,10 +26,7 @@
       <pubDate>Tue, 21 Jan 2020 20:31:19 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/2020/css%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/</guid>
-      <description>transition 闪屏问题 .css { -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden; -webkit-perspective: 1000; }  开启硬件加速 .css { transform: translate3d(0, 0, 0); }  1px的问题 解决方案大致为两种：
-1、使用css伪类加 transform: scale(0.5)
-.box { width: 100px; padding: 10px; position: relative; background-color: white; } .box::after { content: &#39;&#39;; box-sizing: border-box; pointer-events: none; position: absolute; top: -50%; bottom: -50%; right: -50%; left: -50%; border: 0px solid red; transform: scale(.5); border-bottom-width: 1px; }  2、媒体查询根据不同尺寸进行相对缩放
-极简弹窗动画 /* 进场动画 */ .</description>
+      <description>transition 闪屏问题 .css { -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden; -webkit-perspective: 1000; }  开启硬件加速 .css { transform: translate3d(0, 0, 0); }  极简弹窗动画 /* 进场动画 */ .fadeIn-animate { animation: showDialogAnm 0.3s; } @keyframes showDialogAnm { 0% { transform: translate(-50%, -50%) scale(1.05); -webkit-transform: translate(-50%, -50%) scale(1.05); } 50% { transform: translate(-50%, -50%) scale(0.95); -webkit-transform: translate(-50%, -50%) scale(0.95); } 100% { transform: translate(-50%, -50%) scale(1); -webkit-transform: translate(-50%, -50%) scale(1); } } /* 离场动画 */ .</description>
     </item>
     
   </channel>

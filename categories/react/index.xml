@@ -39,28 +39,6 @@ class组件类型  React.ComponentProps: 获取指定组件的props类型
     </item>
     
     <item>
-      <title>如何正确使用React Hooks</title>
-      <link>https://iseekto.github.io/trysme/2020/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8react-hooks/</link>
-      <pubDate>Tue, 25 Feb 2020 14:08:13 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/2020/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8react-hooks/</guid>
-      <description>本文转自 https://zhuanlan.zhihu.com/p/85969406
- 从 React Hooks 正式发布到现在，我一直在项目使用它。但是，在使用 Hooks 的过程中，我也进入了一些误区，导致写出来的代码隐藏 bug 并且难以维护。这篇文章中，我会具体分析这些问题，并总结一些好的实践，以供大家参考。
-问题一：我该使用单个 state 变量还是多个 state 变量？ useState 的出现，让我们可以使用多个 state 变量来保存 state，比如：
-const [width, setWidth] = useState(100); const [height, setHeight] = useState(100); const [left, setLeft] = useState(0); const [top, setTop] = useState(0);  但同时，我们也可以像 Class 组件的 this.state 一样，将所有的 state 放到一个 object 中，这样只需一个 state 变量即可：
-const [state, setState] = useState({ width: 100, height: 100, left: 0, top: 0 });  那么问题来了，到底该用单个 state 变量还是多个 state 变量呢？</description>
-    </item>
-    
-    <item>
-      <title>React Hook持久化引用方案</title>
-      <link>https://iseekto.github.io/trysme/2020/react-hook%E6%8C%81%E4%B9%85%E5%8C%96%E5%BC%95%E7%94%A8%E6%96%B9%E6%A1%88/</link>
-      <pubDate>Wed, 05 Feb 2020 21:57:03 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/2020/react-hook%E6%8C%81%E4%B9%85%E5%8C%96%E5%BC%95%E7%94%A8%E6%96%B9%E6%A1%88/</guid>
-      <description> 使用 useRef 作为持久化引用 import { useRef, useEffect } from &#39;react&#39; type strOrNum = number | string const usePreviousValue = (value: strOrNum) =&amp;gt; { // 增加一个长久引用的变量 ref const ref = useRef() as any // 在useEffect钩子里传递值 useEffect(() =&amp;gt; { ref.current = value }) return ref.current } export default usePreviousValue  </description>
-    </item>
-    
-    <item>
       <title>Create React App运行报错解决方案</title>
       <link>https://iseekto.github.io/trysme/2020/create-react-app%E8%BF%90%E8%A1%8C%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</link>
       <pubDate>Mon, 27 Jan 2020 20:28:16 +0800</pubDate>
@@ -69,16 +47,9 @@ const [state, setState] = useState({ width: 100, height: 100, left: 0, top: 0 })
       <description>排除webpack，以及相关依赖包/版本的错误
  根目录下创建一个 .env 文件
 添加 SKIP_PREFLIGHT_CHECK=true
-运行 npm start</description>
-    </item>
-    
-    <item>
-      <title>React生命周期执行顺序</title>
-      <link>https://iseekto.github.io/trysme/2020/react%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/</link>
-      <pubDate>Wed, 15 Jan 2020 23:05:35 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/2020/react%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/</guid>
-      <description> React生命周期执行顺序： ###################	渲染过程 ############### #constructor: ES6构造函数. 1.定义它是为了初始化state，这样我们可以在组件生命周期任何函数中访问state 1.其次是为了绑定成员函数的this环境、 #render：组件中最重要的函数，渲染DOM。 1.它返回一个JSX描述的结构，最终由react来操作渲染过程 2.如果组件的作用不是为了渲染页面，无东西可画，我们可以返回一个null或者false 3.不可再render中使用this.setState，因为一个纯函数不应该引起状态的改变。 #componentWillMount: 组件渲染前，将要装载时。 1.它执行完毕会走render函数 2.建议数据渲染不要放在这个函数里 3.一般都在里放loading，改变引用title等。 4.它可以在浏览器和服务器端被调用。 #componentDidMount: 组件挂载时 1.这里我们可以拿到DOM节点，动态赋予DOM事件 2.可以请求数据接口 3.它只能在浏览器端被调用，因为DOM已经挂载 4.可结合其他UI库执行代码。 ################## 更新过程 ################## 组件被挂载到DOM树上之后，当props或者state被更改的时候会依次执行以下生命周期函数 #componentWillReceiveProps 1.只要是父组件里的render函数被调用，在render函数里面#【被渲染的子组件也会经历更新过程】#； 不管父传给子组件的props有没有改变，都会触发子组件的componentWillReceiveProps函数 2.注意：this.setState()函数在更新的过程中不会触发这个函数； 因为它是根据props值，也就是参数nextProps来计算出是不是要更新内部state状态 3.触发之后会更新子组件的render函数 #shouldComponentUpdate: 性能优化利器-决定一个组件什么时候不需要渲染。 1.在更新过程中，react会首先调用shouldComponentUpdate函数，如果他返回true，继续更新 接下来调用render 反之，停止更新，也就不会引发后续的渲染。 2.通过this.setState()函数引发更新过程，而不是立即更新组件的state值，在执行到本周期函数时，this.state依 然是this.setState()函数执行前的值，我们要做的就是在nextProps, this.props, nextState, this.state中做对比。 #componentWillUpdate：组件更新前 1.如果shouldComponentUpdate函数返回true，react接下来就会调用组件的componentWillUpdate, render和componentDidUpdate函数。 2.使用React做服务端渲染时(SSR), 基本不会经历更新过程，因为服务端之产出一个HTML字符串。 ################## 卸载过程 ################## #componentWillUnMount: 组件卸载时 1.本周期函数与componentDidMount周期函数有关，用于移除DOM节点 2.清除定时器。 React生命周期走势大致是： constructor-&amp;gt;componentWillMount-&amp;gt;render-&amp;gt;componentDidMount-&amp;gt;!props更新调用-&amp;gt;(componentWillReceiveProps -&amp;gt; render) -&amp;gt;(shouldComponentUpdate ? true -&amp;gt; componentWillUpdate -&amp;gt; render -&amp;gt; componentDidUpdate : componentWillUnMount: 不会打印 默认执行了)  </description>
+运行 npm start
+ 其他错误 错误日志：The engine &amp;ldquo;node&amp;rdquo; is incompatible with this module
+ 解决方案：yarn config set ignore-engines true</description>
     </item>
     
   </channel>

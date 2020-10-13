@@ -57,7 +57,7 @@
     "datePublished": "2020-03-27 13:52:48 \x2b0800 CST",
     "dateModified" : "2020-03-27 13:52:48 \x2b0800 CST",
     "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/css%E6%8A%80%E5%B7%A7\/",
-    "wordCount" : "145",
+    "wordCount" : "163",
     "keywords" : [ "css", "wm\x27s blog"]
 }
 </script>
@@ -166,6 +166,7 @@
 <li><a href="#transfrom的rotate属性在span标签下失效">transfrom的rotate属性在span标签下失效</a></li>
 <li><a href="#cursor属性">cursor属性</a></li>
 <li><a href="#自动换行">自动换行</a></li>
+<li><a href="#解决translatex造成其他元素抖动">解决translateX造成其他元素抖动</a></li>
 </ul>
 </nav>
     </div>
@@ -317,6 +318,18 @@ input:-ms-input-placeholder {
     -webkit-box-orient: vertical;   /* 设置伸缩盒对象的子元素的排列方式  *必须结合的属性* */
     -webkit-line-clamp: 3;   /* 用来限制在一个块元素中显示的文本的行数  */
     word-break: break-all;   /* 让浏览器实现在任意位置的换行 *break-all为允许在单词内换行*  */
+}
+</code></pre>
+
+<h1 id="解决translatex造成其他元素抖动">解决translateX造成其他元素抖动</h1>
+
+<pre><code class="language-css">/* 容器元素 */  
+.box {
+    backface-visibility: hidden;
+}
+.translateXEle {
+    transform: translateZ(0);
+    transform: translate3d(0, 0, 0);
 }
 </code></pre>
 

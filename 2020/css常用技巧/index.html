@@ -10,7 +10,7 @@
   
   <meta name="keywords" content="blog">
   
-  <link rel="prev" href="https://iseekto.github.io/trysme/2020/mac%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/" />
+  <link rel="prev" href="https://iseekto.github.io/trysme/2020/ts%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/" />
   <link rel="next" href="https://iseekto.github.io/trysme/2020/ts%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/" />
   <link rel="canonical" href="https://iseekto.github.io/trysme/2020/css%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "Css常用技巧",
     "headline" : "Css常用技巧",
-    "description" : "transition 闪屏问题 .css { -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden; -webkit-perspective: 1000; }  开启硬件加速 .css { transform: translate3d(0, 0, 0); }  1px的问题 解决方案大致为两种：\n1、使用css伪类加 transform: scale(0.5)\n.box { width: 100px; padding: 10px; position: relative; background-color: white; } .box::after { content: \x27\x27; box-sizing: border-box; pointer-events: none; position: absolute; top: -50%; bottom: -50%; right: -50%; left: -50%; border: 0px solid red; transform: scale(.5); border-bottom-width: 1px; }  2、媒体查询根据不同尺寸进行相对缩放\n极简弹窗动画 \/* 进场动画 *\/ .",
+    "description" : "transition 闪屏问题 .css { -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden; -webkit-perspective: 1000; }  开启硬件加速 .css { transform: translate3d(0, 0, 0); }  极简弹窗动画 \/* 进场动画 *\/ .fadeIn-animate { animation: showDialogAnm 0.3s; } @keyframes showDialogAnm { 0% { transform: translate(-50%, -50%) scale(1.05); -webkit-transform: translate(-50%, -50%) scale(1.05); } 50% { transform: translate(-50%, -50%) scale(0.95); -webkit-transform: translate(-50%, -50%) scale(0.95); } 100% { transform: translate(-50%, -50%) scale(1); -webkit-transform: translate(-50%, -50%) scale(1); } } \/* 离场动画 *\/ .",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -57,7 +57,7 @@
     "datePublished": "2020-01-21 20:31:19 \x2b0800 CST",
     "dateModified" : "2020-01-21 20:31:19 \x2b0800 CST",
     "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/css%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7\/",
-    "wordCount" : "133",
+    "wordCount" : "88",
     "keywords" : [ "css", "wm\x27s blog"]
 }
 </script>
@@ -162,7 +162,6 @@
 <ul>
 <li><a href="#transition-闪屏问题">transition 闪屏问题</a></li>
 <li><a href="#开启硬件加速">开启硬件加速</a></li>
-<li><a href="#1px的问题">1px的问题</a></li>
 <li><a href="#极简弹窗动画">极简弹窗动画</a></li>
 </ul>
 </nav>
@@ -252,35 +251,6 @@
     }
 </code></pre>
 
-<h1 id="1px的问题">1px的问题</h1>
-
-<p>解决方案大致为两种：</p>
-
-<p>1、使用css伪类加 <code>transform: scale(0.5)</code></p>
-
-<pre><code class="language-css">    .box {
-        width: 100px;
-        padding: 10px;
-        position: relative;
-        background-color: white;
-    }
-    .box::after {
-        content: '';
-        box-sizing: border-box;
-        pointer-events: none;
-        position: absolute;
-        top: -50%;
-        bottom: -50%;
-        right: -50%;
-        left: -50%;
-        border: 0px solid red;
-        transform: scale(.5);
-        border-bottom-width: 1px;
-    }
-</code></pre>
-
-<p>2、媒体查询根据不同尺寸进行相对缩放</p>
-
 <h1 id="极简弹窗动画">极简弹窗动画</h1>
 
 <pre><code class="language-css">/* 进场动画 */
@@ -312,10 +282,6 @@
 }
 
 </code></pre>
-
-<blockquote>
-<p>持续更新中&hellip;</p>
-</blockquote>
 
     </div>
 
@@ -364,7 +330,7 @@
 
     <div class="post-nav">
         
-        <a href="https://iseekto.github.io/trysme/2020/mac%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/" class="prev" rel="prev" title="Mac常用指令"><i class="iconfont icon-left"></i>&nbsp;Mac常用指令</a>
+        <a href="https://iseekto.github.io/trysme/2020/ts%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/" class="prev" rel="prev" title="Ts代码片段"><i class="iconfont icon-left"></i>&nbsp;Ts代码片段</a>
          
         
         <a href="https://iseekto.github.io/trysme/2020/ts%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/" class="next" rel="next" title="Ts常见问题总结">Ts常见问题总结&nbsp;<i class="iconfont icon-right"></i></a>

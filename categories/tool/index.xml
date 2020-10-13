@@ -56,40 +56,6 @@
     </item>
     
     <item>
-      <title>Tree命令</title>
-      <link>https://iseekto.github.io/trysme/2020/tree%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Fri, 20 Mar 2020 10:49:09 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/2020/tree%E5%91%BD%E4%BB%A4/</guid>
-      <description>tree 显示当前全部目录及全部子文件
-例如：
-├── README.md
-├── config
-│ ├── env.js
-│ ├── getHttpsConfig.js
-│ ├── jest
-│ │ ├── cssTransform.js
-│ │ └── fileTransform.js
-│ ├── modules.js
-│ ├── paths.js
-│ ├── pnpTs.js
-│ ├── webpack.config.js
-│ └── webpackDevServer.config.js
-├── package.json
-├── public
-│ ├── favicon.ico
-│ ├── index.html
-│ ├── logo192.png
-│ ├── logo512.png
-│ ├── manifest.json
-│ └── robots.txt
-├── scripts
-│ ├── build.js
-│ ├── start.js
-│ └── test.</description>
-    </item>
-    
-    <item>
       <title>Ngnix刷新404</title>
       <link>https://iseekto.github.io/trysme/2020/ngnix%E5%88%B7%E6%96%B0404/</link>
       <pubDate>Mon, 09 Mar 2020 20:10:29 +0800</pubDate>
@@ -145,16 +111,6 @@ location / { try_files $uri $uri/ /index.html; }  </description>
     </item>
     
     <item>
-      <title>Yarn安装项目遇到的难点</title>
-      <link>https://iseekto.github.io/trysme/2020/yarn%E5%AE%89%E8%A3%85%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E7%9A%84%E9%9A%BE%E7%82%B9/</link>
-      <pubDate>Sat, 22 Feb 2020 19:12:57 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/2020/yarn%E5%AE%89%E8%A3%85%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E7%9A%84%E9%9A%BE%E7%82%B9/</guid>
-      <description>create-react-app创建项目报错（冷门错误） 错误日志：The engine &amp;ldquo;node&amp;rdquo; is incompatible with this module
-解决方案：yarn config set ignore-engines true</description>
-    </item>
-    
-    <item>
       <title>Linux常用命令</title>
       <link>https://iseekto.github.io/trysme/2020/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Sun, 16 Feb 2020 17:41:37 +0800</pubDate>
@@ -175,15 +131,6 @@ location / { try_files $uri $uri/ /index.html; }  </description>
 执行 ./t1.sh
 ！设置某目录最高权限 chmod 777 your Catalog
 ！将当前目录下的所有文件及子目录的文件拥有者权限设置为读、写、可执行 chmod -R 777 *: *： 通配符，指当前目录下的所有文件及目录</description>
-    </item>
-    
-    <item>
-      <title>Mac常用指令</title>
-      <link>https://iseekto.github.io/trysme/2020/mac%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</link>
-      <pubDate>Sun, 19 Jan 2020 20:03:59 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/2020/mac%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</guid>
-      <description>查看本机ip grep：筛选的意思 筛选某个键 ifconfig | grep &amp;quot;inet&amp;quot;</description>
     </item>
     
     <item>

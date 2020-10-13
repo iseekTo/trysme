@@ -36,15 +36,6 @@
     </item>
     
     <item>
-      <title>Q 业务常见需求思路</title>
-      <link>https://iseekto.github.io/trysme/2020/q-%E4%B8%9A%E5%8A%A1%E5%B8%B8%E8%A7%81%E9%9C%80%E6%B1%82%E6%80%9D%E8%B7%AF/</link>
-      <pubDate>Fri, 24 Jul 2020 22:06:38 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/2020/q-%E4%B8%9A%E5%8A%A1%E5%B8%B8%E8%A7%81%E9%9C%80%E6%B1%82%E6%80%9D%E8%B7%AF/</guid>
-      <description> 类似数组，长度不一致，如何取值？ // 给定 原数组 const dateWeek = [ { compare: &#39;2020-07-24&#39;, week: &#39;周五&#39; }, { compare: &#39;2020-07-25&#39;, week: &#39;周六&#39; }, { compare: &#39;2020-07-26&#39;, week: &#39;周日&#39; }, { compare: &#39;2020-07-27&#39;, week: &#39;周一&#39; }, ] // 假设接口数据 const serverDate = [ { examDate: &#39;2020-07-24&#39;, price: 90 }, { examDate: &#39;2020-07-26&#39;, price: 20 } ] // 如何有效根据日期获得对应价格？ // 可根据日期作为key，在原数组渲染中取得 const rangeDate = {} serverDate.forEach(date =&amp;gt; { rangeDate[date.examDate] = date }) // 判断是否存在即可取值：rangeDate[compare].price  </description>
-    </item>
-    
-    <item>
       <title>正则妙用</title>
       <link>https://iseekto.github.io/trysme/2020/%E6%AD%A3%E5%88%99%E5%A6%99%E7%94%A8/</link>
       <pubDate>Sun, 28 Jun 2020 13:16:34 +0800</pubDate>
@@ -82,20 +73,6 @@
       <guid>https://iseekto.github.io/trysme/2020/mac%E5%88%B7%E6%96%B0%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</guid>
       <description>安装 https://ohmyz.sh/ 执行：source ~/.zshrc
 系统自带 执行：source ~/bash_profile</description>
-    </item>
-    
-    <item>
-      <title>Docker基本指令</title>
-      <link>https://iseekto.github.io/trysme/2020/docker%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4/</link>
-      <pubDate>Mon, 01 Jun 2020 21:57:27 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/2020/docker%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4/</guid>
-      <description>后台运行：docker run -d IMAGE some command
-镜像列表：docker images
-构建镜像: docker image build ./ -t docker-test:1.0.0
-&amp;gt; 基于路径./（当前路径）打包一个镜像，镜像的名字是 docker-test，版本号是1.0.0。该命令会自动寻找Dockerfile来打包出一个镜像
-删除镜像: docker rmi images
-停止：docker stop CONTAINER ID</description>
     </item>
     
     <item>
@@ -162,46 +139,21 @@ class组件类型  React.ComponentProps: 获取指定组件的props类型
     </item>
     
     <item>
+      <title>Css技巧</title>
+      <link>https://iseekto.github.io/trysme/2020/css%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Fri, 27 Mar 2020 13:52:48 +0800</pubDate>
+      
+      <guid>https://iseekto.github.io/trysme/2020/css%E6%8A%80%E5%B7%A7/</guid>
+      <description>select内容居中显示、下拉内容右对齐 select { text-align: center; text-align-last: center; } select option { direction: rtl; }  修改input输入框中光标的颜色不改变字体的颜色 input { color: #fff; caret-color: red; }  修改input 输入框中 placeholder 默认字体样式 /* webkit内核的浏览器 */ input::-webkit-input-placeholder { color: #c2c6ce; } /* Firefox版本4-18 */ input:-moz-placeholder { color: #c2c6ce; } /* Firefox版本19+ */ input::-moz-placeholder { color: #c2c6ce; } /* IE浏览器 */ input:-ms-input-placeholder { color: #c2c6ce; }  transfrom的rotate属性在span标签下失效 span { display: inline-block; }  cursor属性 .</description>
+    </item>
+    
+    <item>
       <title>微信内置浏览器缓存问题</title>
       <link>https://iseekto.github.io/trysme/2020/%E5%BE%AE%E4%BF%A1%E5%86%85%E7%BD%AE%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E9%97%AE%E9%A2%98/</link>
       <pubDate>Fri, 20 Mar 2020 13:26:39 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/2020/%E5%BE%AE%E4%BF%A1%E5%86%85%E7%BD%AE%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E9%97%AE%E9%A2%98/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Tree命令</title>
-      <link>https://iseekto.github.io/trysme/2020/tree%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Fri, 20 Mar 2020 10:49:09 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/2020/tree%E5%91%BD%E4%BB%A4/</guid>
-      <description>tree 显示当前全部目录及全部子文件
-例如：
-├── README.md
-├── config
-│ ├── env.js
-│ ├── getHttpsConfig.js
-│ ├── jest
-│ │ ├── cssTransform.js
-│ │ └── fileTransform.js
-│ ├── modules.js
-│ ├── paths.js
-│ ├── pnpTs.js
-│ ├── webpack.config.js
-│ └── webpackDevServer.config.js
-├── package.json
-├── public
-│ ├── favicon.ico
-│ ├── index.html
-│ ├── logo192.png
-│ ├── logo512.png
-│ ├── manifest.json
-│ └── robots.txt
-├── scripts
-│ ├── build.js
-│ ├── start.js
-│ └── test.</description>
     </item>
     
     <item>
@@ -271,22 +223,6 @@ location / { try_files $uri $uri/ /index.html; }  </description>
     </item>
     
     <item>
-      <title>Mongodb相关问题</title>
-      <link>https://iseekto.github.io/trysme/2020/mongodb%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/</link>
-      <pubDate>Tue, 25 Feb 2020 17:06:47 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/2020/mongodb%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/</guid>
-      <description>此处不讲本地mongodb的连接, 主环境在宝塔面板中进行
- 基本步骤 1、点击ssh终端进行命令行交互
-2、输入 mongo
-3、切换 admin 数据库，输入：use admin
-4、 给 admin 设置密码
-添加用户密码 db.createUser({ user: &amp;quot;自定义名&amp;quot;, // db,getUsers(user) pwd: &amp;quot;密码&amp;quot;, roles:[ { role: &amp;quot;userAdmin&amp;quot;, // 权限 db: &amp;quot;数据库名字&amp;quot; // 要对应 数据库列表中的某一个，查看数据库列表 show dbs } ] })  5、验证是否添加成功，db.auth(用户名，用户密码)，如果返回 ‘1’表示验证成功， 如果是 ‘0’ 表示验证失败
-刚才是给 admin 添加的权限，现在可以给别的数据库加
- 宝塔mongodb配置修改  bindIp 修改为 0.0.0.0 允许外网访问 authorization 修改为 enabled 开启认证   createUser中的 role 字段解释  MongoDB 目前内置了 7 个角色。  数据库用户角色：read、readWrite; 数据库管理角色：dbAdmin、dbOwner、userAdmin； 集群管理角色：clusterAdmin、clusterManager、clusterMonitor、hostManager； 备份恢复角色：backup、restore； 所有数据库角色：readAnyDatabase、readWriteAnyDatabase、userAdminAnyDatabase、dbAdminAnyDatabase 超级用户角色：root；这里还有几个角色间接或直接提供了系统超级用户的访问（dbOwner 、userAdmin、userAdminAnyDatabase） 内部角色：__system  这些角色对应的作用如下：  Read：允许用户读取指定数据库 readWrite：允许用户读写指定数据库 dbAdmin：允许用户在指定数据库中执行管理函数，如索引创建、删除，查看统计或访问system.</description>
-    </item>
-    
-    <item>
       <title>Taro注意事项</title>
       <link>https://iseekto.github.io/trysme/2020/taro%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/</link>
       <pubDate>Tue, 25 Feb 2020 14:41:37 +0800</pubDate>
@@ -297,29 +233,6 @@ location / { try_files $uri $uri/ /index.html; }  </description>
 输出图片使用 Taro.canvasToTempFilePath()
 预览图片功能  在新页面中全屏预览图片。预览的过程中用户可以进行保存图片、发送给朋友等操作。
 Taro.previewImage({ current: &#39;urls[0]&#39;, // 当前显示图片链接 urls: imgList // 需要预览的图片链接列表 })   </description>
-    </item>
-    
-    <item>
-      <title>如何正确使用React Hooks</title>
-      <link>https://iseekto.github.io/trysme/2020/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8react-hooks/</link>
-      <pubDate>Tue, 25 Feb 2020 14:08:13 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/2020/%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E4%BD%BF%E7%94%A8react-hooks/</guid>
-      <description>本文转自 https://zhuanlan.zhihu.com/p/85969406
- 从 React Hooks 正式发布到现在，我一直在项目使用它。但是，在使用 Hooks 的过程中，我也进入了一些误区，导致写出来的代码隐藏 bug 并且难以维护。这篇文章中，我会具体分析这些问题，并总结一些好的实践，以供大家参考。
-问题一：我该使用单个 state 变量还是多个 state 变量？ useState 的出现，让我们可以使用多个 state 变量来保存 state，比如：
-const [width, setWidth] = useState(100); const [height, setHeight] = useState(100); const [left, setLeft] = useState(0); const [top, setTop] = useState(0);  但同时，我们也可以像 Class 组件的 this.state 一样，将所有的 state 放到一个 object 中，这样只需一个 state 变量即可：
-const [state, setState] = useState({ width: 100, height: 100, left: 0, top: 0 });  那么问题来了，到底该用单个 state 变量还是多个 state 变量呢？</description>
-    </item>
-    
-    <item>
-      <title>Yarn安装项目遇到的难点</title>
-      <link>https://iseekto.github.io/trysme/2020/yarn%E5%AE%89%E8%A3%85%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E7%9A%84%E9%9A%BE%E7%82%B9/</link>
-      <pubDate>Sat, 22 Feb 2020 19:12:57 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/2020/yarn%E5%AE%89%E8%A3%85%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E7%9A%84%E9%9A%BE%E7%82%B9/</guid>
-      <description>create-react-app创建项目报错（冷门错误） 错误日志：The engine &amp;ldquo;node&amp;rdquo; is incompatible with this module
-解决方案：yarn config set ignore-engines true</description>
     </item>
     
     <item>
@@ -355,15 +268,6 @@ const [state, setState] = useState({ width: 100, height: 100, left: 0, top: 0 })
     </item>
     
     <item>
-      <title>React Hook持久化引用方案</title>
-      <link>https://iseekto.github.io/trysme/2020/react-hook%E6%8C%81%E4%B9%85%E5%8C%96%E5%BC%95%E7%94%A8%E6%96%B9%E6%A1%88/</link>
-      <pubDate>Wed, 05 Feb 2020 21:57:03 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/2020/react-hook%E6%8C%81%E4%B9%85%E5%8C%96%E5%BC%95%E7%94%A8%E6%96%B9%E6%A1%88/</guid>
-      <description> 使用 useRef 作为持久化引用 import { useRef, useEffect } from &#39;react&#39; type strOrNum = number | string const usePreviousValue = (value: strOrNum) =&amp;gt; { // 增加一个长久引用的变量 ref const ref = useRef() as any // 在useEffect钩子里传递值 useEffect(() =&amp;gt; { ref.current = value }) return ref.current } export default usePreviousValue  </description>
-    </item>
-    
-    <item>
       <title>JS原型与闭包系列之——prototype原型</title>
       <link>https://iseekto.github.io/trysme/2020/js%E5%8E%9F%E5%9E%8B%E4%B8%8E%E9%97%AD%E5%8C%85%E7%B3%BB%E5%88%97%E4%B9%8Bprototype%E5%8E%9F%E5%9E%8B/</link>
       <pubDate>Mon, 27 Jan 2020 20:41:43 +0800</pubDate>
@@ -376,8 +280,7 @@ Fn是一个函数，fn对象是从Fn函数new出来的，这样fn对象就可以
 即：fn.__proto__ === Fn.prototype
 隐式原型 每个对象都有一个proto，可成为隐式原型 proto是一个隐藏的属性，javascript不希望开发者用到这个属性值，有的低版本浏览器甚至不支持这个属性值 instanceof Instanceof的判断队则是：沿着A的proto这条线来找，同时沿着B的prototype这条线来找，如果两条线能找到同一个引用，即同一个对象，那么就返回true。如果找到终点还未重合，则返回false。 instanceof表示的就是一种继承关系，或者原型链的结构
 继承 OR 原型链 javascript中的继承是通过原型链来体现的 访问一个对象的属性时，先在基本属性中查找，如果没有，再沿着proto这条链向上找，这就是原型链。
-那么我们在实际应用中如何区分一个属性到底是基本的还是从原型中找到的呢？大家可能都知道答案了——hasOwnProperty，特别是在for…in…循环中，一定要注意。  Q：f1的这个hasOwnProperty哪里来？
- </description>
+那么我们在实际应用中如何区分一个属性到底是基本的还是从原型中找到的呢？大家可能都知道答案了——hasOwnProperty，特别是在for…in…循环中，一定要注意。 </description>
     </item>
     
     <item>
@@ -400,7 +303,9 @@ Fn是一个函数，fn对象是从Fn函数new出来的，这样fn对象就可以
       <description>排除webpack，以及相关依赖包/版本的错误
  根目录下创建一个 .env 文件
 添加 SKIP_PREFLIGHT_CHECK=true
-运行 npm start</description>
+运行 npm start
+ 其他错误 错误日志：The engine &amp;ldquo;node&amp;rdquo; is incompatible with this module
+ 解决方案：yarn config set ignore-engines true</description>
     </item>
     
     <item>
@@ -419,7 +324,7 @@ Fn是一个函数，fn对象是从Fn函数new出来的，这样fn对象就可以
       <pubDate>Tue, 21 Jan 2020 20:36:06 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/2020/ts%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</guid>
-      <description>1、从一组数组对象中拿到相应值，组成枚举类型 const littleNumbers = [ { a: 1, b: &#39;123&#39; }, { a: 2, b: &#39;22223&#39; }, { a: 3, b: &#39;3123&#39; }, ] as const; // remember &#39;as const&#39; // littleNumbers[number] 相当于下标 type aLittle = typeof littleNumbers[number][&#39;b&#39;] // aLittle = &#39;123&#39; | &#39;22223&#39; | &#39;3123&#39; let useLittles: aLittle = &#39;3123&#39;  2、找不到第三方模块时，有两种方法可以消除ts的报警 // 1、在加载第三方模块内部声明 declare const yourModuleName: any; // 2、在根目录新建 modules.d.ts declare module &#39;yourModuleName&#39;;  3、根据key值，约束对应value的值类型 let source = { name: &#39;lisa&#39;, age: 19 } type typeSource = typeof source const getKey = &amp;lt;T extends keyof typeSource&amp;gt;( key: T, value: typeSource[T] ): typeSource[T] =&amp;gt; { return value } // error 类型“&amp;quot;123&amp;quot;”的参数不能赋给类型“number”的参数。ts(2345) let bingoAge = getKey(&#39;age&#39;, &#39;123&#39;) // is ok let bingoName = getKey(&#39;name&#39;, &#39;123&#39;)   持续更新中&amp;hellip;</description>
+      <description> 1、从一组数组对象中拿到相应值，组成枚举类型 const littleNumbers = [ { a: 1, b: &#39;123&#39; }, { a: 2, b: &#39;22223&#39; }, { a: 3, b: &#39;3123&#39; }, ] as const; // remember &#39;as const&#39; // littleNumbers[number] 相当于下标 type aLittle = typeof littleNumbers[number][&#39;b&#39;] // aLittle = &#39;123&#39; | &#39;22223&#39; | &#39;3123&#39; let useLittles: aLittle = &#39;3123&#39;  2、找不到第三方模块时，有两种方法可以消除ts的报警 // 1、在加载第三方模块内部声明 declare const yourModuleName: any; // 2、在根目录新建 modules.d.ts declare module &#39;yourModuleName&#39;;  </description>
     </item>
     
     <item>
@@ -428,19 +333,7 @@ Fn是一个函数，fn对象是从Fn函数new出来的，这样fn对象就可以
       <pubDate>Tue, 21 Jan 2020 20:31:19 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/2020/css%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/</guid>
-      <description>transition 闪屏问题 .css { -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden; -webkit-perspective: 1000; }  开启硬件加速 .css { transform: translate3d(0, 0, 0); }  1px的问题 解决方案大致为两种：
-1、使用css伪类加 transform: scale(0.5)
-.box { width: 100px; padding: 10px; position: relative; background-color: white; } .box::after { content: &#39;&#39;; box-sizing: border-box; pointer-events: none; position: absolute; top: -50%; bottom: -50%; right: -50%; left: -50%; border: 0px solid red; transform: scale(.5); border-bottom-width: 1px; }  2、媒体查询根据不同尺寸进行相对缩放
-极简弹窗动画 /* 进场动画 */ .</description>
-    </item>
-    
-    <item>
-      <title>Mac常用指令</title>
-      <link>https://iseekto.github.io/trysme/2020/mac%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</link>
-      <pubDate>Sun, 19 Jan 2020 20:03:59 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/2020/mac%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</guid>
-      <description>查看本机ip grep：筛选的意思 筛选某个键 ifconfig | grep &amp;quot;inet&amp;quot;</description>
+      <description>transition 闪屏问题 .css { -webkit-transform-style: preserve-3d; -webkit-backface-visibility: hidden; -webkit-perspective: 1000; }  开启硬件加速 .css { transform: translate3d(0, 0, 0); }  极简弹窗动画 /* 进场动画 */ .fadeIn-animate { animation: showDialogAnm 0.3s; } @keyframes showDialogAnm { 0% { transform: translate(-50%, -50%) scale(1.05); -webkit-transform: translate(-50%, -50%) scale(1.05); } 50% { transform: translate(-50%, -50%) scale(0.95); -webkit-transform: translate(-50%, -50%) scale(0.95); } 100% { transform: translate(-50%, -50%) scale(1); -webkit-transform: translate(-50%, -50%) scale(1); } } /* 离场动画 */ .</description>
     </item>
     
     <item>
@@ -449,7 +342,7 @@ Fn是一个函数，fn对象是从Fn函数new出来的，这样fn对象就可以
       <pubDate>Fri, 17 Jan 2020 16:21:40 +0800</pubDate>
       
       <guid>https://iseekto.github.io/trysme/2020/ts%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5/</guid>
-      <description>interface定义函数 interface User { name: string age: number } // 定义单个函数，用type定义是个不错的选择 type UserFunc = (user: User) =&amp;gt; string const getUserInfo: UserFunc = (user) =&amp;gt; { return `name: ${user.name}，age: ${user.age}` } getUserInfo({ name: &#39;ff&#39;, age: 23 })  typeof 探查某个dom/关键字的类型 // 想知道某个dom，关键字(setTimeout)的类型是什么，可用typeof let div = document.createElement(&#39;div&#39;); // HTMLDivElement type divType = typeof div let timer = setTimeout(() =&amp;gt; console.log(&#39;st&#39;), 2) // NodeJS.Timeout type timerType = typeof timer  ts高级类型 // 剔除某个键 Omit let person = { name: &#39;name&#39;, hoppy: [&#39;eat&#39;, &#39;sleep&#39;] } type user = Omit&amp;lt;typeof person, &#39;name&#39;&amp;gt;   持续更新中&amp;hellip;</description>
+      <description> typeof 探查某个dom/关键字的类型 // 想知道某个dom，关键字(setTimeout)的类型是什么，可用typeof let div = document.createElement(&#39;div&#39;); // HTMLDivElement type divType = typeof div let timer = setTimeout(() =&amp;gt; console.log(&#39;st&#39;), 2) // NodeJS.Timeout type timerType = typeof timer  </description>
     </item>
     
     <item>
@@ -459,16 +352,6 @@ Fn是一个函数，fn对象是从Fn函数new出来的，这样fn对象就可以
       
       <guid>https://iseekto.github.io/trysme/2020/%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/</guid>
       <description> 生成二维码：使用 QRCode import QRCode from &#39;qrcode&#39;; const opt = {} const url = window.location.url try { console.log(await QRCode.toDataURL(url, opt)) } catch(err) { console.error(err) }  -- 生成图片：使用html2canvas import html2canvas from &#39;html2canvas&#39;; html2canvas(document.body).then(function(canvas) { document.body.appendChild(canvas); });  后续问题：  生成的有base64，但img区域空白 解决方案：  截图产生空白是因为容器高度设置的问题，设置windowHeight的高度等于页面包含滚动条的高度即可获取滚动条中的内容。这一条就可以解决空白的问题。 设置width、height属性的原因是，我们在页面中截图显示的区域宽度和高度是固定的，就是当前屏幕的可见区域。 设置x、y坐标的原因是由于页面在有滚动条的时候，需要指定截图的起始位置。本项目中x轴方向不存在滚动条，所以设置为零；y方向有滚动条，所以需要获取一下当前方向的滚动坐标。 一般网页中会有图片，图片中有链接地址时，设置useCORS属性可保证图片的加载。   </description>
-    </item>
-    
-    <item>
-      <title>js面试—数组</title>
-      <link>https://iseekto.github.io/trysme/2020/js%E9%9D%A2%E8%AF%95%E6%95%B0%E7%BB%84/</link>
-      <pubDate>Fri, 17 Jan 2020 15:33:22 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/2020/js%E9%9D%A2%E8%AF%95%E6%95%B0%E7%BB%84/</guid>
-      <description> 一、铺平数组 给定原数组：let moreArr = [1, 2, [3, 4], [33, [442]], 5];
-1、moreArr = [...moreArr] 2、moreArr = moreArr.flat(Infinity) 3、while(moreArr.some(Array.isArray)) { moreArr = [].concat(...moreArr) } 4、let flatArr = []; function flats(arr = []) { arr.forEach(v =&amp;gt; { if (Array.isArray(v)) { flats(v) } else { flatArr.push(v) } }) }  </description>
     </item>
     
     <item>
@@ -484,15 +367,6 @@ Fn是一个函数，fn对象是从Fn函数new出来的，这样fn对象就可以
 最后就可以在你的github上看效果吧！
  记坑，tags分页下404的问题：需要加上 trysme 作为链接标头 导航需要加入别的路由时可用到此招！
  </description>
-    </item>
-    
-    <item>
-      <title>React生命周期执行顺序</title>
-      <link>https://iseekto.github.io/trysme/2020/react%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/</link>
-      <pubDate>Wed, 15 Jan 2020 23:05:35 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/2020/react%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F/</guid>
-      <description> React生命周期执行顺序： ###################	渲染过程 ############### #constructor: ES6构造函数. 1.定义它是为了初始化state，这样我们可以在组件生命周期任何函数中访问state 1.其次是为了绑定成员函数的this环境、 #render：组件中最重要的函数，渲染DOM。 1.它返回一个JSX描述的结构，最终由react来操作渲染过程 2.如果组件的作用不是为了渲染页面，无东西可画，我们可以返回一个null或者false 3.不可再render中使用this.setState，因为一个纯函数不应该引起状态的改变。 #componentWillMount: 组件渲染前，将要装载时。 1.它执行完毕会走render函数 2.建议数据渲染不要放在这个函数里 3.一般都在里放loading，改变引用title等。 4.它可以在浏览器和服务器端被调用。 #componentDidMount: 组件挂载时 1.这里我们可以拿到DOM节点，动态赋予DOM事件 2.可以请求数据接口 3.它只能在浏览器端被调用，因为DOM已经挂载 4.可结合其他UI库执行代码。 ################## 更新过程 ################## 组件被挂载到DOM树上之后，当props或者state被更改的时候会依次执行以下生命周期函数 #componentWillReceiveProps 1.只要是父组件里的render函数被调用，在render函数里面#【被渲染的子组件也会经历更新过程】#； 不管父传给子组件的props有没有改变，都会触发子组件的componentWillReceiveProps函数 2.注意：this.setState()函数在更新的过程中不会触发这个函数； 因为它是根据props值，也就是参数nextProps来计算出是不是要更新内部state状态 3.触发之后会更新子组件的render函数 #shouldComponentUpdate: 性能优化利器-决定一个组件什么时候不需要渲染。 1.在更新过程中，react会首先调用shouldComponentUpdate函数，如果他返回true，继续更新 接下来调用render 反之，停止更新，也就不会引发后续的渲染。 2.通过this.setState()函数引发更新过程，而不是立即更新组件的state值，在执行到本周期函数时，this.state依 然是this.setState()函数执行前的值，我们要做的就是在nextProps, this.props, nextState, this.state中做对比。 #componentWillUpdate：组件更新前 1.如果shouldComponentUpdate函数返回true，react接下来就会调用组件的componentWillUpdate, render和componentDidUpdate函数。 2.使用React做服务端渲染时(SSR), 基本不会经历更新过程，因为服务端之产出一个HTML字符串。 ################## 卸载过程 ################## #componentWillUnMount: 组件卸载时 1.本周期函数与componentDidMount周期函数有关，用于移除DOM节点 2.清除定时器。 React生命周期走势大致是： constructor-&amp;gt;componentWillMount-&amp;gt;render-&amp;gt;componentDidMount-&amp;gt;!props更新调用-&amp;gt;(componentWillReceiveProps -&amp;gt; render) -&amp;gt;(shouldComponentUpdate ? true -&amp;gt; componentWillUpdate -&amp;gt; render -&amp;gt; componentDidUpdate : componentWillUnMount: 不会打印 默认执行了)  </description>
     </item>
     
     <item>
@@ -531,16 +405,6 @@ iOS 的 webview 中 滑动不流畅 ios5.0及以后的版本里，滑动有定�
 -webkit-overflow-scrolling: auto: 当手指从触摸屏上离开，滚动会立即停止
 在滚动容器上增加滚动touch方法，可能会导致的问题是 含有fixed的元素会随着页面一起滚动，解决方案；在
 body: { ​ overflow-y: hidden; } .box { ​ overflow-y: auto; ​ -webkit-overflow-scrolling: touch; }  iOS上拉边界与下拉会出现白色空白区域 产生原因: 在 iOS 中，手指按住屏幕上下拖动，会触发 touchmove 事件。这个事件触发的对象是整个 webview 容器，容器自然会被拖动，剩下的部分会成空白</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://iseekto.github.io/trysme/1/css%E6%8A%80%E5%B7%A7/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/1/css%E6%8A%80%E5%B7%A7/</guid>
-      <description>title: &amp;ldquo;Css技巧&amp;rdquo; date: 2020-03-27T13:52:48+08:00 categories: [&amp;lsquo;css&amp;rsquo;]
-tags: [&amp;lsquo;css&amp;rsquo;] select内容居中显示、下拉内容右对齐 select { text-align: center; text-align-last: center; } select option { direction: rtl; }  修改input输入框中光标的颜色不改变字体的颜色 input { color: #fff; caret-color: red; }  修改input 输入框中 placeholder 默认字体样式 /* webkit内核的浏览器 */ input::-webkit-input-placeholder { color: #c2c6ce; } /* Firefox版本4-18 */ input:-moz-placeholder { color: #c2c6ce; } /* Firefox版本19+ */ input::-moz-placeholder { color: #c2c6ce; } /* IE浏览器 */ input:-ms-input-placeholder { color: #c2c6ce; }  transfrom的rotate属性在span标签下失效 span { display: inline-block; }  cursor属性 .</description>
     </item>
     
   </channel>

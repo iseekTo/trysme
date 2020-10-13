@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "Ts常见问题总结",
     "headline" : "Ts常见问题总结",
-    "description" : "1、从一组数组对象中拿到相应值，组成枚举类型 const littleNumbers = [ { a: 1, b: \x27123\x27 }, { a: 2, b: \x2722223\x27 }, { a: 3, b: \x273123\x27 }, ] as const; \/\/ remember \x27as const\x27 \/\/ littleNumbers[number] 相当于下标 type aLittle = typeof littleNumbers[number][\x27b\x27] \/\/ aLittle = \x27123\x27 | \x2722223\x27 | \x273123\x27 let useLittles: aLittle = \x273123\x27  2、找不到第三方模块时，有两种方法可以消除ts的报警 \/\/ 1、在加载第三方模块内部声明 declare const yourModuleName: any; \/\/ 2、在根目录新建 modules.d.ts declare module \x27yourModuleName\x27;  3、根据key值，约束对应value的值类型 let source = { name: \x27lisa\x27, age: 19 } type typeSource = typeof source const getKey = \x26lt;T extends keyof typeSource\x26gt;( key: T, value: typeSource[T] ): typeSource[T] =\x26gt; { return value } \/\/ error 类型“\x26quot;123\x26quot;”的参数不能赋给类型“number”的参数。ts(2345) let bingoAge = getKey(\x27age\x27, \x27123\x27) \/\/ is ok let bingoName = getKey(\x27name\x27, \x27123\x27)   持续更新中\x26hellip;",
+    "description" : " 1、从一组数组对象中拿到相应值，组成枚举类型 const littleNumbers = [ { a: 1, b: \x27123\x27 }, { a: 2, b: \x2722223\x27 }, { a: 3, b: \x273123\x27 }, ] as const; \/\/ remember \x27as const\x27 \/\/ littleNumbers[number] 相当于下标 type aLittle = typeof littleNumbers[number][\x27b\x27] \/\/ aLittle = \x27123\x27 | \x2722223\x27 | \x273123\x27 let useLittles: aLittle = \x273123\x27  2、找不到第三方模块时，有两种方法可以消除ts的报警 \/\/ 1、在加载第三方模块内部声明 declare const yourModuleName: any; \/\/ 2、在根目录新建 modules.d.ts declare module \x27yourModuleName\x27;  ",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -57,7 +57,7 @@
     "datePublished": "2020-01-21 20:36:06 \x2b0800 CST",
     "dateModified" : "2020-01-21 20:36:06 \x2b0800 CST",
     "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/ts%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93\/",
-    "wordCount" : "114",
+    "wordCount" : "64",
     "keywords" : [ "ts", "wm\x27s blog"]
 }
 </script>
@@ -162,7 +162,6 @@
 <ul>
 <li><a href="#1-从一组数组对象中拿到相应值-组成枚举类型">1、从一组数组对象中拿到相应值，组成枚举类型</a></li>
 <li><a href="#2-找不到第三方模块时-有两种方法可以消除ts的报警">2、找不到第三方模块时，有两种方法可以消除ts的报警</a></li>
-<li><a href="#3-根据key值-约束对应value的值类型">3、根据key值，约束对应value的值类型</a></li>
 </ul>
 </nav>
     </div>
@@ -245,6 +244,7 @@
 
 // littleNumbers[number] 相当于下标
 type aLittle = typeof littleNumbers[number]['b']
+
 // aLittle = '123' | '22223' | '3123'
 let useLittles: aLittle = '3123'
 </code></pre>
@@ -257,33 +257,6 @@ declare const yourModuleName: any;
 // 2、在根目录新建 modules.d.ts
 declare module 'yourModuleName';
 </code></pre>
-
-<h1 id="3-根据key值-约束对应value的值类型">3、根据key值，约束对应value的值类型</h1>
-
-<pre><code class="language-typescript">let source = {
-    name: 'lisa',
-    age: 19
-}
-
-type typeSource = typeof source
-
-const getKey = &lt;T extends keyof typeSource&gt;(
-    key: T, value: typeSource[T]
-): typeSource[T] =&gt; {
-    return value
-}
-
-// error 类型“&quot;123&quot;”的参数不能赋给类型“number”的参数。ts(2345)
-let bingoAge = getKey('age', '123')   
-
-// is ok
-let bingoName = getKey('name', '123') 
-
-</code></pre>
-
-<blockquote>
-<p>持续更新中&hellip;</p>
-</blockquote>
 
     </div>
 

@@ -11,7 +11,7 @@
   <meta name="keywords" content="blog">
   
   <link rel="prev" href="https://iseekto.github.io/trysme/2020/node%E8%B5%84%E6%BA%90/" />
-  <link rel="next" href="https://iseekto.github.io/trysme/2020/react-hook%E6%8C%81%E4%B9%85%E5%8C%96%E5%BC%95%E7%94%A8%E6%96%B9%E6%A1%88/" />
+  <link rel="next" href="https://iseekto.github.io/trysme/2020/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" />
   <link rel="canonical" href="https://iseekto.github.io/trysme/2020/js%E5%8E%9F%E5%9E%8B%E4%B8%8E%E9%97%AD%E5%8C%85%E7%B3%BB%E5%88%97%E4%B9%8Bprototype%E5%8E%9F%E5%9E%8B/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "JS原型与闭包系列之——prototype原型",
     "headline" : "JS原型与闭包系列之——prototype原型",
-    "description" : " prototype原型 函数也是一种对象。他也是属性的集合，也可以对函数进行自定义属性。\n每个函数都有一个属性叫做prototype。\n这个prototype的属性值是一个对象（属性的集合，再次强调！），默认的只有一个叫做constructor的属性，指向这个函数本身。\nFn是一个函数，fn对象是从Fn函数new出来的，这样fn对象就可以调用Fn.prototype中的属性。 因为每个对象都有一个隐藏的属性——“proto”，这个属性引用了创建这个对象的函数的prototype。\n即：fn.__proto__ === Fn.prototype\n隐式原型 每个对象都有一个proto，可成为隐式原型 proto是一个隐藏的属性，javascript不希望开发者用到这个属性值，有的低版本浏览器甚至不支持这个属性值 instanceof Instanceof的判断队则是：沿着A的proto这条线来找，同时沿着B的prototype这条线来找，如果两条线能找到同一个引用，即同一个对象，那么就返回true。如果找到终点还未重合，则返回false。 instanceof表示的就是一种继承关系，或者原型链的结构\n继承 OR 原型链 javascript中的继承是通过原型链来体现的 访问一个对象的属性时，先在基本属性中查找，如果没有，再沿着proto这条链向上找，这就是原型链。\n那么我们在实际应用中如何区分一个属性到底是基本的还是从原型中找到的呢？大家可能都知道答案了——hasOwnProperty，特别是在for…in…循环中，一定要注意。  Q：f1的这个hasOwnProperty哪里来？\n ",
+    "description" : " prototype原型 函数也是一种对象。他也是属性的集合，也可以对函数进行自定义属性。\n每个函数都有一个属性叫做prototype。\n这个prototype的属性值是一个对象（属性的集合，再次强调！），默认的只有一个叫做constructor的属性，指向这个函数本身。\nFn是一个函数，fn对象是从Fn函数new出来的，这样fn对象就可以调用Fn.prototype中的属性。 因为每个对象都有一个隐藏的属性——“proto”，这个属性引用了创建这个对象的函数的prototype。\n即：fn.__proto__ === Fn.prototype\n隐式原型 每个对象都有一个proto，可成为隐式原型 proto是一个隐藏的属性，javascript不希望开发者用到这个属性值，有的低版本浏览器甚至不支持这个属性值 instanceof Instanceof的判断队则是：沿着A的proto这条线来找，同时沿着B的prototype这条线来找，如果两条线能找到同一个引用，即同一个对象，那么就返回true。如果找到终点还未重合，则返回false。 instanceof表示的就是一种继承关系，或者原型链的结构\n继承 OR 原型链 javascript中的继承是通过原型链来体现的 访问一个对象的属性时，先在基本属性中查找，如果没有，再沿着proto这条链向上找，这就是原型链。\n那么我们在实际应用中如何区分一个属性到底是基本的还是从原型中找到的呢？大家可能都知道答案了——hasOwnProperty，特别是在for…in…循环中，一定要注意。 ",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -57,7 +57,7 @@
     "datePublished": "2020-01-27 20:41:43 \x2b0800 CST",
     "dateModified" : "2020-01-27 20:41:43 \x2b0800 CST",
     "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/js%E5%8E%9F%E5%9E%8B%E4%B8%8E%E9%97%AD%E5%8C%85%E7%B3%BB%E5%88%97%E4%B9%8Bprototype%E5%8E%9F%E5%9E%8B\/",
-    "wordCount" : "22",
+    "wordCount" : "21",
     "keywords" : [ "js","语言基础", "wm\x27s blog"]
 }
 </script>
@@ -274,10 +274,6 @@
 <p>那么我们在实际应用中如何区分一个属性到底是基本的还是从原型中找到的呢？大家可能都知道答案了——hasOwnProperty，特别是在for…in…循环中，一定要注意。
 <figure><img src="/images/ring.svg" data-sizes="auto" data-src="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/27/5ca17_20200127210628.png" alt="" class="lazyload"><figcaption class="image-caption"></figcaption></figure></p>
 
-<blockquote>
-<p>Q：f1的这个hasOwnProperty哪里来？</p>
-</blockquote>
-
     </div>
 
     <div class="post-copyright">
@@ -331,7 +327,7 @@
         <a href="https://iseekto.github.io/trysme/2020/node%E8%B5%84%E6%BA%90/" class="prev" rel="prev" title="Node资源"><i class="iconfont icon-left"></i>&nbsp;Node资源</a>
          
         
-        <a href="https://iseekto.github.io/trysme/2020/react-hook%E6%8C%81%E4%B9%85%E5%8C%96%E5%BC%95%E7%94%A8%E6%96%B9%E6%A1%88/" class="next" rel="next" title="React Hook持久化引用方案">React Hook持久化引用方案&nbsp;<i class="iconfont icon-right"></i></a>
+        <a href="https://iseekto.github.io/trysme/2020/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="next" rel="next" title="Linux常用命令">Linux常用命令&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 

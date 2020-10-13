@@ -46,7 +46,7 @@
     "articleSection" : "posts",
     "name" : "Create React App运行报错解决方案",
     "headline" : "Create React App运行报错解决方案",
-    "description" : "排除webpack，以及相关依赖包\/版本的错误\n 根目录下创建一个 .env 文件\n添加 SKIP_PREFLIGHT_CHECK=true\n运行 npm start",
+    "description" : "排除webpack，以及相关依赖包\/版本的错误\n 根目录下创建一个 .env 文件\n添加 SKIP_PREFLIGHT_CHECK=true\n运行 npm start\n 其他错误 错误日志：The engine \x26ldquo;node\x26rdquo; is incompatible with this module\n 解决方案：yarn config set ignore-engines true",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -57,7 +57,7 @@
     "datePublished": "2020-01-27 20:28:16 \x2b0800 CST",
     "dateModified" : "2020-01-27 20:28:16 \x2b0800 CST",
     "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/create-react-app%E8%BF%90%E8%A1%8C%E6%8A%A5%E9%94%99%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88\/",
-    "wordCount" : "9",
+    "wordCount" : "23",
     "keywords" : [ "react","question", "wm\x27s blog"]
 }
 </script>
@@ -236,6 +236,13 @@
 <p>添加 <code>SKIP_PREFLIGHT_CHECK=true</code></p>
 
 <p>运行 <code>npm start</code></p>
+
+<blockquote>
+<p>其他错误
+错误日志：The engine &ldquo;node&rdquo; is incompatible with this module</p>
+</blockquote>
+
+<p>解决方案：<code>yarn config set ignore-engines true</code></p>
 
     </div>
 

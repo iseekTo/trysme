@@ -31,20 +31,6 @@
     </item>
     
     <item>
-      <title>Docker基本指令</title>
-      <link>https://iseekto.github.io/trysme/2020/docker%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4/</link>
-      <pubDate>Mon, 01 Jun 2020 21:57:27 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/2020/docker%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4/</guid>
-      <description>后台运行：docker run -d IMAGE some command
-镜像列表：docker images
-构建镜像: docker image build ./ -t docker-test:1.0.0
-&amp;gt; 基于路径./（当前路径）打包一个镜像，镜像的名字是 docker-test，版本号是1.0.0。该命令会自动寻找Dockerfile来打包出一个镜像
-删除镜像: docker rmi images
-停止：docker stop CONTAINER ID</description>
-    </item>
-    
-    <item>
       <title>Git Rebase简单使用</title>
       <link>https://iseekto.github.io/trysme/2020/git-rebase%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Wed, 15 Apr 2020 10:36:02 +0800</pubDate>
@@ -57,40 +43,6 @@
   执行完毕如果又出现，successfully updated&amp;hellip; 然后会出现一个无序数字字母组成的分支名
  执行 git checkout -b new branch git add . git commit -m &#39;some msg&#39; git push 可选，多余分支删掉即可。
   去掉上一次的提交 git reset HEAD^ 或者 commitid</description>
-    </item>
-    
-    <item>
-      <title>Tree命令</title>
-      <link>https://iseekto.github.io/trysme/2020/tree%E5%91%BD%E4%BB%A4/</link>
-      <pubDate>Fri, 20 Mar 2020 10:49:09 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/2020/tree%E5%91%BD%E4%BB%A4/</guid>
-      <description>tree 显示当前全部目录及全部子文件
-例如：
-├── README.md
-├── config
-│ ├── env.js
-│ ├── getHttpsConfig.js
-│ ├── jest
-│ │ ├── cssTransform.js
-│ │ └── fileTransform.js
-│ ├── modules.js
-│ ├── paths.js
-│ ├── pnpTs.js
-│ ├── webpack.config.js
-│ └── webpackDevServer.config.js
-├── package.json
-├── public
-│ ├── favicon.ico
-│ ├── index.html
-│ ├── logo192.png
-│ ├── logo512.png
-│ ├── manifest.json
-│ └── robots.txt
-├── scripts
-│ ├── build.js
-│ ├── start.js
-│ └── test.</description>
     </item>
     
     <item>
@@ -139,16 +91,6 @@
     </item>
     
     <item>
-      <title>Yarn安装项目遇到的难点</title>
-      <link>https://iseekto.github.io/trysme/2020/yarn%E5%AE%89%E8%A3%85%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E7%9A%84%E9%9A%BE%E7%82%B9/</link>
-      <pubDate>Sat, 22 Feb 2020 19:12:57 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/2020/yarn%E5%AE%89%E8%A3%85%E9%A1%B9%E7%9B%AE%E9%81%87%E5%88%B0%E7%9A%84%E9%9A%BE%E7%82%B9/</guid>
-      <description>create-react-app创建项目报错（冷门错误） 错误日志：The engine &amp;ldquo;node&amp;rdquo; is incompatible with this module
-解决方案：yarn config set ignore-engines true</description>
-    </item>
-    
-    <item>
       <title>Js工具函数</title>
       <link>https://iseekto.github.io/trysme/2020/js%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0/</link>
       <pubDate>Fri, 21 Feb 2020 14:11:45 +0800</pubDate>
@@ -189,15 +131,6 @@
       <description>nodejs不同版本的下载
  mac系统的同学建议下载相关版本的 msi
  </description>
-    </item>
-    
-    <item>
-      <title>Mac常用指令</title>
-      <link>https://iseekto.github.io/trysme/2020/mac%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</link>
-      <pubDate>Sun, 19 Jan 2020 20:03:59 +0800</pubDate>
-      
-      <guid>https://iseekto.github.io/trysme/2020/mac%E5%B8%B8%E7%94%A8%E6%8C%87%E4%BB%A4/</guid>
-      <description>查看本机ip grep：筛选的意思 筛选某个键 ifconfig | grep &amp;quot;inet&amp;quot;</description>
     </item>
     
     <item>
