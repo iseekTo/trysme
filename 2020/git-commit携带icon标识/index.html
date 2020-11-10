@@ -10,9 +10,9 @@
   
   <meta name="keywords" content="blog">
   
-  <link rel="prev" href="https://iseekto.github.io/trysme/2020/flutter%E8%B0%83%E8%AF%95%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" />
-  <link rel="next" href="https://iseekto.github.io/trysme/2020/git-commit%E6%90%BA%E5%B8%A6icon%E6%A0%87%E8%AF%86/" />
-  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/x-%E9%A1%B9%E7%9B%AE%E7%B1%BB%E4%BC%98%E5%8C%96/" />
+  <link rel="prev" href="https://iseekto.github.io/trysme/2020/x-%E9%A1%B9%E7%9B%AE%E7%B1%BB%E4%BC%98%E5%8C%96/" />
+  
+  <link rel="canonical" href="https://iseekto.github.io/trysme/2020/git-commit%E6%90%BA%E5%B8%A6icon%E6%A0%87%E8%AF%86/" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="16x16" href="https://simg01.gaodunwangxiao.com/uploadimgs/goada/202001/16/33647_20200116152624.png">
   <link rel="manifest" href="/site.webmanifest">
@@ -22,10 +22,10 @@
   <title>
        
        
-           X 项目类优化 | wm&#39;s blog
+           Git Commit携带icon标识 | wm&#39;s blog
        
   </title>
-  <meta name="title" content="X 项目类优化 | wm&#39;s blog">
+  <meta name="title" content="Git Commit携带icon标识 | wm&#39;s blog">
     
   
   <link rel="stylesheet" href="/trysme/font/iconfont.css">
@@ -44,9 +44,9 @@
          "@id": "https:\/\/iseekto.github.io\/trysme\/"
     },
     "articleSection" : "posts",
-    "name" : "X 项目类优化",
-    "headline" : "X 项目类优化",
-    "description" : " cli之外的优化方案  moment | lodash  根据 webpack-bundle-analyzer 分析 moment 包体积非常大，如果没有国际化需求，可以将语言包 剔除 plugins: [ new webpack.ContextReplacementPlugin(\/moment[\\\/\\\\]locale$\/, \/de|fr|hu\/) ]   ",
+    "name" : "Git Commit携带icon标识",
+    "headline" : "Git Commit携带icon标识",
+    "description" : "效果 示例  命令行提交：git commit -m \x27🔥 更新xxx功能\x27 githubDesktop桌面端：🔥 更新xxx功能  参考 commit code icon大全",
     "inLanguage" : "en-us",
     "author" : "_weimou",
     "creator" : "_weimou",
@@ -54,11 +54,11 @@
     "accountablePerson" : "_weimou",
     "copyrightHolder" : "_weimou",
     "copyrightYear" : "2020",
-    "datePublished": "2020-09-16 18:11:59 \x2b0800 CST",
-    "dateModified" : "2020-09-16 18:11:59 \x2b0800 CST",
-    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/x-%E9%A1%B9%E7%9B%AE%E7%B1%BB%E4%BC%98%E5%8C%96\/",
-    "wordCount" : "16",
-    "keywords" : [  "wm\x27s blog"]
+    "datePublished": "2020-11-10 15:06:29 \x2b0800 CST",
+    "dateModified" : "2020-11-10 15:06:29 \x2b0800 CST",
+    "url" : "https:\/\/iseekto.github.io\/trysme\/2020\/git-commit%E6%90%BA%E5%B8%A6icon%E6%A0%87%E8%AF%86\/",
+    "wordCount" : "13",
+    "keywords" : [ "tool","git", "wm\x27s blog"]
 }
 </script>
 
@@ -135,18 +135,14 @@
           
 <article class="post-warp" itemscope itemtype="http://schema.org/Article">
     <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">X 项目类优化</h1>
+        <h1 class="post-title" itemprop="name headline">Git Commit携带icon标识</h1>
         <div class="post-meta">
                 Written by <a itemprop="name" href="https://iseekto.github.io/trysme/" rel="author">_weimou</a> with ♥ 
                 <span class="post-time">
-                on <time datetime=2020-09-16 itemprop="datePublished">September 16, 2020</time>
+                on <time datetime=2020-11-10 itemprop="datePublished">November 10, 2020</time>
                 </span>
                 in
-                <i class="iconfont icon-folder"></i>
-                <span class="post-category">
-                        <a href="https://iseekto.github.io/trysme/categories/optmize/"> optmize </a>
-                        
-                </span>
+                
                 
                 <a href="#gitalk-container" itemprop="discussionUrl">
                     <span class="gitalk-comment-count" itemprop="commentCount"></span>
@@ -160,7 +156,9 @@
     <div class="post-toc-content">
       <nav id="TableOfContents">
 <ul>
-<li><a href="#cli之外的优化方案">cli之外的优化方案</a></li>
+<li><a href="#效果">效果</a></li>
+<li><a href="#示例">示例</a></li>
+<li><a href="#参考">参考</a></li>
 </ul>
 </nav>
     </div>
@@ -219,6 +217,8 @@
         
 
         
+            
+        
 
         
         
@@ -233,16 +233,20 @@
 
           
 
-<h1 id="cli之外的优化方案">cli之外的优化方案</h1>
+<h1 id="效果">效果</h1>
+
+<p><figure><img src="/images/ring.svg" data-sizes="auto" data-src="https://raw.githubusercontent.com/iseekTo/atomicImg/main/mainImage/Git-commit-icon.png" alt="git-commit-icon" class="lazyload"><figcaption class="image-caption">git-commit-icon</figcaption></figure></p>
+
+<h1 id="示例">示例</h1>
 
 <ul>
-<li>moment | lodash
-
-<ul>
-<li>根据 <code>webpack-bundle-analyzer</code> 分析 <code>moment</code> 包体积非常大，如果没有国际化需求，可以将语言包 <em>剔除</em></li>
-<li><code>plugins: [ new webpack.ContextReplacementPlugin(/moment[\/\\]locale$/, /de|fr|hu/) ]</code></li>
-</ul></li>
+<li>命令行提交：<code>git commit -m '🔥 更新xxx功能'</code></li>
+<li>githubDesktop桌面端：<code>🔥 更新xxx功能</code></li>
 </ul>
+
+<h1 id="参考">参考</h1>
+
+<p><a href="https://gitmoji.carloscuesta.me/" rel="nofollow noreferrer" target="_blank">commit code icon大全</a></p>
 
     </div>
 
@@ -258,7 +262,7 @@
             <p class="copyright-item">
                     <span>Link:</span>
                     
-                    <a href=https://iseekto.github.io/trysme/2020/x-%E9%A1%B9%E7%9B%AE%E7%B1%BB%E4%BC%98%E5%8C%96/>
+                    <a href=https://iseekto.github.io/trysme/2020/git-commit%E6%90%BA%E5%B8%A6icon%E6%A0%87%E8%AF%86/>
                         <script>
                             document.write(decodeURI(location.origin + location.pathname))
                         </script>
@@ -275,6 +279,17 @@
   
     <div class="post-tags">
         
+            <section>
+            <i class="iconfont icon-tag"></i>Tag(s): 
+            
+            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/tool/">
+                    #tool</a></span>
+            
+            <span class="tag"><a href="https://iseekto.github.io/trysme/tags/git/">
+                    #git</a></span>
+            
+            </section>
+        
         <section>
                 <a href="javascript:window.history.back();">back</a></span> · 
                 <span><a href="https://iseekto.github.io/trysme/">home</a></span>
@@ -283,10 +298,8 @@
 
     <div class="post-nav">
         
-        <a href="https://iseekto.github.io/trysme/2020/flutter%E8%B0%83%E8%AF%95%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9/" class="prev" rel="prev" title="Flutter调试注意事项"><i class="iconfont icon-left"></i>&nbsp;Flutter调试注意事项</a>
+        <a href="https://iseekto.github.io/trysme/2020/x-%E9%A1%B9%E7%9B%AE%E7%B1%BB%E4%BC%98%E5%8C%96/" class="prev" rel="prev" title="X 项目类优化"><i class="iconfont icon-left"></i>&nbsp;X 项目类优化</a>
          
-        
-        <a href="https://iseekto.github.io/trysme/2020/git-commit%E6%90%BA%E5%B8%A6icon%E6%A0%87%E8%AF%86/" class="next" rel="next" title="Git Commit携带icon标识">Git Commit携带icon标识&nbsp;<i class="iconfont icon-right"></i></a>
         
     </div>
 
@@ -308,7 +321,7 @@
       var gitalk = new Gitalk({
         
         id: location.pathname.substr(0, 50),
-        title: 'X 项目类优化',
+        title: 'Git Commit携带icon标识',
         clientID: '64ecd4438b6b3a3a9bd8',
         clientSecret: '25f4634cfc70ec2b3fc22e015152a0e19a16df09',
         repo: 'trysme-comment',
@@ -384,8 +397,9 @@
 
 
     
-    
-    <script src="/trysme/js/vendor_no_gallery.min.js" async=""></script>
+     <link href="//lib.baomitu.com/lightgallery/1.6.11/css/lightgallery.min.css" rel="stylesheet">  
+      
+     <script src="/trysme/js/vendor_gallery.min.js" async="" ></script>
     
   
 
